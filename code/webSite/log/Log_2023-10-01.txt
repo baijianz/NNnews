@@ -1,0 +1,128 @@
+2023-10-01 20:44:49.4730 Info sys_Home-index 
+2023-10-01 20:44:49.5555 Info sys_Home-desktop 
+2023-10-01 21:16:48.2104 Info sys_Home-index 
+2023-10-01 21:16:48.7302 Info sys_Home-desktop 
+2023-10-01 21:17:04.1118 Info sys_Home-index 
+2023-10-01 21:17:04.1496 Info sys_Home-desktop 
+2023-10-01 21:17:37.7602 Info sys_Home-index 
+2023-10-01 21:17:38.3720 Info sys_Home-desktop 
+2023-10-01 21:26:17.0656 Info sys_Home-index 
+2023-10-01 21:26:17.6375 Info sys_Home-desktop 
+2023-10-01 21:29:42.9004 Info sys_Home-index 
+2023-10-01 21:29:43.4478 Info sys_Home-desktop 
+2023-10-01 21:31:30.4779 Info sys_Home-index 
+2023-10-01 21:31:31.0263 Info sys_Home-desktop 
+2023-10-01 21:34:44.6130 Info sys_Home-index 
+2023-10-01 21:34:45.1514 Info sys_Home-desktop 
+2023-10-01 21:37:10.9314 Info sys_Home-index 
+2023-10-01 21:37:11.5010 Info sys_Home-desktop 
+2023-10-01 21:37:41.9721 Info sys_Home-index 
+2023-10-01 21:37:42.5234 Info sys_Home-desktop 
+2023-10-01 21:38:31.3897 Info sys_Home-index 
+2023-10-01 21:38:31.9521 Info sys_Home-desktop 
+2023-10-01 21:45:53.7238 Info sys_Home-index 
+2023-10-01 21:45:54.2816 Info sys_Home-desktop 
+2023-10-01 21:49:39.9673 Info sys_Home-index 
+2023-10-01 21:49:40.5372 Info sys_Home-desktop 
+2023-10-01 21:57:01.0772 Info sys_Home-index 
+2023-10-01 21:57:01.1488 Info sys_Home-desktop 
+2023-10-01 22:09:35.8882 Info sys_Home-index 
+2023-10-01 22:09:36.4373 Info sys_Home-desktop 
+2023-10-01 22:12:51.6333 Info sys_Home-index 
+2023-10-01 22:12:52.1800 Info sys_Home-desktop 
+2023-10-01 22:13:24.7515 Info sys_Home-index 
+2023-10-01 22:13:25.2946 Info sys_Home-desktop 
+2023-10-01 22:18:33.1029 Info sys_Home-index 
+2023-10-01 22:18:33.6334 Info sys_Home-desktop 
+2023-10-01 22:20:16.7252 Info sys_Home-index 
+2023-10-01 22:20:17.2974 Info sys_Home-desktop 
+2023-10-01 22:20:36.3943 Error “@newsCategoryID”附近有语法错误。
+------------begin-------------
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderImpl(IDbConnection cnn, CommandDefinition& command, CommandBehavior commandBehavior, IDbCommand& cmd)
+   在 Dapper.SqlMapper.ExecuteReader(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 db.efHelper.ExecuteDataTable(String cmdText, Object param, CommandType type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\lib\db\efHelper.cs:行号 148
+   在 db.bll.NN_newsCategory.batchRecovey(String keyFieldValues, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_newsCategory.cs:行号 191
+   在 web.Areas.employee.Controllers.employeeNewsCategoryNameController.batchRecovey(String keyFieldValues) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeNewsCategoryNameController.cs:行号 166
+------------End-------------
+ 
+2023-10-01 22:20:42.2043 Error “@newsCategoryID”附近有语法错误。
+------------begin-------------
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderImpl(IDbConnection cnn, CommandDefinition& command, CommandBehavior commandBehavior, IDbCommand& cmd)
+   在 Dapper.SqlMapper.ExecuteReader(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 db.efHelper.ExecuteDataTable(String cmdText, Object param, CommandType type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\lib\db\efHelper.cs:行号 148
+   在 db.bll.NN_newsCategory.batchRecovey(String keyFieldValues, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_newsCategory.cs:行号 191
+   在 web.Areas.employee.Controllers.employeeNewsCategoryNameController.batchRecovey(String keyFieldValues) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeNewsCategoryNameController.cs:行号 166
+------------End-------------
+ 
+2023-10-01 22:21:13.3396 Info sys_Home-index 
+2023-10-01 22:21:13.8643 Info sys_Home-desktop 
+2023-10-01 22:25:57.1513 Info sys_Home-index 
+2023-10-01 22:25:57.6967 Info sys_Home-desktop 
+2023-10-01 22:30:24.9861 Info sys_Home-index 
+2023-10-01 22:30:25.5665 Info sys_Home-desktop 
+2023-10-01 22:31:44.6379 Info sys_Home-index 
+2023-10-01 22:31:45.1865 Info sys_Home-desktop 
+2023-10-01 22:40:21.8957 Info sys_Home-index 
+2023-10-01 22:40:21.9408 Info sys_Home-desktop 
+2023-10-01 23:06:01.7845 Info sys_Home-index 
+2023-10-01 23:06:02.3260 Info sys_Home-desktop 
+2023-10-01 23:07:41.5373 Info sys_Home-index 
+2023-10-01 23:07:42.1011 Info sys_Home-desktop 
+2023-10-01 23:12:56.0086 Info rbac_Resource-select 
+2023-10-01 23:12:58.6870 Info rbac_Resource-Update 
+2023-10-01 23:12:58.7428 Info rbac_ResourceOp-SelectPartial 
+2023-10-01 23:12:59.0235 Info sys_BillAttach-SelectPartial 
+2023-10-01 23:13:04.6675 Info rbac_Resource-Update 
+2023-10-01 23:13:04.7197 Info rbac_ResourceOp-SelectPartial 
+2023-10-01 23:13:06.1682 Info rbac_Resource-Select 
+2023-10-01 23:13:07.7358 Info sys_Home-index 
+2023-10-01 23:13:07.7835 Info sys_Home-desktop 
+2023-10-01 23:13:32.3651 Info rbac_Module-select 
+2023-10-01 23:13:38.5654 Info rbac_Resource-select 
+2023-10-01 23:13:39.2609 Info rbac_Module-select 
+2023-10-01 23:13:45.2824 Info rbac_Resource-select 
+2023-10-01 23:13:47.8136 Info rbac_Resource-Insert 
+2023-10-01 23:17:20.4569 Info rbac_Resource-Insert 
+2023-10-01 23:17:20.4818 Info rbac_Resource-Update 
+2023-10-01 23:17:20.5083 Info rbac_ResourceOp-SelectPartial 
+2023-10-01 23:17:20.5157 Info sys_BillAttach-SelectPartial 
+2023-10-01 23:17:22.7758 Info rbac_ResourceOp-InsertFromCheck 
+2023-10-01 23:17:22.7978 Info rbac_ResourceOp-SelectPartial 
+2023-10-01 23:17:24.6664 Info rbac_ResourceOp-InsertFromCheck 
+2023-10-01 23:17:24.6785 Info rbac_ResourceOp-SelectPartial 
+2023-10-01 23:17:26.2033 Info rbac_ResourceOp-InsertFromCheck 
+2023-10-01 23:17:26.2123 Info rbac_ResourceOp-SelectPartial 
+2023-10-01 23:17:27.0973 Info rbac_ResourceOp-InsertFromCheck 
+2023-10-01 23:17:27.1033 Info rbac_ResourceOp-SelectPartial 
+2023-10-01 23:17:28.3070 Info rbac_Resource-Update 
+2023-10-01 23:17:28.3204 Info rbac_ResourceOp-SelectPartial 
+2023-10-01 23:17:29.9470 Info sys_Home-index 
+2023-10-01 23:17:30.0030 Info sys_Home-desktop 

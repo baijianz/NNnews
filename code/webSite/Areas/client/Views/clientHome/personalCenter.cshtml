@@ -1,0 +1,1023 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrom">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NN News</title>
+    <style>
+        .ContentLeft {
+            width: 500px;
+        }
+
+        .ContentRight {
+            position: relative;
+            width: 500px;
+            float: right;
+            margin-left: 80px;
+            margin-top: 173px;
+        }
+
+        .profile-form {
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            flex-basis: 45%;
+        }
+
+            .item label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .item input {
+                width: calc(100% - 70px);
+                padding: 8px;
+                margin-bottom: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+        .edit-button {
+            padding: 5px;
+            width: 40px;
+            background-color: #1e9fff;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        button {
+            margin-left: 10px;
+        }
+
+        input {
+            border: 1px solid #ccc; /* 设置边框为1像素宽的实线，颜色为灰色 */
+        }
+
+        .avatar-preview {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+            .avatar-preview img {
+                max-width: 100px;
+                max-height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+    </style>
+    <style>
+        .data-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f0f2f5;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+            .data-item img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 5px;
+                margin-right: 10px;
+                float: left;
+            }
+
+            .data-item .content {
+                flex-grow: 1;
+                float: left;
+            }
+
+            .data-item .title {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .data-item .description {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            .data-item .read-count {
+                font-size: 14px;
+                color: #888;
+            }
+    </style>
+
+    <link rel="shortcut icon" href=@Url.Content("~/Areas/client/assets/images/fav.png") type="image/x-icon">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/plugins/fontawesome-5.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/bootstrap.min.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/swiper.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/metismenu.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/magnific-popup.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/style.css") as="style">
+    @*layui*@
+    <link href="@Url.Content("~/content/layui/css/layui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/layui/layui.js")"></script>
+
+    @*jquery*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery-1.12.4.min.js")></script>
+    @*easyUI*@
+    <link href="@Url.Content("~/content/easyui/icon.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/content/easyui/bootstrap/easyui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/easyui/jquery.easyui.js")"></script>
+    @*layui*@
+    <link href="@Url.Content("~/content/layui/css/layui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/layui/layui.js")"></script>
+    @*chosen*@
+    <link href="@Url.Content("~/content/chosen/chosen.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/chosen/jquery.chosen.js")"></script>
+    @*jquery.validate*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate-vsdoc.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.message.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.unobtrusive.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.metadata.js")></script>
+    @*jquery库*@
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.ajaxfileupload.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.tableInput.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/my97DatePicker/WdatePicker.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.form.js")"></script>
+
+    @*自己封装的js*@
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.tools.js" + rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/fontawesome/rui.button.js" + rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.modelDialog.js" + rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.dropDownList.js" + rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.bill.js" + rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.cbxMulSelected.js" + rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_rui.js" + rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_lay.js" + rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table.js" + rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.pager.js" + rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.layout.js" + rui.configHelper.ctxKey)></script>
+    <!-- main js file -->
+    <script src="/Areas/client/assets/js/main.js" defer></script>
+    <!-- End Footer Area -->
+</head>
+
+<body class="home-one">
+    <header class="echo-header-area">
+        @*新闻头*@
+        <div class="echo-header-top">
+            <div class="container">
+                <div class="echo-full-header-top">
+                    <div class="row align-items-center plr_md--30">
+                        <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                            <div class="echo-meta-total-jobs">
+                                <div class="echo-meta-jobs-icons">
+                                    <img src="/Areas/client/assets/images/home-1/header-top/home-1-header-top.png" alt="Echo">
+                                </div>
+                                <div class="echo-meta-jobs-text">
+                                    <a id="recommend" style="cursor:pointer;">新闻推荐正在加载</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-7 col-8">
+                            <div class="echo-header-top-date">
+                                <div class="echo-day-name">
+                                    <span><i class="fa-regular fa-cloud"></i></span>
+                                    <span id="echo-day" class="echo-home-day"></span>
+                                    <span id="echo-date"></span>
+                                </div>
+                                <div class="echo-date-time">
+                                    <span><i class="fa-regular fa-calendar"></i></span>
+                                    <span><strong id="temperature">加载中</strong><span id="provinceCity">加载中</span></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-5 col-4 position-relative">
+                            <div class="echo-header-top-subs-social-menu">
+                                <div class="echo-header-top-subs-social">
+                                    <div class="echo-header-top-subscribe-btn">
+                                        @*这里要设置一个申请成为创作者和创作者的入口*@
+                                        <a href="CreateNewsItem" class="echo-py-btn"><i class="layui-icon layui-icon-file"></i>进入创作</a>
+                                    </div>
+                                    <div class="echo-header-top-social-media">
+                                        <div class="rts-darkmode">
+                                            <a id="rts-data-toggle" class="rts-dark-light">
+                                                @*夜间模式切换*@
+                                                <i class="rts-go-dark fal fa-moon"></i>
+                                                <i class="rts-go-light far fa-sun"></i>
+                                            </a>
+                                        </div>
+                                        <a href="#" id="search" class="echo-header-top-search-btn search-icon action-item icon">
+                                            @*SVG 意为可缩放矢量图形（Scalable Vector Graphics）。搜索框由svg生成*@
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.11544 16.961C13.3484 16.961 16.7798 13.5296 16.7798 9.29665C16.7798 5.06373 13.3484 1.63226 9.11544 1.63226C4.88251 1.63226 1.45105 5.06373 1.45105 9.29665C1.45105 13.5296 4.88251 16.961 9.11544 16.961Z" stroke="#5E5E5E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M14.4461 15.0254L17.451 18.0225" stroke="#5E5E5E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                        @*默认隐藏，在点击搜索按钮后显现*@
+                                        <div class="search-input-area">
+                                            <div class="container">
+                                                <div class="search-input-inner">
+                                                    <div class="input-div">
+                                                        <input id="searchInput1" class="search-input" type="text" placeholder="搜索任何你想要知道的内容">
+                                                    </div>
+                                                    <div id="NNsearch" class="search-close-icon" onclick="NNsearch()"><i class="fa-regular fa-search"></i></div>
+                                                    <div style="margin-left:5px;" class="search-close-icon"><i class="fa-regular fa-xmark-large rt-xmark"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="echo-header-top-menu-bar menu-btn">
+                                        <a href="javascript:void(0)">
+                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.526001 0.953461H20V3.11724H0.526001V0.953461ZM7.01733 8.52668H20V10.6905H7.01733V8.52668ZM0.526001 16.0999H20V18.2637H0.526001V16.0999Z" fill="#5E5E5E" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Home-1 Menu & Site Logo & Social Media -->
+        @*导航页*@
+        <div class="echo-home-1-menu">
+            <div class="echo-site-main-logo-menu-social">
+                <div class="container">
+                    <div class="row align-items-center plr_md--30 plr_sm--30 plr--10">
+                        <div class="col-xl-2 col-lg-2 col-md-7 col-sm-7 col-7">
+                            <div class="echo-site-logo">
+                                <a class="logo-light" href="index"><img src="/Areas/client/assets/images/home-1/site-logo/site-logo.svg" alt="Echo"></a>
+                                <a class="logo-dark" href="index"><img src="/Areas/client/assets/images/home-1/site-logo/site-logo-dark.svg" alt="Echo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 d-none d-lg-block">
+                            <nav>
+                                <div class="echo-home-1-menu">
+                                    <ul class="list-unstyled echo-desktop-menu">
+                                        <li class="menu-item echo-has-dropdown">
+                                            <a href="index" class="active">主页</a>
+                                        </li>
+                                        <li class="menu-item"><a href="about" class="echo-dropdown-main-element">关于</a></li>
+                                        <li class="menu-item">
+                                            <a href="cateGory" class="echo-dropdown-main-element active">新闻分类</a>
+                                        </li>
+                                        <li class="menu-item"><a href="contact" class="echo-dropdown-main-element">联系我们</a></li>
+                                        <li class="menu-item"><a href="personalCenter" class="echo-dropdown-main-element">个人中心</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Home-1 Menu & Site Logo & Social Media -->
+    </header>
+    @*侧边栏*@
+    <div id="side-bar" class="side-bar header-one">
+        <div class="inner">
+            @*本地化基本完成，剩余logo的更改，以及个人信息的跳转*@
+            <button class="close-icon-menu"><i class="far fa-times"></i></button>
+            <!-- inner menu area desktop start -->
+            <div class="inner-main-wrapper-desk d-none d-lg-block">
+                <div class="thumbnail">
+                    @*logo图像*@
+                    <img src="/Areas/client/assets/images/sidemenu-logo.svg" alt="echo">
+                </div>
+                <div class="inner-content">
+                    <div class="category-menu-area">
+                        <ul class="category-area">
+                            @*在这里显示用户个人信息*@
+                            <li class="item">
+                                @*在这里跳转个人信息界面*@
+                                @*用户图像*@
+                                <div class="image-area"><a href="personalCenter"><img src="data:jpg/jpeg;base64,@Convert.ToBase64String((byte[])rui.sessionHelper.getValue<byte[]>("profile"))" alt="用户头像"></a></div>
+                                <div class="content">
+                                    <div class="recent-post-title">
+                                        @*用户昵称*@
+                                        <a href="personalCenter">@rui.sessionHelper.getValue("userName")</a>
+                                    </div>
+                                    @*用户ID*@
+                                    <p class="desc"><a href="personalCenter"><i class="fa-light fa-user"></i>@rui.sessionHelper.getValue("userID")</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-form">
+                        <div class="form-inner">
+                            <div class="content">
+                                <div class="newsletter-image">
+                                    <img src="/Areas/client/assets/images/home-1/feature-right/news-item-1.png" alt="">
+                                </div>
+                                <h3 class="title">NN新闻</h3>
+                                <p class="desc">订阅NN新闻的邮件推送</p>
+                            </div>
+                            <form action="#">
+                                <div class="input-div">
+                                    <input type="email" placeholder="你的邮件地址" required>
+                                </div>
+                                <button type="submit" class="subscribe-btn">立即订阅</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="echo-breadcrumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- bread crumb inner wrapper -->
+                    <div class="breadcrumb-inner text-center">
+                        <div class="meta">
+                            <a href="#" class="prev">NN新闻/</a>
+                        </div>
+                        <h1 class="title">个人中心</h1>
+                    </div>
+                    <!-- bread crumb inner wrapper end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*主要内容*@
+    <section class="echo-about-area">
+        <div class="container">
+            <div class="echo-about-area-inner">
+                <div class="row align-items-center">
+                    <div class="col-xl-12 col-lg-12 sticky-coloum-item" style=" max-width: 1200px; margin: 30px auto; padding: 20px; background-color: #ffffff; border-radius: 5px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); display: flex;">
+                        <div class="ContentLeft">
+                            <div class="item">
+                                <label for="avatar">头像:</label>
+                                <div class="avatar-preview">
+                                    <img style="width:95px;height:100px;" alt="用户头像">
+                                </div>
+                                <input type="file" id="avatar">
+                            </div>
+
+                            <div class="item">
+                                <label for="gender">性别:</label>
+                                <select id="gender" style="width:413px;height:29px; border: 1px solid; background-color: #ccc;" disabled>
+                                    <option value="male">男</option>
+                                    <option value="female">女</option>
+                                </select>
+                                <button class="edit-button" id="genderButton">修改</button>
+                            </div>
+
+
+
+                            <div class="item">
+                                <label for="nickname">昵称:</label>
+                                <input type="text" style="border: 1px solid; background-color: #ccc;" id="nickname" value="John Doe" readonly>
+                                <button class="edit-button" id="nicknameButton">修改</button>
+                            </div>
+
+                            <div class="item">
+                                <label for="organization">所属机构:</label>
+                                <input type="text" style="border: 1px solid; background-color: #ccc;" id="organization" value="XX公司" readonly>
+                            </div>
+                        </div>
+
+                        <div class="ContentRight">
+                            <div class="item">
+                                <label for="birthdate">出生日期:</label>
+                                <input type="date" style="height:29px; border: 1px solid; background-color: #ccc;" id="birthdate" value="1990-01-01" readonly>
+                                <button class="edit-button" id="birthdateButton">修改</button>
+                            </div>
+
+                            <div class="item">
+                                <label for="account-type">账户类型:</label>
+                                <input type="text" style="border: 1px solid; background-color: #ccc;" id="account-type" value="普通用户" readonly>
+                            </div>
+                        </div>
+                        <div class="profile-form">
+                            <div class="buttons">
+                                <button style="background-color: darkseagreen" id="save" disabled>保存修改</button>
+                                <button id="cancel" style="background-color: darkseagreen;  margin-left: 3px;" class="cancel">取消</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-12 col-lg-12 sticky-coloum-item" style=" max-width: 1200px; margin: 30px auto; padding: 20px; background-color: #ffffff; border-radius: 5px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);">
+                        <div class="col-xl-12 col-lg-12 sticky-coloum-item" style="font-size: medium; font-weight: bold;">
+                            <label>最近点赞</label>
+                            <ul id="NNnewsLikeItem">
+                            </ul>
+                            <button id="load-more-btn-Like">加载更多</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-12 col-lg-12 sticky-coloum-item" style=" max-width: 1200px; margin: 30px auto; padding: 20px; background-color: #ffffff; border-radius: 5px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);">
+                        <div class="col-xl-12 col-lg-12 sticky-coloum-item" style="font-size: medium; font-weight: bold;">
+                            <label>最近收藏</label>
+                            <ul id="NNnewsStarItem">
+                            </ul>
+                            <button id="load-more-btn-Star">加载更多</button>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-12 col-lg-12 sticky-coloum-item" style=" max-width: 1200px; margin: 30px auto; padding: 20px; background-color: #ffffff; border-radius: 5px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);">
+                        <div class="col-xl-12 col-lg-12 sticky-coloum-item" style="font-size: medium; font-weight: bold;">
+                            <label>账户设置</label>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 sticky-coloum-item">
+                            @{
+                                if (rui.sessionHelper.getValue("type").ToString() == "0") //说明为普通用户
+                                {
+                                    <button type="button" class="layui-btn layui-btn-fluid" style="background-color:#1e9fff;margin-top:5px;margin-left:10px;" id="beComeCreater">申请成为内容创作者</button>
+
+                                }
+                                else  //说明已经为内容创作者
+                                {
+                                    if (rui.sessionHelper.getValue("newsAgencyID").ToString() == "NNI000000")
+                                    {
+                                        <button type="button" class="layui-btn layui-btn-fluid " style="background-color: #1e9fff; margin-top: 5px; margin-left:10px;" onclick="window.open('ToBeOfficial?userID=@rui.sessionHelper.getValue("userID")', '_self')">认证为官方号</button>
+                                    }
+                                    <button type="button" class="layui-btn layui-btn-fluid " style="background-color: #1e9fff; margin-top: 5px; margin-left:10px; " id="logoutCreater">注销内容创作者身份</button>
+
+                                }
+                            }
+                            <button type="button" class="layui-btn layui-btn-fluid" style="background-color: #1e9fff; margin-top: 7px;" id="amendPass">修改密码</button>
+                            <button type="button" class="layui-btn layui-btn-fluid" style="background-color: #1e9fff; margin-top: 5px;" id="PermanentCancellation">永久销号</button>
+                            <button type="button" class="layui-btn layui-btn-fluid" style="background-color: #1e9fff; margin-top: 5px;" onclick="window.open('../clientLogin/login', '_self')">注销账户</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                </div>
+            </div>
+    </section>
+
+
+    @*页脚*@
+    <footer class="echo-footer-area" id="footer">
+        <div class="container">
+            <div class="echo-row">
+                <div class="echo-footer-content-1">
+                    <div class="echo-get-in-tuch">
+                        <h4 class="text-capitalize">保持联系</h4>
+                    </div>
+                    <div class="echo-footer-address">
+                        <span class="text-capitalize"><i class="fa-regular fa-map"></i> 江苏省，南京市，雨花台区龙西路310号</span>
+                        <span class="text-capitalize"><i class="fa-regular fa-phone"></i> 19951684424</span>
+                        <span class="text-capitalize">
+                            <i class="fa-sharp fa-regular fa-envelope"></i>
+                            1600946024@@qq.com
+                        </span>
+                    </div>
+                </div>
+                <div class="echo-footer-content-2">
+                    <div class="echo-get-in-tuch">
+                        <h4 class="text-capitalize">最受欢迎的</h4>
+                    </div>
+                    <div class="echo-footer-most-popular">
+                        <ul class="list-unstyled">
+                            @{ var dataTable = db.bll.NN_sqlHelper.getMostPopularCategory();
+                                for (int i = 0; i < dataTable.Rows.Count; i++)
+                                {
+                                    @*这里跳到分类界面*@
+                                    <li><a href="@dataTable.Rows[i]["ID"]">@dataTable.Rows[i]["Name"]</a></li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="echo-footer-content-3">
+                    <div class="echo-get-in-tuch">
+                        <h4 class="text-capitalize">帮助</h4>
+                    </div>
+                    <div class="echo-footer-help">
+                        <ul class="list-unstyled">
+                            <li><a href="about">关于</a></li>
+                            <li><a href="_404NotFound">入驻媒体</a></li>
+                            <li><a href="_404NotFound">广告资助商</a></li>
+                            <li><a href="_404NotFound">隐私协议</a></li>
+                            <li><a href="_404NotFound">常见问题解答</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="echo-footer-content-4">
+                    <div class="echo-get-in-tuch">
+                        <h4 class="text-capitalize">订阅服务</h4>
+                    </div>
+                    <div class="echo-footer-news-text">
+                        <p>订阅NN新闻的邮件推送</p>
+                    </div>
+                    <div class="echo-subscribe-box-button">
+                        <form action="POST">
+                            <div class="echo-subscribe-input-fill">
+                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.8" d="M14.4414 11.6674C14.4402 11.8345 14.3734 11.9944 14.2553 12.1127C14.1371 12.2309 13.9773 12.2979 13.8101 12.2993H2.34541C2.17792 12.2991 2.01736 12.2325 1.89899 12.114C1.78062 11.9955 1.71413 11.8348 1.71413 11.6674V11.0265H13.1687V3.58109L8.07777 8.16291L1.71413 2.43564V1.48109C1.71413 1.31232 1.78118 1.15045 1.90052 1.03111C2.01986 0.911772 2.18172 0.844727 2.3505 0.844727H13.805C13.9738 0.844727 14.1357 0.911772 14.255 1.03111C14.3744 1.15045 14.4414 1.31232 14.4414 1.48109V11.6674ZM3.26304 2.11745L8.07777 6.45109L12.8925 2.11745H3.26304ZM0.441406 8.48109H5.53232V9.75382H0.441406V8.48109ZM0.441406 5.29927H3.62322V6.572H0.441406V5.29927Z" fill="white" />
+                                </svg>
+                                <input type="email" placeholder="你的邮箱" required>
+                            </div>
+                            <div class="echo-footer-area-subscribe-button">
+                                <a href="#" class="echo-py-btn-border text-capitalize">立即订阅</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="echo-footer-copyright-area">
+                <div class="copyright-area-inner">
+                    <div class="footer-logo"><a href="index.html"><img src="/Areas/client/assets/images/home-1/site-logo/footer-logo-1.svg" alt="logo"></a></div>
+                    <div class="copyright-content">
+                        <h5 class="title">© Copyright 2023 By NNnews</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn">
+        <i class="fa-regular fa-angles-up"></i>
+    </button>
+    <!--scroll top button end-->
+
+    <div id="anywhere-home"></div>
+
+    <script src="/Areas/client/assets/js/vendor/jquery.min.js" defer></script>
+    <script src="/Areas/client/assets/js/plugins/audio.js" defer></script>
+    <script src="/Areas/client/assets/js/vendor/bootstrap.min.js" defer></script>
+    <script src="/Areas/client/assets/js/vendor/swiper.js" defer></script>
+    <script src="/Areas/client/assets/js/vendor/metisMenu.min.js" defer></script>
+    <script src="/Areas/client/assets/js/plugins/audio.js" defer></script>
+    <script src="/Areas/client/assets/js/plugins/magnific-popup.js" defer></script>
+    <script src="/Areas/client/assets/js/plugins/resize-sensor.min.js" defer></script>
+    <script src="/Areas/client/assets/js/plugins/theia-sticky-sidebar.min.js" defer></script>
+
+    <!-- main js file -->
+    <script src="/Areas/client/assets/js/main.js" defer></script>
+    <!-- End Footer Area -->
+</body>
+</html>
+
+<script type="text/javascript">
+
+
+
+    document.getElementById("PermanentCancellation").addEventListener("click", function () {
+        showConfirm("确定永久销号?", function () {
+            ajaxPost("PermanentCancellation", { userID: "@rui.sessionHelper.getValue("userID")" }, function (data) {
+                if (data.result == "True") {
+                    showInfo("销号成功，将在5秒后关闭");
+                    setTimeout(function () {
+                        window.open('../clientLogin/login', '_self')
+                    }, 5000); // 5000 毫秒等于 5 秒
+                } else {
+                    showInfo("出现了意料之外的错误");
+                }
+            });
+        })
+    });
+
+
+    document.getElementById("amendPass").addEventListener("click", function () {
+        var url = "amendPassword?userID=@rui.sessionHelper.getValue("userID")";
+        var width = 900;
+        var height = 600;
+
+        var screenWidth = window.screen.width;
+        var screenHeight = window.screen.height;
+
+        var left = (screenWidth - width) / 2;
+        var top = (screenHeight - height) / 2;
+
+        var windowFeatures = "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top;
+        var newWindow = window.open(url, "_blank", windowFeatures);
+    });
+
+    var currentLikeIndex = 0; // 用于跟踪当前喜欢的新闻的索引
+    var cateLikeNewsItemPerPage = 3; // 每次加载的新闻数量
+    @* 加载评论的功能 *@
+    var cateLikeNewsItemDict = {}; //设置一个初始数据字典
+    var loadMoreLikeButton = document.getElementById("load-more-btn-Like");
+    loadMoreLikeButton.addEventListener("click", loadNewsItem);
+
+
+    var currentStarIndex = 0; // 用于跟踪当前收藏的新闻的索引
+    var cateStarNewsItemPerPage = 3; // 每次加载的新闻数量
+    @* 加载评论的功能 *@
+    var cateStarNewsItemDict = {}; //设置一个初始数据字典
+    var loadMoreStarButton = document.getElementById("load-more-btn-Star");
+    loadMoreStarButton.addEventListener("click", loadNewsItem_Star);
+
+
+    var reCommendIndex = 0;
+    var reCommendDataTable = {};
+    $(document).ready(function () {
+        //加载最近喜欢的数据
+
+          $.ajax({
+            type: "post",
+              url: "NNLikeNewsAjax",
+            data: { userID: "@rui.sessionHelper.getValue("userID")"},
+            dataType: "json",
+            async: true,
+            success: function (Recdata) {
+                cateLikeNewsItemDict = JSON.parse(Recdata); //这里是所有的评论数据
+                loadNewsItem(); // 初始加载5条喜欢的条目
+            },
+            error: function (data) {
+                window.alert(data.responseText);
+                window.alert("获取评论失败");
+            }
+        });
+
+             $.ajax({
+            type: "post",
+              url: "NNStarNewsAjax",
+            data: { userID: "@rui.sessionHelper.getValue("userID")"},
+            dataType: "json",
+            async: true,
+            success: function (Recdata) {
+                cateStarNewsItemDict = JSON.parse(Recdata); //这里是所有的评论数据
+                loadNewsItem_Star(); // 初始加载5条喜欢的条目
+            },
+            error: function (data) {
+                window.alert(data.responseText);
+                window.alert("获取评论失败");
+            }
+        });
+
+        $("#provinceCity").ready(function () {
+            $.ajax({
+                type:"get",
+                url: "getWeatherAsync",
+                dataType: "task<JsonResult>",
+                async: true,
+                success: function (data) {
+
+                },
+                error: function (data) {
+                    @*json.parse 用不了没办法，只能用字符串截取 *@
+                    var s = data.responseText;
+                    var startindex = s.search("temp");
+                    var result = s.slice(startindex + 7, startindex + 9);
+                    document.getElementById("temperature").innerHTML = result + "°C,";
+                }
+            });
+        });
+
+        dynamicIp();
+        ajaxPost("recommentDataTable", { count: 5 }, function (data) {
+            reCommendDataTable = JSON.parse(data);
+        });
+        var v = document.getElementById("recommend");
+        v.textContent = reCommendDataTable[(reCommendIndex) % Math.min(5, reCommendDataTable.length)].newsTitle + "...";
+        v.href = "postDetail?newsID=" + reCommendDataTable[reCommendIndex++].newsID;
+
+    });
+
+    function loadNewsItem_Star() {
+        var end = Math.min(currentStarIndex + cateStarNewsItemPerPage, cateStarNewsItemDict.length);
+        var NNcomment = document.getElementById("NNnewsStarItem");
+        if (cateStarNewsItemDict.length == 0) {
+            if (currentStarIndex >= cateStarNewsItemDict.length) {
+                // 已加载所有评论，隐藏加载更多按钮
+                loadMoreStarButton.style.display = "none";
+            }
+            var empty = document.createElement("li");
+            empty.textContent = "无数据";
+            NNcomment.appendChild(empty);
+            return false;
+        }
+        for (let i = currentStarIndex; i < end; i++) {
+            const Item = document.createElement("li");
+            Item.style.cursor = "pointer";
+            const ItemDiv = document.createElement("div");
+            Item.className = "data-item";
+            Item.addEventListener("click", function () {
+                window.open("postDetail?newsID=" + cateStarNewsItemDict[i].newsID);
+            });
+
+            const img = document.createElement("img");
+            img.style = "height:122px;width:150px;";
+            img.src = "data:jpg/jpeg;base64," + cateStarNewsItemDict[i].coverPic;
+
+
+            const divContent = document.createElement("div");
+            divContent.className = "content";
+
+            const divtitle = document.createElement("div");
+            divtitle.className = "title";
+            divtitle.textContent = cateStarNewsItemDict[i].newsTitle;;
+
+
+            const divdescription = document.createElement("div");
+            divdescription.className = "description"
+            divdescription.textContent = "描述:" + cateStarNewsItemDict[i].describe;;
+
+            const divReadCount = document.createElement("div");
+            divReadCount.className = "read-count";
+            divReadCount.textContent = "阅读量:" + cateStarNewsItemDict[i].readQuantity;
+
+            const Tag = document.createElement("div");
+            Tag.className = "read-count";
+            ajaxPost("GetTagBynewsID", { newsID: cateStarNewsItemDict[i].newsID }, function (data) {
+                Tag.textContent = "标签: " + data.message;
+            });
+            Tag.textContent = "标签: 无";
+
+
+            divContent.appendChild(divtitle);
+            divContent.appendChild(divdescription);
+            divContent.appendChild(divReadCount);
+            divContent.appendChild(Tag);
+            ItemDiv.appendChild(img);
+            ItemDiv.appendChild(divContent);
+            Item.appendChild(ItemDiv);
+            NNcomment.appendChild(Item);
+        }
+        currentStarIndex = end;
+
+        if (currentStarIndex >= cateStarNewsItemDict.length) {
+            // 已加载所有评论，隐藏加载更多按钮
+            loadMoreStarButton.style.display = "none";
+        }
+    }
+
+    function loadNewsItem() {
+        var end = Math.min(currentLikeIndex + cateLikeNewsItemPerPage, cateLikeNewsItemDict.length);
+        var NNcomment = document.getElementById("NNnewsLikeItem");
+        if (cateLikeNewsItemDict.length == 0) {
+            if (currentLikeIndex >= cateLikeNewsItemDict.length) {
+                // 已加载所有评论，隐藏加载更多按钮
+                loadMoreLikeButton.style.display = "none";
+            }
+            var empty = document.createElement("li");
+            empty.textContent = "无数据";
+            NNcomment.appendChild(empty);
+            return false;
+        }
+        for (let i = currentLikeIndex; i < end; i++) {
+            const Item = document.createElement("li");
+            Item.style.cursor = "pointer";
+            const ItemDiv = document.createElement("div");
+            Item.className = "data-item";
+            Item.addEventListener("click", function () {
+                window.open("postDetail?newsID=" + cateLikeNewsItemDict[i].newsID);
+            });
+
+            const img = document.createElement("img");
+            img.style = "height:122px;width:150px;";
+            img.src = "data:jpg/jpeg;base64," + cateLikeNewsItemDict[i].coverPic;
+
+
+            const divContent = document.createElement("div");
+            divContent.className = "content";
+
+            const divtitle = document.createElement("div");
+            divtitle.className = "title";
+            divtitle.textContent = cateLikeNewsItemDict[i].newsTitle;;
+
+
+            const divdescription = document.createElement("div");
+            divdescription.className = "description"
+            divdescription.textContent = "描述:" + cateLikeNewsItemDict[i].describe;;
+
+            const divReadCount = document.createElement("div");
+            divReadCount.className = "read-count";
+            divReadCount.textContent = "阅读量:" + cateLikeNewsItemDict[i].readQuantity;
+
+            const Tag = document.createElement("div");
+            Tag.className = "read-count";
+            ajaxPost("GetTagBynewsID", { newsID: cateLikeNewsItemDict[i].newsID }, function (data) {
+                Tag.textContent = "标签: " + data.message;
+            });
+            Tag.textContent = "标签: 无";
+
+
+            divContent.appendChild(divtitle);
+            divContent.appendChild(divdescription);
+            divContent.appendChild(divReadCount);
+            divContent.appendChild(Tag);
+            ItemDiv.appendChild(img);
+            ItemDiv.appendChild(divContent);
+            Item.appendChild(ItemDiv);
+            NNcomment.appendChild(Item);
+        }
+        currentLikeIndex = end;
+
+        if (currentLikeIndex >= cateLikeNewsItemDict.length) {
+            // 已加载所有评论，隐藏加载更多按钮
+            loadMoreLikeButton.style.display = "none";
+        }
+    }
+
+    setInterval(function () {
+        var v = document.getElementById("recommend");
+        v.textContent = reCommendDataTable[(reCommendIndex) % Math.min(5, reCommendDataTable.length)].newsTitle + "...";
+        v.href = "postDetail?newsID=" + reCommendDataTable[reCommendIndex++].newsID;
+    }, 3000);
+    function dynamicIp() {
+        $.ajax({
+            type:"get",
+            url: "getProvinceAndCity",
+            dataType: "string",
+            async: true,
+            success: function (data) {
+                document.getElementById("provinceCity").innerHTML = data.responseText;
+            },
+            error: function (data) {
+                document.getElementById("provinceCity").innerHTML = data.responseText;
+            }
+        });
+    }
+    var nickNameSwitch = 0;
+    var genderSwitch = 0;
+    var birthdateSwitch = 0;
+    var OperationIndex = 0;
+    document.addEventListener("DOMContentLoaded", function () {
+        const avatarInput = document.getElementById("avatar");
+        const avatarPreview = document.querySelector(".avatar-preview img");
+        const nicknameInput = document.getElementById("nickname");
+        const genderInput = document.getElementById("gender");
+        const birthdateInput = document.getElementById("birthdate");
+        const saveButton = document.getElementById("save");
+        const cancelButton = document.getElementById("cancel");
+        const editButtons = document.querySelectorAll(".edit-button");
+        const buttonNickName = document.getElementById("nicknameButton");
+        const buttongender = document.getElementById("genderButton");
+        const buttonbirthdate = document.getElementById("birthdateButton");
+
+        //初始化信息
+        //头像
+        avatarPreview.src = "data:jpg/jpeg;base64,@Convert.ToBase64String((byte[])rui.sessionHelper.getValue<byte[]>("profile"))";
+
+        //性别
+        if ("@db.bll.NN_user.getModelByuserID_NonDc(rui.sessionHelper.getValue("userID")).gender" == "True") {
+            genderInput.selectedIndex = 1;
+        } else {
+            genderInput.selectedIndex = 0;
+        }
+
+        //昵称
+        nicknameInput.value = "@rui.sessionHelper.getValue("userName")";
+
+        //所属机构
+        var agency = document.getElementById("organization");
+        if ("@rui.sessionHelper.getValue("type")" == "1") {
+            agency.value = "@db.bll.NN_NewsAgency.getNewsAgencyNameByID(rui.sessionHelper.getValue("newsAgencyID"))";
+        } else {
+            agency.value = "无";
+        }
+
+        //账户类型
+        var accountType = document.getElementById("account-type");
+        if ("@rui.sessionHelper.getValue("type")" == "1") {
+            accountType.value = "内容创作者";
+        } else {
+            accountType.value = "普通用户";
+        }
+
+        //出生日期
+        birthdateInput.value = "@db.bll.NN_user.getModelByuserID_NonDc(rui.sessionHelper.getValue("userID")).birth.ToString("yyyy-MM-dd")";
+
+
+
+        // 头像选择预览
+        avatarInput.addEventListener("change", function (event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function () {
+                avatarPreview.src = reader.result;
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+            OperationIndex++;
+        });
+
+        buttonNickName.addEventListener("click", function () {
+            nickNameSwitch = (nickNameSwitch + 1) % 2;
+            if (nickNameSwitch == 1) {
+                nicknameInput.readOnly = false;
+                nicknameInput.style.backgroundColor = "#1e9fff";
+            } else {
+                nicknameInput.readOnly = true;
+                nicknameInput.style.backgroundColor = "#ccc";
+            }
+            OperationIndex++;
+        });
+
+        buttongender.addEventListener("click", function () {
+            genderSwitch = (genderSwitch + 1) % 2;
+            if (genderSwitch == 1) {
+                genderInput.disabled  = false
+                genderInput.style.backgroundColor = "#1e9fff";
+            } else {
+                genderInput.disabled  = true;
+                genderInput.style.backgroundColor = "#ccc";
+            }
+            OperationIndex++;
+        });
+
+
+        buttonbirthdate. addEventListener("click", function () {
+            birthdateSwitch = (birthdateSwitch + 1) % 2;
+            if (birthdateSwitch == 1) {
+                birthdateInput.readOnly = false;
+                birthdateInput.style.backgroundColor = "#1e9fff";
+            } else {
+                birthdateInput.readOnly = true;
+                birthdateInput.style.backgroundColor = "#ccc";
+            }
+            OperationIndex++;
+        });
+
+
+        //表单提交
+        saveButton.addEventListener("click", function () {
+            var formData = new FormData();
+            formData.append("name", nicknameInput.value);
+            formData.append("file", document.getElementById("avatar").files[0]);
+            formData.append("gender", genderInput.value);
+            formData.append("birth", birthdateInput.value);            formData.append("userID", "@rui.sessionHelper.getValue("userID")");
+
+            $.ajax({
+                url: "amendPersonInfo",
+                type: "POST",
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    if (response.result == "True") {
+                        window.open('personalCenter?userID = @rui.sessionHelper.getValue("userID")', '_self');
+                    }
+                    else {
+                        showInfo("失败，请联系管理员");
+                    }
+                },
+                error: function (error) {
+                    showInfo("内部链接出现问题，请联系管理员");
+                }
+            });
+
+        });
+        cancelButton.addEventListener("click", function () {
+            window.open('personalCenter?userID = @rui.sessionHelper.getValue("userID")', '_self');
+        });
+
+
+    });
+    setInterval(function () {
+        const saveButton = document.getElementById("save");
+        const cancelButton = document.getElementById("cancel");
+        @*window.alert("1");*@
+        if (OperationIndex > 0) {
+            saveButton.style.backgroundColor = "#1e9fff";
+            cancelButton.style.backgroundColor = "#1e9fff";
+            saveButton.disabled = false;
+            cancelButton.disabled = false;
+
+        } else {
+            saveButton.style.backgroundColor = "#ccc";
+            saveButton.disabled = true;
+            cancelButton.style.backgroundColor = "#ccc";
+            cancelButton.disabled = true;
+        }
+    }, 500);
+
+    if (document.getElementById("beComeCreater") != null) {
+        document.getElementById("beComeCreater").addEventListener("click", function () {
+            window.open('beComeCreater?userID=@rui.sessionHelper.getValue("userID")', '_self');
+        });
+    }
+        @*去掉内容创作者的身份*@
+    if (document.getElementById("logoutCreater") != null) {
+        document.getElementById("logoutCreater").addEventListener("click", function () {
+            ajaxPost("logoutCreater", {}, function (data) {
+                if (data.result == "True") {
+                    showInfo("请求已发出，请等待后台审批");
+                } else {
+                    showInfo("请求已经发出过啦");
+                }
+            });
+        });
+    }
+    function NNsearch() {
+        var search = document.getElementById("NNsearch");
+        var content = document.getElementById("searchInput1").value;
+        if (content == "") {
+            showInfo("输入不能为空");
+        }
+        else {
+            top.location.href = "NNsearch?content=" + content;
+        }
+    }
+</script>
+

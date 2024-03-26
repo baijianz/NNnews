@@ -1,0 +1,38 @@
+2023-10-09 15:20:05.2531 Info sys_Home-index 
+2023-10-09 15:20:05.9012 Info sys_Home-desktop 
+2023-10-09 16:18:10.3058 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_loginCustomer.cs:行号 27
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 
+2023-10-09 16:18:15.8910 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_loginCustomer.cs:行号 27
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 
+2023-10-09 16:18:43.9835 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_loginCustomer.cs:行号 27
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 
+2023-10-09 16:18:54.3398 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_loginCustomer.cs:行号 27
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 
+2023-10-09 16:19:08.7914 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_loginCustomer.cs:行号 27
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 
+2023-10-09 16:22:52.3627 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc)
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 

@@ -1,0 +1,9 @@
+2023-02-20 16:37:03.7410 Info config文件:C:\Users\王世威\Desktop\MVC5开发框架 - 教学版(给学生)\MVC5开发框架 - 教学版(给学生)\code\webSite\Web.config 
+2023-02-20 16:37:03.7566 Info config文件:C:\Users\王世威\Desktop\MVC5开发框架 - 教学版(给学生)\MVC5开发框架 - 教学版(给学生)\code\webSiteApi\Web.config 
+2023-02-20 16:37:03.7566 Info config文件:C:\Users\王世威\Desktop\MVC5开发框架 - 教学版(给学生)\MVC5开发框架 - 教学版(给学生)\code\webSiteWeixin\Web.config 
+2023-02-20 16:37:03.7566 Info json文件:C:\Users\王世威\Desktop\MVC5开发框架 - 教学版(给学生)\MVC5开发框架 - 教学版(给学生)\code\webSite\appsettings.json 
+2023-02-20 16:37:03.7566 Info C:\Users\王世威\Desktop\MVC5开发框架 - 教学版(给学生)\MVC5开发框架 - 教学版(给学生)\code\webSite\appsettings.json 
+2023-02-20 16:37:03.7566 Info json文件:C:\Users\王世威\Desktop\MVC5开发框架 - 教学版(给学生)\MVC5开发框架 - 教学版(给学生)\code\webSiteApi\appsettings.json 
+2023-02-20 16:37:03.7566 Info C:\Users\王世威\Desktop\MVC5开发框架 - 教学版(给学生)\MVC5开发框架 - 教学版(给学生)\code\webSiteApi\appsettings.json 
+2023-02-20 16:37:03.7566 Info json文件:C:\Users\王世威\Desktop\MVC5开发框架 - 教学版(给学生)\MVC5开发框架 - 教学版(给学生)\code\webSiteWeixin\appsettings.json 
+2023-02-20 16:37:03.7566 Info C:\Users\王世威\Desktop\MVC5开发框架 - 教学版(给学生)\MVC5开发框架 - 教学版(给学生)\code\webSiteWeixin\appsettings.json 

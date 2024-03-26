@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>举报页面</title>
+    @*字体库*@
+    <link href="@Url.Content("~/content/fontawesome/css/font-awesome.min.css")" rel="stylesheet" type="text/css" />
+
+    @*jquery*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery-1.12.4.min.js")></script>
+    @*easyUI*@
+    <link href="@Url.Content("~/content/easyui/icon.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/content/easyui/bootstrap/easyui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/easyui/jquery.easyui.js")"></script>
+    @*layui*@
+    <link href="@Url.Content("~/content/layui/css/layui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/layui/layui.js")"></script>
+    @*chosen*@
+    <link href="@Url.Content("~/content/chosen/chosen.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/chosen/jquery.chosen.js")"></script>
+    @*jquery.validate*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate-vsdoc.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.message.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.unobtrusive.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.metadata.js")></script>
+    @*jquery库*@
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.ajaxfileupload.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.tableInput.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/my97DatePicker/WdatePicker.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.form.js")"></script>
+    @*自己封装的js*@
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.tools.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/fontawesome/rui.button.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.modelDialog.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.dropDownList.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.bill.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.cbxMulSelected.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_rui.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_lay.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.pager.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.layout.js"+rui.configHelper.ctxKey)></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            height: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .form-label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+
+            .form-button:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>举报页面</h1>
+        <hr>
+
+        <div class="form-group">
+            <label for="reporterId" class="form-label">举报人ID</label>
+            <input type="text" id="reporterId" class="form-control" value="@ViewBag.reporterUserID" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="reporterName" class="form-label">举报人姓名</label>
+            <input type="text" id="reporterName" class="form-control" value="@ViewBag.reporterUserName" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="reportObject" class="form-label">举报对象所属类型</label>
+            <input type="text" id="reportObject" class="form-control" value="@ViewBag.Type" readonly>
+        </div>
+        @{
+            if (ViewBag.Type == "新闻")
+            {
+                <div class="form-group">
+                    <label for="reportType" class="form-label">举报对象ID</label>
+                    <input type="text" id="reportObject" class="form-control" value="@ViewBag.newsID" readonly>
+                </div>
+            }
+            else
+            {
+                <div class="form-group">
+                    <label for="reportType" class="form-label">举报对象ID</label>
+                    <input type="text" id="reportObject" class="form-control" value="@ViewBag.commentId" readonly>
+                </div>
+            }
+        }
+
+        <div class="form-group">
+            <label for="reportReason" class="form-label">举报理由</label>
+            <textarea id="reportReason" class="form-control" rows="4" placeholder="请输入举报理由"></textarea>
+        </div>
+
+        <button type="submit" class="form-button" onclick="submitForm()">提交举报</button>
+    </div>
+</body>
+</html>
+
+<script>
+    function submitForm() {
+        var formData = new FormData(); // 创建一个新的 FormData 对象，用于存储表单数据
+        formData.append("userID", document.getElementById("reporterId").value);
+        var content = document.getElementById("reportReason").value;
+        if (content.length < 1) {
+            showInfo("内容不可为空");
+            return false;
+        }
+        var category = "";
+        if ("@ViewBag.Type" == "新闻") {
+            formData.append("category", "0");
+        } else {
+            formData.append("category", "1");
+        }
+        formData.append("newsID", "@ViewBag.newsID");
+        formData.append("commentID", "@ViewBag.commentID");
+        formData.append("reason", content);
+        $.ajax({
+            url: 'recReport', // 设置请求的URL
+            type: 'POST', // 设置请求的方法
+            data: formData, // 设置请求的数据
+            processData: false, // 禁止 jQuery 对数据进行处理
+            contentType: false, // 禁止 jQuery 设置请求头的 Content-Type
+            success: function (response) {
+                // 处理服务器成功响应的逻辑
+                showInfo(response.message);
+                if (response.result == "True") {
+                    window.close();
+                } else {
+                    showInfo(response.message);
+                }
+            },
+            error: function () {
+                // 处理请求发生错误的逻辑
+                console.log('请求发生错误');
+            }
+        });
+    }
+</script>

@@ -1,0 +1,461 @@
+2020-03-11 08:43:28.8906 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 08:43:54.5711 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 08:45:28.0453 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 08:47:48.4242 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:47:52.1124 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:47:52.8194 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:47:53.3505 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:47:53.9145 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:47:54.9456 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:47:55.5156 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:47:56.3106 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:47:56.9967 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:47:57.6337 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:47:58.3548 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:48:21.5201 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:48:30.7796 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:49:35.7563 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 08:50:04.4339 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 09:11:02.1434 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 09:12:27.8466 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 09:12:34.1328 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 09:12:55.4435 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 09:13:13.0843 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 09:27:36.7926 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 09:29:27.8843 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 13:51:41.0738 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 13:53:17.9274 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 13:54:39.4380 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 13:54:48.6435 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 14:03:09.4001 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:03:26.7351 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:04:23.1893 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:05:24.3388 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:06:29.4036 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:06:36.1139 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:06:42.2613 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:06:57.7292 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:07:19.4884 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 37
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:08:18.9078 Info sys_Home-index 
+2020-03-11 14:08:19.7189 Info sys_Home-desktop 
+2020-03-11 14:11:20.3532 Info sys_Home-desktop 
+2020-03-11 14:14:51.0981 Info sys_Home-index 
+2020-03-11 14:14:51.3211 Info sys_Home-desktop 
+2020-03-11 14:28:47.3652 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 14:29:13.2026 Error 列“code”不属于表 。
+-------------------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 rui.jsonResult.dataTableToJsonStr(DataTable table)
+   在 db.bll.rbac_UserOrg.getOrgDdlJsonByUserCode(String userCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\rbac_UserOrg.cs:行号 136
+   在 web.Controllers.LoginController.getLoginOrg(String userCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 70
+-------------------------
+ 
+2020-03-11 14:30:53.2294 Error 登录信息有误，无法登录
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 56
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:31:06.8841 Error 登录信息有误，无法登录
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 56
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:32:37.3723 Error 登录信息有误，无法登录
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 56
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:33:11.6222 Error 登录信息有误，无法登录
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 56
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:34:56.2272 Error 登录信息有误，无法登录
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 56
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:35:37.7066 Error 登录信息有误，无法登录
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 56
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:36:31.8247 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 36
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:36:51.8308 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 36
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 
+2020-03-11 14:38:17.8606 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.privRbacHelper.getUserPrivResource(String userCode, String orgCode, dbEntities dc, Boolean hasNoPrivResource, Boolean isUserOnly) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\privRbacHelper.cs:行号 36
+   在 db.bll.loginAdminHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\rbac\loginAdminHelper.cs:行号 51
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 50
+-------------------------
+ 

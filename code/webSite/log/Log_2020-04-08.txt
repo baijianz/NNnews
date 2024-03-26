@@ -1,0 +1,82 @@
+2020-04-08 07:07:00.2509 Error 不能将值 NULL 插入列 'rowID'，表 'ruiBookSale.dbo.rbac_Module'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+-------------------------
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 db.efHelper.Execute(String cmdText, Object param, CommandType type) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版(录屏用)\code\dbLibrary\lib\db\efHelper.cs:行号 207
+   在 db.bll.test事务.method1(dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版(录屏用)\code\dbLibrary\bll\test事务.cs:行号 31
+-------------------------
+ 
+2020-04-08 07:07:00.2709 Error 不能将值 NULL 插入列 'rowID'，表 'ruiBookSale.dbo.rbac_Module'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+-------------------------
+   在 rui.logHelper.log(Exception ex, Boolean isThrow)
+   在 db.bll.test事务.method1(dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版(录屏用)\code\dbLibrary\bll\test事务.cs:行号 39
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版(录屏用)\code\WebSite\Controllers\LoginController.cs:行号 45
+-------------------------
+ 
+2020-04-08 07:07:36.5020 Info sys_Home-index 
+2020-04-08 07:07:37.4260 Info sys_Home-desktop 
+2020-04-08 07:07:43.7774 Info rbac_Resource-select 
+2020-04-08 07:18:20.9433 Info bks_Book-Select 
+2020-04-08 07:18:23.8255 Info sys_Home-index 
+2020-04-08 07:18:24.6915 Info sys_Home-desktop 
+2020-04-08 07:18:35.1221 Info rbac_Module-select 
+2020-04-08 07:18:38.6073 Info rbac_Module-Insert 
+2020-04-08 07:19:07.8580 Info rbac_Module-Insert 
+2020-04-08 07:19:08.0690 Info rbac_Module-Update 
+2020-04-08 07:19:08.5750 Info rbac_Module-select 
+2020-04-08 07:19:12.6973 Info rbac_Module-Delete 
+2020-04-08 07:19:12.7133 Info rbac_Module-select 
+2020-04-08 07:19:15.6684 Info rbac_Module-Delete 
+2020-04-08 07:19:15.6824 Info rbac_Module-select 
+2020-04-08 07:19:20.3777 Info rbac_Module-batchSave 
+2020-04-08 07:19:24.0899 Info sys_Home-index 
+2020-04-08 07:19:24.2239 Info sys_Home-desktop 
+2020-04-08 07:19:31.1153 Info rbac_Resource-select 
+2020-04-08 07:19:37.0527 Info rbac_Resource-Select 
+2020-04-08 07:19:40.1508 Info rbac_Resource-Select 
+2020-04-08 07:19:41.1889 Info rbac_Resource-Insert 
+2020-04-08 07:20:42.0794 Info rbac_Resource-Insert 
+2020-04-08 07:20:42.1394 Info rbac_Resource-Update 
+2020-04-08 07:20:42.2014 Info rbac_ResourceOp-SelectPartial 
+2020-04-08 07:20:42.6424 Info sys_BillAttach-SelectPartial 
+2020-04-08 07:20:44.6335 Info rbac_Resource-Select 
+2020-04-08 07:20:46.3816 Info sys_Home-index 
+2020-04-08 07:20:46.4916 Info sys_Home-desktop 
+2020-04-08 07:20:53.1810 Info bks_Book-select 
+2020-04-08 07:24:59.3989 Info sys_Home-index 
+2020-04-08 07:24:59.5469 Info sys_Home-desktop 
+2020-04-08 07:25:00.4390 Info bks_Book-select 
+2020-04-08 07:25:10.4175 Info bks_Book-select 
+2020-04-08 07:26:12.5491 Info bks_Book-select 
+2020-04-08 07:26:28.4330 Info bks_Book-select 
+2020-04-08 07:26:46.8801 Info bks_Book-select 
+2020-04-08 07:26:47.9341 Info bks_Book-select 
+2020-04-08 07:26:48.5502 Info bks_Book-select 
+2020-04-08 07:26:48.9922 Info bks_Book-select 
+2020-04-08 07:26:49.4552 Info bks_Book-select 
+2020-04-08 07:26:51.4803 Info bks_Book-select 
+2020-04-08 07:26:51.9513 Info bks_Book-select 
+2020-04-08 07:26:52.3914 Info bks_Book-select 
+2020-04-08 07:26:53.0014 Info bks_Book-select 
+2020-04-08 07:27:05.0051 Info bks_Book-select 
+2020-04-08 07:27:59.6872 Info sys_Home-desktop 
+2020-04-08 07:28:06.5276 Info bks_Book-select 
+2020-04-08 07:29:12.5174 Info bks_Book-select 
+2020-04-08 07:29:22.1999 Info bks_Book-select 
+2020-04-08 07:30:59.7415 Info sys_Home-desktop 
+2020-04-08 07:31:40.2678 Info sys_Home-index 
+2020-04-08 07:31:40.4108 Info sys_Home-desktop 
+2020-04-08 07:31:41.2929 Info bks_Book-select 
+2020-04-08 07:31:50.2744 Info bks_Book-select 

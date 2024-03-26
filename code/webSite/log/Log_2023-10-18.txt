@@ -1,0 +1,48 @@
+2023-10-18 15:36:08.8944 Info sys_Home-index 
+2023-10-18 15:36:09.8870 Info sys_Home-desktop 
+2023-10-18 20:46:14.0497 Error 无法将类型为“System.Int32”的对象强制转换为类型“System.String”。
+------------begin-------------
+   在 System.Data.DataRowExtensions.UnboxT`1.ReferenceField(Object value)
+   在 System.Data.DataRowExtensions.Field[T](DataRow row, String columnName)
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_loginCustomer.cs:行号 26
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 
+2023-10-18 20:46:17.0015 Error 无法将类型为“System.Int32”的对象强制转换为类型“System.String”。
+------------begin-------------
+   在 System.Data.DataRowExtensions.UnboxT`1.ReferenceField(Object value)
+   在 System.Data.DataRowExtensions.Field[T](DataRow row, String columnName)
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_loginCustomer.cs:行号 26
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 
+2023-10-18 20:46:21.2793 Error 无法将类型为“System.Int32”的对象强制转换为类型“System.String”。
+------------begin-------------
+   在 System.Data.DataRowExtensions.UnboxT`1.ReferenceField(Object value)
+   在 System.Data.DataRowExtensions.Field[T](DataRow row, String columnName)
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_loginCustomer.cs:行号 26
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 
+2023-10-18 20:46:23.2452 Error 无法将类型为“System.Int32”的对象强制转换为类型“System.String”。
+------------begin-------------
+   在 System.Data.DataRowExtensions.UnboxT`1.ReferenceField(Object value)
+   在 System.Data.DataRowExtensions.Field[T](DataRow row, String columnName)
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_loginCustomer.cs:行号 26
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 
+2023-10-18 20:46:42.5033 Error 无法将类型为“System.Int32”的对象强制转换为类型“System.String”。
+------------begin-------------
+   在 System.Data.DataRowExtensions.UnboxT`1.ReferenceField(Object value)
+   在 System.Data.DataRowExtensions.Field[T](DataRow row, String columnName)
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_loginCustomer.cs:行号 26
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 
+2023-10-18 20:53:29.5869 Info sys_Home-index 
+2023-10-18 20:53:30.3105 Info sys_Home-desktop 
+2023-10-18 23:52:39.4473 Info sys_Home-index 
+2023-10-18 23:52:40.3054 Info sys_Home-desktop 
+2023-10-18 23:53:43.8613 Info sys_Home-index 
+2023-10-18 23:53:43.9562 Info sys_Home-desktop 

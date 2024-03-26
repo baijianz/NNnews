@@ -1,0 +1,305 @@
+2023-09-25 08:46:26.3957 Info sys_Home-index 
+2023-09-25 08:46:26.9777 Info sys_Home-desktop 
+2023-09-25 08:49:04.3973 Info sys_Home-index 
+2023-09-25 08:49:04.9163 Info sys_Home-desktop 
+2023-09-25 08:57:32.7247 Info sys_Home-index 
+2023-09-25 08:57:33.2150 Info sys_Home-desktop 
+2023-09-25 09:08:55.3472 Info sys_Home-index 
+2023-09-25 09:08:55.3988 Info sys_Home-desktop 
+2023-09-25 09:09:47.8184 Info sys_Home-index 
+2023-09-25 09:09:47.8631 Info sys_Home-desktop 
+2023-09-25 09:11:32.9698 Info sys_Home-index 
+2023-09-25 09:11:33.0100 Info sys_Home-desktop 
+2023-09-25 09:33:38.1631 Info sys_Home-index 
+2023-09-25 09:33:40.4134 Info sys_Home-index 
+2023-09-25 09:33:40.4710 Info sys_Home-desktop 
+2023-09-25 09:38:50.1969 Info sys_Home-index 
+2023-09-25 09:38:50.7559 Info sys_Home-desktop 
+2023-09-25 10:37:34.3114 Info sys_Home-index 
+2023-09-25 10:37:36.8118 Info sys_Home-index 
+2023-09-25 10:37:36.8739 Info sys_Home-desktop 
+2023-09-25 10:41:31.4710 Info sys_Home-index 
+2023-09-25 10:41:31.5223 Info sys_Home-desktop 
+2023-09-25 10:56:57.3560 Info sys_Home-index 
+2023-09-25 10:56:59.2175 Info sys_Home-index 
+2023-09-25 10:56:59.2708 Info sys_Home-desktop 
+2023-09-25 11:27:09.5818 Info sys_Home-index 
+2023-09-25 11:27:10.1780 Info sys_Home-desktop 
+2023-09-25 11:27:54.2217 Info sys_Home-index 
+2023-09-25 11:27:54.3526 Info sys_Home-desktop 
+2023-09-25 11:32:52.5570 Info sys_Home-index 
+2023-09-25 11:32:52.7261 Info sys_Home-desktop 
+2023-09-25 11:35:28.0064 Info sys_Home-index 
+2023-09-25 11:35:28.6453 Info sys_Home-desktop 
+2023-09-25 11:42:20.8283 Info sys_Home-index 
+2023-09-25 11:42:20.9576 Info sys_Home-desktop 
+2023-09-25 15:48:46.9708 Info sys_Home-index 
+2023-09-25 15:48:47.5591 Info sys_Home-desktop 
+2023-09-25 15:49:41.8343 Info sys_Home-index 
+2023-09-25 15:49:42.3940 Info sys_Home-desktop 
+2023-09-25 15:52:49.9526 Info sys_Home-index 
+2023-09-25 15:52:50.6073 Info sys_Home-desktop 
+2023-09-25 15:53:50.5954 Info sys_Home-index 
+2023-09-25 15:53:51.2180 Info sys_Home-desktop 
+2023-09-25 16:12:46.1611 Info sys_Home-index 
+2023-09-25 16:12:46.7381 Info sys_Home-desktop 
+2023-09-25 16:14:02.5918 Info sys_Home-index 
+2023-09-25 16:14:03.1620 Info sys_Home-desktop 
+2023-09-25 16:17:46.2033 Info sys_Home-index 
+2023-09-25 16:17:46.7969 Info sys_Home-desktop 
+2023-09-25 16:27:14.1745 Info sys_Home-index 
+2023-09-25 16:27:14.2535 Info sys_Home-desktop 
+2023-09-25 16:27:32.5828 Info sys_Home-index 
+2023-09-25 16:27:32.7081 Info sys_Home-desktop 
+2023-09-25 16:32:09.9845 Info sys_Home-index 
+2023-09-25 16:32:10.6003 Info sys_Home-desktop 
+2023-09-25 16:37:04.5513 Info sys_Home-index 
+2023-09-25 16:37:05.1681 Info sys_Home-desktop 
+2023-09-25 16:37:50.9065 Info sys_Home-index 
+2023-09-25 16:37:51.0382 Info sys_Home-desktop 
+2023-09-25 16:42:40.9721 Info sys_Home-index 
+2023-09-25 16:42:41.5681 Info sys_Home-desktop 
+2023-09-25 16:45:51.7004 Info sys_Home-index 
+2023-09-25 16:45:52.2470 Info sys_Home-desktop 
+2023-09-25 16:46:35.1349 Info sys_Home-index 
+2023-09-25 16:46:35.7962 Info sys_Home-desktop 
+2023-09-25 17:05:06.9726 Info sys_Home-index 
+2023-09-25 17:05:07.5541 Info sys_Home-desktop 
+2023-09-25 17:35:34.8641 Info sys_Home-index 
+2023-09-25 17:35:35.4498 Info sys_Home-desktop 
+2023-09-25 17:35:54.3796 Info sys_Home-index 
+2023-09-25 17:35:54.4165 Info sys_Home-desktop 
+2023-09-25 17:38:09.6635 Info sys_Home-index 
+2023-09-25 17:38:10.2548 Info sys_Home-desktop 
+2023-09-25 17:38:25.3986 Info sys_Home-index 
+2023-09-25 17:38:25.4331 Info sys_Home-desktop 
+2023-09-25 17:39:50.3531 Info sys_Home-index 
+2023-09-25 17:39:50.9372 Info sys_Home-desktop 
+2023-09-25 17:41:46.2385 Info sys_Home-index 
+2023-09-25 17:41:46.8272 Info sys_Home-desktop 
+2023-09-25 17:42:38.6910 Info sys_Home-index 
+2023-09-25 17:42:39.2965 Info sys_Home-desktop 
+2023-09-25 17:50:29.6284 Info sys_Home-index 
+2023-09-25 17:50:29.7309 Info sys_Home-desktop 
+2023-09-25 17:51:36.6657 Info sys_Home-index 
+2023-09-25 17:51:37.3040 Info sys_Home-desktop 
+2023-09-25 17:54:07.9101 Info sys_Home-index 
+2023-09-25 17:54:08.0155 Info sys_Home-desktop 
+2023-09-25 17:55:20.1709 Info sys_Home-index 
+2023-09-25 17:55:20.1965 Info sys_Home-index 
+2023-09-25 17:55:20.2237 Info sys_Home-desktop 
+2023-09-25 17:55:48.6204 Info sys_Home-index 
+2023-09-25 17:55:48.6686 Info sys_Home-desktop 
+2023-09-25 17:56:25.9616 Info sys_Home-index 
+2023-09-25 18:02:51.9877 Info sys_Home-index 
+2023-09-25 18:02:52.1291 Info sys_Home-desktop 
+2023-09-25 18:03:13.4908 Info sys_Home-index 
+2023-09-25 18:03:13.6281 Info sys_Home-desktop 
+2023-09-25 18:06:05.9085 Info sys_Home-index 
+2023-09-25 18:06:06.5371 Info sys_Home-desktop 
+2023-09-25 18:09:30.1613 Info sys_Home-index 
+2023-09-25 18:09:30.7711 Info sys_Home-desktop 
+2023-09-25 18:22:53.9305 Info sys_Home-index 
+2023-09-25 18:22:54.5391 Info sys_Home-desktop 
+2023-09-25 18:25:08.3364 Info sys_Home-index 
+2023-09-25 18:25:08.9712 Info sys_Home-desktop 
+2023-09-25 18:58:22.3833 Info sys_Home-index 
+2023-09-25 18:58:22.9758 Info sys_Home-desktop 
+2023-09-25 18:59:52.7420 Info sys_Home-index 
+2023-09-25 18:59:53.3604 Info sys_Home-desktop 
+2023-09-25 19:00:52.4686 Info sys_Home-index 
+2023-09-25 19:00:53.0700 Info sys_Home-desktop 
+2023-09-25 19:07:59.9194 Info sys_Home-index 
+2023-09-25 19:08:00.5289 Info sys_Home-desktop 
+2023-09-25 19:10:12.8541 Info sys_Home-index 
+2023-09-25 19:10:13.4671 Info sys_Home-desktop 
+2023-09-25 19:12:19.2335 Info sys_Home-index 
+2023-09-25 19:12:19.8566 Info sys_Home-desktop 
+2023-09-25 19:14:07.1059 Info sys_Home-index 
+2023-09-25 19:14:07.6836 Info sys_Home-desktop 
+2023-09-25 19:15:16.2096 Info sys_Home-index 
+2023-09-25 19:15:16.7318 Info sys_Home-desktop 
+2023-09-25 19:16:04.9955 Info sys_Home-index 
+2023-09-25 19:16:05.5078 Info sys_Home-desktop 
+2023-09-25 19:17:56.6466 Info sys_Home-index 
+2023-09-25 19:17:57.2158 Info sys_Home-desktop 
+2023-09-25 19:19:04.6238 Info sys_Home-index 
+2023-09-25 19:19:05.1697 Info sys_Home-desktop 
+2023-09-25 19:20:35.5123 Info sys_Home-index 
+2023-09-25 19:20:36.0608 Info sys_Home-desktop 
+2023-09-25 19:21:03.3902 Info sys_Home-index 
+2023-09-25 19:21:03.9478 Info sys_Home-desktop 
+2023-09-25 19:47:36.1301 Info sys_Home-index 
+2023-09-25 19:47:36.2051 Info sys_Home-desktop 
+2023-09-25 19:52:58.8588 Info sys_Home-index 
+2023-09-25 19:52:58.9168 Info sys_Home-desktop 
+2023-09-25 22:09:22.6382 Info sys_Home-index 
+2023-09-25 22:09:23.1533 Info sys_Home-desktop 
+2023-09-25 22:40:34.3896 Info sys_Home-index 
+2023-09-25 22:40:34.9072 Info sys_Home-desktop 
+2023-09-25 22:41:49.9135 Info sys_Home-index 
+2023-09-25 22:41:50.0351 Info sys_Home-desktop 
+2023-09-25 22:42:55.3572 Info sys_Home-index 
+2023-09-25 22:42:55.4872 Info sys_Home-desktop 
+2023-09-25 22:45:11.9841 Info sys_Home-index 
+2023-09-25 22:45:12.5076 Info sys_Home-desktop 
+2023-09-25 22:45:16.8158 Error 列名 'newsCategoryName' 无效。
+列名 'newsCategoryID' 无效。
+列名 'newsCategoryID' 无效。
+------------begin-------------
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderImpl(IDbConnection cnn, CommandDefinition& command, CommandBehavior commandBehavior, IDbCommand& cmd)
+   在 Dapper.SqlMapper.ExecuteReader(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 db.efHelper.ExecuteDataTable(String cmdText, Object param, CommandType type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\lib\db\efHelper.cs:行号 148
+   在 db.bll.NN_user.bindDdl(Boolean has请选择, String selectedValue, String type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 217
+   在 db.bll.NN_user.getJsonAgencyDdl(String type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 209
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 159
+------------End-------------
+ 
+2023-09-25 22:53:20.0012 Info sys_Home-index 
+2023-09-25 22:53:20.5051 Info sys_Home-desktop 
+2023-09-25 22:56:10.4105 Info sys_Home-index 
+2023-09-25 22:56:10.9246 Info sys_Home-desktop 
+2023-09-25 22:57:01.1748 Info sys_Home-index 
+2023-09-25 22:57:01.3177 Info sys_Home-desktop 
+2023-09-25 22:58:49.7687 Info sys_Home-index 
+2023-09-25 22:58:49.8439 Info sys_Home-desktop 
+2023-09-25 22:59:31.2880 Info sys_Home-index 
+2023-09-25 22:59:31.4087 Info sys_Home-desktop 
+2023-09-25 23:02:54.2296 Info sys_Home-index 
+2023-09-25 23:02:54.3472 Info sys_Home-desktop 
+2023-09-25 23:05:29.3262 Info sys_Home-index 
+2023-09-25 23:05:29.4510 Info sys_Home-desktop 
+2023-09-25 23:07:54.8219 Info sys_Home-index 
+2023-09-25 23:07:54.9195 Info sys_Home-desktop 
+2023-09-25 23:09:51.0602 Info sys_Home-index 
+2023-09-25 23:09:51.6819 Info sys_Home-desktop 
+2023-09-25 23:11:50.5984 Info sys_Home-index 
+2023-09-25 23:11:50.6946 Info sys_Home-desktop 
+2023-09-25 23:12:02.7328 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 216
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 159
+------------End-------------
+ 
+2023-09-25 23:12:09.9465 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 216
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 159
+------------End-------------
+ 
+2023-09-25 23:12:16.3264 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 216
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 159
+------------End-------------
+ 
+2023-09-25 23:12:38.1199 Info sys_Home-index 
+2023-09-25 23:12:38.2503 Info sys_Home-desktop 
+2023-09-25 23:15:14.9245 Info sys_Home-index 
+2023-09-25 23:15:15.5498 Info sys_Home-desktop 
+2023-09-25 23:15:33.2317 Error 列名 'newsCategoryName' 无效。
+列名 'newsCategoryID' 无效。
+列名 'newsCategoryID' 无效。
+------------begin-------------
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderImpl(IDbConnection cnn, CommandDefinition& command, CommandBehavior commandBehavior, IDbCommand& cmd)
+   在 Dapper.SqlMapper.ExecuteReader(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 db.efHelper.ExecuteDataTable(String cmdText, Object param, CommandType type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\lib\db\efHelper.cs:行号 148
+   在 db.bll.NN_user.bindDdl(Boolean has请选择, String selectedValue, String type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 242
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 226
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 159
+------------End-------------
+ 
+2023-09-25 23:17:29.9059 Info sys_Home-index 
+2023-09-25 23:17:30.4653 Info sys_Home-desktop 
+2023-09-25 23:17:36.5160 Error 列“newsAgencyID”不属于表 。
+------------begin-------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 db.bll.NN_user.dataTableToDdlList_newAgencys(DataTable table, Boolean has请选择, String selectedValue) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 254
+   在 db.bll.NN_user.bindDdl(Boolean has请选择, String selectedValue, String type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 243
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 226
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 159
+------------End-------------
+ 
+2023-09-25 23:17:43.0911 Error 列“newsAgencyID”不属于表 。
+------------begin-------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 db.bll.NN_user.dataTableToDdlList_newAgencys(DataTable table, Boolean has请选择, String selectedValue) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 254
+   在 db.bll.NN_user.bindDdl(Boolean has请选择, String selectedValue, String type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 243
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 226
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 159
+------------End-------------
+ 
+2023-09-25 23:17:59.0150 Error 列“newsAgencyID”不属于表 。
+------------begin-------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 db.bll.NN_user.dataTableToDdlList_newAgencys(DataTable table, Boolean has请选择, String selectedValue) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 254
+   在 db.bll.NN_user.bindDdl(Boolean has请选择, String selectedValue, String type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 243
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 226
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 159
+------------End-------------
+ 
+2023-09-25 23:18:25.5565 Info sys_Home-index 
+2023-09-25 23:18:26.0925 Info sys_Home-desktop 
+2023-09-25 23:18:32.0511 Error 列“newsAgencyID”不属于表 。
+------------begin-------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 db.bll.NN_user.dataTableToDdlList_newAgencys(DataTable table, Boolean has请选择, String selectedValue) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 254
+   在 db.bll.NN_user.bindDdl(Boolean has请选择, String selectedValue, String type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 243
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 226
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 159
+------------End-------------
+ 
+2023-09-25 23:18:38.4157 Error 列“newsAgencyID”不属于表 。
+------------begin-------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 db.bll.NN_user.dataTableToDdlList_newAgencys(DataTable table, Boolean has请选择, String selectedValue) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 254
+   在 db.bll.NN_user.bindDdl(Boolean has请选择, String selectedValue, String type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 243
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 226
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 159
+------------End-------------
+ 
+2023-09-25 23:18:42.4629 Error 列“newsAgencyID”不属于表 。
+------------begin-------------
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 db.bll.NN_user.dataTableToDdlList_newAgencys(DataTable table, Boolean has请选择, String selectedValue) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 254
+   在 db.bll.NN_user.bindDdl(Boolean has请选择, String selectedValue, String type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 243
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 226
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 159
+------------End-------------
+ 
+2023-09-25 23:19:02.0216 Info sys_Home-index 
+2023-09-25 23:19:02.5741 Info sys_Home-desktop 

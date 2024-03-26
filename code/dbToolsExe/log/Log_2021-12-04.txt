@@ -1,0 +1,8 @@
+2021-12-04 09:35:00.6448 Info 拷贝了:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\dbLibrary\bll\sys_Config.cs ~ E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\_MVC5CodeCreate\bll\sys_Config.cs 
+2021-12-04 09:35:00.6538 Info 拷贝了:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\dbLibrary\meta\sys_Config.cs ~ E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\_MVC5CodeCreate\meta\sys_Config.cs 
+2021-12-04 09:35:00.6548 Info 拷贝了:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\dbLibrary\view\sys_Config.cs ~ E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\_MVC5CodeCreate\viewModel\sys_Config.cs 
+2021-12-04 09:35:00.6558 Info 拷贝了:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Areas\admin\Controllers\sys_ConfigController.cs ~ E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\_MVC5CodeCreate\controller\sys_ConfigController.cs 
+2021-12-04 09:35:00.6588 Info 拷贝了:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Areas\admin\Views\sys_Config\Detail.cshtml ~ E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\_MVC5CodeCreate\view\sys_Config\Detail.cshtml 
+2021-12-04 09:35:00.6598 Info 拷贝了:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Areas\admin\Views\sys_Config\Insert.cshtml ~ E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\_MVC5CodeCreate\view\sys_Config\Insert.cshtml 
+2021-12-04 09:35:00.6608 Info 拷贝了:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Areas\admin\Views\sys_Config\Select.cshtml ~ E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\_MVC5CodeCreate\view\sys_Config\Select.cshtml 
+2021-12-04 09:35:00.6618 Info 拷贝了:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Areas\admin\Views\sys_Config\Update.cshtml ~ E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\_MVC5CodeCreate\view\sys_Config\Update.cshtml 

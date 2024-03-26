@@ -1,0 +1,164 @@
+﻿@model db.NN_user
+
+@{
+	ViewBag.Title = "Insert";
+}
+
+@using (Html.BeginForm(new { enctype = "multipart / form - data" }))
+{
+    @Html.AntiForgeryToken()
+	@Html.ValidationSummary(true)
+    
+<div class="dialog">
+    <div class="editor-label hide">
+        @Html.LabelFor(model => model.userID)
+    </div>
+    <div class="editor-field hide">
+        @Html.EditorFor(model => model.userID)
+        @Html.ValidationMessageFor(model => model.userID)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.userName)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.userName)
+        @Html.ValidationMessageFor(model => model.userName)
+    </div>
+
+    <div class="editor-label">
+        <!--头像-->
+        @Html.LabelFor(model => model.profile)
+    </div>
+    <div class="editor-field">
+        <input type="file" name="file" id="file" class="form-control" />
+        @Html.ValidationMessageFor(model => model.profile)
+
+    </div>
+
+    <div class="editor-label hide">
+        @Html.LabelFor(model => model.registerDateTime)
+    </div>
+    <div class="editor-field hide">
+        @Html.EditorFor(model => model.registerDateTime)
+        @Html.ValidationMessageFor(model => model.registerDateTime)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.password)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.password)
+        @Html.ValidationMessageFor(model => model.password)
+    </div>
+
+    <div class="editor-label">
+        <!--性别 -->
+        @Html.LabelFor(model => model.gender)
+    </div>
+    <div class="editor-field">
+        <input type="radio" id="radioMan" name="gender" value=false>
+        <label for="radioMan">男</label>
+        <input type="radio" id="radioWoman" name="gender" value=true checked>
+        <label for="radioWoman">女</label>
+    </div>
+
+    <div class="editor-label">
+        <!--出生日期-->
+        @Html.LabelFor(model => model.birth)
+    </div>
+    <div class="editor-field">
+        <input type="date" value="2000-01-01" name="birth" />
+        @Html.ValidationMessageFor(model => model.birth)
+    </div>
+
+    <div class="editor-label">
+        <!--用户类型-->
+        @Html.LabelFor(model => model.type)
+    </div>
+    <div class="editor-field">
+        @Html.DropDownListFor(model => model.type, db.bll.NN_user.bind用户类型(false), new { id = "userType" })
+        @Html.ValidationMessageFor(model => model.type)
+    </div>
+
+    <div class="editor-label">
+        <!--新闻机构-->
+        @Html.Label("新闻机构")
+    </div>
+    <div class="editor-field">
+        @Html.DropDownListFor(model => model.newsAgencyID, db.bll.NN_user.bind机构(true), new { id = "SetnewAgencyID", @class = "userReadonly" })
+        @Html.ValidationMessageFor(model => model.newsAgencyID)
+    </div>
+
+    <!--账号状态-->
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.remark)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.remark)
+        @Html.ValidationMessageFor(model => model.remark)
+    </div>
+
+    <p class="button">
+        <a class="billSave opSave" data-close="true">保存</a>
+        <a class="opClose">关闭</a>
+    </p>
+</div>
+}
+
+<style type="text/css">
+
+    .userReadonly {
+        pointer-events: none;
+        opacity: 0.5; /* 可选：降低不透明度以表示禁用状态 */
+    }
+</style>
+
+
+<script type="text/javascript">
+
+    //联动获取图书下拉框的值
+    $("#userType").change(function () {
+        var type = $("#userType").val();
+        var rowID = $("#ID").val();
+        if (true) {
+            ajaxPost("/employee/employeeUser/getNewsAgencyDdl", { type: type, rowID: rowID }, function (data) {
+                showJsonResult(data, function () {
+                    updateDdl($("#SetnewAgencyID"), parseJSON(data.newAgencysList), false);
+                });
+            });
+        }
+    });
+    //页面加载后代码触发图书类型的change事件
+    $("#userType").trigger("change");
+
+    // 在页面完全加载后执行代码
+    window.addEventListener("DOMContentLoaded", function () {
+
+        // 获取下拉框和另一个控件的引用
+        var dropdown = document.getElementById("userType");
+        var otherControl = document.getElementById("SetnewAgencyID");
+
+        // 添加一个事件监听器，当下拉框的值发生变化时触发
+        dropdown.addEventListener("change", function () {
+            // 获取选中的值
+            var selectedValue = dropdown.value;
+
+            // 检查选中的值是否是特定的值，例如 "1"
+            if (selectedValue === "1") { 
+                // 如果是特定值，使另一个控件可编辑
+                otherControl.classList.remove("userReadonly");
+                //otherControl.innerHTML = "选到了！"; 
+            } else {
+                // 否则，将另一个控件设置为只读
+                otherControl.classList.add("userReadonly");
+                //otherControl.innerHTML = "没选到"; 
+            }
+        });
+    });
+
+
+
+</script>
+

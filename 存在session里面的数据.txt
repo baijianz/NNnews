@@ -1,0 +1,8 @@
+用户登录之后一定有的数据：
+rui.sessionHelper.saveValue<string>("userName", row.Field<string>("userName").ToString());
+rui.sessionHelper.saveValue<string>("userID", row.Field<string>("userID").ToString());
+rui.sessionHelper.saveValue<string>("type", row.Field<string>("userName").ToString());
+rui.sessionHelper.saveValue<byte[]>("profile", row.Field<byte[]>("profile"));
+
+用户登录之后可能有的数据：
+rui.sessionHelper.saveValue<string>("newsAgencyID", row.Field<string>("newsAgencyID").ToString());

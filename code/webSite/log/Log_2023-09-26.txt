@@ -1,0 +1,477 @@
+2023-09-26 08:25:18.3384 Info sys_Home-index 
+2023-09-26 08:25:18.4152 Info sys_Home-desktop 
+2023-09-26 08:27:08.8229 Info sys_Home-index 
+2023-09-26 08:27:08.8789 Info sys_Home-desktop 
+2023-09-26 08:48:32.9612 Info sys_Home-index 
+2023-09-26 08:48:33.4703 Info sys_Home-desktop 
+2023-09-26 08:48:49.8162 Info sys_Home-index 
+2023-09-26 08:48:49.8529 Info sys_Home-desktop 
+2023-09-26 08:49:35.8287 Info sys_Home-index 
+2023-09-26 08:49:36.3402 Info sys_Home-desktop 
+2023-09-26 08:49:44.6274 Info sys_Home-index 
+2023-09-26 08:49:44.6603 Info sys_Home-desktop 
+2023-09-26 08:51:43.6731 Info sys_Home-index 
+2023-09-26 08:51:44.1928 Info sys_Home-desktop 
+2023-09-26 08:51:52.4982 Info sys_Home-index 
+2023-09-26 08:51:52.5341 Info sys_Home-desktop 
+2023-09-26 08:52:03.5365 Error An error occurred while updating the entries. See the inner exception for details.
+------------begin-------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 136
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 54
+------------End-------------
+ 
+2023-09-26 08:52:03.5385 Error An error occurred while updating the entries. See the inner exception for details.
+------------begin-------------
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   在 System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+------------End-------------
+ 
+2023-09-26 08:52:17.9705 Error An error occurred while updating the entries. See the inner exception for details.
+------------begin-------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 136
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 54
+------------End-------------
+ 
+2023-09-26 08:52:17.9705 Error An error occurred while updating the entries. See the inner exception for details.
+------------begin-------------
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   在 System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+------------End-------------
+ 
+2023-09-26 08:56:15.9265 Info sys_Home-index 
+2023-09-26 08:56:16.5508 Info sys_Home-desktop 
+2023-09-26 08:59:39.3807 Info sys_Home-index 
+2023-09-26 08:59:39.9175 Info sys_Home-desktop 
+2023-09-26 09:00:29.6415 Info sys_Home-index 
+2023-09-26 09:00:30.1774 Info sys_Home-desktop 
+2023-09-26 09:00:48.3464 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 225
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:00:52.8550 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 225
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:01:00.7317 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 225
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:01:03.3331 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 225
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:01:18.0190 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 225
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:01:28.6212 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 225
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:01:33.3650 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 225
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:01:39.2123 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 225
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:01:46.8878 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 225
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:03:54.7567 Info sys_Home-index 
+2023-09-26 09:03:55.2931 Info sys_Home-desktop 
+2023-09-26 09:03:59.8319 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 225
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:04:04.8345 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 225
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:05:08.1266 Info sys_Home-index 
+2023-09-26 09:05:08.7002 Info sys_Home-desktop 
+2023-09-26 09:05:12.6710 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 223
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:05:18.4318 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 223
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:05:23.4290 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 223
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:07:16.9340 Info sys_Home-index 
+2023-09-26 09:07:17.0518 Info sys_Home-desktop 
+2023-09-26 09:10:38.4696 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 223
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:13:46.6035 Info sys_Home-index 
+2023-09-26 09:13:46.6717 Info sys_Home-desktop 
+2023-09-26 09:15:54.6570 Info sys_Home-index 
+2023-09-26 09:15:55.2542 Info sys_Home-desktop 
+2023-09-26 09:17:14.1919 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 db.bll.NN_user.getJsonAgencyDdl(String type, String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 226
+   在 web.Areas.employee.Controllers.employeeUserController.getNewsAgencyDdl(String type, String rowID) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 160
+------------End-------------
+ 
+2023-09-26 09:20:37.1752 Info sys_Home-index 
+2023-09-26 09:20:37.7232 Info sys_Home-desktop 
+2023-09-26 09:21:32.5204 Info sys_Home-index 
+2023-09-26 09:21:32.5583 Info sys_Home-desktop 
+2023-09-26 09:21:46.9739 Info sys_Home-index 
+2023-09-26 09:21:47.0126 Info sys_Home-desktop 
+2023-09-26 09:24:03.5233 Info sys_Home-index 
+2023-09-26 09:24:04.0756 Info sys_Home-desktop 
+2023-09-26 09:29:12.7960 Info sbs_Org-select 
+2023-09-26 09:29:16.0768 Info sbs_Org-Insert 
+2023-09-26 09:29:24.6686 Info sbs_Org-Insert 
+2023-09-26 09:29:24.6960 Info sbs_Org-Update 
+2023-09-26 09:29:25.2049 Info sbs_Org-select 
+2023-09-26 09:29:27.7492 Info sbs_Org-Delete 
+2023-09-26 09:29:27.7669 Info sbs_Org-select 
+2023-09-26 09:29:30.5909 Info sys_Home-index 
+2023-09-26 09:29:30.6331 Info sys_Home-desktop 
+2023-09-26 09:34:32.8037 Info sys_Home-index 
+2023-09-26 09:34:33.4026 Info sys_Home-desktop 
+2023-09-26 09:35:26.8985 Info sys_Home-index 
+2023-09-26 09:35:27.0122 Info sys_Home-desktop 
+2023-09-26 09:38:34.7745 Info sys_Home-index 
+2023-09-26 09:38:34.9021 Info sys_Home-desktop 
+2023-09-26 09:40:14.4999 Info sys_Home-index 
+2023-09-26 09:40:15.0338 Info sys_Home-desktop 
+2023-09-26 09:41:44.1269 Info sys_Home-index 
+2023-09-26 09:41:44.2441 Info sys_Home-desktop 
+2023-09-26 09:47:56.5237 Info sys_Home-index 
+2023-09-26 09:47:56.6031 Info sys_Home-desktop 
+2023-09-26 09:47:59.2249 Info rbac_Role-select 
+2023-09-26 09:48:02.2258 Info rbac_User-Select 
+2023-09-26 09:48:04.7084 Info sbs_Org-select 
+2023-09-26 09:48:05.6325 Info sbs_Empl-select 
+2023-09-26 09:48:06.9008 Info sbs_Dept-select 
+2023-09-26 09:48:08.0569 Info sbs_Org-select 
+2023-09-26 09:48:08.6196 Info sbs_Empl-select 
+2023-09-26 09:48:17.5547 Info sbs_Empl-select 
+2023-09-26 09:48:21.5135 Info sbs_Dept-getDdlJsonByOrgCode 
+2023-09-26 09:48:22.7592 Info sbs_Empl-select 
+2023-09-26 09:48:24.0683 Info sbs_Empl-select 
+2023-09-26 09:48:24.2528 Info sbs_Empl-select 
+2023-09-26 09:48:26.4981 Info sbs_Empl-select 
+2023-09-26 09:48:37.7521 Info sbs_Dept-getDdlJsonByOrgCode 
+2023-09-26 09:48:39.3347 Info sbs_Empl-select 
+2023-09-26 09:48:44.7902 Info sbs_Empl-select 
+2023-09-26 09:48:47.5460 Info sbs_Empl-select 
+2023-09-26 09:48:47.9260 Info sbs_Empl-select 
+2023-09-26 09:48:48.0774 Info sbs_Empl-select 
+2023-09-26 09:48:48.2579 Info sbs_Empl-select 
+2023-09-26 09:48:50.7710 Info sbs_Org-select 
+2023-09-26 09:48:54.0452 Info sbs_Org-Insert 
+2023-09-26 09:48:58.2429 Info sbs_Org-Insert 
+2023-09-26 09:48:58.4591 Info sbs_Org-Update 
+2023-09-26 09:48:58.9779 Info sbs_Org-select 
+2023-09-26 09:49:02.5244 Info sbs_Org-Delete 
+2023-09-26 09:49:02.5405 Info sbs_Org-select 
+2023-09-26 09:49:06.3454 Info sbs_Org-Insert 
+2023-09-26 09:49:11.4404 Info sbs_Org-Insert 
+2023-09-26 09:49:11.4526 Info sbs_Org-Update 
+2023-09-26 09:49:11.9680 Info sbs_Org-select 
+2023-09-26 09:49:13.1091 Info sbs_Org-Update 
+2023-09-26 09:49:16.8071 Info sbs_Org-Update 
+2023-09-26 09:49:16.8320 Info sbs_Org-select 
+2023-09-26 09:49:19.3580 Info sbs_Org-Delete 
+2023-09-26 09:49:19.3679 Info sbs_Org-select 
+2023-09-26 09:49:21.5431 Info sbs_Dept-select 
+2023-09-26 09:49:22.1013 Info sbs_Org-select 
+2023-09-26 10:29:55.5860 Info sys_Home-index 
+2023-09-26 10:29:56.0917 Info sys_Home-desktop 
+2023-09-26 10:30:20.8044 Info sys_Home-index 
+2023-09-26 10:30:20.8380 Info sys_Home-desktop 
+2023-09-26 10:30:42.3407 Info sys_Home-index 
+2023-09-26 10:30:42.4639 Info sys_Home-desktop 
+2023-09-26 10:32:51.4851 Info sys_Home-index 
+2023-09-26 10:32:52.0853 Info sys_Home-desktop 
+2023-09-26 10:34:45.9489 Info sys_Home-index 
+2023-09-26 10:34:46.5425 Info sys_Home-desktop 
+2023-09-26 10:35:52.4007 Info sys_Home-index 
+2023-09-26 10:35:52.9295 Info sys_Home-desktop 
+2023-09-26 10:36:36.7608 Info sys_Home-index 
+2023-09-26 10:36:37.2721 Info sys_Home-desktop 
+2023-09-26 10:37:26.5858 Info sys_Home-index 
+2023-09-26 10:37:27.1102 Info sys_Home-desktop 
+2023-09-26 10:40:16.5680 Info sys_Home-index 
+2023-09-26 10:40:16.6865 Info sys_Home-desktop 
+2023-09-26 10:46:30.9950 Info sys_Home-index 
+2023-09-26 10:46:31.5368 Info sys_Home-desktop 
+2023-09-26 10:52:09.7101 Info sys_Home-index 
+2023-09-26 10:52:10.2288 Info sys_Home-desktop 
+2023-09-26 11:01:53.9142 Info sys_Home-index 
+2023-09-26 11:01:53.9857 Info sys_Home-desktop 
+2023-09-26 11:02:56.4174 Info rbac_Module-select 
+2023-09-26 11:02:57.9352 Info rbac_Resource-select 
+2023-09-26 11:03:00.0158 Info rbac_Resource-Insert 
+2023-09-26 11:03:45.3825 Info rbac_Resource-Insert 
+2023-09-26 11:03:45.6120 Info rbac_Resource-Update 
+2023-09-26 11:03:45.6620 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:03:45.9448 Info sys_BillAttach-SelectPartial 
+2023-09-26 11:03:49.8676 Info sys_Home-index 
+2023-09-26 11:03:49.9111 Info sys_Home-desktop 
+2023-09-26 11:03:53.7593 Info rbac_Module-select 
+2023-09-26 11:03:54.6659 Info rbac_Resource-select 
+2023-09-26 11:04:00.7860 Info rbac_Resource-Select 
+2023-09-26 11:04:01.3488 Info rbac_Resource-Select 
+2023-09-26 11:04:02.4187 Info rbac_Resource-Select 
+2023-09-26 11:04:03.1721 Info rbac_Resource-Select 
+2023-09-26 11:04:08.9328 Info rbac_Resource-Update 
+2023-09-26 11:04:08.9398 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:04:08.9458 Info sys_BillAttach-SelectPartial 
+2023-09-26 11:04:10.3398 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-26 11:04:10.3917 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:04:10.7963 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-26 11:04:10.8090 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:04:12.7470 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-26 11:04:12.7558 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:04:13.4286 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-26 11:04:13.4406 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:04:14.0689 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-26 11:04:14.0824 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:04:15.0073 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-26 11:04:15.0162 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:04:16.3172 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-26 11:04:16.3289 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:04:18.7490 Info rbac_Resource-Update 
+2023-09-26 11:04:18.7930 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:04:21.1782 Info sys_Home-index 
+2023-09-26 11:04:21.2213 Info sys_Home-desktop 
+2023-09-26 11:04:23.4564 Info rbac_Module-select 
+2023-09-26 11:04:24.0209 Info rbac_Resource-select 
+2023-09-26 11:04:27.4308 Info rbac_Resource-Update 
+2023-09-26 11:04:27.4368 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:04:27.4408 Info sys_BillAttach-SelectPartial 
+2023-09-26 11:04:37.3212 Info rbac_Resource-Update 
+2023-09-26 11:04:37.3336 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:04:38.8300 Info rbac_Resource-select 
+2023-09-26 11:04:42.0687 Info sys_Home-index 
+2023-09-26 11:04:42.1054 Info sys_Home-desktop 
+2023-09-26 11:04:44.0198 Info rbac_Resource-select 
+2023-09-26 11:04:44.8585 Info rbac_Module-select 
+2023-09-26 11:04:46.2857 Info rbac_Resource-select 
+2023-09-26 11:05:47.9915 Info rbac_Resource-Update 
+2023-09-26 11:05:48.0145 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:05:48.0225 Info sys_BillAttach-SelectPartial 
+2023-09-26 11:05:54.4113 Info rbac_Resource-Update 
+2023-09-26 11:05:54.4258 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:05:56.9118 Info sys_Home-index 
+2023-09-26 11:05:56.9575 Info sys_Home-desktop 
+2023-09-26 11:06:47.2360 Info sys_Home-index 
+2023-09-26 11:06:47.3908 Info sys_Home-desktop 
+2023-09-26 11:06:51.8672 Info af_AuditType-select 
+2023-09-26 11:06:53.8731 Info af_AuditPostUser-Select 
+2023-09-26 11:06:58.4186 Info af_AuditCenter-select 
+2023-09-26 11:06:59.7779 Info af_AuditFlow-select 
+2023-09-26 11:07:16.7960 Info sys_Home-index 
+2023-09-26 11:07:16.9059 Info sys_Home-desktop 
+2023-09-26 11:07:37.2924 Info sys_Home-exit 
+2023-09-26 11:07:39.6158 Info sys_Home-index 
+2023-09-26 11:07:39.6525 Info sys_Home-desktop 
+2023-09-26 11:07:42.0909 Info rbac_Role-select 
+2023-09-26 11:07:47.0921 Info rbac_User-Select 
+2023-09-26 11:07:49.6925 Info rbac_User-Priv 
+2023-09-26 11:07:59.4642 Info rbac_User-Priv 
+2023-09-26 11:08:06.2755 Info sys_Home-exit 
+2023-09-26 11:08:09.2024 Info sys_Home-index 
+2023-09-26 11:08:09.2385 Info sys_Home-desktop 
+2023-09-26 11:33:46.8701 Info sys_Home-index 
+2023-09-26 11:33:47.3871 Info sys_Home-desktop 
+2023-09-26 11:38:49.9323 Info sys_Home-index 
+2023-09-26 11:38:50.4773 Info sys_Home-desktop 
+2023-09-26 11:38:52.9910 Info sys_Home-exit 
+2023-09-26 11:38:56.1639 Info sys_Home-index 
+2023-09-26 11:38:56.1994 Info sys_Home-desktop 
+2023-09-26 11:39:00.1260 Info rbac_Module-select 
+2023-09-26 11:39:01.3625 Info rbac_Resource-select 
+2023-09-26 11:39:06.4083 Info rbac_Resource-Update 
+2023-09-26 11:39:06.4780 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:39:06.7412 Info sys_BillAttach-SelectPartial 
+2023-09-26 11:39:22.5840 Info rbac_Resource-Update 
+2023-09-26 11:39:22.8084 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 11:39:25.2865 Info rbac_Resource-Select 
+2023-09-26 11:39:30.1496 Info sys_Home-index 
+2023-09-26 11:39:30.1887 Info sys_Home-desktop 
+2023-09-26 11:40:51.3722 Info sys_Home-index 
+2023-09-26 11:40:51.4122 Info sys_Home-desktop 
+2023-09-26 11:40:51.5470 Info sys_Home-index 
+2023-09-26 11:40:51.5812 Info sys_Home-desktop 
+2023-09-26 11:40:51.7224 Info sys_Home-index 
+2023-09-26 11:40:51.7544 Info sys_Home-desktop 
+2023-09-26 11:44:40.1998 Info sys_Home-index 
+2023-09-26 11:44:40.7778 Info sys_Home-desktop 
+2023-09-26 11:49:45.1291 Info sys_Home-index 
+2023-09-26 11:49:45.1960 Info sys_Home-desktop 
+2023-09-26 11:58:51.7418 Info sys_Home-index 
+2023-09-26 11:58:52.2737 Info sys_Home-desktop 
+2023-09-26 12:02:16.2621 Info rbac_Module-select 
+2023-09-26 12:02:18.2438 Info rbac_Resource-select 
+2023-09-26 12:02:43.3244 Info rbac_Role-select 
+2023-09-26 12:43:48.5244 Info sys_Home-index 
+2023-09-26 12:43:48.5779 Info sys_Home-desktop 
+2023-09-26 12:58:32.2805 Info sys_Home-index 
+2023-09-26 12:58:32.8436 Info sys_Home-desktop 
+2023-09-26 13:03:40.6378 Info sys_Home-index 
+2023-09-26 13:03:41.2086 Info sys_Home-desktop 
+2023-09-26 13:04:17.6684 Info sys_Home-index 
+2023-09-26 13:04:17.7055 Info sys_Home-desktop 
+2023-09-26 13:06:15.8604 Info sys_Home-index 
+2023-09-26 13:06:16.4179 Info sys_Home-desktop 
+2023-09-26 13:13:42.3564 Info sys_Home-index 
+2023-09-26 13:13:42.8983 Info sys_Home-desktop 
+2023-09-26 13:14:13.5543 Info sys_Home-index 
+2023-09-26 13:14:14.0718 Info sys_Home-desktop 
+2023-09-26 13:23:54.0147 Info sys_Home-index 
+2023-09-26 13:23:54.5476 Info sys_Home-desktop 
+2023-09-26 13:25:58.7389 Info sys_Home-index 
+2023-09-26 13:25:59.2803 Info sys_Home-desktop 
+2023-09-26 13:27:02.2497 Info sys_Home-index 
+2023-09-26 13:27:02.7949 Info sys_Home-desktop 
+2023-09-26 13:43:35.2934 Info sys_Home-index 
+2023-09-26 13:43:35.8264 Info sys_Home-desktop 
+2023-09-26 13:44:10.4592 Info sys_Home-index 
+2023-09-26 13:44:10.5800 Info sys_Home-desktop 
+2023-09-26 13:45:32.1548 Info sys_Home-index 
+2023-09-26 13:45:32.7099 Info sys_Home-desktop 
+2023-09-26 13:48:22.6469 Info sys_Home-index 
+2023-09-26 13:48:22.7784 Info sys_Home-desktop 
+2023-09-26 13:52:17.3886 Info sys_Home-index 
+2023-09-26 13:52:17.9394 Info sys_Home-desktop 
+2023-09-26 14:21:55.1709 Info sys_Home-index 
+2023-09-26 14:21:55.7094 Info sys_Home-desktop 
+2023-09-26 14:22:53.0905 Info sys_Home-index 
+2023-09-26 14:22:53.6820 Info sys_Home-desktop 
+2023-09-26 14:23:51.2537 Info sys_Home-index 
+2023-09-26 14:23:51.7797 Info sys_Home-desktop 
+2023-09-26 14:31:07.9885 Info sys_Home-index 
+2023-09-26 14:31:08.0656 Info sys_Home-desktop 
+2023-09-26 14:35:52.7169 Info rbac_Resource-select 
+2023-09-26 14:35:58.7099 Info rbac_Resource-Insert 
+2023-09-26 14:37:15.4151 Info rbac_Resource-Insert 
+2023-09-26 14:37:15.6337 Info rbac_Resource-Update 
+2023-09-26 14:37:15.6812 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 14:37:15.9337 Info sys_BillAttach-SelectPartial 
+2023-09-26 14:37:43.6410 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-26 14:37:43.6760 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 14:37:45.0053 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-26 14:37:45.0153 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 14:37:45.7015 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-26 14:37:45.7137 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 14:37:47.6561 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-26 14:37:47.6654 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 14:37:48.6936 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-26 14:37:48.7065 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 14:37:51.7419 Info rbac_Resource-Update 
+2023-09-26 14:37:51.7806 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 14:37:53.4759 Info rbac_Resource-Select 
+2023-09-26 14:37:58.4422 Info sys_Home-index 
+2023-09-26 14:37:58.4863 Info sys_Home-desktop 
+2023-09-26 14:38:05.0190 Info rbac_Resource-select 
+2023-09-26 14:38:48.5517 Info rbac_Resource-Select 
+2023-09-26 14:38:51.6025 Info rbac_Resource-Update 
+2023-09-26 14:38:51.6239 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 14:38:51.6300 Info sys_BillAttach-SelectPartial 
+2023-09-26 14:39:07.2202 Info rbac_Resource-Update 
+2023-09-26 14:39:07.2344 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 14:39:09.3564 Info sys_Home-index 
+2023-09-26 14:39:09.3964 Info sys_Home-desktop 
+2023-09-26 14:43:22.9330 Info sys_Home-index 
+2023-09-26 14:43:22.9707 Info sys_Home-desktop 
+2023-09-26 15:11:51.9777 Info sys_Home-index 
+2023-09-26 15:11:52.4905 Info sys_Home-desktop 
+2023-09-26 15:12:07.4523 Info rbac_Resource-select 
+2023-09-26 15:12:12.0410 Info rbac_Resource-select 
+2023-09-26 15:12:14.8075 Info rbac_Resource-Select 
+2023-09-26 15:12:16.1061 Info rbac_Resource-Update 
+2023-09-26 15:12:16.1853 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 15:12:16.4459 Info sys_BillAttach-SelectPartial 
+2023-09-26 15:12:56.6251 Info rbac_Resource-Update 
+2023-09-26 15:12:56.8676 Info rbac_ResourceOp-SelectPartial 
+2023-09-26 15:13:29.1493 Info sys_Home-index 
+2023-09-26 15:13:29.2068 Info sys_Home-desktop 
+2023-09-26 15:16:22.2868 Info sys_Home-index 
+2023-09-26 15:16:22.7823 Info sys_Home-desktop 
+2023-09-26 15:16:53.6223 Info sys_Home-index 
+2023-09-26 15:16:54.1409 Info sys_Home-desktop 
+2023-09-26 15:17:14.6744 Info sys_Home-index 
+2023-09-26 15:17:15.1753 Info sys_Home-desktop 
+2023-09-26 15:22:25.8939 Info sys_Home-index 
+2023-09-26 15:22:25.9491 Info sys_Home-desktop 
+2023-09-26 16:20:47.4059 Info sys_Home-index 
+2023-09-26 16:20:47.9454 Info sys_Home-desktop 
+2023-09-26 16:24:41.2180 Info sys_Home-index 
+2023-09-26 16:24:41.7538 Info sys_Home-desktop 
+2023-09-26 16:29:58.8004 Info sys_Home-index 
+2023-09-26 16:29:59.3113 Info sys_Home-desktop 
+2023-09-26 16:33:03.8742 Info sys_Home-index 
+2023-09-26 16:33:04.4062 Info sys_Home-desktop 
+2023-09-26 16:39:41.7534 Info sys_Home-index 
+2023-09-26 16:39:42.3272 Info sys_Home-desktop 
+2023-09-26 16:39:54.1921 Info sys_Home-index 
+2023-09-26 16:39:54.2265 Info sys_Home-desktop 

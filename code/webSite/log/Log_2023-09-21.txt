@@ -1,0 +1,562 @@
+2023-09-21 08:38:44.8103 Info sys_Home-index 
+2023-09-21 08:38:45.4457 Info sys_Home-desktop 
+2023-09-21 08:38:49.2453 Info sys_Home-desktop 
+2023-09-21 08:39:50.3121 Info sys_Home-index 
+2023-09-21 08:39:50.8900 Info sys_Home-desktop 
+2023-09-21 08:40:35.1311 Info sys_Home-index 
+2023-09-21 08:40:35.2532 Info sys_Home-desktop 
+2023-09-21 08:42:00.5752 Info sys_Home-index 
+2023-09-21 08:42:00.7019 Info sys_Home-desktop 
+2023-09-21 08:54:37.8082 Info sys_Home-index 
+2023-09-21 08:54:38.4227 Info sys_Home-desktop 
+2023-09-21 08:57:36.2462 Info sys_Home-index 
+2023-09-21 08:57:36.8265 Info sys_Home-desktop 
+2023-09-21 08:58:00.3954 Error Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+------------begin-------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 104
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, Int32 gender, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 44
+------------End-------------
+ 
+2023-09-21 08:58:56.6145 Info sys_Home-index 
+2023-09-21 08:58:57.1697 Info sys_Home-desktop 
+2023-09-21 08:59:37.8196 Info sys_Home-index 
+2023-09-21 08:59:37.9456 Info sys_Home-desktop 
+2023-09-21 09:16:21.9710 Info sys_Home-index 
+2023-09-21 09:16:22.5957 Info sys_Home-desktop 
+2023-09-21 09:19:04.9313 Info sys_Home-index 
+2023-09-21 09:19:05.5686 Info sys_Home-desktop 
+2023-09-21 09:23:59.1802 Info sys_Home-index 
+2023-09-21 09:23:59.8152 Info sys_Home-desktop 
+2023-09-21 09:26:49.4900 Info sys_Home-index 
+2023-09-21 09:26:50.1007 Info sys_Home-desktop 
+2023-09-21 09:27:01.9760 Error Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+------------begin-------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 104
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, Int32 gender, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 44
+------------End-------------
+ 
+2023-09-21 09:29:26.5468 Info sys_Home-index 
+2023-09-21 09:29:27.1210 Info sys_Home-desktop 
+2023-09-21 09:29:59.8348 Info sys_Home-index 
+2023-09-21 09:29:59.9611 Info sys_Home-desktop 
+2023-09-21 09:32:19.0425 Info sys_Home-index 
+2023-09-21 09:32:19.6820 Info sys_Home-desktop 
+2023-09-21 09:41:52.8163 Info sys_Home-index 
+2023-09-21 09:41:53.4425 Info sys_Home-desktop 
+2023-09-21 09:45:07.2729 Info sys_Home-index 
+2023-09-21 09:45:07.3467 Info sys_Home-desktop 
+2023-09-21 09:45:28.7977 Info sys_Home-index 
+2023-09-21 09:45:28.9202 Info sys_Home-desktop 
+2023-09-21 09:47:10.2243 Info sys_Home-index 
+2023-09-21 09:47:10.8098 Info sys_Home-desktop 
+2023-09-21 09:53:47.9538 Info sys_Home-index 
+2023-09-21 09:53:48.0219 Info sys_Home-desktop 
+2023-09-21 09:54:13.5502 Info sys_Home-index 
+2023-09-21 09:54:13.6677 Info sys_Home-desktop 
+2023-09-21 10:07:02.7347 Info sys_Home-index 
+2023-09-21 10:07:03.2990 Info sys_Home-desktop 
+2023-09-21 10:07:35.6865 Info sys_Home-index 
+2023-09-21 10:07:35.8281 Info sys_Home-desktop 
+2023-09-21 10:08:18.2564 Info sys_Home-index 
+2023-09-21 10:08:18.3800 Info sys_Home-desktop 
+2023-09-21 10:14:46.0827 Info sys_Home-index 
+2023-09-21 10:14:46.2125 Info sys_Home-desktop 
+2023-09-21 10:15:41.1239 Info sys_Home-index 
+2023-09-21 10:15:41.1871 Info sys_Home-desktop 
+2023-09-21 10:17:04.9492 Info sys_Home-index 
+2023-09-21 10:17:05.0998 Info sys_Home-desktop 
+2023-09-21 10:21:18.0806 Info sys_Home-index 
+2023-09-21 10:21:18.1626 Info sys_Home-desktop 
+2023-09-21 10:27:16.3636 Info sys_Home-index 
+2023-09-21 10:27:16.4861 Info sys_Home-desktop 
+2023-09-21 10:30:09.7623 Info sys_Home-index 
+2023-09-21 10:30:09.8375 Info sys_Home-desktop 
+2023-09-21 10:31:25.8994 Info sys_Home-index 
+2023-09-21 10:31:25.9545 Info sys_Home-desktop 
+2023-09-21 10:33:09.7142 Info sys_Home-index 
+2023-09-21 10:33:09.7658 Info sys_Home-desktop 
+2023-09-21 10:37:30.5988 Info sys_Home-index 
+2023-09-21 10:37:30.6541 Info sys_Home-desktop 
+2023-09-21 10:38:18.2569 Info sys_Home-index 
+2023-09-21 10:38:18.3125 Info sys_Home-desktop 
+2023-09-21 10:49:14.8622 Info sys_Home-index 
+2023-09-21 10:49:14.9893 Info sys_Home-desktop 
+2023-09-21 10:51:10.2859 Info sys_Home-index 
+2023-09-21 10:51:10.4085 Info sys_Home-desktop 
+2023-09-21 10:57:11.2084 Info sys_Home-index 
+2023-09-21 10:57:11.2744 Info sys_Home-desktop 
+2023-09-21 10:57:34.4650 Info sys_Home-index 
+2023-09-21 10:57:34.5865 Info sys_Home-desktop 
+2023-09-21 11:00:14.1578 Info sys_Home-index 
+2023-09-21 11:00:14.2371 Info sys_Home-desktop 
+2023-09-21 11:02:10.2084 Info sys_Home-index 
+2023-09-21 11:02:10.2572 Info sys_Home-desktop 
+2023-09-21 11:07:39.3817 Info sys_Home-index 
+2023-09-21 11:07:39.4611 Info sys_Home-desktop 
+2023-09-21 11:08:04.2158 Info sys_Home-index 
+2023-09-21 11:08:04.3860 Info sys_Home-desktop 
+2023-09-21 11:12:22.9621 Info sys_Home-index 
+2023-09-21 11:12:23.4863 Info sys_Home-desktop 
+2023-09-21 11:12:46.6322 Error Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+------------begin-------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 104
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 45
+------------End-------------
+ 
+2023-09-21 11:13:13.1535 Info sys_Home-index 
+2023-09-21 11:13:13.2810 Info sys_Home-desktop 
+2023-09-21 11:15:22.8322 Error Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+------------begin-------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 104
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 45
+------------End-------------
+ 
+2023-09-21 11:17:20.9314 Info sys_Home-index 
+2023-09-21 11:17:21.4755 Info sys_Home-desktop 
+2023-09-21 11:17:31.1355 Error Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+------------begin-------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 105
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 45
+------------End-------------
+ 
+2023-09-21 11:20:24.6758 Info sys_Home-index 
+2023-09-21 11:20:25.3016 Info sys_Home-desktop 
+2023-09-21 11:25:02.4921 Info sys_Home-index 
+2023-09-21 11:25:03.1544 Info sys_Home-desktop 
+2023-09-21 11:29:43.7548 Info sys_Home-index 
+2023-09-21 11:29:44.4657 Info sys_Home-desktop 
+2023-09-21 11:33:45.9226 Info sys_Home-index 
+2023-09-21 11:33:46.5320 Info sys_Home-desktop 
+2023-09-21 11:38:37.0916 Info sys_Home-index 
+2023-09-21 11:38:37.1948 Info sys_Home-desktop 
+2023-09-21 11:50:08.7367 Info sys_Home-index 
+2023-09-21 11:50:09.2653 Info sys_Home-desktop 
+2023-09-21 11:50:21.1551 Error 未能找到路径“C:\pic\woman.jpg”的一部分。
+------------begin-------------
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   在 System.IO.File.ReadAllBytes(String path)
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 111
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 45
+------------End-------------
+ 
+2023-09-21 11:50:48.8304 Info sys_Home-index 
+2023-09-21 11:50:49.3724 Info sys_Home-desktop 
+2023-09-21 11:51:04.8197 Info sys_Home-index 
+2023-09-21 11:51:04.8567 Info sys_Home-desktop 
+2023-09-21 11:53:24.8386 Info sys_Home-index 
+2023-09-21 11:53:24.8846 Info sys_Home-desktop 
+2023-09-21 11:53:56.6235 Info sys_Home-index 
+2023-09-21 11:53:56.6620 Info sys_Home-desktop 
+2023-09-21 11:55:28.6126 Info sys_Home-index 
+2023-09-21 11:55:28.6527 Info sys_Home-desktop 
+2023-09-21 11:56:20.9668 Info sys_Home-index 
+2023-09-21 11:56:21.0008 Info sys_Home-desktop 
+2023-09-21 12:06:41.2900 Info sys_Home-index 
+2023-09-21 12:06:41.8621 Info sys_Home-desktop 
+2023-09-21 12:22:04.9026 Info sys_Home-index 
+2023-09-21 12:22:04.9566 Info sys_Home-desktop 
+2023-09-21 12:26:38.2077 Info sys_Home-index 
+2023-09-21 12:26:38.3368 Info sys_Home-desktop 
+2023-09-21 12:35:12.4564 Info sys_Home-index 
+2023-09-21 12:35:13.0798 Info sys_Home-desktop 
+2023-09-21 12:40:01.9851 Info sys_Home-index 
+2023-09-21 12:40:02.0933 Info sys_Home-desktop 
+2023-09-21 12:41:24.7162 Info sys_Home-index 
+2023-09-21 12:41:24.7689 Info sys_Home-desktop 
+2023-09-21 12:41:53.4386 Info sys_Home-index 
+2023-09-21 12:41:53.4940 Info sys_Home-desktop 
+2023-09-21 12:42:29.5125 Info sys_Home-index 
+2023-09-21 12:42:29.5805 Info sys_Home-desktop 
+2023-09-21 12:43:24.0898 Info sys_Home-index 
+2023-09-21 12:43:24.2157 Info sys_Home-desktop 
+2023-09-21 12:49:39.8533 Info sys_Home-index 
+2023-09-21 12:49:39.9617 Info sys_Home-desktop 
+2023-09-21 12:51:26.7895 Info sys_Home-index 
+2023-09-21 12:51:26.8652 Info sys_Home-desktop 
+2023-09-21 12:54:44.2089 Info sys_Home-index 
+2023-09-21 12:54:44.2935 Info sys_Home-desktop 
+2023-09-21 12:55:54.0398 Info sys_Home-index 
+2023-09-21 12:55:54.0721 Info sys_Home-desktop 
+2023-09-21 12:57:09.4120 Info sys_Home-index 
+2023-09-21 12:57:09.4454 Info sys_Home-desktop 
+2023-09-21 13:22:06.2938 Info sys_Home-index 
+2023-09-21 13:22:06.4193 Info sys_Home-desktop 
+2023-09-21 13:26:30.3425 Info sys_Home-index 
+2023-09-21 13:26:30.9934 Info sys_Home-desktop 
+2023-09-21 13:28:18.8142 Info sys_Home-index 
+2023-09-21 13:28:19.3618 Info sys_Home-desktop 
+2023-09-21 13:29:54.5054 Info sys_Home-index 
+2023-09-21 13:29:55.1406 Info sys_Home-desktop 
+2023-09-21 14:11:31.1634 Info sys_Home-index 
+2023-09-21 14:11:31.7072 Info sys_Home-desktop 
+2023-09-21 14:17:13.4638 Info sys_Home-index 
+2023-09-21 14:17:13.5237 Info sys_Home-desktop 
+2023-09-21 14:19:34.9051 Info sys_Home-index 
+2023-09-21 14:19:34.9524 Info sys_Home-desktop 
+2023-09-21 14:20:23.6485 Info sys_Home-index 
+2023-09-21 14:20:23.6926 Info sys_Home-desktop 
+2023-09-21 14:27:53.6535 Info sys_Home-index 
+2023-09-21 14:27:54.2410 Info sys_Home-desktop 
+2023-09-21 14:33:59.7302 Info sys_Home-index 
+2023-09-21 14:33:59.7732 Info sys_Home-desktop 
+2023-09-21 14:44:00.9577 Info sys_Home-index 
+2023-09-21 14:44:01.5182 Info sys_Home-desktop 
+2023-09-21 14:50:23.7933 Info sys_Home-index 
+2023-09-21 14:50:23.8440 Info sys_Home-desktop 
+2023-09-21 14:56:56.8943 Info sys_Home-index 
+2023-09-21 14:56:57.4622 Info sys_Home-desktop 
+2023-09-21 14:57:48.7552 Error 未能找到路径“C:\Program Files (x86)\IIS Express\pic\man.jpg”的一部分。
+------------begin-------------
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   在 System.IO.File.ReadAllBytes(String path)
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 107
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 47
+------------End-------------
+ 
+2023-09-21 14:58:34.4262 Info sys_Home-index 
+2023-09-21 14:58:34.9511 Info sys_Home-desktop 
+2023-09-21 14:59:02.2136 Error 未能找到路径“C:\Program Files (x86)\IIS Express\~\pic\man.jpg”的一部分。
+------------begin-------------
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   在 System.IO.File.ReadAllBytes(String path)
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 107
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 47
+------------End-------------
+ 
+2023-09-21 14:59:34.8502 Info sys_Home-index 
+2023-09-21 14:59:35.3891 Info sys_Home-desktop 
+2023-09-21 14:59:51.2093 Error 未能找到路径“C:\Program Files (x86)\IIS Express\~\pic\man.jpg”的一部分。
+------------begin-------------
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   在 System.IO.File.ReadAllBytes(String path)
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 107
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 47
+------------End-------------
+ 
+2023-09-21 15:03:54.7665 Info sys_Home-index 
+2023-09-21 15:03:55.3047 Info sys_Home-desktop 
+2023-09-21 15:04:08.7887 Error 未能找到路径“C:\pic\man.jpg”的一部分。
+------------begin-------------
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   在 System.IO.File.ReadAllBytes(String path)
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 107
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 47
+------------End-------------
+ 
+2023-09-21 15:04:34.9609 Info sys_Home-index 
+2023-09-21 15:04:35.4931 Info sys_Home-desktop 
+2023-09-21 15:04:50.8027 Error 未能找到路径“C:\Program Files (x86)\IIS Express\~\pic\man.jpg”的一部分。
+------------begin-------------
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   在 System.IO.File.ReadAllBytes(String path)
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 107
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 47
+------------End-------------
+ 
+2023-09-21 15:07:34.7590 Info sys_Home-index 
+2023-09-21 15:07:35.3075 Info sys_Home-desktop 
+2023-09-21 15:07:45.7884 Error 未能找到路径“C:\Program Files (x86)\IIS Express\pic\man.jpg”的一部分。
+------------begin-------------
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   在 System.IO.File.ReadAllBytes(String path)
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 107
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 47
+------------End-------------
+ 
+2023-09-21 15:07:53.4052 Error 未能找到路径“C:\Program Files (x86)\IIS Express\~\pic\woman.jpg”的一部分。
+------------begin-------------
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   在 System.IO.File.ReadAllBytes(String path)
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 111
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 47
+------------End-------------
+ 
+2023-09-21 15:08:30.2943 Info sys_Home-index 
+2023-09-21 15:08:30.8354 Info sys_Home-desktop 
+2023-09-21 15:09:46.4398 Error 对路径“C:\Program Files (x86)\IIS Express”的访问被拒绝。
+------------begin-------------
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   在 System.IO.File.ReadAllBytes(String path)
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 107
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 47
+------------End-------------
+ 
+2023-09-21 15:10:49.9695 Info sys_Home-index 
+2023-09-21 15:10:50.5713 Info sys_Home-desktop 
+2023-09-21 15:11:14.6887 Error 未能找到路径“C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\”的一部分。
+------------begin-------------
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   在 System.IO.File.ReadAllBytes(String path)
+   在 db.bll.NN_user.insert(NN_user model, dbEntities dc, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 107
+   在 web.Areas.employee.Controllers.employeeUserController.Insert(NN_user model, HttpPostedFileBase file) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeUserController.cs:行号 47
+------------End-------------
+ 
+2023-09-21 15:13:16.7215 Info sys_Home-index 
+2023-09-21 15:13:17.2599 Info sys_Home-desktop 
+2023-09-21 15:13:36.0602 Info sys_Home-index 
+2023-09-21 15:13:36.0988 Info sys_Home-desktop 
+2023-09-21 15:17:50.6425 Info sys_Home-index 
+2023-09-21 15:17:51.2018 Info sys_Home-desktop 
+2023-09-21 15:18:54.3659 Info sys_Home-index 
+2023-09-21 15:18:54.4960 Info sys_Home-desktop 
+2023-09-21 15:21:08.3340 Info sys_Home-index 
+2023-09-21 15:21:08.8981 Info sys_Home-desktop 
+2023-09-21 15:31:32.8176 Info sys_Home-index 
+2023-09-21 15:31:32.8689 Info sys_Home-desktop 
+2023-09-21 15:33:20.4532 Info sys_Home-index 
+2023-09-21 15:33:21.0992 Info sys_Home-desktop 
+2023-09-21 15:34:39.3556 Info sys_Home-index 
+2023-09-21 15:34:39.4661 Info sys_Home-desktop 
+2023-09-21 15:44:26.0206 Info sys_Home-index 
+2023-09-21 15:44:26.5472 Info sys_Home-desktop 
+2023-09-21 15:46:35.7523 Info rbac_User-Select 
+2023-09-21 16:08:49.4029 Info sys_Home-index 
+2023-09-21 16:08:49.9639 Info sys_Home-desktop 
+2023-09-21 16:13:00.8418 Info sys_Home-index 
+2023-09-21 16:13:01.4156 Info sys_Home-desktop 
+2023-09-21 16:17:39.9652 Info sys_Home-index 
+2023-09-21 16:17:40.1783 Info sys_Home-desktop 
+2023-09-21 16:18:08.5612 Info sys_Home-index 
+2023-09-21 16:18:09.1184 Info sys_Home-desktop 
+2023-09-21 16:19:08.0114 Info sys_Home-index 
+2023-09-21 16:19:08.5480 Info sys_Home-desktop 
+2023-09-21 16:23:20.0280 Info sys_Home-index 
+2023-09-21 16:23:20.1036 Info sys_Home-desktop 
+2023-09-21 16:27:17.2419 Info sys_Home-index 
+2023-09-21 16:27:17.3836 Info sys_Home-desktop 
+2023-09-21 16:31:48.2057 Info sys_Home-index 
+2023-09-21 16:31:48.7827 Info sys_Home-desktop 
+2023-09-21 16:32:18.5026 Info sys_Home-index 
+2023-09-21 16:32:19.0969 Info sys_Home-desktop 
+2023-09-21 16:33:14.1545 Info sys_Home-index 
+2023-09-21 16:33:14.6689 Info sys_Home-desktop 
+2023-09-21 16:35:25.6238 Info sys_Home-index 
+2023-09-21 16:35:26.1725 Info sys_Home-desktop 
+2023-09-21 16:38:59.1902 Info sys_Home-index 
+2023-09-21 16:38:59.7460 Info sys_Home-desktop 
+2023-09-21 16:42:09.7708 Info sys_Home-index 
+2023-09-21 16:42:09.8226 Info sys_Home-desktop 
+2023-09-21 16:42:36.6077 Info sys_Home-index 
+2023-09-21 16:42:36.6643 Info sys_Home-desktop 
+2023-09-21 16:43:09.5127 Info sys_Home-index 
+2023-09-21 16:43:10.0560 Info sys_Home-desktop 
+2023-09-21 16:43:47.6030 Info sys_Home-index 
+2023-09-21 16:43:48.1294 Info sys_Home-desktop 
+2023-09-21 16:47:14.2704 Info sys_Home-index 
+2023-09-21 16:47:14.8128 Info sys_Home-desktop 
+2023-09-21 16:49:51.1294 Info sys_Home-exit 
+2023-09-21 16:49:53.6816 Info sys_Home-index 
+2023-09-21 16:49:53.7732 Info sys_Home-desktop 
+2023-09-21 16:49:58.5154 Info sys_Home-index 
+2023-09-21 16:49:58.5529 Info sys_Home-desktop 
+2023-09-21 16:49:59.6165 Info sys_Home-index 
+2023-09-21 16:49:59.6511 Info sys_Home-desktop 
+2023-09-21 16:50:02.6504 Info sys_Home-exit 
+2023-09-21 16:50:05.1366 Info sys_Home-index 
+2023-09-21 16:50:05.1706 Info sys_Home-desktop 
+2023-09-21 16:50:06.8730 Info rbac_Role-select 
+2023-09-21 16:50:10.8083 Info rbac_Role-Priv 
+2023-09-21 16:53:05.9278 Info sys_Home-index 
+2023-09-21 16:53:06.5944 Info sys_Home-desktop 
+2023-09-21 16:53:26.7523 Info sys_Home-index 
+2023-09-21 16:53:27.3155 Info sys_Home-desktop 
+2023-09-21 16:53:43.5597 Info sys_Home-index 
+2023-09-21 16:53:44.0818 Info sys_Home-desktop 
+2023-09-21 17:01:27.3801 Info sys_Home-index 
+2023-09-21 17:01:27.4517 Info sys_Home-desktop 
+2023-09-21 17:01:41.9798 Info rbac_Role-select 
+2023-09-21 17:01:44.3350 Info rbac_User-Select 
+2023-09-21 17:01:47.9102 Info rbac_User-Priv 
+2023-09-21 17:01:52.2360 Info rbac_User-Priv 
+2023-09-21 17:01:54.1940 Info sys_Home-exit 
+2023-09-21 17:01:56.1762 Info sys_Home-index 
+2023-09-21 17:01:56.2132 Info sys_Home-desktop 
+2023-09-21 17:01:58.6316 Info sys_Home-index 
+2023-09-21 17:01:58.6673 Info sys_Home-desktop 
+2023-09-21 17:01:58.8393 Info sys_Home-index 
+2023-09-21 17:01:58.8735 Info sys_Home-desktop 
+2023-09-21 17:01:59.0119 Info sys_Home-index 
+2023-09-21 17:01:59.0479 Info sys_Home-desktop 
+2023-09-21 17:01:59.1617 Info sys_Home-index 
+2023-09-21 17:01:59.1970 Info sys_Home-desktop 
+2023-09-21 17:01:59.3078 Info sys_Home-index 
+2023-09-21 17:01:59.3418 Info sys_Home-desktop 
+2023-09-21 17:02:07.6105 Info sys_Home-index 
+2023-09-21 17:02:07.6569 Info sys_Home-desktop 
+2023-09-21 17:02:10.1346 Info sys_Home-exit 
+2023-09-21 17:02:11.7390 Info sys_Home-index 
+2023-09-21 17:02:11.7786 Info sys_Home-desktop 
+2023-09-21 17:02:14.0301 Info af_AuditPost-Select 
+2023-09-21 17:02:14.6928 Info rbac_User-Select 
+2023-09-21 17:02:16.2064 Info rbac_User-Priv 
+2023-09-21 17:02:20.1472 Info rbac_User-Priv 
+2023-09-21 17:02:20.4867 Info rbac_User-Priv 
+2023-09-21 17:02:20.6468 Info rbac_User-Priv 
+2023-09-21 17:02:20.8184 Info rbac_User-Priv 
+2023-09-21 17:02:20.9542 Info rbac_User-Priv 
+2023-09-21 17:02:25.5904 Info rbac_User-Priv 
+2023-09-21 17:02:27.5593 Info rbac_User-Priv 
+2023-09-21 17:02:27.7306 Info rbac_User-Priv 
+2023-09-21 17:02:27.8913 Info rbac_User-Priv 
+2023-09-21 17:02:28.0499 Info rbac_User-Priv 
+2023-09-21 17:02:28.1997 Info rbac_User-Priv 
+2023-09-21 17:02:28.3635 Info rbac_User-Priv 
+2023-09-21 17:02:28.5091 Info rbac_User-Priv 
+2023-09-21 17:02:33.8411 Info sys_Home-exit 
+2023-09-21 17:02:36.2186 Info sys_Home-index 
+2023-09-21 17:02:36.2559 Info sys_Home-desktop 
+2023-09-21 17:02:40.0591 Info sys_Home-index 
+2023-09-21 17:02:40.0932 Info sys_Home-desktop 
+2023-09-21 17:02:40.2499 Info sys_Home-index 
+2023-09-21 17:02:40.2849 Info sys_Home-desktop 
+2023-09-21 17:02:40.4093 Info sys_Home-index 
+2023-09-21 17:02:40.4433 Info sys_Home-desktop 
+2023-09-21 17:02:40.5706 Info sys_Home-index 
+2023-09-21 17:02:40.6061 Info sys_Home-desktop 
+2023-09-21 17:02:41.7695 Info sys_Home-exit 
+2023-09-21 17:02:43.9024 Info sys_Home-index 
+2023-09-21 17:02:43.9324 Info sys_Home-desktop 
+2023-09-21 17:02:46.4679 Info rbac_User-Select 
+2023-09-21 17:02:47.1289 Info af_AuditPost-Select 
+2023-09-21 17:02:48.8723 Info rbac_User-Select 
+2023-09-21 17:02:54.5201 Info rbac_User-PrivShow 
+2023-09-21 17:02:57.7115 Info rbac_User-Priv 
+2023-09-21 17:02:59.2967 Info rbac_User-Priv 
+2023-09-21 17:03:00.3430 Info rbac_User-Priv 
+2023-09-21 17:03:01.4021 Info rbac_User-Priv 
+2023-09-21 17:03:02.2628 Info rbac_User-Priv 
+2023-09-21 17:03:06.4803 Info rbac_User-Priv 
+2023-09-21 17:03:06.9230 Info rbac_User-Priv 
+2023-09-21 17:03:07.1109 Info rbac_User-Priv 
+2023-09-21 17:03:07.2578 Info rbac_User-Priv 
+2023-09-21 17:03:07.7047 Info rbac_User-Priv 
+2023-09-21 17:03:08.2028 Info rbac_User-Priv 
+2023-09-21 17:03:08.4978 Info rbac_User-Priv 
+2023-09-21 17:03:11.3634 Info rbac_User-Priv 
+2023-09-21 17:03:13.4112 Info rbac_User-select 
+2023-09-21 17:03:17.3646 Info rbac_User-Detail 
+2023-09-21 17:03:27.5835 Info rbac_User-Priv 
+2023-09-21 17:03:29.8393 Info rbac_User-Priv 
+2023-09-21 17:03:30.3141 Info rbac_User-Priv 
+2023-09-21 17:03:30.4946 Info rbac_User-Priv 
+2023-09-21 17:03:30.6597 Info rbac_User-Priv 
+2023-09-21 17:03:30.8136 Info rbac_User-Priv 
+2023-09-21 17:03:33.8915 Info rbac_Role-select 
+2023-09-21 17:03:34.4262 Info rbac_User-Select 
+2023-09-21 17:03:34.9582 Info af_AuditPost-Select 
+2023-09-21 17:03:35.3799 Info rbac_User-Select 
+2023-09-21 17:03:39.3360 Info rbac_User-Priv 
+2023-09-21 17:03:42.5499 Info rbac_User-Priv 
+2023-09-21 17:03:45.5205 Info af_AuditPost-Select 
+2023-09-21 17:03:53.2520 Info af_AuditPostUser-Select 
+2023-09-21 17:03:54.2489 Info af_AuditType-select 
+2023-09-21 17:03:55.2583 Info af_AuditFlow-select 
+2023-09-21 17:03:56.3898 Info af_AuditCenter-select 
+2023-09-21 17:03:57.2014 Info af_AuditPost-Select 
+2023-09-21 17:03:57.7546 Info rbac_Role-select 
+2023-09-21 17:04:00.3290 Info rbac_Role-LinkUsers 
+2023-09-21 17:04:00.7910 Info rbac_Role-SelectLinkUsers 
+2023-09-21 17:04:00.8060 Info rbac_Role-SelectNoLinkUsers 
+2023-09-21 17:04:07.4692 Info rbac_User-Select 
+2023-09-21 17:04:10.1693 Info rbac_User-Priv 
+2023-09-21 17:04:13.4967 Info rbac_User-Priv 
+2023-09-21 17:04:13.9312 Info rbac_User-Priv 
+2023-09-21 17:04:14.1046 Info rbac_User-Priv 
+2023-09-21 17:04:14.2705 Info rbac_User-Priv 
+2023-09-21 17:04:14.4286 Info rbac_User-Priv 
+2023-09-21 17:04:17.0792 Info sys_Home-index 
+2023-09-21 17:04:17.1191 Info sys_Home-desktop 
+2023-09-21 17:04:23.8454 Info rbac_User-Select 
+2023-09-21 17:04:30.1209 Info rbac_User-Priv 
+2023-09-21 17:04:32.3064 Info rbac_User-Priv 
+2023-09-21 17:04:33.0427 Info rbac_User-Priv 
+2023-09-21 17:04:34.4883 Info rbac_User-Priv 
+2023-09-21 17:04:35.6896 Info rbac_User-Priv 
+2023-09-21 17:04:36.9881 Info rbac_User-Priv 
+2023-09-21 17:04:38.3207 Info rbac_User-Priv 
+2023-09-21 17:04:41.2008 Info rbac_User-Priv 
+2023-09-21 17:04:43.3045 Info rbac_User-Priv 
+2023-09-21 17:04:46.7108 Info rbac_User-Priv 
+2023-09-21 17:04:48.2903 Info rbac_User-Priv 
+2023-09-21 17:04:49.5200 Info rbac_User-Priv 
+2023-09-21 17:04:52.7296 Info rbac_User-Priv 
+2023-09-21 17:04:54.9657 Info rbac_User-Priv 
+2023-09-21 17:04:56.6706 Info rbac_User-Priv 
+2023-09-21 17:04:59.4669 Info rbac_User-Priv 
+2023-09-21 17:05:02.1513 Info rbac_Module-select 
+2023-09-21 17:05:04.9197 Info rbac_Resource-select 
+2023-09-21 17:05:07.2008 Info rbac_Resource-Update 
+2023-09-21 17:05:07.2456 Info rbac_ResourceOp-SelectPartial 
+2023-09-21 17:05:07.4917 Info sys_BillAttach-SelectPartial 
+2023-09-21 17:05:08.7827 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-21 17:05:08.8056 Info rbac_ResourceOp-SelectPartial 
+2023-09-21 17:05:10.0828 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-21 17:05:10.0941 Info rbac_ResourceOp-SelectPartial 
+2023-09-21 17:05:10.8078 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-21 17:05:10.8194 Info rbac_ResourceOp-SelectPartial 
+2023-09-21 17:05:11.8424 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-21 17:05:11.8538 Info rbac_ResourceOp-SelectPartial 
+2023-09-21 17:05:14.5144 Info rbac_ResourceOp-InsertFromCheck 
+2023-09-21 17:05:14.5236 Info rbac_ResourceOp-SelectPartial 
+2023-09-21 17:05:17.4757 Info rbac_Resource-Update 
+2023-09-21 17:05:17.5502 Info rbac_ResourceOp-SelectPartial 
+2023-09-21 17:05:19.2148 Info rbac_Resource-Select 
+2023-09-21 17:05:22.5886 Info rbac_User-Select 
+2023-09-21 17:05:26.5318 Info rbac_User-Priv 
+2023-09-21 17:05:28.8486 Info rbac_User-Priv 
+2023-09-21 17:05:30.4056 Info rbac_User-Priv 
+2023-09-21 17:05:31.2975 Info rbac_User-Priv 
+2023-09-21 17:05:32.9497 Info sys_Home-exit 
+2023-09-21 17:05:36.6507 Info sys_Home-index 
+2023-09-21 17:05:36.6894 Info sys_Home-desktop 
+2023-09-21 19:53:18.0191 Info sys_Home-index 
+2023-09-21 19:53:20.6479 Info sys_Home-index 
+2023-09-21 19:53:20.6912 Info sys_Home-desktop 
+2023-09-21 19:53:48.7624 Info sys_Home-exit 
+2023-09-21 19:53:52.4279 Info sys_Home-index 
+2023-09-21 19:53:52.4631 Info sys_Home-desktop 

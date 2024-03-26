@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>用户登录</title>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>@ViewBag.Title</title>
+    @*字体库*@
+    <link href="@Url.Content("~/content/fontawesome/css/font-awesome.min.css")" rel="stylesheet" type="text/css" />
+
+    @*jquery*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery-1.12.4.min.js")></script>
+    @*easyUI*@
+    <link href="@Url.Content("~/content/easyui/icon.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/content/easyui/bootstrap/easyui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/easyui/jquery.easyui.js")"></script>
+    @*layui*@
+    <link href="@Url.Content("~/content/layui/css/layui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/layui/layui.js")"></script>
+    @*chosen*@
+    <link href="@Url.Content("~/content/chosen/chosen.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/chosen/jquery.chosen.js")"></script>
+    @*jquery.validate*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate-vsdoc.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.message.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.unobtrusive.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.metadata.js")></script>
+    @*jquery库*@
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.ajaxfileupload.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.tableInput.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/my97DatePicker/WdatePicker.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.form.js")"></script>
+
+    @*自己的样式代码*@
+    <link href="@Url.Content("~/content/fontawesome/css/rui.button.css"+rui.configHelper.ctxKey)" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/content/css/rui.layout.css"+rui.configHelper.ctxKey)" rel="stylesheet" type="text/css" />
+
+    @*md5 swipter*@
+    <script type="text/javascript" src="@Url.Content("~/Content/scripts/jquery.md5.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/swiper/swiper.jquery.min.js")"></script>
+
+    @*自己封装的js*@
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.tools.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/fontawesome/rui.button.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.modelDialog.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.dropDownList.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.bill.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.cbxMulSelected.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_rui.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_lay.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.pager.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.layout.js"+rui.configHelper.ctxKey)></script>
+
+</head>
+<body>
+    <div>
+        <div class="login-container">
+            <div class="image-container"></div>
+            <div class="login-content">
+                <h2>登录</h2>
+                <label>账号:</label>
+                <input type="text" placeholder="请输入账号" id="userName"><br>
+                <label>密码:</label>
+                <input type="password" placeholder="请输入密码" id="password"><br>
+                <button id="login">登录</button>
+                <button id="register">注册</button>
+                <button id="back">返回</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<script>
+    $(document).ready(function () {
+        if (@ViewBag.type == 1) {
+            showInfo("注册成功，快来登录吧！");
+        }
+        var login = document.getElementById("login");
+        var register = document.getElementById("register");
+        var back = document.getElementById("back");
+        //给这三个添加事件监听
+        //登录
+        login.addEventListener("click", function () {
+            var userID = $("#userName").val();
+            var password = md5($("#password").val());
+            ajaxPost("login_", { userID: userID, password: password }, function (data) {
+                if (data.result == "True") {
+                    top.location.href = "../clientHome/index";
+                }
+                else {
+                    showError(data.message);
+                }
+            });
+            return false;
+        });
+        //注册
+        register.addEventListener("click", function () {
+            window.open('../clientRegister/register');
+        });
+        //返回导航页
+        back.addEventListener("click", function () {
+            window.open('../../Login/Home', "_self");
+        });
+    });
+</script>
+
+<style>
+    body {
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .login-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        padding: 40px;
+        text-align: center;
+        display: flex; /* 使用 Flex 布局 */
+        align-items: center; /* 垂直居中 */
+        width: 700px;
+    }
+
+    .image-container {
+        background-image: url("/Resource/Pic/Home.png"); /* 替换为您的图片URL */
+        background-size: cover;
+        border-radius: 10px;
+        width: 300px;
+        height: 300px;
+        margin-right: 20px; /* 设置图片窗口和登录窗口的间距 */
+    }
+
+    .login-content {
+        text-align: left; /* 登录内容左对齐 */
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: #0073e6;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 32px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+        button:hover {
+            background-color: #005bbf;
+        }
+</style>

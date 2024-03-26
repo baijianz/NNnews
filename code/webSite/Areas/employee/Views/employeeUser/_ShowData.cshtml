@@ -1,0 +1,135 @@
+﻿@*数据展示的公用视图*@
+@model rui.pagerBase
+@{ string ctrl = ViewContext.RouteData.Values["controller"].ToString(); }
+<input type="hidden" class="pagerinfo" data-rowcount="@Model.RowCount" data-pagesize="@Model.PageSize"
+       data-pageindex="@Model.PageIndex" data-pagecount="@Model.PageCount"
+       data-orderfield="@Model.OrderField" data-orderway="@Model.OrderWay" />
+<table>
+    <thead>
+        <tr>
+            @foreach (System.Data.DataRow row in Model.showColumn.Rows)
+            {
+                string colName = row["fieldCode"].ToString();
+                if (row["isOrder"].ToString() == "True")
+                {
+                    <th data-option="@row["optionValue"]" data-field="@row["fieldCode"]" data-order="@Model.OrderWay">@row["fieldName"]@Html.orderColumn(Model.OrderField, Model.OrderWay, row["fieldCode"].ToString())</th>
+                }
+                else
+                {
+                    if (colName == "password") { continue; }
+                    <th data-option="@row["optionValue"]">@row["fieldName"]</th>
+                }
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.dataTable.Rows.Count; i++)
+        {
+            string rowID = Model.dataTable.Rows[i]["rowID"].ToString();
+            string keyCode = Model.dataTable.Rows[i][Model.keyField].ToString();
+        <tr data-code="@keyCode">
+            @foreach (System.Data.DataRow row in Model.showColumn.Rows)
+            {
+                string colName = row["fieldCode"].ToString();
+                if (colName == "操作")
+                {
+                    <td class="opRow">
+                        @Html.ActionLink("详情", "Detail", new { rowID = rowID }, new { data_show = rui.privCtl.isPriv(ctrl, rui.privCtl.eOp.Detail), @class = "showDialog" })
+                        @Html.ActionLink("修改", "Update", new { rowID = rowID }, new { data_show = rui.privCtl.isPriv(ctrl, rui.privCtl.eOp.Update), @class = "showDialogR" })
+                        @Html.ActionLink("删除", "Delete", new { rowID = rowID }, new { data_show = rui.privCtl.isPriv(ctrl, rui.privCtl.eOp.Delete), @class = "listDelete" })
+                        @Html.ActionLink("改变账号状态", "ChangeState", new { rowID = rowID }, new { data_show = rui.privCtl.isPriv(ctrl, rui.privCtl.eOp.Update), @class = "listOp", data_msg = "确认改变？" })
+                    </td>
+                }
+                else if (colName == "profile")
+                {
+                    <td>
+
+                        <img style="width:30px;height:30px;" src="data:jpg/jpeg;base64,@Convert.ToBase64String((byte[])Model.dataTable.Rows[i][colName])" alt="图像">
+                    </td>
+                }
+                else if (colName == "password")
+                {
+                    continue;
+                }
+                else if (colName == "gender")
+                {
+                    if (Convert.ToBoolean(Model.dataTable.Rows[i][colName]) == true)
+                    {
+                        <td>女</td>
+                    }
+                    else
+                    {
+                        <td>男</td>
+                    }
+                }
+                else if (colName == "birth")
+                {
+                    <td>@db.bll.NN_user.getAge(Convert.ToDateTime(@Model.dataTable.Rows[i][colName]))</td>
+                }
+                else if (colName == "type")
+                {
+                    if (Convert.ToBoolean(Model.dataTable.Rows[i][colName]) == false)
+                    {
+                        <td>普通用户</td>
+                    }
+                    else
+                    {
+                        <td>内容创作者</td>
+                    }
+                }
+                else if (colName == "newsAgencyID")
+                {
+                    if (Model.dataTable.Rows[i][colName].ToString() == "")
+                    {
+                        <td>无</td>
+                    }
+                    else
+                    {
+                        <td>@db.bll.NN_user.getNewsAgencyByAgencyID(Convert.ToString(Model.dataTable.Rows[i][colName]))</td>
+                    }
+                }
+                else if (colName == "status")
+                {
+                    if (Convert.ToBoolean(Model.dataTable.Rows[i][colName]) == false)
+                    {
+                        <td>正常</td>
+                    }
+                    else
+                    {
+                        <td>封禁</td>
+                    }
+                }
+                else
+                {
+                    <td>@Model.dataTable.Rows[i][colName]</td>
+                }
+            }
+        </tr>
+        }
+        @if (Model.sumRow.Count > 0)
+        {
+            <tr class="sumRow">
+                @foreach (System.Data.DataRow row in Model.showColumn.Rows)
+                {
+                    string colName = row["fieldCode"].ToString();
+                    if (colName == "序号")
+                    {
+                        <td>汇总</td>
+                    }
+                    else if (Model.sumRow.ContainsKey(colName))
+                    {
+                        <td>@Model.sumRow[colName]</td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+

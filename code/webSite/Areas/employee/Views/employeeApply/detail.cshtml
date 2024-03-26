@@ -1,0 +1,91 @@
+﻿@model db.NN_apply
+
+@{
+	ViewBag.Title = "detail";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+	@Html.ValidationSummary(true)
+
+<div class="dialog">
+    <div class="editor-label hide">
+        @Html.LabelFor(model => model.rowID)
+    </div>
+    <div class="editor-field hide">
+        @Html.EditorFor(model => model.rowID)
+        @Html.ValidationMessageFor(model => model.rowID)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.userID)
+    </div>
+    <div class="editor-field read">
+        @Html.EditorFor(model => model.userID)
+        @Html.ValidationMessageFor(model => model.userID)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.type)  @*申请类型*@
+    </div>
+    <div class="editor-field read">
+        @Html.DropDownListFor(model => model.type, db.bll.NN_apply.bind类型__(false))
+        @Html.ValidationMessageFor(model => model.type)
+    </div>
+
+    <div class="editor-label">
+        @Html.Label("申请的机构(如有)")
+    </div>
+    <div class="editor-field read">
+        @{ if (Model.newsAgencyID != null)
+            {
+                @Html.TextBox("FieldName", db.bll.NN_NewsAgency.getNewsAgencyNameByID(Model.newsAgencyID))
+            }
+            else
+            {
+                @Html.TextBox("FieldName", " ")
+            }
+        }
+        @Html.ValidationMessageFor(model => model.newsAgencyID)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.applicationDateTime)
+    </div>
+    <div class="editor-field read">
+        @Html.EditorFor(model => model.applicationDateTime)
+        @Html.ValidationMessageFor(model => model.applicationDateTime)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.disposeTime)
+    </div>
+    <div class="editor-field read">
+        @Html.EditorFor(model => model.disposeTime)
+        @Html.ValidationMessageFor(model => model.disposeTime)
+    </div>
+
+    <div class="editor-label">
+        @*状态*@
+    @Html.LabelFor(model => model.status)
+</div>
+<div class="editor-field read">
+    @Html.DropDownListFor(model => model.status, db.bll.NN_apply.bind处理状态(false))
+    @Html.ValidationMessageFor(model => model.status)
+</div>
+
+
+<fieldset>
+    <legend>@Html.LabelFor(model => model.data)</legend>
+    <div style="padding:3px; text-indent:2em;line-height:3ex;width:100%;">
+        @Html.Raw(Model.data)
+    </div>
+</fieldset>
+
+    <p class="button">
+        <a class="billSave opSave" data-close="true">保存</a>
+        <a class="opClose">关闭</a>
+    </p>
+</div>
+}

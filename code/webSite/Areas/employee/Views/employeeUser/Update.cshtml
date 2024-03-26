@@ -1,0 +1,225 @@
+﻿@model db.NN_user
+
+@{
+    ViewBag.Title = "Update";
+}
+
+@using (Html.BeginForm(new { enctype = "multipart / form - data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+
+    <div class="editor-label hide">
+        @Html.LabelFor(model => model.rowID)
+    </div>
+    <div class="editor-field hide">
+        @Html.EditorFor(model => model.rowID, new { htmlAttributes = new { @id = "ID" } })
+        @Html.ValidationMessageFor(model => model.rowID)
+    </div>
+
+    <div class="editor-label hide">
+        @Html.LabelFor(model => model.rowNum)
+    </div>
+    <div class="editor-field hide">
+        @Html.EditorFor(model => model.rowNum)
+        @Html.ValidationMessageFor(model => model.rowNum)
+    </div>
+
+    <div class="dialog">
+        <div class="editor-label">
+            <!--用户ID-->
+            @Html.LabelFor(model => model.userID)
+        </div>
+        <div class="editor-field read">
+            @Html.EditorFor(model => model.userID)
+            @Html.ValidationMessageFor(model => model.userID)
+        </div>
+
+
+        <div class="editor-label">
+            <!--用户昵称-->
+            @Html.LabelFor(model => model.userName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.userName)
+            @Html.ValidationMessageFor(model => model.userName)
+        </div>
+
+        <div class="editor-label">
+            <!--老头像-->
+            @Html.Label("现头像")
+        </div>
+        <div class="editor-field">
+            <img class="newLine" style="width:30px;height:25px;" src="data:jpg/jpeg;base64,@Convert.ToBase64String((byte[])Model.profile)" alt="图像">
+            @Html.ValidationMessageFor(model => model.profile)
+        </div>
+
+        <div class="editor-label">
+            <!--新头像-->
+            @Html.Label("新头像")
+        </div>
+        <div class="editor-field">
+            <input type="file" name="newProfile" class="newLine">
+            @Html.ValidationMessageFor(model => model.profile)
+        </div>
+
+
+        <div class="editor-label">
+            <!--注册时间-->
+            @Html.LabelFor(model => model.registerDateTime)
+        </div>
+        <div class="editor-field read">
+            @Html.EditorFor(model => model.registerDateTime)
+            @Html.ValidationMessageFor(model => model.registerDateTime)
+        </div>
+
+        <div class="editor-label">
+            <!--密码-->
+            @Html.LabelFor(model => model.password)
+        </div>
+        <div class="editor-field read">
+            @Html.TextBox("password", "**********", new { type = "password", @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.password)
+        </div>
+
+        <div class="editor-label">
+            <!--性别-->
+            @Html.LabelFor(model => model.gender)
+        </div>
+        <div class="editor-field">
+            <input type="radio" name="gender" value=false id="gender_male">
+            <label for="gender_male">男</label>
+            <input type="radio" name="gender" value=true id="gender_female">
+            <label for="gender_female">女</label>
+
+            @{
+                if (!Model.gender)
+                {
+                    <script type="text/javascript">
+                        var obj = document.getElementById("gender_male");
+                        obj.checked = true;
+                    </script>
+                }
+                else
+                {
+                    <script type="text/javascript">
+                        var obj = document.getElementById("gender_female");
+                        obj.checked = true;
+                    </script>
+                }
+            }
+            @Html.ValidationMessageFor(model => model.gender)
+        </div>
+
+        <div class="editor-label">
+            <!--出生日期-->
+            @Html.LabelFor(model => model.birth)
+        </div>
+        <div class="editor-field">
+
+            <input type="date" value=@Model.birth.ToString("yyyy-MM-dd")>
+            @Html.ValidationMessageFor(model => model.birth)
+        </div>
+
+        <div class="editor-label">
+            <!--用户类型-->
+            @Html.LabelFor(model => model.type)
+        </div>
+        <div class="editor-field">
+            @{
+                @Html.DropDownListFor(model => model.type, db.bll.NN_user.bind用户类型(false, Model.type.ToString()), new { id = "userType", onclick = "changeDropListValue()" });
+            }
+
+            @Html.ValidationMessageFor(model => model.type)
+        </div>
+
+        <div class="editor-label">
+            <!--视频创作者机构-->
+            @Html.LabelFor(model => model.newsAgencyID)
+        </div>
+        <div class="editor-field">
+            @{
+                @Html.DropDownListFor(model => model.newsAgencyID, db.bll.NN_user.bind机构(false, Model.newsAgencyID), new { id = "SetnewAgencyID", @class = "userReadonly" })
+            }
+            @Html.ValidationMessageFor(model => model.newsAgencyID)
+        </div>
+
+        <div class="editor-label">
+            <!--账号状态-->
+            @Html.LabelFor(model => model.status)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("status", db.bll.NN_user.bind账号状态(false, Model.status.ToString()))
+            @Html.ValidationMessageFor(model => model.status)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.remark)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.remark)
+            @Html.ValidationMessageFor(model => model.remark)
+        </div>
+
+        <p class="button">
+            <a class="billSave opSave" data-close="true">保存</a>
+            <a class="opClose">关闭</a>
+        </p>
+    </div>
+
+    <style type="text/css">
+
+        .userReadonly {
+            pointer-events: none;
+            opacity: 0.5; /* 可选：降低不透明度以表示禁用状态 */
+        }
+    </style>
+
+    <script type="text/javascript">
+
+             //联动获取图书下拉框的值
+                $("#userType").change(function () {
+                    var type = $("#userType").val();
+                    var rowID = $("#ID").val();
+                    if (true) {
+                        ajaxPost("/employee/employeeUser/getNewsAgencyDdl", { type: type, rowID: rowID }, function (data) {
+                            showJsonResult(data, function () {
+                                updateDdl($("#SetnewAgencyID"), parseJSON(data.newAgencysList), false);
+                            });
+                        });
+                    }
+                });
+                //页面加载后代码触发图书类型的change事件
+                $("#userType").trigger("change");
+
+
+        // 在页面完全加载后执行代码
+        window.addEventListener("DOMContentLoaded", function () {
+            // 获取下拉框和另一个控件的引用
+            var dropdown = document.getElementById("userType");
+            var otherControl = document.getElementById("SetnewAgencyID");
+            var selectedValue = dropdown.value;
+            if (selectedValue === "1") {
+                otherControl.classList.remove("userReadonly");
+            } else {
+                otherControl.classList.add("userReadonly");
+            }
+        
+            // 添加一个事件监听器，当下拉框的值发生变化时触发
+            dropdown.addEventListener("change", function () {
+                // 获取选中的值
+                var selectedValue = dropdown.value;
+
+                // 检查选中的值是否是特定的值，例如 "1"
+                if (selectedValue === "1") {
+                    // 如果是特定值，使另一个控件可编辑
+                    otherControl.classList.remove("userReadonly");
+                } else {
+                    // 否则，将另一个控件设置为只读
+                    otherControl.classList.add("userReadonly");
+                }
+            });
+        });
+    </script>
+}

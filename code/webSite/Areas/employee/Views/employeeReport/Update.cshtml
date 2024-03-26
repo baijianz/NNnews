@@ -1,0 +1,141 @@
+﻿@model db.view.NN_report_userly
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+
+
+<div class="dialog">
+
+    <div class="display-label">
+        @Html.DisplayNameFor(a => a.report.reportID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(a => a.report.reportID, new { htmlAttributes = new { id = "reportID" } })
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(a => a.report.category)
+    </div>
+    <div class="display-field read">
+        @Html.DropDownListFor(a => a.report.category, db.bll.NN_report.bind举报类别(false))
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(a => a.report.commentID)
+    </div>
+    <div class="display-field read">
+        @Html.DisplayFor(a => a.report.commentID)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(a => a.report.newsID)
+    </div>
+    <div class="display-field read">
+        @Html.DisplayFor(a => a.report.newsID)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(a => a.report.userID)
+    </div>
+    <div class="display-field read">
+        @Html.DisplayFor(a => a.report.userID)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayName("用户昵称")
+    </div>
+    <div class="display-field read">
+        @Html.Label(db.bll.NN_user.getUserNameByUserID(Model.report.userID))
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(a => a.report.reportTimeDateTime)
+    </div>
+    <div class="display-field read">
+        @Html.DisplayFor(a => a.report.reportTimeDateTime)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(a => a.report.disposeStatus)
+    </div>
+    <div class="display-field read">
+        @Html.DropDownListFor(a => a.report.disposeStatus, db.bll.NN_report.bind处理状态(false))
+    </div>
+
+
+
+    <fieldset>
+        <legend>相关新闻内容</legend>
+        <div style="padding:3px; text-indent:2em;line-height:3ex;width:100%;">
+            @Html.Raw(Model.news.content)
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>相关评论内容</legend>
+        <div style="padding:3px; text-indent:2em;line-height:3ex;width:100%;">
+            @Html.Raw(db.bll.NN_comment.getContentByID(Model.report.commentID))
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>举报原因</legend>
+        <div style="padding:3px; text-indent:2em;line-height:3ex;width:100%;">
+            @Html.Raw(Model.report.reason)
+        </div>
+    </fieldset>
+
+    <p style="text-align: center;">
+        <input type="button" value="封禁相关内容" id="myButtonBan">
+        <input type="button" value="符合社区规范" id="myButtonPass">
+        <input type="button" value="关闭" id="myButtonClose">
+    </p>
+</div>
+
+<script>
+    // 获取按钮元素
+    var myButtonBan = document.getElementById("myButtonBan");
+    var myButtonPass = document.getElementById("myButtonPass");
+    var myButtonClose = document.getElementById("myButtonClose");
+    
+    // 添加点击事件处理程序
+
+    window.addEventListener("load", function () {
+        // 通过元素的 id 获取显示的值
+        var reportID = "@Model.report.reportID";
+        myButtonBan.addEventListener("click", function () {
+            $.ajax({
+                url: "reportBan",
+                type: "post",
+                data: {reportID },
+                success: function (data) {
+                    autoClosed();
+                },
+                error: function (error) {
+                }
+            });
+        });
+
+        myButtonPass.addEventListener("click", function () {
+            $.ajax({
+                url: "reportPass",
+                type: "post",
+                data: { reportID },
+                success: function (data) {
+                    autoClosed();
+                },
+                error: function (error) {
+                }
+            });
+        });
+
+        myButtonClose.addEventListener("click", function () {
+            autoClosed();
+        });
+    });
+    
+</script>
+
+

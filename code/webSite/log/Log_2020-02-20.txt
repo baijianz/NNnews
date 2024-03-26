@@ -1,0 +1,725 @@
+2020-02-20 09:17:29.5359 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 09:17:32.1808 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 09:17:33.0008 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 09:17:34.9970 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 09:17:36.5428 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 09:17:36.7969 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 09:17:38.7340 Info web.Areas.admin.Controllers.bks_BookStock-Insert 
+2020-02-20 09:17:42.7058 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 09:17:43.5208 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 09:17:52.9470 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 09:17:53.4150 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 09:18:00.2846 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 09:18:02.6517 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 09:18:09.5907 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 09:18:10.9938 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 09:18:36.5088 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 09:18:36.6558 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 09:18:37.6059 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 09:18:38.8559 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 09:18:39.1049 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 09:18:47.4826 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 09:19:06.5253 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 09:19:13.7215 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 09:42:57.3242 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 09:42:58.1173 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 09:43:00.7954 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-20 09:43:06.7544 Info web.Areas.admin.Controllers.rbac_Resource-Select 
+2020-02-20 09:43:08.5715 Info web.Areas.admin.Controllers.rbac_Resource-Insert 
+2020-02-20 09:43:37.5401 Info web.Areas.admin.Controllers.rbac_Resource-Insert 
+2020-02-20 09:43:37.7692 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 09:43:37.8562 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:43:38.3072 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 09:43:51.3979 Info web.Areas.admin.Controllers.rbac_Resource-Select 
+2020-02-20 09:43:52.5590 Info web.Areas.admin.Controllers.rbac_Resource-Insert 
+2020-02-20 09:44:04.3859 Info web.Areas.admin.Controllers.rbac_Resource-Insert 
+2020-02-20 09:44:04.4119 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 09:44:04.4219 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:44:04.4259 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 09:44:05.8540 Info web.Areas.admin.Controllers.rbac_Resource-Select 
+2020-02-20 09:44:23.6520 Info web.Areas.admin.Controllers.rbac_Resource-Insert 
+2020-02-20 09:44:39.6089 Info web.Areas.admin.Controllers.rbac_Resource-Insert 
+2020-02-20 09:44:39.6329 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 09:44:39.6429 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:44:39.6479 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 09:44:51.6648 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 09:44:51.7858 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 09:44:53.3389 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 09:45:00.1653 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 09:45:03.7655 Info web.Areas.admin.Controllers.bks_Supplier-Select 
+2020-02-20 09:47:51.8541 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 09:50:51.9744 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 09:53:59.6445 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 09:53:59.8135 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 09:54:06.7902 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-20 09:54:10.6869 Info web.Areas.admin.Controllers.rbac_Resource-Select 
+2020-02-20 09:54:24.5540 Info web.Areas.admin.Controllers.rbac_Resource-batchSave 
+2020-02-20 09:54:26.4659 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 09:54:26.5809 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 09:54:29.7159 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 09:54:32.6884 Info web.Areas.admin.Controllers.bks_BookType-Insert 
+2020-02-20 09:54:35.2584 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 09:54:37.6241 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-20 09:54:38.9532 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 09:54:39.1922 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:54:39.2232 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 09:54:45.6086 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 09:54:49.4008 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-20 09:54:51.0245 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 09:54:51.0375 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:54:51.0465 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 09:55:00.2362 Info web.Areas.admin.Controllers.rbac_Resource-Select 
+2020-02-20 09:55:02.0223 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 09:55:02.0333 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:55:02.0403 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 09:55:04.9190 Info web.Areas.admin.Controllers.rbac_ResourceOp-InsertFromCheck 
+2020-02-20 09:55:04.9960 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:55:07.1176 Info web.Areas.admin.Controllers.rbac_ResourceOp-InsertFromCheck 
+2020-02-20 09:55:07.1406 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:55:11.4802 Info web.Areas.admin.Controllers.rbac_Resource-Select 
+2020-02-20 09:55:12.5993 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 09:55:12.6143 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:55:12.6193 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 09:56:04.7155 Info web.Areas.admin.Controllers.rbac_Module-select 
+2020-02-20 09:56:07.7553 Info web.Areas.admin.Controllers.rbac_Module-Update 
+2020-02-20 09:56:09.0734 Info web.Areas.admin.Controllers.rbac_Module-select 
+2020-02-20 09:56:10.1716 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-20 09:56:11.5527 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 09:56:11.5657 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:56:11.5727 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 09:56:14.6625 Info web.Areas.admin.Controllers.rbac_Resource-Select 
+2020-02-20 09:56:16.1383 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 09:56:16.1534 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:56:16.1584 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 09:56:17.5446 Info web.Areas.admin.Controllers.rbac_Resource-Select 
+2020-02-20 09:56:18.9343 Info web.Areas.admin.Controllers.rbac_Resource-Detail 
+2020-02-20 09:56:18.9683 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:56:18.9813 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 09:56:21.6801 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 09:56:21.6921 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:56:21.7001 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 09:56:36.6132 Info web.Areas.admin.Controllers.rbac_Resource-Select 
+2020-02-20 09:56:37.8189 Info web.Areas.admin.Controllers.rbac_Resource-Detail 
+2020-02-20 09:56:37.8259 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:56:37.8319 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 09:57:26.6382 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 09:58:25.8294 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 09:58:26.7034 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 09:58:28.6781 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-20 09:58:30.6263 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 09:58:30.9153 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 09:58:31.3153 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 10:00:25.5596 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 10:00:25.7106 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 10:00:30.4677 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-20 10:00:35.6078 Info web.Areas.admin.Controllers.rbac_Resource-Detail 
+2020-02-20 10:00:35.8688 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 10:00:35.9038 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 10:29:44.6887 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 10:29:44.8407 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 10:29:46.7638 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-20 10:29:48.5109 Info web.Areas.admin.Controllers.rbac_Resource-Detail 
+2020-02-20 10:29:48.7529 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 10:29:48.7859 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 10:29:55.8203 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 10:29:56.0923 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 10:29:58.3954 Info web.Areas.admin.Controllers.rbac_Module-select 
+2020-02-20 10:29:59.6485 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-20 10:30:00.8416 Info web.Areas.admin.Controllers.rbac_Resource-Detail 
+2020-02-20 10:30:00.8526 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 10:30:00.8576 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 10:30:05.8719 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 10:30:05.9439 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 10:30:05.9549 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 10:38:05.4209 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 10:38:05.5849 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 10:38:07.4277 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 10:38:11.6249 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 10:38:13.6464 Info web.Areas.admin.Controllers.bks_BookType-Insert 
+2020-02-20 10:38:16.0179 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 10:40:15.9686 Info web.Areas.admin.Controllers.bks_Press-Update 
+2020-02-20 10:40:19.0462 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 10:40:19.8840 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 10:40:24.0370 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 10:40:25.8159 Info web.Areas.admin.Controllers.bks_Press-Insert 
+2020-02-20 10:40:41.7506 Info web.Areas.admin.Controllers.bks_Press-Insert 
+2020-02-20 10:40:41.9772 Info web.Areas.admin.Controllers.bks_Press-Update 
+2020-02-20 10:40:42.9498 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 10:40:44.4485 Info web.Areas.admin.Controllers.bks_Press-Insert 
+2020-02-20 10:40:55.0837 Info web.Areas.admin.Controllers.bks_Press-Insert 
+2020-02-20 10:40:55.1167 Info web.Areas.admin.Controllers.bks_Press-Update 
+2020-02-20 10:40:55.8007 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 10:40:57.1962 Info web.Areas.admin.Controllers.bks_Press-Insert 
+2020-02-20 10:41:08.3780 Info web.Areas.admin.Controllers.bks_Press-Insert 
+2020-02-20 10:41:08.3936 Info web.Areas.admin.Controllers.bks_Press-Update 
+2020-02-20 10:41:08.9922 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 10:41:11.3027 Info web.Areas.admin.Controllers.bks_Press-Update 
+2020-02-20 10:41:12.4289 Info web.Areas.admin.Controllers.bks_Press-Update 
+2020-02-20 10:41:12.4535 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 10:41:13.8222 Info web.Areas.admin.Controllers.bks_Press-Update 
+2020-02-20 10:41:15.8817 Info web.Areas.admin.Controllers.bks_Press-Update 
+2020-02-20 10:41:15.9073 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 10:41:17.5738 Info web.Areas.admin.Controllers.bks_Press-Update 
+2020-02-20 10:41:20.8215 Info web.Areas.admin.Controllers.bks_Press-Update 
+2020-02-20 10:41:20.8481 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 10:41:23.5875 Info web.Areas.admin.Controllers.bks_Press-Update 
+2020-02-20 10:41:29.2183 Info web.Areas.admin.Controllers.bks_Press-Update 
+2020-02-20 10:41:29.2593 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 11:05:46.9680 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 11:05:47.1180 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 11:05:48.5441 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 11:05:50.7883 Info web.Areas.admin.Controllers.bks_BookType-Insert 
+2020-02-20 11:05:58.2697 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 11:06:28.8374 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 11:06:29.6915 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 11:06:31.0106 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 11:06:32.2396 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 11:06:33.5917 Info web.Areas.admin.Controllers.bks_BookType-Insert 
+2020-02-20 11:06:46.6235 Info web.Areas.admin.Controllers.bks_BookType-Insert 
+2020-02-20 11:06:46.8565 Info web.Areas.admin.Controllers.bks_BookType-Update 
+2020-02-20 11:06:48.8866 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 11:06:50.6887 Info web.Areas.admin.Controllers.bks_BookType-Insert 
+2020-02-20 11:06:59.4052 Info web.Areas.admin.Controllers.bks_BookType-Insert 
+2020-02-20 11:06:59.4242 Info web.Areas.admin.Controllers.bks_BookType-Update 
+2020-02-20 11:07:00.3382 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 11:07:02.1193 Info web.Areas.admin.Controllers.bks_BookType-Insert 
+2020-02-20 11:07:07.6687 Info web.Areas.admin.Controllers.bks_BookType-Insert 
+2020-02-20 11:07:07.6877 Info web.Areas.admin.Controllers.bks_BookType-Update 
+2020-02-20 11:07:08.5167 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 11:07:12.1429 Info web.Areas.admin.Controllers.bks_Supplier-Select 
+2020-02-20 11:07:13.9180 Info web.Areas.admin.Controllers.bks_Supplier-Insert 
+2020-02-20 11:07:30.2579 Info web.Areas.admin.Controllers.bks_Supplier-Insert 
+2020-02-20 11:07:30.2829 Info web.Areas.admin.Controllers.bks_Supplier-Update 
+2020-02-20 11:07:31.6900 Info web.Areas.admin.Controllers.bks_Supplier-Select 
+2020-02-20 11:07:32.7761 Info web.Areas.admin.Controllers.bks_Supplier-Insert 
+2020-02-20 11:07:38.6554 Info web.Areas.admin.Controllers.bks_Supplier-Insert 
+2020-02-20 11:07:38.6884 Info web.Areas.admin.Controllers.bks_Supplier-Update 
+2020-02-20 11:07:39.8375 Info web.Areas.admin.Controllers.bks_Supplier-Select 
+2020-02-20 11:07:44.4338 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-20 11:07:45.9748 Info web.Areas.admin.Controllers.bks_Book-Update 
+2020-02-20 11:07:57.3805 Info web.Areas.admin.Controllers.bks_Book-select 
+2020-02-20 11:09:30.2368 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 11:11:05.8833 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 11:11:06.0353 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 11:11:08.2344 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:11:09.7825 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 11:11:10.0245 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 11:11:16.2689 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:11:18.6450 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 11:11:18.6550 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 11:11:24.0973 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:17:43.6380 Info web.Areas.admin.Controllers.bks_Book-Update 
+2020-02-20 11:17:49.0823 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 11:17:49.9674 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 11:17:51.7715 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:17:53.7506 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 11:17:54.0506 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 11:17:56.9258 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 11:18:04.8602 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 11:18:05.8283 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:47:07.2208 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 11:47:19.7105 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 11:47:19.8675 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 11:47:40.4847 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-20 11:47:45.2720 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:47:46.4040 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 11:47:46.6610 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 11:48:05.8341 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 11:48:18.7059 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 11:48:18.7959 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 11:48:20.5820 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 11:48:28.2484 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:49:16.2191 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 11:49:17.1152 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 11:49:18.3333 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:49:19.9124 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 11:49:20.1704 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 11:49:25.2837 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:54:04.6996 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 11:54:05.5617 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 11:54:06.7657 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:54:08.1958 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 11:54:08.4808 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 11:54:11.2500 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 11:54:39.1166 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:54:42.8018 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 11:54:42.8148 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 11:54:44.7479 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 11:55:20.3540 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:55:37.1779 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 11:55:37.3319 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 11:55:38.8410 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:55:40.4971 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 11:55:40.7581 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 11:55:43.0393 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 11:55:43.1333 Error 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.bks_BookStockDetail.insert(bks_BookStockDetail entry, dbEntities dc) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\dbLibrary\bll\book\bks_BookStockDetail.cs:行号 52
+   在 web.Areas.admin.Controllers.bks_BookStockDetailController.Insert(bks_BookStockDetail model) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\WebSite\Areas\admin\Controllers\bks_BookStockDetailController.cs:行号 50
+-------------------------
+ 
+2020-02-20 11:56:00.5653 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 11:58:11.0617 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 11:58:11.9258 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 11:58:13.0268 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 11:58:14.9289 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 11:58:15.1890 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 11:58:18.5211 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 11:58:19.7062 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 11:58:25.7286 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 11:58:27.8257 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 11:58:27.8827 Error 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。有关了解和处理乐观并发异常的信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=472540。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.bks_BookStockDetail.update(bks_BookStockDetail entry, dbEntities dc) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\dbLibrary\bll\book\bks_BookStockDetail.cs:行号 75
+   在 web.Areas.admin.Controllers.bks_BookStockDetailController.Update(bks_BookStockDetail model) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\WebSite\Areas\admin\Controllers\bks_BookStockDetailController.cs:行号 84
+-------------------------
+ 
+2020-02-20 11:58:27.8847 Error 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。有关了解和处理乐观并发异常的信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=472540。
+-------------------------
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   在 System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+-------------------------
+ 
+2020-02-20 11:58:33.5080 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 11:58:33.5330 Error 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。有关了解和处理乐观并发异常的信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=472540。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.bks_BookStockDetail.update(bks_BookStockDetail entry, dbEntities dc) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\dbLibrary\bll\book\bks_BookStockDetail.cs:行号 75
+   在 web.Areas.admin.Controllers.bks_BookStockDetailController.Update(bks_BookStockDetail model) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\WebSite\Areas\admin\Controllers\bks_BookStockDetailController.cs:行号 84
+-------------------------
+ 
+2020-02-20 11:58:33.5340 Error 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。有关了解和处理乐观并发异常的信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=472540。
+-------------------------
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   在 System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+-------------------------
+ 
+2020-02-20 11:58:37.9303 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 11:58:45.0337 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 11:58:47.1518 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 11:58:47.1678 Error 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。有关了解和处理乐观并发异常的信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=472540。
+-------------------------
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 db.bll.bks_BookStockDetail.update(bks_BookStockDetail entry, dbEntities dc) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\dbLibrary\bll\book\bks_BookStockDetail.cs:行号 75
+   在 web.Areas.admin.Controllers.bks_BookStockDetailController.Update(bks_BookStockDetail model) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\WebSite\Areas\admin\Controllers\bks_BookStockDetailController.cs:行号 84
+-------------------------
+ 
+2020-02-20 11:58:47.1688 Error 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。有关了解和处理乐观并发异常的信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=472540。
+-------------------------
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   在 System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+-------------------------
+ 
+2020-02-20 11:58:51.7830 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 11:58:52.6721 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 12:00:09.8295 Info web.Areas.admin.Controllers.bks_BookStockDetail-Detail 
+2020-02-20 12:00:15.9818 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 12:00:16.1229 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 12:00:18.4200 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 12:00:19.6651 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 12:00:19.9571 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 12:00:22.3482 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 12:00:24.1653 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 12:00:24.2083 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 12:02:03.7560 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 12:02:03.8990 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 12:02:05.0651 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 12:02:06.4882 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 12:02:06.7472 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 12:02:24.0892 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 12:02:25.3202 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 12:03:40.7285 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 12:03:41.5716 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 12:03:42.4676 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 12:03:44.1227 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 12:03:44.3828 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 12:03:46.7739 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 12:03:49.9241 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 12:03:49.9681 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 12:03:51.4322 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 12:03:55.4564 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 12:03:55.4854 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 12:03:57.2875 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 12:04:02.1378 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 12:04:02.1518 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 12:04:28.4433 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 12:04:29.6213 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 12:05:35.4871 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 12:07:52.7549 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 12:07:55.3721 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 12:07:56.2141 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 12:07:58.1803 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 12:08:01.5654 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-20 14:26:10.2631 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:27:24.0942 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 14:27:24.9923 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 14:27:26.4894 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:27:27.8374 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:27:28.1035 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:27:34.5248 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:28:00.2373 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:28:00.2553 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:28:02.4344 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:28:02.9474 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:28:05.8736 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:28:07.2487 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:28:07.2637 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:28:10.8229 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:28:10.8459 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:28:13.0240 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:28:14.4401 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:28:14.4511 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:28:20.7274 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:28:20.7474 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:28:23.6566 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:28:24.9116 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:28:24.9196 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:28:26.6367 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 14:28:28.3698 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 14:28:31.1760 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 14:28:32.2711 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 14:28:33.6221 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 14:28:34.6762 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 14:28:41.9906 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:28:42.5066 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:28:44.4477 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:29:06.8210 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:29:06.8300 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:29:10.7812 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:29:10.8072 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:29:19.8027 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:29:21.1058 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:29:21.1128 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:29:25.0530 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:29:25.0890 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:29:55.7738 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:32:46.3573 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 14:32:46.5583 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 14:32:48.1674 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:32:49.5265 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:32:50.3705 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:32:52.2236 Info web.Areas.admin.Controllers.bks_BookStockDetail-Update 
+2020-02-20 14:32:53.5177 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 14:32:54.8478 Info web.Areas.admin.Controllers.bks_BookStockDetail-Detail 
+2020-02-20 14:33:00.1291 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:33:01.1871 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 14:33:02.1442 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:33:02.6702 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:33:06.5234 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:33:39.3263 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:33:39.3413 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:33:47.6167 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:33:47.6317 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:33:49.0458 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:33:50.3949 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:33:50.4159 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:33:51.7900 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:33:51.8190 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:33:53.2751 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:33:54.9121 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:33:54.9201 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:34:00.7365 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:34:00.7665 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:35:46.7664 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 14:35:48.9125 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 14:35:49.8626 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 14:35:52.0437 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:35:53.4038 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:35:53.6938 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:36:04.1054 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:36:39.9614 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:37:19.8497 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:38:36.5220 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:38:38.8971 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 14:38:39.0651 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 14:38:40.2602 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:38:41.5643 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:38:42.4233 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:38:43.5984 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:38:45.2585 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:38:50.4358 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:38:50.4458 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:38:51.7368 Info web.Areas.admin.Controllers.bks_BookStockDetail-Insert 
+2020-02-20 14:38:53.0309 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:39:51.5662 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:39:52.0302 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:39:53.3793 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:40:04.7829 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 14:40:12.7054 Info web.Areas.admin.Controllers.bks_BookStockDetail-Delete 
+2020-02-20 14:42:06.5289 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 14:42:08.8780 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-20 14:42:11.6062 Info web.Areas.admin.Controllers.bks_Book-Insert 
+2020-02-20 14:42:17.8115 Info web.Areas.admin.Controllers.bks_Book-Insert 
+2020-02-20 14:42:17.8635 Error 未将对象引用设置到对象的实例。
+-------------------------
+   在 rui.stringHelper.codeNext(String code, Int32 NumLength)
+   在 db.bll.bks_Book._createCode(dbEntities dc) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\dbLibrary\bll\book\bks_Books.cs:行号 29
+   在 db.bll.bks_Book.insert(bks_Book entry, dbEntities dc) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\dbLibrary\bll\book\bks_Books.cs:行号 44
+   在 web.Areas.admin.Controllers.bks_BookController.Insert(bks_Book model) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\WebSite\Areas\admin\Controllers\bks_BookController.cs:行号 50
+-------------------------
+ 
+2020-02-20 14:42:20.7847 Info web.Areas.admin.Controllers.bks_Book-Insert 
+2020-02-20 14:42:20.8157 Error 未将对象引用设置到对象的实例。
+-------------------------
+   在 rui.stringHelper.codeNext(String code, Int32 NumLength)
+   在 db.bll.bks_Book._createCode(dbEntities dc) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\dbLibrary\bll\book\bks_Books.cs:行号 29
+   在 db.bll.bks_Book.insert(bks_Book entry, dbEntities dc) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\dbLibrary\bll\book\bks_Books.cs:行号 44
+   在 web.Areas.admin.Controllers.bks_BookController.Insert(bks_Book model) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\WebSite\Areas\admin\Controllers\bks_BookController.cs:行号 50
+-------------------------
+ 
+2020-02-20 14:45:06.7692 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 14:45:24.3742 Info web.Areas.admin.Controllers.bks_Book-select 
+2020-02-20 14:46:26.4997 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 14:46:26.6718 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 14:46:28.0408 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:46:29.2839 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:46:29.5579 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:46:30.5830 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:47:24.6720 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 14:47:32.8955 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:48:14.6858 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 14:48:16.2549 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:48:32.1048 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 14:48:33.9169 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:48:40.0292 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 14:48:41.8723 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:51:02.9152 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 14:51:03.0892 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 14:51:04.1813 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 14:51:05.2663 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 14:51:05.5323 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 14:51:06.4914 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 14:51:25.3194 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 14:51:26.4005 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 15:03:31.4119 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 15:03:39.4193 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 15:03:40.3294 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 15:03:41.7435 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 15:03:43.4996 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 15:03:43.8626 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 15:03:45.5177 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 15:03:48.2638 Info web.Areas.admin.Controllers.bks_BookStockDetail-batchInsert 
+2020-02-20 15:03:48.3188 Error 必须提供关联的入库编号
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 db.bll.bks_BookStockDetail.insert(bks_BookStockDetail entry, dbEntities dc) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\dbLibrary\bll\book\bks_BookStockDetail.cs:行号 46
+   在 db.bll.bks_BookStockDetail.batchInsert(String stockCode, String selectedBooks, dbEntities dc) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\dbLibrary\bll\book\bks_BookStockDetail.cs:行号 72
+   在 web.Areas.admin.Controllers.bks_BookStockDetailController.batchInsert(String stockCode, String selectedBooks) 位置 E:\教学材料  - 笔记本为准\_上课材料\2020 - 综合项目\_MVC5开发框架 - 教学版\code\WebSite\Areas\admin\Controllers\bks_BookStockDetailController.cs:行号 76
+-------------------------
+ 
+2020-02-20 15:04:04.0617 Info web.Areas.admin.Controllers.bks_BookStockDetail-batchInsert 
+2020-02-20 15:05:18.4219 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 15:05:21.0241 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 15:05:21.1811 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 15:05:22.4701 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 15:05:23.5392 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 15:05:24.4092 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 15:05:25.6033 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 15:05:28.1045 Info web.Areas.admin.Controllers.bks_BookStockDetail-batchInsert 
+2020-02-20 15:05:29.5345 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 15:05:34.3508 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 15:06:40.8435 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 15:21:22.2855 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 15:21:27.4948 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 15:21:28.3709 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 15:21:29.5740 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 15:21:31.1040 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 15:21:31.3811 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 15:21:54.9854 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 15:21:57.4125 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 15:21:57.4265 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 15:22:39.4519 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 15:22:43.6381 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 15:22:50.0915 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 15:22:51.1565 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 15:22:51.1695 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 15:22:52.9076 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 15:23:10.2426 Info web.Areas.admin.Controllers.bks_BookStockDetail-batchInsert 
+2020-02-20 15:23:10.3096 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 15:24:28.9020 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 15:25:07.0021 Info web.Areas.admin.Controllers.bks_BookStockDetail-Delete 
+2020-02-20 16:00:29.5756 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 16:00:30.4366 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 16:00:33.4016 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 16:00:34.8439 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 16:00:35.0839 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 16:00:38.4321 Info web.Areas.admin.Controllers.bks_BookStockDetail-Delete 
+2020-02-20 16:00:41.7133 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 16:00:47.9042 Info web.Areas.admin.Controllers.bks_BookStockDetail-Delete 
+2020-02-20 16:00:50.4596 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 16:00:52.2765 Info web.Areas.admin.Controllers.select_Dlg-SelectBook 
+2020-02-20 16:00:54.9904 Info web.Areas.admin.Controllers.bks_BookStockDetail-batchInsert 
+2020-02-20 16:00:55.0434 Info web.Areas.admin.Controllers.bks_BookStockDetail-Select 
+2020-02-20 16:01:01.1730 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 16:01:01.2226 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 16:59:22.2771 Info web.Areas.admin.Controllers.bks_BookStock-Detail 
+2020-02-20 16:59:48.0456 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 16:59:48.9696 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 16:59:50.7247 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 16:59:52.4098 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 16:59:52.6698 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 16:59:53.1249 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 16:59:56.3111 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 16:59:58.1092 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 16:59:58.1222 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 16:59:58.1302 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:00:00.1703 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 17:00:01.1833 Info web.Areas.admin.Controllers.bks_BookStock-Detail 
+2020-02-20 17:00:01.2253 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:00:01.2353 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:00:21.0395 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 17:00:21.0535 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:00:21.0595 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:00:23.5816 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 17:00:36.6994 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 17:00:39.3175 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 17:00:39.4755 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 17:00:41.8317 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 17:00:42.8027 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 17:00:43.0647 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:00:43.1027 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:00:45.6199 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 17:01:26.0442 Info web.Areas.admin.Controllers.bks_BookStock-Detail 
+2020-02-20 17:01:28.6743 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 17:01:28.8233 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 17:01:29.9884 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 17:01:33.3536 Info web.Areas.admin.Controllers.bks_BookStock-Detail 
+2020-02-20 17:01:33.5996 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:01:33.6416 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:05:24.7738 Info web.Areas.admin.Controllers.bks_BookStock-Detail 
+2020-02-20 17:05:27.4460 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 17:05:27.5920 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 17:05:30.2429 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 17:05:31.3510 Info web.Areas.admin.Controllers.bks_BookStock-Detail 
+2020-02-20 17:05:32.1280 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:05:32.1640 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:05:39.7841 Info web.Areas.admin.Controllers.bks_BookStock-Detail 
+2020-02-20 17:05:39.7881 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:05:39.7931 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:06:02.2185 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 17:06:02.2765 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:06:02.2865 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:06:27.5343 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 17:08:59.0805 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 17:08:59.2465 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 17:09:03.6965 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-20 17:09:05.4226 Info web.Areas.admin.Controllers.rbac_Resource-Detail 
+2020-02-20 17:09:05.6686 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 17:09:06.0477 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:09:10.9987 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-20 17:09:11.0597 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-20 17:09:11.0687 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:10:57.6592 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:10:59.8123 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 17:10:59.9603 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 17:11:01.2014 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 17:11:02.3875 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 17:11:03.5125 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:11:03.5675 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:11:08.0466 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 17:11:09.1378 Info web.Areas.admin.Controllers.bks_BookStock-Detail 
+2020-02-20 17:11:09.1718 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:11:09.1828 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:14:06.8728 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:14:50.9748 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 17:14:51.1208 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 17:14:55.3987 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 17:14:57.6228 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 17:14:58.6319 Info web.Areas.admin.Controllers.bks_BookStock-Detail 
+2020-02-20 17:14:58.8699 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:14:58.9089 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:15:06.7879 Info web.Areas.admin.Controllers.bks_BookStock-Detail 
+2020-02-20 17:15:06.7959 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:15:06.8039 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:15:10.3229 Info web.Areas.admin.Controllers.bks_BookStock-Update 
+2020-02-20 17:15:10.3899 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:15:10.4029 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:15:27.6891 Info web.Areas.admin.Controllers.sys_BillAttach-fileUpload 
+2020-02-20 17:15:28.1711 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:16:00.2115 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 17:16:01.2025 Info web.Areas.admin.Controllers.bks_BookStock-Detail 
+2020-02-20 17:16:01.2095 Info web.Areas.admin.Controllers.bks_BookStockDetail-select 
+2020-02-20 17:16:01.2195 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-20 17:49:10.2755 Info web.Areas.admin.Controllers.bks_Book-Detail 
+2020-02-20 17:50:51.9908 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 17:50:52.8989 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 17:50:55.1350 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-20 17:50:57.4682 Info web.Areas.admin.Controllers.bks_Book-Insert 
+2020-02-20 17:51:00.6421 Info web.Areas.admin.Controllers.bks_Book-select 
+2020-02-20 17:51:01.8650 Info web.Areas.admin.Controllers.bks_Book-Update 
+2020-02-20 17:51:13.4520 Info web.Areas.admin.Controllers.bks_Book-select 
+2020-02-20 17:51:15.4319 Info web.Areas.admin.Controllers.bks_Book-Update 
+2020-02-20 17:51:45.6918 Info web.Areas.admin.Controllers.bks_Book-Update 
+2020-02-20 17:51:45.7358 Info web.Areas.admin.Controllers.bks_Book-select 
+2020-02-20 17:51:47.3579 Info web.Areas.admin.Controllers.bks_Book-Update 
+2020-02-20 17:51:49.4210 Info web.Areas.admin.Controllers.bks_Book-select 
+2020-02-20 17:52:10.9684 Info web.Areas.admin.Controllers.bks_Book-Update 
+2020-02-20 17:52:25.4580 Info web.Areas.admin.Controllers.bks_Book-select 
+2020-02-20 17:53:53.4219 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 18:08:24.5349 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 18:08:30.8939 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 18:08:31.7819 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 18:08:38.5725 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 18:09:55.8508 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 18:10:08.8725 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 18:10:09.0215 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 18:10:10.6406 Info web.Areas.admin.Controllers.bks_BookStock-Select 
+2020-02-20 18:10:11.6706 Info web.Areas.admin.Controllers.bks_Press-Select 
+2020-02-20 18:10:32.9034 Info web.Areas.admin.Controllers.comm.sys_ExlImport-Import 
+2020-02-20 18:10:41.6193 Info web.Areas.admin.Controllers.comm.sys_ExlImport-ImportUpload 
+2020-02-20 18:10:41.9533 Info web.Areas.admin.Controllers.comm.sys_ExlImport-disPlayImport 
+2020-02-20 18:13:09.1558 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 18:26:03.8006 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-20 18:26:08.2786 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 18:26:09.1247 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 18:26:11.7989 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 18:26:14.5758 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-20 18:26:16.9989 Info web.Areas.admin.Controllers.bks_Book-SelectExport 
+2020-02-20 18:28:18.0062 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-20 18:28:18.8743 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-20 18:28:21.1702 Info web.Areas.admin.Controllers.bks_BookType-Select 
+2020-02-20 18:28:26.2727 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-20 18:28:28.3278 Info web.Areas.admin.Controllers.bks_Book-SelectExport 

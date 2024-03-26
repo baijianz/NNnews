@@ -1,0 +1,37 @@
+2019-11-08 21:34:57.3298 Info sys_Home-index 
+2019-11-08 21:34:58.7679 Info sys_Home-desktop 
+2019-11-08 21:35:03.5378 Info rbac_Role-select 
+2019-11-08 21:41:45.7732 Info 登录信息有误，无法登录 
+   在 rui.exceptionHelper.throwEx(String msg)
+   在 db.bll.adminLoginHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\bll\rbac\adminLoginHelper.cs:行号 56
+   在 web.Controllers.LoginController.adminLogin(adminLogin model) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\WebSite\Controllers\LoginController.cs:行号 55 
+2019-11-08 21:41:50.7849 Info 登录信息有误，无法登录 
+   在 rui.exceptionHelper.throwEx(String msg)
+   在 db.bll.adminLoginHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\bll\rbac\adminLoginHelper.cs:行号 56
+   在 web.Controllers.LoginController.adminLogin(adminLogin model) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\WebSite\Controllers\LoginController.cs:行号 55 
+2019-11-08 21:41:53.8068 Info 登录信息有误，无法登录 
+   在 rui.exceptionHelper.throwEx(String msg)
+   在 db.bll.adminLoginHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\bll\rbac\adminLoginHelper.cs:行号 56
+   在 web.Controllers.LoginController.adminLogin(adminLogin model) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\WebSite\Controllers\LoginController.cs:行号 55 
+2019-11-08 21:47:50.4989 Info sys_Home-index 
+2019-11-08 21:47:52.1280 Info sys_Home-desktop 
+2019-11-08 21:48:00.3673 Info sys_Home-exit 
+2019-11-08 22:39:40.6381 Info sys_Home-index 
+2019-11-08 22:40:48.6637 Info sys_Home-index 
+2019-11-08 22:40:49.3698 Info sys_Home-desktop 
+2019-11-08 22:41:20.6419 Info sys_Home-index 
+2019-11-08 22:41:21.3240 Info sys_Home-desktop 
+2019-11-08 22:41:25.7220 Info sys_Home-index 
+2019-11-08 22:41:25.9680 Info sys_Home-desktop 
+2019-11-08 22:42:31.7467 Info sys_Home-index 
+2019-11-08 22:42:32.0017 Info sys_Home-desktop 
+2019-11-08 22:42:47.7316 Info rbac_Role-select 
+2019-11-08 22:42:49.5475 Info rbac_User-Select 
+2019-11-08 22:42:52.2527 Info af_AuditPost-Select 
+2019-11-08 22:42:54.4708 Info af_AuditPostUser-Select 
+2019-11-08 22:42:55.8099 Info af_AuditType-select 
+2019-11-08 22:43:43.9614 Info sys_Home-index 
+2019-11-08 22:43:44.6174 Info sys_Home-desktop 
+2019-11-08 22:45:30.3812 Info sys_Home-Index 
+2019-11-08 22:45:33.9954 Info sys_Home-index 
+2019-11-08 22:45:35.0455 Info sys_Home-desktop 

@@ -1,0 +1,51 @@
+﻿@model db.NN_newsCategory
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+
+<div class="dialog">
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.newsCategoryID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.newsCategoryID)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.newsCategoryName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.newsCategoryName)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.status)
+    </div>
+    <div class="display-field">
+        @{
+            if (Model.status.ToString() == "0")
+            {
+                <span>正常</span>
+            }
+            else
+            {
+                <span>封禁</span>
+            }
+        }
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.remark)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.remark)
+    </div>
+
+
+    <p class="button">
+        <a class="opClose">关闭</a>
+    </p>
+</div>
+

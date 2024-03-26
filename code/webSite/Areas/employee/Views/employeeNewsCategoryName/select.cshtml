@@ -1,0 +1,41 @@
+﻿@model db.view.NN_newsCategory
+@{
+    ViewBag.Title = "机构维护";
+}
+
+@section header
+{
+    <style type="text/css">
+    </style>
+
+    <script type="text/javascript">
+        function refleshData(execCountSql) {
+            $("#container").pager("reflesh", execCountSql);
+        }
+        $(function () {
+            $("#container").pager();
+        });
+    </script>
+}
+@{ string ctrl = ViewContext.RouteData.Values["controller"].ToString(); }
+<div class="container" id="container" data-width="@Model.PageWidth" data-url="/employee/employeeNewsCategoryName/select">
+    <div class="search">
+        <span>标签ID：@Html.TextBoxFor(a => a.newsCategoryID)</span>
+        <span>标签名称：@Html.TextBoxFor(a => a.newsCategoryName)</span>
+        <span>标签状态：@Html.DropDownListFor(a => a.status, db.bll.NN_newsCategory.bind账号状态(true))</span>
+    </div>
+
+    <div class="toolbar">
+        <a class="opSearch">查询</a>
+        @Html.ActionLink("新增", "Insert", new { }, new { data_show = rui.privCtl.isPriv(ctrl, rui.privCtl.eOp.Insert), @class = "showDialogR opInsert" })
+        @Html.ActionLink("批量删除", "batchDelete", new { }, new { data_show = rui.privCtl.isPriv(ctrl, "batchDelete"), @class = "listBatchOp opBtn", data_msg = "确认批量删除" })
+        @Html.ActionLink("批量封禁", "batchBan", new { }, new { data_show = rui.privCtl.isPriv(ctrl, "batchBan"), @class = "listBatchOp opBtn", data_msg = "确认批量封禁" })
+        @Html.ActionLink("批量解封", "batchRecovey", new { }, new { data_show = rui.privCtl.isPriv(ctrl, "batchRecovey"), @class = "listBatchOp opBtn", data_msg = "确认批量解封" })
+    </div>
+    <div class="pager"></div>
+    <form id="form">
+        <div class="showData cbxCol">
+            @{Html.RenderPartial("_ShowData");}
+        </div>
+    </form>
+</div>

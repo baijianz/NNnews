@@ -1,0 +1,83 @@
+2019-11-13 08:23:03.0244 Info sys_Home-index 
+2019-11-13 08:23:04.0964 Info sys_Home-desktop 
+2019-11-13 08:23:06.2663 Info rbac_User-Select 
+2019-11-13 08:23:11.8733 Info rbac_Resource-select 
+2019-11-13 08:23:20.5253 Info rbac_Resource-batchShow 
+2019-11-13 08:23:39.4934 Info 在从服务器接收结果时发生传输级错误。 (provider: Session Provider, error: 19 - 物理连接不可用) 
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 db.efHelper.Execute(String cmdText, Object param, CommandType type) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\lib\db\efHelper.cs:行号 193
+   在 db.efHelper.ExecuteBatch(String opName, Dictionary`2 sqlDic) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\lib\db\efHelper.cs:行号 213 
+2019-11-13 08:23:39.5094 Info 在从服务器接收结果时发生传输级错误。 (provider: Session Provider, error: 19 - 物理连接不可用) 
+   在 rui.logHelper.log(Exception ex, Boolean isThrow)
+   在 db.efHelper.ExecuteBatch(String opName, Dictionary`2 sqlDic) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\lib\db\efHelper.cs:行号 218
+   在 db.bll.rbac_Resource.batchShow(String keyCodes, dbEntities dc) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\bll\rbac\rbac_Resource.cs:行号 130 
+2019-11-13 08:23:39.5254 Info 在从服务器接收结果时发生传输级错误。 (provider: Session Provider, error: 19 - 物理连接不可用) 
+   在 rui.logHelper.log(Exception ex, Boolean isThrow)
+   在 db.bll.rbac_Resource.batchShow(String keyCodes, dbEntities dc) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\bll\rbac\rbac_Resource.cs:行号 132
+   在 web.Areas.admin.Controllers.rbac_ResourceController.batchShow(String keyFieldValues) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\WebSite\Areas\admin\Controllers\rbac_ResourceController.cs:行号 171 
+2019-11-13 08:23:49.7522 Info rbac_Resource-batchShow 
+2019-11-13 08:24:22.7361 Info 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) 
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 db.efHelper.Execute(String cmdText, Object param, CommandType type) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\lib\db\efHelper.cs:行号 193
+   在 db.efHelper.ExecuteBatch(String opName, Dictionary`2 sqlDic) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\lib\db\efHelper.cs:行号 213 
+2019-11-13 08:24:22.7371 Info 找不到网络路径。 
+ 
+2019-11-13 08:24:22.7551 Info 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) 
+   在 rui.logHelper.log(Exception ex, Boolean isThrow)
+   在 db.efHelper.ExecuteBatch(String opName, Dictionary`2 sqlDic) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\lib\db\efHelper.cs:行号 218
+   在 db.bll.rbac_Resource.batchShow(String keyCodes, dbEntities dc) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\bll\rbac\rbac_Resource.cs:行号 130 
+2019-11-13 08:24:22.7561 Info 找不到网络路径。 
+ 
+2019-11-13 08:24:22.7691 Info 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) 
+   在 rui.logHelper.log(Exception ex, Boolean isThrow)
+   在 db.bll.rbac_Resource.batchShow(String keyCodes, dbEntities dc) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\bll\rbac\rbac_Resource.cs:行号 132
+   在 web.Areas.admin.Controllers.rbac_ResourceController.batchShow(String keyFieldValues) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\WebSite\Areas\admin\Controllers\rbac_ResourceController.cs:行号 171 
+2019-11-13 08:24:22.7701 Info 找不到网络路径。 
+ 
+2019-11-13 08:24:46.9068 Info rbac_Resource-select 
+2019-11-13 08:24:52.5812 Info rbac_Resource-batchShow 
+2019-11-13 08:24:52.8332 Info rbac_Resource-Select 
+2019-11-13 08:25:01.6195 Info rbac_Resource-batchShow 
+2019-11-13 08:25:01.8785 Info rbac_Resource-Select 
+2019-11-13 08:25:32.9032 Info rbac_Resource-batchShow 
+2019-11-13 08:25:33.1532 Info rbac_Resource-Select 
+2019-11-13 08:25:38.8233 Info rbac_Resource-batchNoShow 
+2019-11-13 08:25:39.1054 Info rbac_Resource-Select 
+2019-11-13 08:25:42.9026 Info rbac_Resource-batchShow 
+2019-11-13 08:25:43.1716 Info rbac_Resource-Select 
+2019-11-13 08:25:48.3099 Info rbac_Resource-batchNoShow 
+2019-11-13 08:25:48.5709 Info rbac_Resource-Select 
+2019-11-13 08:25:52.8861 Info rbac_Resource-batchShow 
+2019-11-13 08:25:53.1512 Info rbac_Resource-Select 
+2019-11-13 08:26:04.6700 Info sys_Home-desktop 

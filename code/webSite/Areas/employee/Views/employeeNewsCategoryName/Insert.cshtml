@@ -1,0 +1,43 @@
+﻿@model db.NN_newsCategory
+
+@{
+	ViewBag.Title = "Insert";
+}
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+	@Html.ValidationSummary(true)
+    
+	<div class="dialog">
+
+        <div class="editor-label">
+			@Html.LabelFor(model => model.newsCategoryName)
+		</div>
+		<div class="editor-field">	
+			@Html.EditorFor(model => model.newsCategoryName)
+			@Html.ValidationMessageFor(model => model.newsCategoryName) 
+        </div>
+
+        <div class="editor-label">
+			@Html.LabelFor(model => model.status)
+		</div>
+		<div class="editor-field">	
+			@Html.DropDownListFor(a => a.status, db.bll.NN_newsCategory.bind账号状态(false))
+			@Html.ValidationMessageFor(model => model.status)
+        </div>
+
+        <div class="editor-label">
+			@Html.LabelFor(model => model.remark)
+		</div>
+		<div class="editor-field">	
+			@Html.EditorFor(model => model.remark)
+			@Html.ValidationMessageFor(model => model.remark)
+        </div>
+
+        <p class="button">
+            <a class="billSave opSave" data-close="true">保存</a>
+            <a class="opClose">关闭</a>
+        </p>
+    </div>
+}

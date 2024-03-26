@@ -1,0 +1,99 @@
+2019-10-23 16:34:06.6175 Info sys_Home-index 
+2019-10-23 16:34:07.8875 Info sys_Home-desktop 
+2019-10-23 16:34:08.8576 Info rbac_Role-select 
+2019-10-23 16:37:05.9555 Info sys_Home-index 
+2019-10-23 16:37:06.5105 Info sys_Home-desktop 
+2019-10-23 16:37:07.6816 Info rbac_Role-select 
+2019-10-23 16:44:22.5435 Info sys_Home-index 
+2019-10-23 16:44:23.8825 Info sys_Home-desktop 
+2019-10-23 16:44:24.7466 Info rbac_Role-select 
+2019-10-23 16:45:35.8457 Info sys_Home-index 
+2019-10-23 16:45:37.2857 Info sys_Home-desktop 
+2019-10-23 16:45:38.2508 Info rbac_Role-select 
+2019-10-23 16:48:07.3723 Info sys_Home-index 
+2019-10-23 16:48:08.6584 Info sys_Home-desktop 
+2019-10-23 16:48:09.9595 Info rbac_Role-select 
+2019-10-23 16:48:28.0895 Info rbac_User-Select 
+2019-10-23 16:50:01.1168 Info sys_Home-index 
+2019-10-23 16:50:02.3619 Info sys_Home-desktop 
+2019-10-23 16:50:03.8100 Info rbac_Role-select 
+2019-10-23 16:50:08.6373 Info rbac_User-Select 
+2019-10-23 16:50:09.7863 Info sys_Home-index 
+2019-10-23 16:50:09.9823 Info sys_Home-desktop 
+2019-10-23 16:52:24.1050 Info sys_Home-index 
+2019-10-23 16:52:25.3011 Info sys_Home-desktop 
+2019-10-23 16:52:27.0262 Info rbac_Role-select 
+2019-10-23 16:57:11.1834 Info sys_Home-index 
+2019-10-23 16:57:12.5305 Info sys_Home-desktop 
+2019-10-23 16:57:13.3896 Info rbac_Role-select 
+2019-10-23 16:57:16.7698 Info rbac_User-Select 
+2019-10-23 16:57:18.2648 Info af_AuditPost-Select 
+2019-10-23 19:13:05.6490 Info sys_Home-index 
+2019-10-23 19:13:08.2209 Info sys_Home-index 
+2019-10-23 19:13:08.9600 Info sys_Home-index 
+2019-10-23 19:13:09.9090 Info sys_Home-index 
+2019-10-23 19:13:24.7127 Info sys_Home-index 
+2019-10-23 19:13:37.8230 Info sys_Home-index 
+2019-10-23 19:15:22.4073 Info sys_Home-index 
+2019-10-23 19:22:07.3327 Info sys_Home-index 
+2019-10-23 19:24:50.5481 Info sys_Home-index 
+2019-10-23 19:24:52.7552 Info sys_Home-desktop 
+2019-10-23 19:25:05.0889 Info sys_Home-exit 
+2019-10-23 19:25:09.7031 Info sys_Home-index 
+2019-10-23 19:27:06.0643 Info sys_Home-index 
+2019-10-23 19:27:08.4142 Info sys_Home-desktop 
+2019-10-23 19:27:18.0837 Info rbac_Role-select 
+2019-10-23 19:27:37.7994 Info sys_Home-index 
+2019-10-23 19:27:42.8871 Info sys_Home-index 
+2019-10-23 19:28:14.1609 Info sys_Home-index 
+2019-10-23 19:28:18.2451 Info sys_Home-index 
+2019-10-23 19:28:20.7783 Info sys_Home-index 
+2019-10-23 19:28:52.0601 Info sys_Home-index 
+2019-10-23 19:28:53.4321 Info sys_Home-desktop 
+2019-10-23 19:34:27.6844 Info 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) 
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Dapper.SqlMapper.ExecuteScalarImpl[T](IDbConnection cnn, CommandDefinition& command)
+   在 rui.dbHelper.ExecuteScalar(String cmdText, Object cmdPara, CommandType cmdType)
+   在 rui.loginHelper.checkLogin(String userName, String userPw)
+   在 db.bll.adminLoginHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\bll\rbac\adminLoginHelper.cs:行号 33
+   在 web.Controllers.LoginController.adminLogin(adminLogin model) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\WebSite\Controllers\LoginController.cs:行号 55 
+2019-10-23 19:34:27.6954 Info 找不到网络路径。 
+ 
+2019-10-23 19:34:32.3444 Info 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) 
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Dapper.SqlMapper.ExecuteScalarImpl[T](IDbConnection cnn, CommandDefinition& command)
+   在 rui.dbHelper.ExecuteScalar(String cmdText, Object cmdPara, CommandType cmdType)
+   在 rui.loginHelper.checkLogin(String userName, String userPw)
+   在 db.bll.adminLoginHelper.login(String userCode, String password, String orgCode, dbEntities dc) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\dbLibrary\bll\rbac\adminLoginHelper.cs:行号 33
+   在 web.Controllers.LoginController.adminLogin(adminLogin model) 位置 E:\Projecting\2019 mvc5开发框架 - 三江服务器\code\WebSite\Controllers\LoginController.cs:行号 55 
+2019-10-23 19:34:32.3454 Info 找不到网络路径。 
+ 
+2019-10-23 19:34:35.8384 Info sys_Home-index 
+2019-10-23 19:34:37.9496 Info sys_Home-desktop 
+2019-10-23 19:34:43.6995 Info rbac_Role-select 
+2019-10-23 19:34:46.9155 Info rbac_User-Select 
+2019-10-23 19:34:49.5014 Info af_AuditPost-Select 
+2019-10-23 19:34:51.8933 Info af_AuditPostUser-Select 
+2019-10-23 20:07:26.5159 Info sys_Home-index 
+2019-10-23 20:07:28.9130 Info sys_Home-desktop 
+2019-10-23 20:15:49.2244 Info sys_Home-index 
+2019-10-23 20:15:50.4685 Info sys_Home-desktop 

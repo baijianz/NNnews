@@ -1,0 +1,2825 @@
+2023-09-12：
+确定数据库，建表。
+
+2023-09-14：
+后端权限设置，界面优化
+
+2023-09-19:
+innerHTML指的是从对象的起始位置到终止位置的全部内容,包括Html标签。
+innerText指的是从起始位置到终止位置的内容,但它去除Html标签。
+outerHTML指的是除了包含innerHTML的全部内容外, 还包含对象标签本身。
+
+如果想要去除/添加某个class。 需要用到classlist.remove/add
+
+二进制和图片互相转换：
+
+private byte[] ImageToByte(Image Picture)
+{
+    MemoryStream ms = new MemoryStream();
+    if (Picture == null)
+        return new byte[ms.Length];
+    Picture.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+    byte[] BPicture = new byte[ms.Length];
+    BPicture = ms.GetBuffer();
+    return BPicture;
+}
+反过来，把数据库中的二进制数据转为Image：
+
+private Image ByteToImage(byte[] btImage)
+{
+    if (btImage.Length == 0)
+        return null;
+    System.IO.MemoryStream ms = new System.IO.MemoryStream(btImage);
+    System.Drawing.Image image = System.Drawing.Image.FromStream(ms);
+    return image;
+}
+
+[ValidateAntiForgeryToken] 是 ASP.NET MVC 中的一个安全特性，用于帮助防止跨站请求伪造（CSRF）攻击。CSRF攻击是一种攻击类型，攻击者试图在未经授权的情况下以受害者的身份执行某些操作。攻击者会伪装成受害者，并通过发送伪造的请求来执行潜在恶意操作，例如更改密码、执行金融交易等。
+
+ValidateAntiForgeryToken 的作用是确保只有在服务器上生成的表单才能被提交，而不是由攻击者伪造的表单。它的工作原理如下：
+
+当服务器渲染包含表单的页面时，它会生成一个随机的令牌（称为AntiForgeryToken）并将其嵌入到表单中。
+
+当用户提交表单时，ValidateAntiForgeryToken 会验证提交的令牌与服务器上生成的令牌是否匹配。如果不匹配，请求将被拒绝。
+
+这个过程可以有效地防止CSRF攻击，因为攻击者无法获得服务器生成的随机令牌，无法伪造有效的表单提交
+
+
+2023-09-21:
+ModelState.IsValid为false时的查找方法
+
+if (!ModelState.IsValid)
+{
+	List<string> sb = new List<string>();
+	//获取所有错误的Key
+        List<string> Keys = ModelState.Keys.ToList();
+        //获取每一个key对应的ModelStateDictionary
+        foreach (var key in Keys)
+        {
+	    	var errors = ModelState[key].Errors.ToList();
+		//将错误描述添加到sb中
+		foreach (var error in errors)
+		{
+			sb.Add(error.ErrorMessage);
+		}
+        }
+	return Json(sb);
+}
+
+
+如何解决Validation failed for one or more entities.错误
+
+我们把Exception更改为DbEntityValidationException查看错误，使用DbEntityValidationException捕获异常需要using
+
+11：39 完成用户的添加
+14：26  完成二进制文件的读取和显示
+//相对路径转化为绝对路径
+public string UrlRelativeToAbsolute(string relative)
+{
+   string absolutePath = System.IO.Path.GetFullPath(relative);
+   return absolutePath;
+}
+
+ //获取模块的完整路径。
+ 2             string path1 = System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName;
+ 3             //获取和设置当前目录(该进程从中启动的目录)的完全限定目录
+ 4             string path2 = System.Environment.CurrentDirectory;
+ 5             //获取应用程序的当前工作目录
+ 6             string path3 = System.IO.Directory.GetCurrentDirectory();
+ 7             //获取程序的基目录
+ 8             string path4 = System.AppDomain.CurrentDomain.BaseDirectory;
+ 9             //获取和设置包括该应用程序的目录的名称
+10             string path5 = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
+11             //获取启动了应用程序的可执行文件的路径
+12             string path6 = System.Windows.Forms.Application.StartupPath;
+13             //获取启动了应用程序的可执行文件的路径及文件名
+14             string path7 = System.Windows.Forms.Application.ExecutablePath;
+
+16：54：
+用户搜索功能完成；
+
+2032-09-25：
+8：44：开始
+
+1.常用表单输入元素
+
+Html.BeginForm()，输出<form>标签
+
+Html.EndForm()，输出</form>标签
+
+Html.Label()，输出<label>标签
+
+Html.TextBox()，输出<input type="text">标签
+
+Html.TextArea()，输出<textarea>标签
+
+Html.Password()，输出<input type="password">标签
+
+Html.CheckBox()，输出<input type="checkbox">标签
+
+Html.RadionButton()，输出<input type="radio">标签
+
+Html.DropDownList()，输出<select>标签。
+
+Html.ListBox()，输出<select multiple>标签
+
+Html.Hidden()，输出<input type="hidden">标签
+
+Html.ValidationSummary()，输出表单验证失败时的错误信息摘要
+
+
+使用HTML辅助方法输出超链接
+
+
+1.Html.ActionLink
+
+@Html.ActionLink("链接文字"，"ActionName") 这是最基本的用法，要跳转的控制器为本视图所在的控制器。链接文字不可以为空字符串、空白字符串或null值，否则会抛出The Value cannot be null or empty的异常
+
+@Html.ActionLink("链接文字","ActionName","ControllerName") 指定链接文字，动作，控制器
+
+@Html.ActionLink("链接文字","ActionName",new{id=123,page=5}) 当需要设定额外的RouteValue时，可以在第三个参数传入object类型的数据
+
+@Html.ActionLink("链接文字","ActionName",null,new{@class="btnLink"}) 当需要传入超链接额外的HTML属性时，可以将参数加载到第四个参数上。
+
+@Html.ActionLink("链接文字","ActionName","ControllerName", null,new{@class="btnLink"}) 5个参数
+
+
+2.Html.RouteLink，其用法与Html.ActionLink非常相似,但是RouteLink只可以接收路由名称，而不能接收控制器名称和操作名称
+
+@Html.ActionLink("Link Text","AnotherAction")
+
+@Html.RouteLink("Link Text",new {action = "AnotherAction"})
+
+
+强类型辅助方法
+
+基本上，属于强类型的辅助方法命名方式皆为“原先的名称最后加上For”，使用强类型辅助方法，在View页面的最上方一定要用@model定义出这个View页面的参考数据模型，如果没有生命就无法正常使用强类型辅助方法。
+
+
+
+Html.LabelFor()，输出<label>标签，显示字段的名字。
+
+Html.TextBoxFor()
+
+Html.TextAreaFor()
+
+Html.PasswordFor()
+
+Html.CheckBoxFor()
+
+Html.RadioButtonFor()
+
+Html.DropDownListFor()，输出<select>标签。
+
+Html.ListBoxFor()，输出<select multiple>标签。
+
+Html.HiddenFor() ，生成HTML窗体的隐藏域。
+
+Html.DisplayNameFor()，显示数据模型在Metadata定义的显示名称。
+
+Html.DisplayTextFor()，显示数据模型的文字资料。
+
+Html.ValidationMessageFor()，显示数据模型当输入验证失败时显示的错误信息。
+
+Html.EditorFor()，用来输出表单域可编辑文本框。
+
+使用HTML辅助方法载入分部视图
+
+
+
+使用Html.Partial载入分布视图
+
+@Html.Partial("Page")
+
+@Html.Partial("Page",Model)
+
+@Html.Partial("Page",ViewData["Model"])
+
+@Html.Partial("Page",Model,ViewData["Model"])
+
+9：34：用户查看详情完成
+
+
+<img style="width:30px;height:25px;" src="data:jpg/jpeg;base64,@Convert.ToBase64String((byte[])Model.profile)" alt="图像">
+
+
+为textbox加上password
+@Html.TextBox("password","**********", new { type = "password", @class = "form-control" })
+
+
+<input type="radio" name="gender" value="male" id="gender_male">
+<label for="gender_male">男</label>
+<input type="radio" name="gender" value="female" id="gender_female">
+<label for="gender_female">女</label>
+
+@{
+if (!Model.gender)
+{
+	<script type="text/javascript">
+	var obj = document.getElementById("gender_male");
+	obj.checked = true;
+	</script>
+}
+else
+{
+	<script type="text/javascript">
+	var obj = document.getElementById("gender_female");
+	obj.checked = true;
+	</script>
+}
+}
+
+@Html.TextBoxFor(model => model.birth, "{0:yyyy-MM-dd}", new { type = "date", @Value = Model.birth.ToString("yyyy-MM-dd"), @class = "form-control" }) 
+等价于 
+<input type="date" value=@Model.birth.ToString("yyyy-MM-dd")> 
+
+
+form-control 是一个常用的CSS类，通常与表单元素一起使用，以改善它们的样式和外观。在Bootstrap等流行的前端框架中，这个类经常用于设置表单输入元素的样式。
+
+具体来说，form-control 类可以做以下事情：
+
+使输入框具有一致的外观： 它会应用一些通用的样式规则，以确保所有的表单输入元素（文本框、下拉框、按钮等）在外观上保持一致。
+
+调整输入框的宽度： 它会将输入框的宽度设置为适合其容器的大小，以确保它们在页面上看起来协调。
+
+增加边框和填充： 它会为输入框添加边框和一些内部填充，以提高可读性和用户体验。
+
+使输入框响应式： 在一些情况下，form-control 类还可以帮助确保输入框在不同屏幕尺寸上具有良好的响应式行为。
+
+总之，form-control 类有助于标准化表单元素的外观和行为，使它们看起来更专业且一致。这在构建用户友好的表单页面时非常有用。
+
+
+实体的状态：
+
+在 Entity Framework 中，实体的状态是指实体对象在与数据库交互时的状态，通常与数据库的操作（如插入、更新、删除）相关联。有几种不同的实体状态，包括：
+
+Added（已添加）： 当你创建一个新的实体对象并将其添加到上下文中时，实体的状态被设置为 "Added"。这表示 Entity Framework 会在保存更改时将此实体插入到数据库中。
+
+Unchanged（未更改）： 当你从数据库中检索实体并将其附加到上下文中时，实体的状态通常是 "Unchanged"。这表示实体的属性没有被修改，且 Entity Framework 不会在保存更改时对其进行更新。
+
+Modified（已修改）： 当你从数据库中检索实体后，如果你更改了实体的属性并将其附加回上下文，实体的状态会变为 "Modified"。这表示实体的属性已被修改，且 Entity Framework 在保存更改时会生成相应的更新语句。
+
+Deleted（已删除）： 如果你从数据库中检索实体并将其标记为删除，实体的状态会变为 "Deleted"。这表示在保存更改时，Entity Framework 会生成删除语句以从数据库中删除该实体。
+
+Detached（分离）： 当实体不再与上下文关联时，其状态被称为 "Detached"。这通常发生在实体已经从上下文中分离或从数据库中删除后。
+
+设置实体状态的目的是告诉 Entity Framework 在保存更改时如何处理实体。例如，如果你将实体状态设置为 "Modified"，那么 Entity Framework 将生成相应的 SQL 更新语句来更新数据库中的记录。如果将实体状态设置为 "Unchanged"，则 Entity Framework 将认为实体没有被修改，因此不会生成更新语句。
+
+
+
+链接字符串：
+string connectionStringProfile = "data source=DUNE;initial catalog=delicacyDataBase;persist security info=True;user id=sa;password=123456;MultipleActiveResultSets=True;App=EntityFramework&quot;";
+
+
+NN-USER JS下拉框联动
+    // 在页面完全加载后执行代码
+    window.addEventListener("DOMContentLoaded", function () {
+
+        // 获取下拉框和另一个控件的引用
+        var dropdown = document.getElementById("userType");
+        var otherControl = document.getElementById("SetnewAgencyID");
+
+        // 添加一个事件监听器，当下拉框的值发生变化时触发
+        dropdown.addEventListener("change", function () {
+            // 获取选中的值
+            var selectedValue = dropdown.value;
+
+            // 检查选中的值是否是特定的值，例如 "1"
+            if (selectedValue === "1") { 
+                // 如果是特定值，使另一个控件可编辑
+                otherControl.classList.remove("userReadonly");
+                //otherControl.innerHTML = "选到了！"; 
+            } else {
+                // 否则，将另一个控件设置为只读
+                otherControl.classList.add("userReadonly");
+                //otherControl.innerHTML = "没选到"; 
+            }
+        });
+    });
+
+
+JS下拉框联动（高级）：通过一次下拉框控件另外一个下拉框的值
+/***********************************************************/
+                $("#userType").change(function () {
+                    var type = $("#userType").val();
+                    var rowID = $("#ID").val();
+                    if (true) {
+                        ajaxPost("/employee/employeeUser/getNewsAgencyDdl", { type: type, rowID: rowID }, function (data) {
+                            showJsonResult(data, function () {
+                                updateDdl($("#SetnewAgencyID"), parseJSON(data.newAgencysList), false);
+                            });
+                        });
+                    }
+                });
+                //页面加载后代码触发图书类型的change事件
+                $("#userType").trigger("change");
+
+        public JsonResult getNewsAgencyDdl(string type, string rowID = "")
+        {
+            rui.jsonResult result = new rui.jsonResult();
+            try
+            {
+                Dictionary<string, string> dic = new Dictionary<string, string>();
+                dic.Add("newAgencysList", db.bll.NN_user.getJsonAgencyDdl(type, rowID, dc));
+                result.data = rui.jsonResult.getAJAXResult("获取成功", true, dic);
+            }
+            catch (Exception ex)
+            {
+                rui.logHelper.log(ex);
+                result.data = rui.jsonResult.getAJAXResult(ex.Message, false);
+            }
+            return Json(result.data);
+        }
+
+     /// <summary>
+        /// 实现下拉框的联动
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns>返回一个selectitem列表</returns>
+        public static string getJsonAgencyDdl(string type, string rowID, dbEntities dc)
+        {
+            
+            if(type == "0") //表示不需要
+            {
+                return rui.jsonResult.SelectListToJsonStr(bindDdl(false, "", type));
+            }
+            else
+            {
+                string v;
+                try
+                {
+                    v = dc.NN_user.Where(a => a.rowID == rowID).SingleOrDefault().newsAgencyID.ToString();
+                }
+                catch
+                {
+                    v = dc.NN_user.First().newsAgencyID.ToString();
+                }
+                
+                return rui.jsonResult.SelectListToJsonStr(bindDdl(false, v, type));
+            }
+        }
+
+        public static List<System.Web.Mvc.SelectListItem> bindDdl(bool has请选择 = false, string selectedValue = "", string type = "")
+        {
+            if(type == "0")
+            {
+                List<SelectListItem> list1 = new List<SelectListItem>();
+                rui.listHelper.add请选择(list1, has请选择);
+                list1.Add(new SelectListItem() { Text = "无", Value = "-1" });
+                return list1;
+            }
+            efHelper ef = new efHelper();
+            string sql = " SELECT newsAgencyName, newsAgencyID FROM NN_NewsAgency where 1=1 ";
+            sql += " ORDER BY newsAgencyID ASC ";
+            DataTable table = ef.ExecuteDataTable(sql);
+            List<System.Web.Mvc.SelectListItem> list = dataTableToDdlList_newAgencys(table, has请选择, selectedValue);
+            return list;
+        }
+
+        public static List<SelectListItem> dataTableToDdlList_newAgencys(DataTable table, bool has请选择, string selectedValue)
+        {
+            List<SelectListItem> list = new List<SelectListItem>();
+            rui.listHelper.add请选择(list, has请选择);
+            List<string> selectedList = rui.dbTools.getList(selectedValue);
+            foreach (DataRow row in table.Rows)
+            {
+                if (selectedList.Contains(row["newsAgencyID"].ToString()))
+                    list.Add(new SelectListItem() { Text = row["newsAgencyName"].ToString(), Value = row["newsAgencyID"].ToString(), Selected = true });
+                else
+                    list.Add(new SelectListItem() { Text = row["newsAgencyName"].ToString(), Value = row["newsAgencyID"].ToString() });
+            }
+            return list;
+        }
+
+/***********************************************************/
+给@Html.EditorFor加ID的写法
+@Html.EditorFor(model => model.rowID, new { htmlAttributes = new { @id = "yourID" } })
+23：22：结束
+
+
+
+2023-09-26：
+09：32 修正了新增下拉框的问题
+10：01 实现NN_user的删除
+10：53 完成NN_user的改变账号状态
+还需要在NN_user完成的功能有：
+批量解封；批量封号；批量变更账户类型；
+上面的三个功能放在后面做。先做几张表的增删改查；
+
+14：25 完成NN_NewsAgencys的增删改查
+
+
+
+2023-09-27：
+21：47：开始
+
+在C#中，KeyValuePair<TKey, TValue> 的构造函数是受保护的，无法直接实例化。你通常不需要手动创建 KeyValuePair<TKey, TValue>，因为它通常是用于表示字典或集合中的键值对
+// 创建一个包含键值对的字典
+Dictionary<string, string> dictionary = new Dictionary<string, string>
+{
+    { "Key1", "Value1" },
+    { "Key2", "Value2" }
+};
+
+// 或者使用 LINQ 初始化
+var keyValuePairList = new List<KeyValuePair<string, string>>
+{
+    new KeyValuePair<string, string>("Key1", "Value1"),
+    new KeyValuePair<string, string>("Key2", "Value2")
+};
+
+
+
+09月25日 09:19 会话ID:(1513284)
+
+@Html.Display辅助方法
+09月25日 09:20 会话ID:(1513284)
+
+@Html.Display 是ASP.NET MVC中的一个辅助方法，用于将文本内容显示在视图中。它通常用于将模型数据显示在视图中的HTML标签中。
+
+以下是一个简单的示例，演示如何在ASP.NET MVC视图中使用@Html.Display辅助方法：
+
+假设你有一个名为Person的模型类：
+
+
+        
+csharp
+插入代码
+复制代码
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+然后在控制器中创建了一个Person对象，并将其传递到视图：
+
+
+        
+csharp
+插入代码
+复制代码
+public ActionResult DisplayPerson()
+{
+    var person = new Person
+    {
+        Name = "John",
+        Age = 30
+    };
+
+    return View(person);
+}
+在视图中，你可以使用@Html.Display来显示Person对象的属性：
+
+
+        
+html
+插入代码
+复制代码
+@model Person
+
+<h1>Person Details</h1>
+
+<div>
+    <label>Name:</label>
+    @Html.DisplayFor(model => model.Name) <!-- 显示姓名 -->
+</div>
+
+<div>
+    <label>Age:</label>
+    @Html.DisplayFor(model => model.Age) <!-- 显示年龄 -->
+</div>
+这将在视图中显示Person对象的姓名和年龄。
+
+@Html.DisplayFor方法可以帮助你以合适的方式显示模型属性，具体的显示方式会根据属性的数据类型和注解而变化。在这个示例中，它会自动显示文本内容。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 09:20 会话ID:(1513284)
+
+我要的不是强辅助方法
+09月25日 09:20 会话ID:(1513284)
+
+如果你不需要使用强辅助方法，而是想要在HTML中手动显示文本内容，你可以直接在视图中使用HTML标签来显示文本。以下是一个示例，演示如何手动在HTML中显示文本内容：
+
+
+        
+html
+插入代码
+复制代码
+<h1>Person Details</h1>
+
+<div>
+    <label>Name:</label>
+    John <!-- 手动显示姓名 -->
+</div>
+
+<div>
+    <label>Age:</label>
+    30 <!-- 手动显示年龄 -->
+</div>
+在这个示例中，我们直接在HTML标签中放置了文本内容，而没有使用@Html.Display或其他ASP.NET MVC辅助方法。这样可以手动控制文本的显示方式。如果你只需要简单地在视图中显示文本内容，这是一种常见的方法。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 10:18 会话ID:(1513284)
+
+如何给textboxfor 加上password属性
+09月25日 10:18 会话ID:(1513284)
+
+要在ASP.NET MVC中的 @Html.TextBoxFor 控件上添加 type="password" 属性，以将其渲染成密码输入框，你可以使用以下方法：
+
+假设你有一个名为 Password 的模型属性，你可以在视图中这样使用 @Html.TextBoxFor：
+
+
+        
+csharp
+插入代码
+复制代码
+@model YourModel
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(model => model.Password)
+        @Html.TextBoxFor(model => model.Password, new { @type = "password", @class = "form-control" })
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+}
+在上面的示例中，我们使用了 @Html.TextBoxFor 来渲染密码输入框，并通过 new { @type = "password", @class = "form-control" } 将 type 设置为 "password"。你还可以添加其他属性，如 @class 来指定CSS类。
+
+这将在浏览器中生成一个密码输入框，用户在该输入框中输入的文本将被掩盖，以保护密码的安全性。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 10:19 会话ID:(1513284)
+
+如何给textboxfor 加上password属性
+09月25日 10:19 会话ID:(1513284)
+
+在ASP.NET MVC中，要将 @Html.TextBoxFor 控件渲染成密码输入框，需要设置 type 属性为 "password"。你可以按照以下方式来实现：
+
+假设你有一个名为 Password 的模型属性，你可以在视图中这样使用 @Html.TextBoxFor：
+
+
+        
+csharp
+插入代码
+复制代码
+@model YourModel
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(model => model.Password)
+        @Html.TextBoxFor(model => model.Password, new { type = "password", @class = "form-control" })
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+}
+在上面的示例中，我们使用了 @Html.TextBoxFor 来渲染密码输入框，并通过 new { type = "password", @class = "form-control" } 设置 type 为 "password"。你还可以添加其他属性，如 @class 来指定CSS类。
+
+这将在浏览器中生成一个密码输入框，用户在该输入框中输入的文本将被掩盖，以保护密码的安全性。请确保将 YourModel 替换为你的模型类的名称。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 10:29 会话ID:(1513284)
+
+            <input type="radio" name="gender" value="male" id="gender_male">
+            <label>男</label>
+            <input type="radio" name="sender" value="female" id="gender_female">
+            <label>女</label>
+            @{
+                if (Model.gender == false)
+                {
+                    <script type="text/javascript">
+                    const { checked } = require("modernizr");
+                        var obj = document.getElementById("gender_male");
+                        obj.setAttribute(checked):
+                    </script>
+                }
+            } 根据我的意思。修正我的代码
+09月25日 10:29 会话ID:(1513284)
+
+你的代码中存在一些语法错误和逻辑问题。以下是修正后的代码：
+
+
+        
+html
+插入代码
+复制代码
+<input type="radio" name="gender" value="male" id="gender_male">
+<label for="gender_male">男</label>
+<input type="radio" name="gender" value="female" id="gender_female">
+<label for="gender_female">女</label>
+
+@{
+    if (!Model.gender)
+    {
+        <script type="text/javascript">
+            var obj = document.getElementById("gender_male");
+            obj.checked = true;
+        </script>
+    }
+}
+修正后的代码：
+
+使用 label 元素的 for 属性来将标签与相应的 input 元素关联。
+修复了 JavaScript 部分的语法错误，使用 obj.checked = true; 来设置 gender_male 的选中状态。
+这样，如果 Model.gender 为 false，则男性选项将被默认选中。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 10:30 会话ID:(1513284)
+
+label 里面那个for加不加有什么区别
+09月25日 10:30 会话ID:(1513284)
+
+在 HTML 中， <label> 元素的 for 属性用于关联标签与表单元素（如 <input>）以实现更好的用户体验。它有以下两种作用：
+
+可点击标签: 如果你将 <label> 的 for 属性设置为与表单元素的 id 相同，用户可以点击标签文本来触发关联的表单元素。这提高了用户点击目标的可用性和易用性。
+
+辅助屏幕阅读器: 对于使用辅助技术的用户（如屏幕阅读器用户），正确使用 for 属性可以提供更好的可访问性。当屏幕阅读器读取标签时，它会识别 for 属性，并告诉用户与之关联的表单元素的用途。
+
+因此，尽管在某些情况下不加 for 属性也可以正常工作，但最佳实践是为标签和相关的表单元素使用相同的 id 和 for 属性，以获得更好的可用性和可访问
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 10:37 会话ID:(1513284)
+
+@Html.TextBoxDateFor(model => model.birth, new { value = Model.birth}) 根据我的意思修改代码
+09月25日 10:37 会话ID:(1513284)
+
+根据你的意思，你想使用 @Html.TextBoxFor 来渲染一个日期输入框，并设置其初始值为 Model.birth。以下是代码的修正版本：
+
+
+        
+csharp
+插入代码
+复制代码
+@Html.TextBoxFor(model => model.birth, new { @Value = Model.birth.ToString("yyyy-MM-dd") })
+在这里，我们使用 @Html.TextBoxFor 渲染日期输入框，并通过匿名对象 { @Value = Model.birth.ToString("yyyy-MM-dd") } 将 value 属性设置为 Model.birth 的字符串表示形式，以确保初始值被正确设置。假设 Model.birth 是一个 DateTime 类型的属性，我们将其格式化为 "yyyy-MM-dd" 以匹配日期输入框的预期格式。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 10:39 会话ID:(1513284)
+
+我是想要使用那个时间日期控件
+09月25日 10:40 会话ID:(1513284)
+
+如果你想使用一个时间日期控件来渲染日期输入框，你可以使用一些JavaScript库，如Bootstrap Datepicker或jQuery UI Datepicker。以下是使用Bootstrap Datepicker的示例：
+
+首先，确保你的项目中包含了Bootstrap和Bootstrap Datepicker的相关文件。
+
+在视图中，你可以使用以下代码来渲染一个带有Bootstrap Datepicker的日期输入框：
+
+
+        
+csharp
+插入代码
+复制代码
+@Html.TextBoxFor(model => model.birth, new { @class = "form-control", id = "datepicker" })
+
+@section scripts {
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#datepicker').datepicker({
+                format: 'yyyy-mm-dd', // 设置日期格式
+                autoclose: true // 选择日期后自动关闭日期选择器
+            });
+        });
+    </script>
+}
+在上面的代码中，我们使用了Bootstrap Datepicker来渲染日期输入框，并设置了日期格式和其他选项。请确保在视图中包含所需的CSS和JavaScript文件。这将创建一个具有日期选择功能的日期输入框。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 10:40 会话ID:(1513284)
+
+ @Html.TextBoxDateFor(model => model.birth, new { @Value = Model.birth.ToString("yyyy-MM-dd") }) 在这个的基础上修改
+09月25日 10:40 会话ID:(1513284)
+
+如果你想在 @Html.TextBoxFor 基础上渲染日期输入框并设置初始值，你可以使用以下方式修改代码：
+
+
+        
+csharp
+插入代码
+复制代码
+@Html.TextBoxFor(model => model.birth, "{0:yyyy-MM-dd}", new { @class = "form-control" })
+这将使用 "{0:yyyy-MM-dd}" 格式字符串来指定日期的格式，并且不需要设置 @Value 属性，因为 TextBoxFor 方法会根据模型的值自动设置初始值。在这个示例中，日期的格式将被设置为 "yyyy-MM-dd" 并且应用了 form-control CSS 类来改善样式。确保 model.birth 是一个 DateTime 类型的属性，以便格式化为指定的日期格式。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 10:42 会话ID:(1513284)
+
+不是，我想要使用TextBoxDateFor
+09月25日 10:42 会话ID:(1513284)
+
+我明白了，你想要使用名为 @Html.TextBoxDateFor 的自定义辅助方法。如果你要自定义一个名为 TextBoxDateFor 的辅助方法，可以尝试以下方式：
+
+首先，在你的ASP.NET MVC应用程序中创建一个自定义辅助方法，可以在项目的某个公共位置定义它。例如，在 App_Code 文件夹下创建一个名为 HtmlHelpers.cshtml 的文件。
+
+在 HtmlHelpers.cshtml 文件中添加以下代码：
+
+
+        
+csharp
+插入代码
+复制代码
+@using System.Web.Mvc
+@helper TextBoxDateFor<TModel, TValue>(HtmlHelper<TModel> html, Expression<Func<TModel, TValue>> expression, object htmlAttributes)
+{
+    var name = ExpressionHelper.GetExpressionText(expression);
+    var value = ModelMetadata.FromLambdaExpression(expression, html.ViewData).Model;
+
+    var attributes = HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
+    attributes["type"] = "date"; // 设置输入类型为日期
+
+    @Html.TextBox(name, value, attributes)
+}
+上述代码定义了一个名为 TextBoxDateFor 的自定义辅助方法，该方法接受一个 HtmlHelper 对象、表达式和HTML属性。它会设置输入框的类型为 "date"，并调用内置的 @Html.TextBox 辅助方法来生成文本框。
+
+接下来，在你的视图中，你可以像这样使用自定义辅助方法：
+
+
+        
+csharp
+插入代码
+复制代码
+@Html.TextBoxDateFor(model => model.birth, new { @class = "form-control" })
+这将使用你的自定义辅助方法来渲染日期输入框，并且你可以通过传递 @class 或其他HTML属性来自定义其外观和行为。请确保 HtmlHelpers.cshtml 文件在你的项目中能够被正确引用和识别。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 10:54 会话ID:(1513284)
+
+@Html.TextBoxDateFor 这个干什么的
+09月25日 10:54 会话ID:(1513284)
+
+抱歉，我之前似乎误解了你的问题。@Html.TextBoxDateFor 并不是ASP.NET MVC中的标准辅助方法，所以我之前提供的示例是一种自定义方法的假设。如果你使用的是标准ASP.NET MVC，通常不会有名为 @Html.TextBoxDateFor 的内置辅助方法。
+
+要在ASP.NET MVC中创建日期输入框，通常使用的是 @Html.TextBoxFor 方法，并设置日期的格式，就像我之前提供的示例一样。如果你有一个名为 TextBoxDateFor 的自定义辅助方法，那可能是你的项目中添加的自定义代码，其功能和用法会依赖于你或你的团队自行开发的实现。
+
+如果你需要关于 @Html.TextBoxDateFor 具体是做什么的更多信息，我建议查看你的项目中的自定义代码或者文档，以了解其用法和实现。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 10:55 会话ID:(1513284)
+
+
+09月25日 10:54 会话ID:(1513284)
+
+09月25日 10:55 会话ID:(1513284)
+
+你好！
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 10:55 会话ID:(1513284)
+
+@Html.TextBoxDateFor 这个干什么的
+09月25日 10:55 会话ID:(1513284)
+
+@Html.TextBoxDateFor 不是标准的 ASP.NET MVC 辅助方法。我之前提到的 @Html.TextBoxDateFor 是一个自定义辅助方法，它不属于 ASP.NET MVC 的标准库，而是可能由你或你的团队在项目中创建的自定义代码。
+
+自定义辅助方法可以用来简化在视图中生成HTML元素的过程，但其具体功能和用法是由开发者自行定义的。如果你想了解 @Html.TextBoxDateFor 的详细信息，你需要查看你的项目中的自定义代码或者文档，以确定它是如何实现和用法是什么。它的功能可能根据你的项目的需求而不同。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 10:58 会话ID:(1513284)
+
+ <input type="date" value=@Model.birth.ToString("yyyy-MM-dd")>  将这段语句转化为asp.net里面的辅助方法
+09月25日 10:58 会话ID:(1513284)
+
+你可以将这段HTML代码转化为ASP.NET MVC的辅助方法 @Html.TextBoxFor，同时保留日期格式设置：
+
+
+        
+csharp
+插入代码
+复制代码
+@Html.TextBoxFor(model => model.birth, "{0:yyyy-MM-dd}", new { type = "date", @Value = Model.birth.ToString("yyyy-MM-dd"), @class = "form-control" })
+上述代码将使用 TextBoxFor 方法来渲染日期输入框，同时设置了日期的格式为 "yyyy-MM-dd"。属性 type="date" 会确保在支持的浏览器中呈现一个日期输入框。同时，@Value 属性用于设置初始值为 Model.birth 的字符串表示形式。最后，@class = "form-control" 用于添加一个CSS类，以便可以应用样式。
+
+请确保 model.birth 是一个 DateTime 类型的属性，以便格式化为指定的日期格式。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 11:00 会话ID:(1513284)
+
+form-control 起到什么作用
+09月25日 11:00 会话ID:(1513284)
+
+form-control 是一个常用的CSS类，通常与表单元素一起使用，以改善它们的样式和外观。在Bootstrap等流行的前端框架中，这个类经常用于设置表单输入元素的样式。
+
+具体来说，form-control 类可以做以下事情：
+
+使输入框具有一致的外观： 它会应用一些通用的样式规则，以确保所有的表单输入元素（文本框、下拉框、按钮等）在外观上保持一致。
+
+调整输入框的宽度： 它会将输入框的宽度设置为适合其容器的大小，以确保它们在页面上看起来协调。
+
+增加边框和填充： 它会为输入框添加边框和一些内部填充，以提高可读性和用户体验。
+
+使输入框响应式： 在一些情况下，form-control 类还可以帮助确保输入框在不同屏幕尺寸上具有良好的响应式行为。
+
+总之，form-control 类有助于标准化表单元素的外观和行为，使它们看起来更专业且一致。这在构建用户友好的表单页面时非常有用。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月25日 16:15 会话ID:(1513284)
+
+
+
+/*****************************************************************************************/
+ModelState
+09月25日 16:16 会话ID:(1513284)
+
+ModelState 是 ASP.NET MVC 中的一个重要概念，用于管理和验证模型绑定到控制器动作方法的数据。它主要用于处理表单提交和数据验证。
+
+以下是关于 ModelState 的一些关键信息：
+
+模型绑定： 当用户提交表单或发送HTTP请求时，ASP.NET MVC 尝试将请求数据绑定到控制器的参数或模型中。这个过程称为模型绑定。ModelState 用于跟踪绑定过程中的数据和验证状态。
+
+验证数据： ModelState 还用于验证模型中的数据。ASP.NET MVC 提供了一组验证注解（例如，Required、StringLength 等），这些注解可以用于定义模型属性的验证规则。ModelState 会根据这些规则验证数据，并在验证失败时将错误信息添加到 ModelState 中。
+
+错误信息： 如果模型绑定或数据验证失败，ModelState 会捕获错误信息，并将其与相应的模型属性关联起来。这些错误信息可以用于在视图中显示验证错误消息，以便用户知道哪些数据无效。
+
+在控制器中使用： 控制器可以检查 ModelState 来确定请求数据是否有效。如果存在验证错误，控制器可以采取适当的操作，例如重新显示表单以纠正错误。
+
+下面是一个简单的示例，演示如何在控制器中使用 ModelState：
+
+
+        
+csharp
+插入代码
+复制代码
+[HttpPost]
+public ActionResult SubmitForm(MyModel model)
+{
+    if (!ModelState.IsValid)
+    {
+        // 模型验证失败，重新显示表单并显示错误消息
+        return View(model);
+    }
+    
+    // 处理有效的数据
+    // ...
+    
+    return RedirectToAction("Success");
+}
+在上面的示例中，如果 ModelState 中存在验证错误，控制器将重新显示带有错误消息的表单视图。否则，它将处理有效的数据。
+
+总之，ModelState 是 ASP.NET MVC 中用于管理和验证数据的重要工具，它有助于确保请求数据的有效性，并提供了一种在控制器中处理验证失败的机制。
+
+合计消耗4900字符（提问消耗：10字符 + 回答消耗：570字符 + 上下文：4320字符） 模式：GPT3.5-4k查看字符计算器
+
+09月25日 16:16 会话ID:(1513284)
+
+
+/*****************************************************************************************/
+ModelState怎么手动修改
+09月25日 16:16 会话ID:(1513284)
+
+ModelState 是 ASP.NET MVC 中用于跟踪和管理模型状态和验证错误的对象。你可以手动修改 ModelState 中的错误信息或状态，以满足特定的需求。
+
+以下是一些常见的操作，示范如何手动修改 ModelState：
+
+添加验证错误信息：
+你可以使用 ModelState.AddModelError 方法来手动添加验证错误信息。例如，如果你想要在控制器中检查某些条件并手动添加错误信息，可以这样做：
+
+
+        
+csharp
+插入代码
+复制代码
+if (条件不满足)
+{
+    ModelState.AddModelError("propertyName", "自定义错误消息");
+}
+这将向指定属性名称添加自定义错误消息。
+
+清除验证错误信息：
+如果需要清除特定属性的验证错误信息，可以使用 ModelState.ClearErrors 方法。例如：
+
+
+        
+csharp
+插入代码
+复制代码
+ModelState.ClearErrors("propertyName");
+这将清除指定属性的所有错误信息。
+
+清除所有验证错误信息：
+如果要清除所有属性的验证错误信息，可以使用 ModelState.Clear 方法：
+
+
+        
+csharp
+插入代码
+复制代码
+ModelState.Clear();
+这将清除所有属性的错误信息。
+
+手动设置属性值：
+有时，你可能需要手动设置模型属性的值，而不是从请求中自动绑定。你可以使用以下方法之一：
+
+ModelState.SetModelValue：手动设置属性的值。
+
+直接更改模型属性的值。
+
+这将允许你在控制器中以特定的方式处理数据。
+
+请注意，对 ModelState 的手动修改应该谨慎进行，因为它们可能会影响模型验证和数据绑定的行为。通常，你应该尽量遵循ASP.NET MVC的默认模型绑定和验证机制，只有在特殊情况下才需要手动修改 `
+
+/*****************************************************************************************/
+
+
+
+html.hidden怎么用
+09月25日 16:31 会话ID:(1513284)
+
+Html.Hidden 是ASP.NET MVC中的一个辅助方法，用于在视图中生成一个隐藏字段（hidden field）。隐藏字段是一种用于在表单中存储数据，但不会在页面上可见的HTML元素。
+
+以下是如何使用 Html.Hidden 方法的示例：
+
+假设你有一个名为 "UserId" 的属性，并且你想在表单中存储它的值，但不希望用户看到它：
+        
+csharp
+插入代码
+复制代码
+@using (Html.BeginForm("SubmitForm", "ControllerName", FormMethod.Post))
+{
+    <!-- 其他表单元素 -->
+
+    @Html.Hidden("UserId", Model.UserId)
+
+    <input type="submit" value="提交">
+}
+上面的代码中，@Html.Hidden 方法用于生成一个名为 "UserId" 的隐藏字段，它的值被设置为 Model.UserId。这将使 "UserId" 的值在表单提交时一并发送到服务器，但用户无法看到或编辑它。
+
+在控制器中，你可以使用模型绑定来访问隐藏字段的值，就像访问其他表单字段一样：
+
+
+        
+csharp
+插入代码
+复制代码
+[HttpPost]
+public ActionResult SubmitForm(MyModel model)
+{
+    // 通过模型绑定访问隐藏字段的值
+    int userId = model.UserId;
+
+    // 处理其他表单数据
+    // ...
+
+    return RedirectToAction("Success");
+}
+这是一个典型的用例，当你需要在表单中传递一些数据，但不希望用户看到或更改这些数据时，可以使用 Html.Hidden 方法来实现。
+
+合计消耗5190字符（提问消耗：10字符 + 回答消耗：400字符 + 上下文：4780字符） 模式：GPT3.5-4k查看字符计算器
+
+
+
+        
+csharp
+插入代码
+复制代码
+// Assuming 'context' is your DbContext
+context.Entry(existingEntity).State = EntityState.Modified; // For existing entities
+context.Entry(newEntity).State = EntityState.Added; // For new entities
+
+// Save changes
+context.SaveChanges();
+In this example, you explicitly set the state of each entity before saving changes to ensure Entity Framework handles them correctly
+
+合计消耗5550字符（提问消耗：130字符 + 回答消耗：530字符 + 上下文：4890字符） 模式：GPT3.5-4k查看字符计算器
+
+09月25日 16:47 会话ID:(1513284)
+
+用中文回答 Attaching an entity of type 'db.NN_user' failed because another entity of the same type already has the same primary key value. This can happen when using the 'Attach' method or setting the state of an entity to 'Unchanged' or 'Modified' if any entities in the graph have conflicting key values. This may be because some entities are new and have not yet received database-generated key values. In this case use the 'Add' method or the 'Added' entity state to track the graph and then set the state of non-new entities to 'Unchanged' or 'Modified' as appropriate.
+09月25日 16:47 会话ID:(1513284)
+
+出现这个错误是因为在 Entity Framework 中，你试图附加（Attach）或修改一个实体，但另一个具有相同主键值的同类型实体已经存在，导致冲突。这种情况通常发生在使用 'Attach' 方法或将实体状态设置为 'Unchanged' 或 'Modified' 时，如果图中的任何实体具有冲突的主键值，就可能出现这种情况。这可能是因为一些实体是新的，尚未获得数据库生成的主键值。在这种情况下，应该使用 'Add' 方法或 'Added' 实体状态来跟踪图，并根据情况设置非新实体的状态为 'Unchanged' 或 'Modified'。
+
+解决这个问题的常见方法包括：
+
+避免重复的主键值： 确保不要在上下文中同时处理具有相同主键值的多个实体实例。如果有多个具有相同主键值的实体，确保只使用一个实例，并从上下文中分离其他实例。
+
+处理新旧实体： 如果要附加或修改实体，确保它们的主键值是唯一的，并且已经存在于数据库中。对于新实体，使用 'Add' 方法将它们添加到上下文中。对于现有实体，设置其状态为 'Unchanged' 或 'Modified'，然后保存更改。
+
+处理实体图： 如果在实体图中同时处理新实体和现有实体，确保为每个实体正确设置状态。对于新实体，使用 'Add' 方法添加它们，对
+
+合计消耗3060字符（提问消耗：130字符 + 回答消耗：440字符 + 上下文：2490字符） 模式：GPT3.5-4k查看字符计算器
+
+09月25日 16:58 会话ID:(1513284)
+
+将实体状态设置为unchanged和modified分别是什么意思
+09月25日 16:59 会话ID:(1513284)
+
+在 Entity Framework 中，实体的状态是指实体对象在与数据库交互时的状态，通常与数据库的操作（如插入、更新、删除）相关联。有几种不同的实体状态，包括：
+
+Added（已添加）： 当你创建一个新的实体对象并将其添加到上下文中时，实体的状态被设置为 "Added"。这表示 Entity Framework 会在保存更改时将此实体插入到数据库中。
+
+Unchanged（未更改）： 当你从数据库中检索实体并将其附加到上下文中时，实体的状态通常是 "Unchanged"。这表示实体的属性没有被修改，且 Entity Framework 不会在保存更改时对其进行更新。
+
+Modified（已修改）： 当你从数据库中检索实体后，如果你更改了实体的属性并将其附加回上下文，实体的状态会变为 "Modified"。这表示实体的属性已被修改，且 Entity Framework 在保存更改时会生成相应的更新语句。
+
+Deleted（已删除）： 如果你从数据库中检索实体并将其标记为删除，实体的状态会变为 "Deleted"。这表示在保存更改时，Entity Framework 会生成删除语句以从数据库中删除该实体。
+
+Detached（分离）： 当实体不再与上下文关联时，其状态被称为 "Detached"。这通常发生在实体已经从上下文中分离或从数据库中删除后。
+
+设置实体状态的目的是告诉 Entity Framework 在保存更改时如何处理实体。例如，如果你将实体状态设置为 "Modified"，那么 Entity Framework 将生成相应的 SQL 更新语句来更新数据库中的记录。如果将实体状态设置为 "Unchanged"，则 Entity Framework 将认为实体没有被修改，因此不会生成更新语句。
+
+你可以使用以下方式来设置实体的状态：
+
+
+        
+csharp
+插入代码
+复制代码
+context.Entry(entity).State = EntityState.Modified; // 将实体状态设置为已修改
+context.Entry(entity).State = EntityState.Unchanged; // 将实体状态设置为未更改
+context.Entry(entity).State = EntityState.Added; // 将实体状态设置为已添加
+context.Entry(entity).State = EntityState.Deleted; // 将实体状态设置为已删除
+根据
+
+合计消耗6060字符（提问消耗：20字符 + 回答消耗：610字符 + 上下文：5430字符） 模式：GPT3.5-4k查看字符计算器
+
+09月25日 18:06 会话ID:(1513284)
+
+        <div class="editor-field">
+            <img class="newLine" style="width:30px;height:25px;" src="data:jpg/jpeg;base64,@Convert.ToBase64String((byte[])Model.profile)" alt="图像">
+            <input type="text" class="hide form-control" name="profile" value="@Model.profile"/>
+            @Html.ValidationMessageFor(model => model.profile)
+        </div> 根据意思，修正我的代码
+09月25日 18:07 会话ID:(1513284)
+
+根据你提供的HTML代码，你似乎正在尝试在一个 div 中显示图像，并包括一个隐藏的文本输入字段。如果你的目标是在页面上显示图像并在需要时将其上传到服务器，以下是一些可能的修正和建议：
+
+修复<img>标签的src属性： 在你的 <img> 标签中，src 属性的值应该是正确的图像 URL，而不是 data URI。你可以在服务器端处理图像上传，然后在生成页面时提供图像的URL。
+
+不需要隐藏的文本输入字段： 如果你只需要显示图像而不需要用户编辑图像的原始数据，你可以不必包括隐藏的文本输入字段。仅在需要上传图像时包含一个文件上传字段即可。
+
+确保 Model.profile 包含正确的图像数据： 确保 Model.profile 包含正确的图像二进制数据。
+
+根据上述建议，修正后的代码可能如下所示：
+
+
+        
+html
+插入代码
+复制代码
+<div class="editor-field">
+    <img style="width:30px;height:25px;" src="@Model.ProfileImageUrl" alt="图像">
+    <!-- 不需要隐藏的文本输入字段 -->
+    @Html.ValidationMessageFor(model => model.profile)
+</div>
+在上面的示例中，假设 Model.ProfileImageUrl 包含图像的URL，而不再需要隐藏的文本输入字段。当需要上传图像时，你可以在表单中包含一个文件上传字段，然后在服务器端处理上传的图像并将其保存到合适的位置，同时更新 Model.ProfileImageUrl 的值以反映新上传的图像URL。
+
+合计消耗6260字符（提问消耗：100字符 + 回答消耗：430字符 + 上下文：5730字符） 模式：GPT3.5-4k查看字符计算器
+
+09月27日 21:45 会话ID:(1513284)
+
+  Dictionary<string, string> dict = new Dictionary<string, string>(); 如何向里面添加新值
+09月27日 21:45 会话ID:(1513284)
+
+你可以使用 Add 方法向 Dictionary<string, string> 中添加新值。以下是向字典中添加新键值对的示例：
+
+
+        
+csharp
+插入代码
+复制代码
+Dictionary<string, string> dict = new Dictionary<string, string>();
+
+// 添加新值
+dict.Add("Key1", "Value1");
+dict.Add("Key2", "Value2");
+
+// 或者使用索引器方式添加
+dict["Key3"] = "Value3";
+在上面的示例中，我们首先创建了一个 Dictionary<string, string> 对象，然后使用 Add 方法向字典中添加了两对键值对。你也可以使用索引器方式，通过指定键来添加新值。如果键已经存在于字典中，将会更新相应的值；如果键不存在，将会添加新
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月27日 21:46 会话ID:(1513284)
+
+KeyValuePair<string, string> 应该怎么初始化
+09月27日 21:47 会话ID:(1513284)
+
+要初始化 KeyValuePair<string, string>，你可以使用它的构造函数或者直接使用对象初始化器（object initializer）。以下是两种方法的示例：
+
+使用构造函数初始化：
+
+
+        
+csharp
+插入代码
+复制代码
+KeyValuePair<string, string> pair1 = new KeyValuePair<string, string>("Key1", "Value1");
+KeyValuePair<string, string> pair2 = new KeyValuePair<string, string>("Key2", "Value2");
+使用对象初始化器初始化：
+
+
+        
+csharp
+插入代码
+复制代码
+KeyValuePair<string, string> pair1 = new KeyValuePair<string, string>
+{
+    Key = "Key1",
+    Value = "Value1"
+};
+
+KeyValuePair<string, string> pair2 = new KeyValuePair<string, string>
+{
+    Key = "Key2",
+    Value = "Value2"
+};
+无论哪种方式，都会创建一个包含指定键和值的 KeyValuePair<string, string> 实例。这对于创建键值对对象并将它们放入字典或其他集合中非常有用。
+
+合计消耗1次 模式：GPT3.5-4k查看字符计算器
+
+09月27日 21:51 会话ID:(1513284)
+
+这样不行，C#
+09月27日 21:51 会话ID:(1513284)
+
+对不起，我之前的回答有误。在C#中，KeyValuePair<TKey, TValue> 的构造函数是受保护的，无法直接实例化。你通常不需要手动创建 KeyValuePair<TKey, TValue>，因为它通常是用于表示字典或集合中的键值对。
+
+要创建 KeyValuePair<TKey, TValue>，你可以通过直接初始化字典或集合来实现。例如：
+
+
+        
+csharp
+插入代码
+复制代码
+// 创建一个包含键值对的字典
+Dictionary<string, string> dictionary = new Dictionary<string, string>
+{
+    { "Key1", "Value1" },
+    { "Key2", "Value2" }
+};
+
+// 或者使用 LINQ 初始化
+var keyValuePairList = new List<KeyValuePair<string, string>>
+{
+    new KeyValuePair<string, string>("Key1", "Value1"),
+    new KeyValuePair<string, string>("Key2", "Value2")
+};
+在这些示例中，我们通过直接初始化字典或集合来创建 KeyValuePair<string, string>，而不需要显式创建 KeyValuePair 实例。这是在C#中常见的做法。如果你有其他需要，请提供更多上下文，我将尽力提供相关建议。
+
+
+
+$(function () {}是什么意思
+09月27日 22:43 会话ID:(1513284)
+
+$(function () {}) 是 jQuery 中的一种常见用法，它表示一个函数，该函数会在文档（HTML 页面）加载完毕后执行。具体来说，它是 jQuery 的文档就绪事件（Document Ready Event）的一种方式。
+
+在这个函数内部，你可以放置需要在页面加载完毕后执行的 JavaScript 代码。这样做的好处是确保你的代码不会在页面尚未完全加载时运行，从而避免可能的问题。
+
+$(function () {
+    // 在文档加载完毕后执行的代码
+    alert("文档已加载！");
+    // 可以执行各种操作，如绑定事件、修改DOM等
+});
+
+
+JQuery事件委托：
+$(".showData").on("click", ".listOp", function () {}) 是一个 jQuery 事件委托的用法，它的意思是在文档中所有类名为 "showData" 的元素上，当点击了类名为 "listOp" 的子元素时，执行指定的函数。
+
+让我解释一下每个部分的含义：
+
+$(".showData")：这部分选择器选择了所有具有类名 "showData" 的元素。这些元素将充当事件委托的父容器，也就是事件将被附加到这些元素上。
+
+.on("click", ".listOp", function () {})：这是事件绑定的一部分。
+
+"click" 表示事件类型，即点击事件。
+".listOp" 是一个选择器，它指定了要委托的子元素，也就是类名为 "listOp" 的元素。
+function () {} 是在点击事件发生时要执行的函数。
+所以，整个代码的含义是：当点击文档中具有类名 "showData" 的元素的子元素中的类名为 "listOp" 的元素时，执行指定的函数。
+
+这种事件委托的方式在处理大量元素时非常有用，因为它将事件处理程序附加到父容器，而不是每个子元素，从而提高性能并允许处理动态添加的子元素。
+
+
+.ajax
+$.ajax({
+    url: 'your-api-url',   // 请求的URL
+    method: 'GET',         // 请求方法（GET、POST、PUT、DELETE等）
+    data: {},              // 请求发送的数据（如果有）
+    dataType: 'json',      // 期望的响应数据类型
+    success: function (response) {
+        // 请求成功时的回调函数
+        console.log(response);
+    },
+    error: function (xhr, status, error) {
+        // 请求失败时的回调函数
+        console.error(error);
+    }
+});
+2023-09-28：
+1:39
+终于找到了为什么不跳的原因
+解决方法为：修改JS代码，让result不再作为ajax访问是否成功的标志，而是单纯的作为业务是否成功的标志。
+8：39：
+完成了NN_newsCategory的增删改查
+public override void Search()
+{
+    this.ResourceCode = "NN_user";
+    this.keyField = "userID";
+    string querySql = @"SELECT * FROM NN_user WHERE  1=1";
+    querySql += rui.dbTools.searchTbx("userID", this.userID, this.cmdPara);
+    querySql += rui.dbTools.searchTbx("userName", this.userName, this.cmdPara);
+    querySql += rui.dbTools.searchDdl("gender", this.gender, this.cmdPara);
+    querySql += rui.dbTools.searchDdl("type", this.typeID, this.cmdPara);
+    querySql += rui.dbTools.searchDdl("newsAgencyID", this.newsAgencyID, this.cmdPara);
+    querySql += rui.dbTools.searchDdl("status", this.status, this.cmdPara);
+
+    //利用搜索语句获取数据
+     this.getPageConfig();
+     rui.pagerHelper ph = new rui.pagerHelper(querySql, this.getOrderSql("rowNum", "asc"), this);
+     ph.Execute(this.PageSize, this.PageIndex, this);
+     this.dataTable = ph.Result;
+     //获取要展示的列配置
+      this.showColumn = this.getShowColumn();
+}
+
+<span>用户ID：@Html.TextBoxFor(a => a.userID)</span>
+<span>用户昵称：@Html.TextBoxFor(a => a.userName)</span>
+<span>性别：@Html.DropDownListFor(a => a.gender, db.bll.NN_user.bind性别(true, "男"))</span>
+<span>用户类别：@Html.DropDownListFor(a => a.typeID, db.bll.NN_user.bind用户类型(true))</span>
+<span>官方机构：@Html.DropDownListFor(a => a.newsAgencyID, db.bll.NN_user.bind机构(true))</span>
+<span>账号状态：@Html.DropDownListFor(a => a.status, db.bll.NN_user.bind账号状态(true))</span>
+
+
+public string newsID { get; set; }
+public string newsTitle { get; set; }
+public string userID { get; set; }
+public string readQuantity { get; set; }
+public DateTime publishDateTime;
+
+
+
+DynamicParameters 是 Dapper ORM（Object-Relational Mapping）库中的一个类，用于构建和执行动态 SQL 查询或存储过程调用时的参数。
+
+Dapper 是一个轻量级的、高性能的对象关系映射（ORM）库，它简化了与数据库的交互过程，同时尽量保持高效性能。Dapper 允许你通过映射查询结果到.NET对象，以及通过对象参数执行查询和操作。
+
+DynamicParameters 类的作用是允许你在运行时动态地构建参数集合，用于传递给 SQL 查询或存储过程。通常，你可以使用它来创建一个包含参数的集合，并将这些参数传递给 Dapper 的查询方法，以执行查询或存储过程调用。
+
+以下是一个简单的示例，展示如何使用 DynamicParameters：
+
+using Dapper;
+
+// 创建 DynamicParameters 对象
+var parameters = new DynamicParameters();
+parameters.Add("ParamName", "ParamValue", DbType.String, ParameterDirection.Input);
+
+// 执行查询
+var queryResult = connection.Query<MyModel>("SELECT * FROM MyTable WHERE ColumnName = @ParamName", parameters);
+在上面的示例中，我们首先创建了一个 DynamicParameters 对象，然后通过 Add 方法向参数集合中添加参数。最后，我们将这个参数集合传递给 Dapper 的 Query 方法，以执行查询并传递参数到 SQL 查询中。
+
+总之，DynamicParameters 是 Dapper 提供的一个便捷工具，用于动态地构建和传递参数集合，以在数据库操作中实现更灵活的参数化查询
+
+
+
+
+            this.ResourceCode = "NN_newsItem";
+            this.keyField = "newsID";
+            string querySql = @"SELECT * FROM NN_newsItem JOIN NN_user on NN_user.userID = NN_newsItem.userID WHERE  1=1";
+            //在这里个性化查询优化 searchTbx是模糊查询
+            querySql += rui.dbTools.searchDdl("newsID", this.newsID, cmdPara);       //新闻ID搜索
+            querySql += rui.dbTools.searchTbx("newsTitle", this.newsTitle, cmdPara); //新闻名搜索 
+            querySql += rui.dbTools.searchTbx("userName", this.userName, cmdPara);   //作者名搜索
+            querySql += rui.dbTools.searchDdl("userID", this.userID, cmdPara);       //作者ID搜索
+            querySql += rui.dbTools.searchDate("publishDateTime", publishDateTimeStart, publishDateTimeEND, cmdPara);
+
+
+
+震惊！妙龄男子竟然当众做出这样的事！
+
+当众做出这样的事情！妙龄男子的突如其来举动令人大开眼界
+
+在一个普通的夏日傍晚，小镇的居民们聚集在当地的公园里，享受着温和的天气和欢乐的氛围。人们谈笑风生，孩子们在草地上奔跑嬉戏，似乎一切都平静而祥和。
+
+然而，在这个平凡的日子里，一位年轻的妙龄男子，名叫亚当，突然吸引了大家的注意。亚当是该小镇的一名年轻教师，以其聪明和风趣而受人喜爱。但今天，他似乎有了不同的计划。
+
+当所有人的目光聚集在亚当身上时，他突然开始表演一场精彩绝伦的魔术表演。他从口袋里掏出一束五彩斑斓的丝巾，然后在一瞬间将其变成了一只活生生的白兔！观众们惊讶地鼓掌，尖叫声此起彼伏。
+
+然而，亚当的魔术表演并没有结束，他接着变出了绚丽多彩的气球、一束鲜花，甚至是一台微型飞行器，飞行器在空中翱翔，令人叹为观止。他的魔术不仅仅是技巧，更是一场视觉盛宴。
+
+当表演结束时，亚当的笑容洋溢，观众们热烈鼓掌，夸赞他的才华和创造力。这一突如其来的表演不仅让人们大开眼界，还带来了欢乐和惊喜。
+
+亚当的举动成为了小镇的话题之一，人们纷纷赞扬他的勇气和创意。他解释说，他希望用这个意外的魔术表演来为大家带来快乐，让大家忘记日常生活中的烦恼。
+
+这个小镇上的妙龄男子，以他的惊人表演，让人们重新认识了他。他用自己的方式展示了积极的精神和乐观的态度，成为了当地的一位英雄，也让大家明白了生活中的惊喜和美好可能会突然出现，只要我们敢于去追求和创造。这一天成为了小镇上一个难忘的记忆。
+
+                         202071222374427898.jpg         
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    cout << "hello world";
+}
+
+
+这里是一个分页
+
+
+15：55：
+完成Uediter的基本调用和显示
+下面需要完成的事情：给富文本内容加信息戳 + 详情界面的阅读量 + 收藏量 + 喜欢量的显示。以及评论的显示。评论的显示。
+
+
+下面是一个关于评论区的Demo
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>评论区</title>
+    <style>
+        /* 样式用于美化评论区，可以根据需要进行自定义 */
+        .comment {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .user {
+            font-weight: bold;
+        }
+        .reply {
+            margin-left: 20px;
+            padding-left: 10px;
+            border-left: 1px solid #ccc;
+        }
+        .reply-info {
+            font-style: italic;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>评论区</h1>
+
+    <!-- 评论输入框 -->
+    <div>
+        <input type="text" id="userName" placeholder="昵称">
+        <textarea id="commentText" placeholder="发表评论"></textarea>
+        <button onclick="postComment()">发表</button>
+    </div>
+
+    <!-- 评论列表 -->
+    <div id="comments"></div>
+
+    <script>
+        let comments = [];
+
+        function postComment() {
+            const userName = document.getElementById("userName").value;
+            const commentText = document.getElementById("commentText").value;
+            if (userName.trim() === "" || commentText.trim() === "") {
+                alert("请输入昵称和评论内容");
+                return;
+            }
+
+            const commentTime = new Date().toLocaleString();
+            const comment = {
+                userName,
+                commentText,
+                commentTime,
+                replies: [],
+            };
+
+            comments.push(comment);
+            document.getElementById("userName").value = "";
+            document.getElementById("commentText").value = "";
+
+            refreshComments();
+        }
+
+        function reply(commentIndex) {
+            const userName = prompt("昵称：");
+            const replyText = prompt("回复评论：");
+            if (userName === null || userName.trim() === "" || replyText === null || replyText.trim() === "") {
+                return;
+            }
+
+            const replyTime = new Date().toLocaleString();
+            const reply = {
+                userName,
+                replyText,
+                replyTime,
+                replies: [],
+            };
+
+            comments[commentIndex].replies.push(reply);
+            refreshComments();
+        }
+
+        function createCommentDiv(comment, commentIndex) {
+            const commentDiv = document.createElement("div");
+            commentDiv.className = "comment";
+            commentDiv.innerHTML = `<span class="user">${comment.userName}:</span> ${comment.commentText}
+                                    <br><span class="comment-time">${comment.commentTime}</span>
+                                    <br><button onclick="reply(${commentIndex})">回复</button>`;
+
+            for (let i = 0; i < comment.replies.length; i++) {
+                const reply = createReplyDiv(comment.replies[i], commentIndex, i);
+                commentDiv.appendChild(reply);
+            }
+
+            return commentDiv;
+        }
+
+        function createReplyDiv(reply, commentIndex, replyIndex) {
+            const replyDiv = document.createElement("div");
+            replyDiv.className = "reply";
+            replyDiv.innerHTML = `<span class="user">${reply.userName}:</span> ${reply.replyText}
+                                    <br><span class="comment-time">${reply.replyTime}</span>
+                                    <br><span class="reply-info">回复 ${comments[commentIndex].userName} 的评论</span>
+                                    <br><button onclick="reply(${commentIndex}, ${replyIndex})">回复</button>`;
+
+            for (let i = 0; i < reply.replies.length; i++) {
+                const nestedReply = createReplyDiv(reply.replies[i], commentIndex, replyIndex);
+                replyDiv.appendChild(nestedReply);
+            }
+
+            return replyDiv;
+        }
+
+        function refreshComments() {
+            const commentsDiv = document.getElementById("comments");
+            commentsDiv.innerHTML = "";
+
+            for (let i = 0; i < comments.length; i++) {
+                const commentDiv = createCommentDiv(comments[i], i);
+                commentsDiv.appendChild(commentDiv);
+            }
+        }
+    </script>
+</body>
+</html>
+
+/****************************************************************************************/
+2023-10-1 
+20：50 开始
+实现了几张表的批量功能
+/****************************************************************************************/
+
+
+/****************************************************************************************/
+2023-10-3 
+16：05 开始
+
+@Html.TextBoxFor(a => a.userID, db.bll.NN_newsItem.getUserName(Model.userID))
+@Html.DropDownListFor(a => a.status, db.bll.NN_newsItem.bind新闻状态(false, Model.status.ToString()))
+
+
+        <div class="editor-label">
+			@Html.LabelFor(model => model.content)
+		</div>
+		<div class="editor-field">	
+			@Html.EditorFor(model => model.content)
+			@Html.ValidationMessageFor(model => model.content)
+        </div>
+
+
+[ValidateInput(false)]
+该特性用来设置是否对提交的内容进行合法性检测，富文本内容提交必须加上这个。
+
+
+
+17：42 新闻的修改完成
+
+flex-wrap: wrap; /* 允许控件自动换行 */
+现在的问题是，没有自动给我分页。
+加上数据的处理。
+/****************************************************************************************
+
+/****************************************************************************************/
+2023-10-4
+16：59 标签的相关操作完成
+
+/****************************************************************************************/
+
+
+****************************************************************************************/
+2023-10-5
+        <span>机构ID：@Html.TextBoxFor(a => a.newsAgencyID)</span>
+        <span>机构名称：@Html.TextBoxFor(a => a.newsAgencyName)</span>
+        <span>机构状态：@Html.DropDownListFor(a => a.status, db.bll.NN_NewsAgency.bind账号状态(true))</span>
+
+        public static List<SelectListItem> bind排序(bool has请选择 = false, string selectedValues = "")
+        {
+            dbEntities dc = new dbEntities();
+            List<SelectListItem> list = new List<SelectListItem>();
+            rui.listHelper.add请选择(list, has请选择);
+            list.Add(new SelectListItem { Text = "阅读量高到低", Value = "1" });
+            list.Add(new SelectListItem { Text = "阅读量低到高", Value = "0" });
+            return list;
+        }
+
+/
+
+        @Html.ActionLink("新增", "Insert", new { }, new { data_show = rui.privCtl.isPriv(ctrl, rui.privCtl.eOp.Insert), @class = "showDialogR opInsert" })
+        @Html.ActionLink("批量删除", "batchDelete", new { }, new { data_show = rui.privCtl.isPriv(ctrl, "batchDelete"), @class = "listBatchOp opBtn", data_msg = "确认批量删除" })
+        @Html.ActionLink("批量封禁", "batchBan", new { }, new { data_show = rui.privCtl.isPriv(ctrl, "batchBan"), @class = "listBatchOp opBtn", data_msg = "确认批量封禁" })
+        @Html.ActionLink("批量解封", "batchRecovey", new { }, new { data_show = rui.privCtl.isPriv(ctrl, "batchRecovey"), @class = "listBatchOp opBtn", data_msg = "确认批量解封" })
+
+<select data-val="true" data-val-number="字段 Type 必须是一个数字。" data-val-required="Type 字段是必需的。" id="Type" name="Type" style="width:100%">
+<option value="">这是什么作用</option>
+<option selected="selected" value="0">申请成为内容创作者</option>
+<option value="1">变更新闻机构</option>
+</select>
+
+list查找特定值，并且设置为选中
+ list.FirstOrDefault(a => a.Text == rui.configHelper.va请选择Text).Selected = true;
+
+
+        public ActionResult batchDelete(string keyFieldValues)
+        {
+            rui.jsonResult result = new rui.jsonResult();
+            try
+            {
+                string msg = db.bll.NN_NewsAgency.batchDelete(keyFieldValues, dc);
+                result.data = rui.jsonResult.getAJAXResult(msg, true);
+            }
+            catch (Exception ex)
+            {
+                rui.logHelper.log(ex);
+                result.data = rui.jsonResult.getAJAXResult(ex.Message, false);
+            }
+            return Json(result.data);
+        }
+
+        public static string batchBan(string keyFieldValues, dbEntities dc)//批量禁止
+        {
+            efHelper ef = new efHelper(ref dc);
+            List<string> KeyFieldList = rui.dbTools.getList(keyFieldValues);
+            Dictionary<string, string> errorDic = new Dictionary<string, string>();
+            string sqlCheck = "select newsID, status  from NN_newsItem where newsID in @newsID";
+            DataTable table = ef.ExecuteDataTable(sqlCheck, new { newsID = KeyFieldList });
+            foreach (string newsID in KeyFieldList)
+            {
+                try
+                {
+                    string sql = " UPDATE NN_newsItem SET status = 1 WHERE newsID=@newsID ";
+                    DataRow[] rows = table.Select("newsID='" + newsID + "'");
+                    rui.dbTools.checkRowFieldValue(rows, "status", "1", "已处于封禁状态");
+                    if (ef.Execute(sql, new { newsID }) == 0)
+                    {
+                        errorDic.Add(newsID, "发生错误，未成功设置");
+                    }
+                }
+                catch(Exception ex)
+                {
+                    errorDic.Add(newsID, "发生错误" + rui.excptHelper.getExMsg(ex));
+                }
+            }
+            dc.SaveChanges();
+            return rui.dbTools.getBatchMsg("批量封禁", KeyFieldList.Count, errorDic);
+        }
+
+
+
+DataRow[] 表示一个包含数据表行的数组，通常用于对数据进行筛选、操作和查询。以下是一些常用的 DataRow[] 相关方法和操作：
+
+Select 方法：
+DataRow[] Select(string filterExpression)：使用筛选表达式来选择符合条件的行，并返回一个 DataRow[] 数组。
+DataRow[] selectedRows = yourDataTable.Select("ColumnName = '某个值'");
+
+
+
+Where 方法（使用 LINQ）：
+使用 LINQ 查询语法来筛选行。
+var selectedRows = yourDataTable.AsEnumerable()
+    .Where(row => row.Field<string>("ColumnName") == "某个值")
+    .ToArray();
+
+
+OrderBy 方法（使用 LINQ）：
+使用 LINQ 查询语法对行进行排序。
+
+var sortedRows = yourDataTable.AsEnumerable()
+    .OrderBy(row => row.Field<int>("数值列名"))
+    .ToArray();
+
+
+FirstOrDefault 方法（使用 LINQ）：
+使用 LINQ 查询语法获取符合条件的第一行，如果没有符合条件的行，则返回 null。
+var firstRow = yourDataTable.AsEnumerable()
+    .FirstOrDefault(row => row.Field<int>("数值列名") == 42);
+
+Count 方法：
+int rowCount = yourDataTable.Select("ColumnName = '某个值'").Length;
+
+Delete 方法：
+删除特定的行。
+DataRow[] rowsToDelete = yourDataTable.Select("ColumnName = '某个值'");
+foreach (DataRow row in rowsToDelete)
+{
+    row.Delete();
+}
+这些方法可以帮助你对 DataRow[] 数组进行筛选、排序、计数和删除等操作，根据你的需求选择合适的方法来处理数据行。
+
+
+要在 T-SQL 中一次修改两个值，你可以使用 UPDATE 语句来更新表中的行，并在 SET 子句中分别设置两个列的新值。以下是一个示例：
+
+假设你有一个表名为 YourTable，包含两个列名为 Column1 和 Column2，并且你想要同时更新这两列的值。
+
+
+        
+sql
+插入代码
+复制代码
+UPDATE YourTable
+SET Column1 = 'NewValue1', Column2 = 'NewValue2'
+WHERE YourCondition;
+在上面的 SQL 语句中，UPDATE 语句用于更新表 YourTable 中符合条件的行。在 SET 子句中，你可以指定要更新的列和它们的新值，这里我们同时更新了 Column1 和 Column2 到 'NewValue1' 和 'NewValue2'。请将 'NewValue1'、'NewValue2' 和 YourCondition 替换为实际的值和条件。
+
+通过这种方式，你可以一次性修改两个列的值。如果需要更新更多列，只需在 SET 子句中继续添加列名和新值即可。
+
+
+****************************************************************************************/
+
+****************************************************************************************/
+2023-10-6 1：21
+完成了账户审批的完善，增加了昵称的显示
+
+            querySql += rui.dbTools.searchDdl("userID", this.userID, cmdPara);           //用户人ID搜索
+            querySql += rui.dbTools.searchDdl("reportID", this.reportID, cmdPara);       //举报ID搜索
+            querySql += rui.dbTools.searchDate("reportTimeDate", reportTimeDateStart, reportTimeDateEnd, cmdPara);  //举报时间搜索
+            querySql += rui.dbTools.searchDdl("category", this.category, cmdPara);            //举报类型搜索  0
+            querySql += rui.dbTools.searchDdl("disposeStatusID", this.disposeStatusID, cmdPara);        //处理状态搜索
+            querySql += rui.dbTools.searchDdl("newsID", this.newsID, cmdPara);            //当category为0该字段有效
+            querySql += rui.dbTools.searchDdl("commentID", this.commentID, cmdPara);       //当category为0该字段有效
+
+
+        <span>举报人ID：@Html.TextBoxFor(a => a.userID)</span>
+        <span>举报ID号：@Html.TextBoxFor(a => a.reportID)</span>
+        <span>举报时间：</span>
+        <span>举报种类：</span>
+        <span>处理状态：</span>
+        <span>新闻ID：@Html.TextBoxFor(a => a.newsID)</span>
+        <span>新闻标题</span>
+        <span>评论ID：</span>
+
+
+
+
+"SELECT NN_report.*, NN_user.userName, NN_newsItem.newsTitle  FROM NN_report inner join NN_user on NN_user.userID = NN_report.userID  left join NN_newsItem on NN_newsItem.newsID = NN_report.newsID WHERE  1=1 and NN_report.userID = @NN_report.userID "
+
+
+        public ActionResult batchBan(string keyFieldValues)
+        {
+            rui.jsonResult result = new rui.jsonResult();
+            try
+            {
+                string msg = db.bll.NN_newsItem.batchBan(keyFieldValues, dc);
+                result.data = rui.jsonResult.getAJAXResult(msg, true);
+            }
+            catch (Exception ex)
+            {
+                rui.logHelper.log(ex);
+                result.data = rui.jsonResult.getAJAXResult(ex.Message, false);
+            }
+            return Json(result.data);
+        }
+
+        public static string batchBan(string keyFieldValues, dbEntities dc)//批量禁止
+        {
+            efHelper ef = new efHelper(ref dc);
+            List<string> KeyFieldList = rui.dbTools.getList(keyFieldValues);
+            Dictionary<string, string> errorDic = new Dictionary<string, string>();
+            string sqlCheck = "select newsID, status  from NN_newsItem where newsID in @newsID";
+            DataTable table = ef.ExecuteDataTable(sqlCheck, new { newsID = KeyFieldList });
+            foreach (string newsID in KeyFieldList)
+            {
+                try
+                {
+                    string sql = " UPDATE NN_newsItem SET status = 1 WHERE newsID=@newsID ";
+                    DataRow[] rows = table.Select("newsID='" + newsID + "'");
+                    rui.dbTools.checkRowFieldValue(rows, "status", "1", "已处于封禁状态");
+                    if (ef.Execute(sql, new { newsID }) == 0)
+                    {
+                        errorDic.Add(newsID, "发生错误，未成功设置");
+                    }
+                }
+                catch(Exception ex)
+                {
+                    errorDic.Add(newsID, "发生错误" + rui.excptHelper.getExMsg(ex));
+                }
+            }
+            dc.SaveChanges();
+            return rui.dbTools.getBatchMsg("批量封禁", KeyFieldList.Count, errorDic);
+        }
+
+
+        public static string batchRecovey(string keyFieldValues, dbEntities dc)//批量解封
+        {
+            efHelper ef = new efHelper(ref dc);
+            List<string> KeyFieldList = rui.dbTools.getList(keyFieldValues);
+            Dictionary<string, string> errorDic = new Dictionary<string, string>();
+            string sqlCheck = "select newsID, status  from NN_newsItem where newsID in @newsID";
+            DataTable table = ef.ExecuteDataTable(sqlCheck, new { newsID = KeyFieldList });
+            foreach (string newsID in KeyFieldList)
+            {
+                try
+                {
+                    string sql = " UPDATE NN_newsItem SET status = 0 WHERE newsID=@newsID ";
+                    DataRow[] rows = table.Select("newsID='" + newsID + "'");
+                    rui.dbTools.checkRowFieldValue(rows, "status", "0", "状态正常，不需要解封");
+                    if (ef.Execute(sql, new { newsID }) == 0)
+                    {
+                        errorDic.Add(newsID, "发生错误，未成功设置");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    errorDic.Add(newsID, "发生错误" + rui.excptHelper.getExMsg(ex));
+                }
+            }
+            dc.SaveChanges();
+            return rui.dbTools.getBatchMsg("批量解封", KeyFieldList.Count, errorDic);
+        }
+
+//<a class="opClose">关闭</a>
+
+给displayFor加ID：
+@Html.DisplayFor(a => a.report.reportID, new { htmlAttributes = new { id = "reportID" } })
+
+原来是可以直接拿值的
+ var reportID = @Model.report.reportID;
+
+2023-10-6 8：41
+后端功能基本完成
+****************************************************************************************/
+
+2023-10-7	8：52
+
+top.location.href = "/login/loginAdmin"; 是 JavaScript 代码的一部分，它的作用是将当前页面的浏览器窗口跳转到指定的URL地址。具体解释如下：
+
+top 是一个引用顶级窗口或框架的对象。通常，网页中存在多个嵌套的框架或窗口，top 引用的是最顶层的窗口，也就是整个浏览器窗口的窗口对象。
+
+location 是窗口对象的属性，用于获取或设置当前窗口的URL地址。
+
+href 是 location 对象的属性之一，表示当前窗口的URL。
+
+所以，top.location.href = "/login/loginAdmin"; 的作用是将顶级窗口的当前URL地址设置为 "/login/loginAdmin"，从而实现页面跳转到指定的URL。这通常用于在 JavaScript 中进行页面导航或跳转。
+
+
+background-image: url('your-image-url.jpg'); /* 替换为您的图片URL */
+
+
+$("input[name='submit']").click(function () {
+$("#loading").css("height", $(document).height());
+                $("#loading").show();
+                var tbxUserName = $(".tbxUserName").val();
+                var tbxPassword = md5($(".tbxPassword").val());
+                var ddlOrgCode = $(".ddlOrg").val();
+                ajaxPost("/Login/loginAdmin", { tbxUserName: tbxUserName, tbxPassword: tbxPassword, orgCode: ddlOrgCode }, function (data) {
+                    info(data);
+                    $("#loading").hide();
+                    if (data.result == "True") {
+                        top.location.href = "/admin/sys_Home/index";
+                    } else {
+                        showError(data.message);
+                    }
+                });
+                return false;
+            });
+
+        public JsonResult loginAdmin(string tbxUserName, string tbxPassword, string orgCode)
+        {
+            rui.jsonResult result = new rui.jsonResult();
+            try
+            {
+                //登陆逻辑，成功后进行页面跳转
+                db.bll.loginAdminHelper.login(tbxUserName, tbxPassword, orgCode, dc);
+                db.bll.sys_WebLog.logLogin();
+                db.bll.bks_CustomerAddress.InitDbentities(dc);
+                result.data = rui.jsonResult.getAJAXResult("登录成功", true);
+            }
+            catch (Exception ex)
+            {
+                rui.logHelper.log(ex);
+                result.data = rui.jsonResult.getAJAXResult(rui.excptHelper.getExMsg(ex), false);
+            }
+            return Json(result.data);
+        }
+
+    @*md5 swipter*@
+    <script type="text/javascript" src="@Url.Content("~/Content/scripts/jquery.md5.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/swiper/swiper.jquery.min.js")"></script>
+
+
+ <style>
+        body {
+            background-color: #0073e6;
+            background-image: url("/Resource/Pic/Home2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: flex-end; /* 使容器显示在更右边 */
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+            max-width: 80%; /* 增大容器宽度 */
+            width: 100%;
+            max-height: 85%;
+            height: 100%;
+            margin-right: 20px; /* 向右移动容器 */
+        }
+
+        h2 {
+            color: #0073e6;
+        }
+
+        button {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 20px 45px;
+            margin: 10px;
+            cursor: pointer;
+            margin-top: 30px;
+            width: 200px;
+            height: 50px;
+        }
+
+            button:hover {
+                background-color: #005bbf;
+            }
+    </style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+/******************************************************************************************************/
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>用户注册</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .registration-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            text-align: center;
+            display: flex; 
+            align-items: center; 
+            width: 700px;
+        }
+
+        .image-container {
+            background-color: #ccc; 
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+            margin-right: 20px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-preview {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+
+        .registration-content {
+            text-align: left; 
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: calc(100% - 22px); 
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: 100%; 
+        }
+
+        button {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 32px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005bbf;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="registration-container">
+            <div class="image-container">
+                <!-- 用于实时预览头像的元素 -->
+                <img id="avatar-preview" class="image-preview" src="#" alt="Avatar Preview">
+                <!-- 用于上传头像的input元素 -->
+                <input type="file" id="avatar-upload" accept="image/*">
+            </div>
+            <div class="registration-content">
+                <h2>用户注册</h2>
+                <label>昵称:</label>
+                <input type="text" placeholder="请输入昵称" id="nickname"><br>
+                <label>密码:</label>
+                <input type="password" placeholder="请输入密码" id="password"><br>
+                <label>性别:</label>
+                <select id="gender">
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                </select><br>
+                <label>出生日期:</label>
+                <input type="date" id="birthdate"><br>
+                <button id="register">注册</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("avatar-upload").addEventListener("change", function () {
+            var fileInput = this;
+            var imagePreview = document.getElementById("avatar-preview");
+
+            if (fileInput.files && fileInput.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    imagePreview.src = e.target.result;
+                };
+                reader.readAsDataURL(fileInput.files[0]);
+            }
+        });
+
+        document.getElementById("register").addEventListener("click", function () {
+            var nickname = document.getElementById("nickname").value;
+            var password = document.getElementById("password").value;
+            var gender = document.getElementById("gender").value;
+            var birthdate = document.getElementById("birthdate").value;
+
+            // 在这里添加相应的注册逻辑
+        });
+    </script>
+</body>
+</html>
+
+
+blur 是一个JavaScript事件，它在用户离开（失去焦点）一个HTML元素时触发。具体来说，当用户点击输入框（获得焦点）并然后点击其他地方或按下键盘上的Tab键（失去焦点）时，blur事件会被触发。
+
+在前端开发中，blur事件通常用于验证用户输入或执行一些与焦点交互相关的操作。你可以使用addEventListener方法来为元素添加blur事件的监听器，以便在用户离开输入框时执行特定的JavaScript代码。
+
+        document.getElementById("password").addEventListener("blur", function () {
+            var passwordInput = this;
+            var passwordValue = passwordInput.value;
+
+            if (passwordValue.trim() === "") {
+                passwordInput.setCustomValidity("请输入密码");
+            } else {
+                passwordInput.setCustomValidity("");
+            }
+        });
+
+关于blur的一个完整demo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Input Demo</title>
+</head>
+<body>
+    <h1>Password Input Demo</h1>
+    <label for="password">密码：</label>
+    <input type="password" placeholder="请输入密码" id="password">
+    <p id="password-error" style="color: red;"></p>
+
+    <script>
+        document.getElementById("password").addEventListener("blur", function() {
+            var passwordInput = this;
+            var passwordValue = passwordInput.value.trim();
+            var passwordError = document.getElementById("password-error");
+
+            if (passwordValue === "") {
+                passwordError.textContent = "密码不能为空";
+            } else {
+                passwordError.textContent = "";
+            }
+        });
+    </script>
+</body>
+</html>
+
+nickname-error
+password-error
+birthdate-error
+/******************************************************************************************************/
+要将fileInput.files[0]的值传递到ASP.NET后台，您可以使用AJAX来发送该文件或其内容。以下是一种可能的方法：
+
+首先，在前端页面中创建一个file input元素，通常是这样的：
+
+        
+html
+
+<input type="file" id="fileInput" />
+使用JavaScript监听文件选择事件，然后将文件内容发送到后台。您可以使用JavaScript库（如jQuery）来简化此过程。以下是一个示例使用jQuery的方法：
+
+        
+javascript
+$("#fileInput").change(function() {
+    var file = this.files[0];
+    var formData = new FormData();
+    formData.append("file", file);
+
+    $.ajax({
+        url: "YourAspNetEndpoint.ashx", // 指向您的ASP.NET后台处理程序
+        type: "POST",
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function(response) {
+            // 处理成功响应
+        },
+        error: function(error) {
+            // 处理错误
+        }
+    });
+});
+在ASP.NET后台，您可以创建一个处理程序（通常是.ashx文件）来处理上传的文件。您可以使用HttpContext.Current.Request.Files来访问上传的文件。以下是一个简单的处理程序示例：
+
+
+public void ProcessRequest(HttpContext context)
+{
+    if (context.Request.Files.Count > 0)
+    {
+        HttpPostedFile file = context.Request.Files[0];
+        if (file != null && file.ContentLength > 0)
+        {
+            // 处理上传的文件，例如保存到服务器或进行其他操作
+            string fileName = Path.GetFileName(file.FileName);
+            string filePath = HttpContext.Current.Server.MapPath("~/uploads/" + fileName);
+            file.SaveAs(filePath);
+            
+            // 现在，您可以在处理程序中访问文件的路径或其他信息
+        }
+    }
+}
+在上述示例中，我们使用jQuery监听文件选择事件，然后使用AJAX将文件内容发送到ASP.NET后台的处理程序。在处理程序中，我们可以使用HttpContext.Current.Request.Files来访问上传的文件，然后根据需要对文件进行处理
+
+
+ ajaxPost("", { nickname: nickname, password: password, gender: gender, birthdate: birthdate, file: file }, function () {
+
+                    });
+
+                    ajaxPost("register_exec", { file: file, nickname: nickname, password: password, gender: gender, birthdate: birthdate }, function (data) {
+                        info(data.result);
+                    });
+
+		    var formData = new FormData();
+                    formData.append("file", file.files[0]);
+                    formData.append("nickname", nickname);
+                    formData.append("password", password);
+                    formData.append("gender", gender);
+                    formData.append("birthdate", birthdate);
+
+var formData = new FormData();
+formData.append("avatarUpload", document.getElementById("avatar-upload").files[0]);
+formData.append("nickname", "John"); // 传递其他字段
+
+$.ajax({
+    url: "/YourController/YourActionName",
+    type: "POST",
+    data: formData,
+    contentType: false,
+    processData: false,
+    success: function (response) {
+        // 处理响应
+    },
+    error: function (error) {
+        // 处理错误
+    }
+});
+2023-10-9   15：20
+注册功能完成
+
+将图片传到后台，使用表单提交的方法：
+var formData = new FormData();
+formData.append("avatarUpload", document.getElementById("avatar-upload").files[0]);
+formData.append("nickname", "John"); // 传递其他字段
+
+$.ajax({
+    url: "/YourController/YourActionName",
+    type: "POST",
+    data: formData,
+    contentType: false,
+    processData: false,
+    success: function (response) {
+        // 处理响应
+    },
+    error: function (error) {
+        // 处理错误
+    }
+});
+
+向视图中传递特殊值的办法：
+        public ActionResult login(int type = 0)
+        {
+            ViewBag.type = type;
+            return View();
+        }
+
+                    document.getElementById("back").addEventListener("click", Function(){
+                        window.open('../Login/Home', "_self");
+                    });
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>用户注册</title>
+    @*字体库*@
+    <link href="@Url.Content("~/content/fontawesome/css/font-awesome.min.css")" rel="stylesheet" type="text/css" />
+
+    @*jquery*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery-1.12.4.min.js")></script>
+    @*easyUI*@
+    <link href="@Url.Content("~/content/easyui/icon.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/content/easyui/bootstrap/easyui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/easyui/jquery.easyui.js")"></script>
+    @*layui*@
+    <link href="@Url.Content("~/content/layui/css/layui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/layui/layui.js")"></script>
+    @*chosen*@
+    <link href="@Url.Content("~/content/chosen/chosen.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/chosen/jquery.chosen.js")"></script>
+    @*jquery.validate*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate-vsdoc.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.message.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.unobtrusive.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.metadata.js")></script>
+    @*jquery库*@
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.ajaxfileupload.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.tableInput.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/my97DatePicker/WdatePicker.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.form.js")"></script>
+
+
+    @*自己封装的js*@
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.tools.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/fontawesome/rui.button.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.modelDialog.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.dropDownList.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.bill.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.cbxMulSelected.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_rui.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_lay.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.pager.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.layout.js"+rui.configHelper.ctxKey)></script>
+
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .registration-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            width: 700px;
+        }
+
+        .image-container {
+            background-color: #ccc;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-preview {
+            max-width: 100%;
+            max-height: 100%;
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .registration-content {
+            text-align: left;
+            width: 100%;
+            margin-left: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        Select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: 100%;
+        }
+
+        button {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 32px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #005bbf;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="registration-container">
+            <div>
+                <div class="image-container">
+                    <!-- 用于实时预览头像的元素 -->
+                    <img id="avatar-preview" class="image-preview" src="#" alt="Avatar Preview">
+                </div>
+                <input type="file" id="avatar-upload" accept="image/*" style="margin-top: 20px;">
+            </div>
+            <div class="registration-content">
+                <h2>用户注册</h2>
+                <div>
+                    <label>昵称:</label><br>
+                    <input type="text" placeholder="请输入昵称" id="nickname" style="width:85%"><span id="nickname-error" style="color: red;"></span><br>
+                </div>
+                <div>
+                    <label>密码:</label><br>
+                    <input type="password" placeholder="请输入密码" id="password" style="width:85%"><span id="password-error" style="color: red;"></span><br>
+                </div>
+                <div>
+                    <label>性别:</label><br>
+                    <select id="gender" style="width:85%">
+                        <option value="male">男</option>
+                        <option value="female">女</option>
+                    </select><br>
+                </div>
+                <div>
+                    <label>出生日期:</label><br>
+                    <input type="date" id="birthdate" style="width:85%"><span id="birthdate-error" style="color: red;"></span><br>
+                </div>
+                    <button id="register">注册</button>
+                    <button id="back">返回</button>
+                </div>
+            </div>
+    </div>
+
+    <script>
+        
+
+
+        var defaultmale = getImagePath("man.jpg");
+        document.getElementById("avatar-preview").src = defaultmale;
+
+        function getImagePath(imageName) {
+            // 构建图片的相对路径
+            var imagePath = "\\Areas\\client\\Data\\img\\" + imageName;
+            return imagePath;
+        }
+
+        document.getElementById("avatar-upload").addEventListener("change", function () {
+            var fileInput = this;
+            var imagePreview = document.getElementById("avatar-preview");
+
+            if (fileInput.files && fileInput.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    imagePreview.src = e.target.result;
+                };
+                reader.readAsDataURL(fileInput.files[0]);
+            }
+        });
+
+        document.getElementById("register").addEventListener("click", function () {
+            var nickname = document.getElementById("nickname").value;
+            var password = document.getElementById("password").value;
+            var gender = document.getElementById("gender").value;
+            var birthdate = document.getElementById("birthdate").value;
+            var nicknameError = document.getElementById("nickname-error");
+
+            //在这里添加相应的注册逻辑
+            //先判断应该输入的信息是否输入完整，还要再判断一个是否存在相同的昵称
+            if (nickname && password && gender && birthdate) {
+                //信息输入完整
+                if (nicknameError.textContent == "") {
+                    //没有消息提示说明输入满足条件
+                    /*var file = document.getElementById("avatar-upload").files[0];
+                    ajaxPost("register_exec", { file: file, nickname: nickname, password: password, gender: gender, birthdate: birthdate }, function (data) {
+                        info(data.result);
+                    });*/
+                    var formData = new FormData();
+                    formData.append("avatarUpload", document.getElementById("avatar-upload").files[0]);
+                    formData.append("nickname", nickname);
+                    formData.append("password", password);
+                    formData.append("gender", gender);
+                    formData.append("birthdate", birthdate);
+
+                    $.ajax({
+                        url: "register_exec",
+                        type: "POST",
+                        data: formData,
+                        contentType: false,
+                        processData: false,
+                        success: function (response) {
+                            if (response.result == "True") {
+                                top.location.href = "../clientLogin/login?ty";
+                                showInfo(response.message);
+                            }
+                            else {
+                                showInfo("注册失败，请联系管理员");
+                            }
+                        },
+                        error: function (error) {
+                            showInfo("内部链接出现问题，请联系管理员");
+                        }
+                    });
+                }
+                else {
+                    //有消息提示，但是输入框有东西，说明用户的昵称不满足条件
+                    //需要进行消息提醒，在这里我们使用layui的消息框
+                    showInfo("该昵称已经被占用，请重新选择你的名字吧！");
+                }
+            }
+            else {
+                showInfo("信息输入不完整");
+            }
+        });
+
+        //当性别变的时候，默认头像也跟着变
+        document.getElementById("gender").addEventListener("change", function () {
+            var genderValue = document.getElementById("gender").value;
+            if (genderValue == "male") {
+                defaultmale = getImagePath("man.jpg");
+                document.getElementById("avatar-preview").src = defaultmale;
+            }
+            else {
+                defaultmale = getImagePath("woman.jpg");
+                document.getElementById("avatar-preview").src = defaultmale;
+            }
+        });
+        //日期输入检测
+        document.getElementById("birthdate").addEventListener("blur", function () {
+            var birthdateInput = this;
+            var birthdateError = document.getElementById("birthdate-error");
+            var birthdateValue = birthdateInput.value;
+            if (birthdateValue == "") {
+                birthdateError.textContent = "必填";
+            } else {
+                birthdateError.textContent = "";
+            }
+        });
+        //昵称输入检测
+        document.getElementById("nickname").addEventListener("blur", function () {
+            var nicknameInput = this;
+            var nicknameError = document.getElementById("nickname-error");
+            var nicknameValue = nicknameInput.value;
+            if (nicknameValue.trim() === "") {
+                nicknameError.textContent = "必填";
+            } else {
+                //这个是输入框里面有东西，我们做一次有无相同昵称的判断
+                ajaxPost("checkSameUserName", { nickname: nicknameValue }, function (data) {
+                    if (data.result == "False") {
+                        //这个说明数据库里面已经存在相同的昵称了
+                        nicknameError.textContent = data.message;
+                        return false;
+                    } else {
+                        //这个说明用户输入的昵称是可以用的
+                    }
+                });
+                nicknameError.textContent = "";
+            }
+        });
+        //密码输入检测
+        document.getElementById("password").addEventListener("blur", function () {
+            var passwordInput = this;
+            var passwordError = document.getElementById("password-error");
+            var passwordValue = passwordInput.value;
+            if (passwordValue.trim() === "") {
+                passwordError.textContent = "必填";
+            } else {
+                passwordError.textContent = "";
+            }
+        });
+
+    </script>
+</body>
+</html>
+
+
+    <link rel="shortcut icon" href=@Url.Content("~/Areas/client/assets/images/fav.png")type="image/x-icon">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/plugins/fontawesome-5.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/bootstrap.min.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/swiper.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/metismenu.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/magnific-popup.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/style.css") as="style">
+
+
+2023-10-9
+需要完成时的事情有：给新闻加两个字段，分别是封面图片，以及新闻描述，要设置为可空的，加一个默认新闻的高清图片
+
+
+/******************************************************************************************************/
+2020-10-10 00：20：
+开始
+
+序号
+新闻ID
+新闻标题
+作者
+被阅读量
+发布时间
+内容
+状态
+操作
+
+<img style="width:30px;height:25px;" src="data:jpg/jpeg;base64,@Convert.ToBase64String((byte[])Model.coverPic)" alt="图像">
+
+<td><img style="width:30px;height:25px;" src="data:jpg/jpeg;base64,@Convert.ToBase64String((byte[])Model.dataTable.Rows[i][colName])" alt="图像"></td>
+
+
+        document.getElementById("avatar-upload").addEventListener("change", function () {
+            var fileInput = this;
+            var imagePreview = document.getElementById("avatar-preview");
+
+            if (fileInput.files && fileInput.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    imagePreview.src = e.target.result;
+                };
+                reader.readAsDataURL(fileInput.files[0]);
+            }
+        });
+
+                    using (var binaryReader = new BinaryReader(file.InputStream))  //将文件转为BYTE流
+                    {
+                        byteArray = binaryReader.ReadBytes(file.ContentLength);
+                        model.profile =  byteArray;
+                    }
+
+将上述Python代码转换为C#（ASP.NET）代码：
+
+```csharp
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+class RequestDemo
+{
+    static async Task Main()
+    {
+        string url = "https://api.map.baidu.com/weather/v1/";
+        string ak = "YourAK"; // Replace with your actual AK
+
+        // 构建HttpClient
+        using (HttpClient httpClient = new HttpClient())
+        {
+            // 设置请求参数
+            var queryParams = new
+            {
+                district_id = "222405",
+                data_type = "all",
+                ak
+            };
+
+            string queryString = $"?district_id={queryParams.district_id}&data_type={queryParams.data_type}&ak={queryParams.ak}";
+
+            // 构建请求Url
+            string requestUrl = $"{url}{queryString}";
+
+            // 发送请求
+            HttpResponseMessage response = await httpClient.GetAsync(requestUrl);
+
+            // 处理响应
+            if (response.IsSuccessStatusCode)
+            {
+                string result = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(result);
+            }
+            else
+            {
+                Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
+            }
+        }
+    }
+}
+```
+
+这个C#（ASP.NET）代码与Python代码实现了相同的功能，发送GET请求到百度天气API，并输出响应的JSON结果。请将 `"YourAK"` 替换为你实际的AK。在C#中，我们使用 `HttpClient` 类发送HTTP请求，构建URL和参数，然后处理响应。
+
+"{\"status\":0,\"result\":{\"location\":{\"country\":\"中国\",\"province\":\"吉林省\",\"city\":\"延边朝鲜族自治州\",\"name\":\"龙井\",\"id\":\"222405\"},\"now\":{\"text\":\"晴\",\"temp\":17,\"feels_like\":17,\"rh\":25,\"wind_class\":\"2级\",\"wind_dir\":\"北风\",\"uptime\":\"20231010145000\"},\"forecasts\":[{\"text_day\":\"晴\",\"text_night\":\"晴\",\"high\":20,\"low\":2,\"wc_day\":\"<3级\",\"wd_day\":\"西北风\",\"wc_night\":\"<3级\",\"wd_night\":\"西北风\",\"date\":\"2023-10-10\",\"week\":\"星期二\"},{\"text_day\":\"晴\",\"text_night\":\"晴\",\"high\":20,\"low\":1,\"wc_day\":\"<3级\",\"wd_day\":\"西南风\",\"wc_night\":\"<3级\",\"wd_night\":\"西南风\",\"date\":\"2023-10-11\",\"week\":\"星期三\"},{\"text_day\":\"晴\",\"text_night\":\"晴\",\"high\":21,\"low\":3,\"wc_day\":\"<3级\",\"wd_day\":\"西北风\",\"wc_night\":\"<3级\",\"wd_night\":\"西南风\",\"date\":\"2023-10-12\",\"week\":\"星期四\"},{\"text_day\":\"晴\",\"text_night\":\"晴\",\"high\":21,\"low\":5,\"wc_day\":\"<3级\",\"wd_day\":\"东北风\",\"wc_night\":\"<3级\",\"wd_night\":\"西北风\",\"date\":\"2023-10-13\",\"week\":\"星期五\"},{\"text_day\":\"晴\",\"text_night\":\"晴\",\"high\":20,\"low\":3,\"wc_day\":\"<3级\",\"wd_day\":\"东北风\",\"wc_night\":\"<3级\",\"wd_night\":\"西北风\",\"date\":\"2023-10-14\",\"week\":\"星期六\"}]},\"message\":\"success\"}"
+
+
+"{\r\n  \"status\": 0,\r\n  \"result\": {\r\n    \"location\": {\r\n      \"country\": \"中国\",\r\n      \"province\": \"吉林省\",\r\n      \"city\": \"延边朝鲜族自治州\",\r\n      \"name\": \"龙井\",\r\n      \"id\": \"222405\"\r\n    },\r\n    \"now\": {\r\n      \"text\": \"晴\",\r\n      \"temp\": 17,\r\n      \"feels_like\": 17,\r\n      \"rh\": 25,\r\n      \"wind_class\": \"2级\",\r\n      \"wind_dir\": \"北风\",\r\n      \"uptime\": \"20231010150000\"\r\n    },\r\n    \"forecasts\": [\r\n      {\r\n        \"text_day\": \"晴\",\r\n        \"text_night\": \"晴\",\r\n        \"high\": 20,\r\n        \"low\": 2,\r\n        \"wc_day\": \"<3级\",\r\n        \"wd_day\": \"西北风\",\r\n        \"wc_night\": \"<3级\",\r\n        \"wd_night\": \"西北风\",\r\n        \"date\": \"2023-10-10\",\r\n        \"week\": \"星期二\"\r\n      },\r\n      {\r\n        \"text_day\": \"晴\",\r\n        \"text_night\": \"晴\",\r\n        \"high\": 20,\r\n        \"low\": 1,\r\n        \"wc_day\": \"<3级\",\r\n        \"wd_day\": \"西南风\",\r\n        \"wc_night\": \"<3级\",\r\n        \"wd_night\": \"西南风\",\r\n        \"date\": \"2023-10-11\",\r\n        \"week\": \"星期三\"\r\n      },\r\n      {\r\n        \"text_day\": \"晴\",\r\n        \"text_night\": \"晴\",\r\n        \"high\": 21,\r\n        \"low\": 3,\r\n        \"wc_day\": \"<3级\",\r\n        \"wd_day\": \"西北风\",\r\n        \"wc_night\": \"<3级\",\r\n        \"wd_night\": \"西南风\",\r\n        \"date\": \"2023-10-12\",\r\n        \"week\": \"星期四\"\r\n      },\r\n      {\r\n        \"text_day\": \"晴\",\r\n        \"text_night\": \"晴\",\r\n        \"high\": 21,\r\n        \"low\": 5,\r\n        \"wc_day\": \"<3级\",\r\n        \"wd_day\": \"东北风\",\r\n        \"wc_night\": \"<3级\",\r\n        \"wd_night\": \"西北风\",\r\n        \"date\": \"2023-10-13\",\r\n        \"week\": \"星期五\"\r\n      },\r\n      {\r\n        \"text_day\": \"晴\",\r\n        \"text_night\": \"晴\",\r\n        \"high\": 20,\r\n        \"low\": 3,\r\n        \"wc_day\": \"<3级\",\r\n        \"wd_day\": \"东北风\",\r\n        \"wc_night\": \"<3级\",\r\n        \"wd_night\": \"西北风\",\r\n        \"date\": \"2023-10-14\",\r\n        \"week\": \"星期六\"\r\n      }\r\n    ]\r\n  },\r\n  \"message\": \"success\"\r\n}"
+
+
+dynamic jsonData = JsonConvert.DeserializeObject<dynamic>(result);
+string jsonCode = JsonConvert.SerializeObject(jsonData, Formatting.Indented);
+Response.Write(jsonData);
+/******************************************************************************************************/
+
+
+fa-regular fa-envelope
+
+
+layui组件掉用方法
+<i class="layui-icon layui-icon-file"></i>
+
+SVG 意为可缩放矢量图形（Scalable Vector Graphics）。
+
+SVG 使用 XML 格式定义图像。
+
+/Areas/client
+
+三江学院：118.759861,31.963802
+
+/Areas/client/assets
+
+iframe高度自适应内容
+需求：实现 iframe 的自适应高度，能够随着页面的长度自动的适应以免除页面和 iframe 同时出现滚动条的现象。  
+
+设置iframe 自适应高度，使其等于内嵌网页的高度，从而看不出来滚动条和嵌套痕迹。对于用户体验和网站美观起着重要作用。 如果内容是固定的，那么我们可以通过css来给它直接定义一个高度，同样可以实现上面的需求。当内容是未知或者是变化的时候。这个时候又有几种情况了。
+
+一、iframe内容未知，高度可预测
+这个时候，我们可以给它添加一个默认的css的min-height值，然后同时使用JavaScript改变高度。常用的兼容代码有：
+
+function setIframeHeight(iframe) {
+if (iframe) {
+var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+if (iframeWin.document.body) {
+iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+}
+}
+};
+ 
+window.onload = function () {
+setIframeHeight(document.getElementById('external-frame'));
+};
+复制
+复制
+只要修改以上的iframe的ID即可了。或者你可以直接在iframe里面写代码，我们一般为了不污染html代码，建议使用上面的代码。
+
+<h1 style="text-align: center;"><span style="text-wrap: nowrap;">当众做出这样的事情！妙龄男子的突如其来举动令人大开眼界</span></h1><p><span style="text-wrap: nowrap;">在一个普通的夏日傍晚，小镇的居民们聚集在当地的公园里，享受着温和的天气和欢乐的氛围。人们谈笑风生，孩子们在草地上奔跑嬉戏，似乎一切都平静而祥和。</span></p><p><span style="text-wrap: nowrap;"><br/></span></p><p><span style="text-wrap: nowrap;">然而，在这个平凡的日子里，一位年轻的妙龄男子，名叫亚当，突然吸引了大家的注意。亚当是该小镇的一名年轻教师，以其聪明和风趣而受人喜爱。但今天，他似乎有了不同的计划。</span></p><p><span style="text-wrap: nowrap;"><br/></span></p><p><span style="text-wrap: nowrap;">当所有人的目光聚集在亚当身上时，他突然开始表演一场精彩绝伦的魔术表演。他从口袋里掏出一束五彩斑斓的丝巾，然后在一瞬间将其变成了一只活生生的白兔！观众们惊讶地鼓掌，尖叫声此起彼伏。</span></p><p><span style="text-wrap: nowrap;"><br/></span></p><p><span style="text-wrap: nowrap;">然而，亚当的魔术表演并没有结束，他接着变出了绚丽多彩的气球、一束鲜花，甚至是一台微型飞行器，飞行器在空中翱翔，令人叹为观止。他的魔术不仅仅是技巧，更是一场视觉盛宴。</span></p><p><span style="text-wrap: nowrap;"><br/></span></p><p><span style="text-wrap: nowrap;">当表演结束时，亚当的笑容洋溢，观众们热烈鼓掌，夸赞他的才华和创造力。这一突如其来的表演不仅让人们大开眼界，还带来了欢乐和惊喜。</span></p><p><span style="text-wrap: nowrap;"><br/></span></p><p><span style="text-wrap: nowrap;">亚当的举动成为了小镇的话题之一，人们纷纷赞扬他的勇气和创意。他解释说，他希望用这个意外的魔术表演来为大家带来快乐，让大家忘记日常生活中的烦恼。</span></p><p><span style="text-wrap: nowrap;"><br/></span></p><p><span style="text-wrap: nowrap;">这个小镇上的妙龄男子，以他的惊人表演，让人们重新认识了他。他用自己的方式展示了积极的精神和乐观的态度，成为了当地的一位英雄，也让大家明白了生活中的惊喜和美好可能会突然出现，只要我们敢于去追求和创造。这一天成为了小镇上一个难忘的记忆。</span></p><p><br/></p>
+
+
+                              <li class="wrapper">
+                                        <div class="image-area">
+                                            <img src="/Areas/client/assets/images/home-1/trending-left/commentator-2.png" alt="author">
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="title">Esther Howard</h5>
+                                            <a href="#" class="pe-none">2 Jul 2023</a>
+                                            <p class="desc">Efficiently simplify alternative customer service rather than efficient "outside the box" thinking. Dramatically deploy an expanded array of manufactured.</p>
+                                        </div>
+                                        <div class="reply"><i class="fa-regular fa-share"></i> Reply</div>
+                                    </li>
+
+
+
+
+  function loadComments() {
+        var end = Math.min(currentIndex + commentsPerPage, @modelList.RowCount);
+
+        for (let i = currentIndex; i < end; i++) {
+            var comment = commentsData[i];
+            var NNcomment = document.getElementById("NNcomment");
+                       // 创建一个新的 li 元素
+            const authorItem = document.createElement("li");
+            authorItem.className = "wrapper";
+
+            // 创建包含作者信息的 div 元素
+            const authorInfoDiv = document.createElement("div");
+            authorInfoDiv.className = "image-area";
+
+            // 创建图像元素
+            const authorImage = document.createElement("img");
+            @{ var index = "<script>document.write(i);</script>";
+                }
+            var userModel = @db.bll.NN_user.getModelByUserID_NonDc(modelList.EntryList[0].userID);
+            // 将 byte[] 数组转换为字符串
+            var binaryString = String.fromCharCode.apply(null, userModel.profile);
+            // 使用 btoa 将字符串转换为 Base64 编码
+            var base64String = btoa(binaryString);
+            authorImage.src = "data:jpg/jpeg;base64," + base64String;
+            authorImage.alt = "头像";
+
+            // 将图像元素添加到作者信息 div 中
+            authorInfoDiv.appendChild(authorImage);
+
+            // 创建作者内容 div
+            const authorContentDiv = document.createElement("div");
+            authorContentDiv.className = "content";
+
+            // 创建作者名称元素
+            const authorName = document.createElement("h5");
+            authorName.className = "title";
+            authorName.textContent = "Esther Howard";
+
+            // 创建日期元素
+            const authorDate = document.createElement("a");
+            authorDate.href = "#";
+            authorDate.className = "pe-none";
+            authorDate.textContent = "2 Jul 2023";
+
+            // 创建描述元素
+            const authorDescription = document.createElement("p");
+            authorDescription.className = "desc";
+            authorDescription.textContent = 'Efficiently simplify alternative customer service rather than efficient "outside the box" thinking. Dramatically deploy an expanded array of manufactured.';
+
+            // 将作者名称、日期和描述元素添加到作者内容 div 中
+            authorContentDiv.appendChild(authorName);
+            authorContentDiv.appendChild(authorDate);
+            authorContentDiv.appendChild(authorDescription);
+
+            // 创建回复按钮 div
+            const authorReplyDiv = document.createElement("div");
+            authorReplyDiv.className = "reply";
+            authorReplyDiv.innerHTML = '<i class="fa-regular fa-share"></i> Reply';
+
+            // 将作者信息 div、作者内容 div 和回复按钮 div 添加到 li 元素中
+            authorItem.appendChild(authorInfoDiv);
+            authorItem.appendChild(authorContentDiv);
+            authorItem.appendChild(authorReplyDiv);
+
+            // 将创建的 li 元素添加到作者信息容器中
+            NNcomment.appendChild(authorItem);
+        }
+
+        currentIndex = end;
+
+        if (currentIndex >= @modelList.EntryList.Count) {
+            // 已加载所有评论，隐藏加载更多按钮
+            loadMoreButton.style.display = "none";
+        }
+    }
+
+
+        public int index { get; set; } //索引
+
+        public string commentID { get; set; }
+        public string Name { get; set; }
+
+        public byte[] proFile { get; set; }
+
+        public long rowNum { get; set; }
+        public string rowID { get; set; }
+        public string userID { get; set; }
+        public string newsID { get; set; }
+        public string commentContent { get; set; }
+        public string fatherCommentID { get; set; }
+
+        public string fatherCommentUserName { get; set; }
+        public int status { get; set; }
+        public Nullable<System.DateTime> commentTime { get; set; }
+
+
+
+        formData.append("userID", document.getElementById("reporterId").value);
+        var content = document.getElementById("reportReason").value;
+        if (content.length < 1) {
+            showInfo("内容不可为空");
+            return false;
+        }
+        var category = "";
+        if ("@ViewBag.Type" == "新闻") {
+            formData.append("category", "0");
+        } else {
+            formData.append("category", "1");
+        }
+        formData.append("newsID", "@ViewBag.newsID");
+        formData.append("commentID", "@ViewBag.commentID");
+        formData.append("reason", content);
+
+
+324 205
+
+                        <div class="data-item">
+                            <img src="your-image-url" alt="Image" />
+                            <div class="content">
+                                <div class="title">Title</div>
+                                <div class="description">Description</div>
+                                <div class="read-count">Read Count: 100</div>
+                            </div>
+                        </div>
+
+            var NNcomment = document.getElementById("NNcomment");
+            // 创建一个新的 li 元素
+            const authorItem = document.createElement("li");
+            authorItem.className = "wrapper";
+
+
+
+    function NNsearch() {
+        var search = document.getElementById("NNsearch");
+        var content = document.getElementById("searchInput1").value;
+        if (content == "") {
+            showInfo("输入不能为空");
+        }
+        else {
+            top.location.href = "NNsearch?content=" + content;
+        }
+    }
+
+ <div id="NNsearch" class="search-close-icon" onclick="NNsearch()"><i class="fa-regular fa-search"></i></div>
+
+
+            formData.append("name", nicknameInput.value);
+            formData.append("coverP", document.getElementById("file").value);
+            formData.append("gender", genderInput.value);
+            formData.append("birth", birthdateInput.value);
+
+注销账户
+申请成为内容创作者
+变更新闻机构
+注销内容创作者身份
+
+            List<db.NN_newsItem> list = db.bll.NN_newsItem.NNsearch(content, dc);
+            string jsonString = JsonConvert.SerializeObject(list);
+            return new JsonResult
+            {
+                Data = jsonString,
+                MaxJsonLength = int.MaxValue // 设置为你想要的最大 JSON 字符串长度
+            };
+
+title describe
+
+                                    formData.append("title", document.getElementById("title").value);
+                                    formData.append("describe", document.getElementById("describe").value);
+                                    formData.append("file", document.getElementById("coverP").files[0])
+                                    var TagList = "";
+                                    for (var key in hashTable) {
+                                        TagList += key + " ";
+                                    }
+                                    formData.append("TagList", TagList);
+                                    formData.append("RichText", ue_content.getContent());

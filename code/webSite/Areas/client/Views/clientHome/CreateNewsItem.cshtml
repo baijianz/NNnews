@@ -1,0 +1,524 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrom">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NN News</title>
+    <script>
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+    <style>
+        .tagSelected {
+            border: 2px solid;
+            border-color: gold;
+        }
+    </style>
+    <link rel="shortcut icon" href=@Url.Content("~/Areas/client/assets/images/fav.png") type="image/x-icon">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/plugins/fontawesome-5.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/bootstrap.min.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/swiper.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/metismenu.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/magnific-popup.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/style.css") as="style">
+    @*layui*@
+    <link href="@Url.Content("~/content/layui/css/layui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/layui/layui.js")"></script>
+
+    @*jquery*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery-1.12.4.min.js")></script>
+    @*easyUI*@
+    <link href="@Url.Content("~/content/easyui/icon.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/content/easyui/bootstrap/easyui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/easyui/jquery.easyui.js")"></script>
+    @*layui*@
+    <link href="@Url.Content("~/content/layui/css/layui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/layui/layui.js")"></script>
+    @*chosen*@
+    <link href="@Url.Content("~/content/chosen/chosen.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/chosen/jquery.chosen.js")"></script>
+    @*jquery.validate*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate-vsdoc.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.message.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.unobtrusive.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.metadata.js")></script>
+    @*jquery库*@
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.ajaxfileupload.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.tableInput.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/my97DatePicker/WdatePicker.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.form.js")"></script>
+
+    @*自己封装的js*@
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.tools.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/fontawesome/rui.button.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.modelDialog.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.dropDownList.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.bill.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.cbxMulSelected.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_rui.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_lay.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.pager.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.layout.js"+rui.configHelper.ctxKey)></script>
+
+    @*//uediter*@
+    <script type="text/javascript" charset="utf-8" src="/uEditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/uEditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/uEditor/lang/zh-cn/zh-cn.js"></script>
+    <!-- main js file -->
+    <script src="/Areas/client/assets/js/main.js" defer></script>
+    <!-- End Footer Area -->
+</head>
+
+<body class="home-one">
+    <header class="echo-header-area">
+        @*新闻头*@
+        <div class="echo-header-top">
+            <div class="container">
+                <div class="echo-full-header-top">
+                    <div class="row align-items-center plr_md--30">
+                        <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                            <div class="echo-meta-total-jobs">
+                                <div class="echo-meta-jobs-icons">
+                                    <img src="/Areas/client/assets/images/home-1/header-top/home-1-header-top.png" alt="Echo">
+                                </div>
+                                <div class="echo-meta-jobs-text">
+                                    <a id="recommend" style="cursor:pointer;">新闻推荐正在加载</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-7 col-8">
+                            <div class="echo-header-top-date">
+                                <div class="echo-day-name">
+                                    <span><i class="fa-regular fa-cloud"></i></span>
+                                    <span id="echo-day" class="echo-home-day"></span>
+                                    <span id="echo-date"></span>
+                                </div>
+                                <div class="echo-date-time">
+                                    <span><i class="fa-regular fa-calendar"></i></span>
+                                    <span><strong id="temperature">加载中</strong><span id="provinceCity">加载中</span></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-5 col-4 position-relative">
+                            <div class="echo-header-top-subs-social-menu">
+                                <div class="echo-header-top-subs-social">
+                                    <div class="echo-header-top-subscribe-btn">
+                                        @*这里要设置一个申请成为创作者和创作者的入口*@
+                                        <a href="index" class="echo-py-btn"><i class="layui-icon layui-icon-file"></i>退出</a>
+                                    </div>
+                                    <div class="echo-header-top-social-media">
+                                        <div class="rts-darkmode">
+                                            <a id="rts-data-toggle" class="rts-dark-light">
+                                                @*夜间模式切换*@
+                                                <i class="rts-go-dark fal fa-moon"></i>
+                                                <i class="rts-go-light far fa-sun"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="echo-header-top-menu-bar menu-btn">
+                                        <a href="javascript:void(0)">
+                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.526001 0.953461H20V3.11724H0.526001V0.953461ZM7.01733 8.52668H20V10.6905H7.01733V8.52668ZM0.526001 16.0999H20V18.2637H0.526001V16.0999Z" fill="#5E5E5E" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Home-1 Menu & Site Logo & Social Media -->
+        @*导航页*@
+        <div class="echo-home-1-menu">
+            <div class="echo-site-main-logo-menu-social">
+                <div class="container">
+                    <div class="row align-items-center plr_md--30 plr_sm--30 plr--10">
+                        <div class="col-xl-2 col-lg-2 col-md-7 col-sm-7 col-7">
+                            <div class="echo-site-logo">
+                                <a class="logo-light" href="index"><img src="/Areas/client/assets/images/home-1/site-logo/site-logo.svg" alt="Echo"></a>
+                                <a class="logo-dark" href="index"><img src="/Areas/client/assets/images/home-1/site-logo/site-logo-dark.svg" alt="Echo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 d-none d-lg-block">
+                            <nav>
+                                <div class="echo-home-1-menu">
+                                    <ul class="list-unstyled echo-desktop-menu">
+                                        <li class="menu-item">NN新闻/创作台</li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Home-1 Menu & Site Logo & Social Media -->
+    </header>
+    @*侧边栏*@
+    <div id="side-bar" class="side-bar header-one">
+        <div class="inner">
+            @*本地化基本完成，剩余logo的更改，以及个人信息的跳转*@
+            <button class="close-icon-menu"><i class="far fa-times"></i></button>
+            <!-- inner menu area desktop start -->
+            <div class="inner-main-wrapper-desk d-none d-lg-block">
+                <div class="thumbnail">
+                    @*logo图像*@
+                    <img src="/Areas/client/assets/images/sidemenu-logo.svg" alt="echo">
+                </div>
+                <div class="inner-content">
+                    <div class="category-menu-area">
+                        <ul class="category-area">
+                            @*在这里显示用户个人信息*@
+                            <li class="item">
+                                @*在这里跳转个人信息界面*@
+                                @*用户图像*@
+                                <div class="image-area"><a href="personalCenter"><img src="data:jpg/jpeg;base64,@Convert.ToBase64String((byte[])rui.sessionHelper.getValue<byte[]>("profile"))" alt="用户头像"></a></div>
+                                <div class="content">
+                                    <div class="recent-post-title">
+                                        @*用户昵称*@
+                                        <a href="personalCenter">@rui.sessionHelper.getValue("userName")</a>
+                                    </div>
+                                    @*用户ID*@
+                                    <p class="desc"><a href="personalCenter"><i class="fa-light fa-user"></i>@rui.sessionHelper.getValue("userID")</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-form">
+                        <div class="form-inner">
+                            <div class="content">
+                                <div class="newsletter-image">
+                                    <img src="/Areas/client/assets/images/home-1/feature-right/news-item-1.png" alt="">
+                                </div>
+                                <h3 class="title">NN新闻</h3>
+                                <p class="desc">订阅NN新闻的邮件推送</p>
+                            </div>
+                            <form action="#">
+                                <div class="input-div">
+                                    <input type="email" placeholder="你的邮件地址" required>
+                                </div>
+                                <button type="submit" class="subscribe-btn">立即订阅</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="echo-breadcrumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- bread crumb inner wrapper -->
+                    <div class="breadcrumb-inner text-center">
+                        <span style="position:relative; float:left; font-size:x-large; font-weight:bold;">新闻标题</span>
+                        <input name="title" id="title" type="text" style="border:3px solid; width:900px;" />
+                    </div>
+                    <br><br>
+                    <div class="breadcrumb-inner text-center">
+                        <span style="position:relative; float:left; font-size:x-large; font-weight:bold;">新闻简介</span>
+                        <input type="text" id="describe" style="border:3px solid; width:900px;" />
+                    </div>
+                    <br><br>
+                    <div class="breadcrumb-inner text-center" style="height:180px;">
+                        <span style="position:relative; float:left; font-size:x-large; font-weight:bold;">封面选择</span>
+                        <div style=" float:left; width:180px;height:180px; margin-left:80px;">
+                            <img src="/Areas/client/Data/img/defaultCover.png" id="dispCoverP" style="width:100%;height:100%;" alt="封面图"/>
+                        </div>
+                        <div style=" width:100px; height:30px; position:relative; float:left; margin-left:10px;margin-top:155px;">
+                            <input type="file" id="coverP" style="height:30px;width:76px;" />
+                            <script>
+                                var coverP = document.getElementById("coverP");
+                                var disCoverP = document.getElementById("dispCoverP");
+                                coverP.addEventListener("change", function () {
+                                    var fileInput = this;
+
+                                    if (fileInput.files && fileInput.files[0]) {
+                                        var reader = new FileReader();
+                                        reader.onload = function (e) {
+                                            disCoverP.src = e.target.result;
+                                        };
+                                        reader.readAsDataURL(fileInput.files[0]);
+                                    }
+                                });
+                                </script>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="breadcrumb-inner text-center" style="height:180px">
+                        <span style="position:relative; float:left; font-size:x-large; font-weight:bold;">标签选择</span>
+                        <br>
+                        <br>
+                        <div id=" recTagDiv"></div>
+                        @{
+                            var dat = db.bll.NN_newsCategory.getWordListAll();
+                            int index = dat.Count;
+
+                                for (int i = 0; i < index; i++)
+                                {
+                                    <div id="@dat[i].newsCategoryID" class="TagDiv" style="cursor:pointer; display: flex; align-items: center; /* 垂直居中 */ justify-content: center; /* 水平居中 */ width: 120px; text-align: center; font-size: large; height: 50px; margin-left: 5px; margin-top: 5px; background-color: brown; position: relative; float: left;">
+                                        <span>@dat[i].newsCategoryName</span>
+                                        <script>
+                                            var hashTable = {}; //利用哈希表来表达最后的选择的标签
+                                            var TagItem = document.getElementById("@dat[i].newsCategoryID");
+                                            TagItem.style.backgroundColor = getRandomColor();
+                                            TagItem.addEventListener("click", function () {
+                                                var Tag = this;
+                                                if (Tag.id in hashTable) {
+                                                    //说明在此之前是选中状态
+                                                    delete hashTable[Tag.id];
+                                                    this.style.border = "0px";
+                                                } else {
+                                                    //说明在此之前是没选中
+                                                    hashTable[Tag.id] = '1';
+                                                    this.style.border = "5px solid";
+                                                    this.style.borderColor = "gold";
+                                                }
+                                            });
+                                            
+                                        </script>
+                                    </div>
+                                }
+                            
+                        }
+                    </div>
+                    <!-- bread crumb inner wrapper end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*主要内容*@
+    <section class="echo-about-area">
+        <div class="container">
+            <div class="echo-about-area-inner">
+                <div class="row align-items-center">
+                    <div class="col-xl-12 col-lg-12 sticky-coloum-item">
+                        <script id="uEditor_content" type="text/plain" style="width: 100%; height: 600px; margin-top:-50px;">
+                        </script>
+                        <div class="col-xl-5 col-lg-5" style="float:left; margin-left:20px;">
+                            <button type="button" class="layui-btn" style="background-color:deepskyblue" id="publish">发布</button>
+                            <script>
+                                var PublishButton = document.getElementById("publish");
+                                PublishButton.addEventListener("click", function () {
+                                    //提交，还是采用ajax异步
+                                    var formData = new FormData();
+                                    formData.append("title", document.getElementById("title").value);
+                                    formData.append("describe", document.getElementById("describe").value);
+                                    formData.append("file", document.getElementById("coverP").files[0])
+                                    var TagList = "";
+                                    for (var key in hashTable) {
+                                        TagList += key + " ";
+                                    }
+                                    formData.append("TagList", TagList);
+                                    formData.append("RichText", ue_content.getContent());
+
+                                    $.ajax({
+                                        url: "createNewsItem", // 指向您的ASP.NET后台处理程序
+                                        type: "POST",
+                                        data: formData,
+                                        dataType: "JSON",
+                                        processData: false,
+                                        contentType: false,
+                                        success: function (response) {
+                                            showInfo(response.message + ",将在5秒后返回主页", { fontColor: 'blue' });
+                                           setTimeout(function () {
+                                                window.open('index', '_self');
+                                            }, 5000); 
+                                        },
+                                        error: function (error) {
+                                            showInfo('发布失败，请联系管理员', { fontColor: 'blue' }); // 设置字体颜色为蓝色
+                                 
+                                        }
+                                    });
+
+                                });
+                            </script>
+
+                        </div>
+                        <div class="col-xl-5 col-lg-5" style="float:right; margin-right:20px;">
+                            <button type="button" class="layui-btn" style="background-color:deepskyblue" id="cancelButton" onclick="window.open('index', '_self')">取消</button>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    @*页脚*@
+    <footer class="echo-footer-area" id="footer">
+        <div class="container">
+            <div class="echo-row">
+                <div class="echo-footer-content-1">
+                    <div class="echo-get-in-tuch">
+                        <h4 class="text-capitalize">保持联系</h4>
+                    </div>
+                    <div class="echo-footer-address">
+                        <span class="text-capitalize"><i class="fa-regular fa-map"></i> 江苏省，南京市，雨花台区龙西路310号</span>
+                        <span class="text-capitalize"><i class="fa-regular fa-phone"></i> 19951684424</span>
+                        <span class="text-capitalize">
+                            <i class="fa-sharp fa-regular fa-envelope"></i>
+                            1600946024@@qq.com
+                        </span>
+                    </div>
+                </div>
+                <div class="echo-footer-content-2">
+                    <div class="echo-get-in-tuch">
+                        <h4 class="text-capitalize">最受欢迎的</h4>
+                    </div>
+                    <div class="echo-footer-most-popular">
+                        <ul class="list-unstyled">
+                            @{ var dataTable = db.bll.NN_sqlHelper.getMostPopularCategory();
+                                for (int i = 0; i < dataTable.Rows.Count; i++)
+                                {
+                                    @*这里跳到分类界面*@
+                                    <li><a href="@dataTable.Rows[i]["ID"]">@dataTable.Rows[i]["Name"]</a></li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="echo-footer-content-3">
+                    <div class="echo-get-in-tuch">
+                        <h4 class="text-capitalize">帮助</h4>
+                    </div>
+                    <div class="echo-footer-help">
+                        <ul class="list-unstyled">
+                            <li><a href="about">关于</a></li>
+                            <li><a href="_404NotFound">入驻媒体</a></li>
+                            <li><a href="_404NotFound">广告资助商</a></li>
+                            <li><a href="_404NotFound">隐私协议</a></li>
+                            <li><a href="_404NotFound">常见问题解答</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="echo-footer-content-4">
+                    <div class="echo-get-in-tuch">
+                        <h4 class="text-capitalize">订阅服务</h4>
+                    </div>
+                    <div class="echo-footer-news-text">
+                        <p>订阅NN新闻的邮件推送</p>
+                    </div>
+                    <div class="echo-subscribe-box-button">
+                        <form action="POST">
+                            <div class="echo-subscribe-input-fill">
+                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.8" d="M14.4414 11.6674C14.4402 11.8345 14.3734 11.9944 14.2553 12.1127C14.1371 12.2309 13.9773 12.2979 13.8101 12.2993H2.34541C2.17792 12.2991 2.01736 12.2325 1.89899 12.114C1.78062 11.9955 1.71413 11.8348 1.71413 11.6674V11.0265H13.1687V3.58109L8.07777 8.16291L1.71413 2.43564V1.48109C1.71413 1.31232 1.78118 1.15045 1.90052 1.03111C2.01986 0.911772 2.18172 0.844727 2.3505 0.844727H13.805C13.9738 0.844727 14.1357 0.911772 14.255 1.03111C14.3744 1.15045 14.4414 1.31232 14.4414 1.48109V11.6674ZM3.26304 2.11745L8.07777 6.45109L12.8925 2.11745H3.26304ZM0.441406 8.48109H5.53232V9.75382H0.441406V8.48109ZM0.441406 5.29927H3.62322V6.572H0.441406V5.29927Z" fill="white" />
+                                </svg>
+                                <input type="email" placeholder="你的邮箱" required>
+                            </div>
+                            <div class="echo-footer-area-subscribe-button">
+                                <a href="_404NotFound" class="echo-py-btn-border text-capitalize">立即订阅</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="echo-footer-copyright-area">
+                <div class="copyright-area-inner">
+                    <div class="footer-logo"><a href="index.html"><img src="/Areas/client/assets/images/home-1/site-logo/footer-logo-1.svg" alt="logo"></a></div>
+                    <div class="copyright-content">
+                        <h5 class="title">© Copyright 2023 By NNnews</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn">
+        <i class="fa-regular fa-angles-up"></i>
+    </button>
+    <!--scroll top button end-->
+
+    <div id="anywhere-home"></div>
+
+    <script src="/Areas/client/assets/js/vendor/jquery.min.js" defer></script>
+    <script src="/Areas/client/assets/js/plugins/audio.js" defer></script>
+    <script src="/Areas/client/assets/js/vendor/bootstrap.min.js" defer></script>
+    <script src="/Areas/client/assets/js/vendor/swiper.js" defer></script>
+    <script src="/Areas/client/assets/js/vendor/metisMenu.min.js" defer></script>
+    <script src="/Areas/client/assets/js/plugins/audio.js" defer></script>
+    <script src="/Areas/client/assets/js/plugins/magnific-popup.js" defer></script>
+    <script src="/Areas/client/assets/js/plugins/resize-sensor.min.js" defer></script>
+    <script src="/Areas/client/assets/js/plugins/theia-sticky-sidebar.min.js" defer></script>
+
+    <!-- main js file -->
+    <script src="/Areas/client/assets/js/main.js" defer></script>
+    <!-- End Footer Area -->
+</body>
+</html>
+
+<script type="text/javascript">
+
+    var ue_content;
+
+    //页面加载后，从代理表单取值付给uEditor
+    $(document).ready(function () {
+        //实例化作者介绍的编辑器
+        ue_content = UE.getEditor('uEditor_content');
+    });
+    var reCommendIndex = 0;
+    var reCommendDataTable = {};
+    $(document).ready(function () {
+        $("#provinceCity").ready(function () {
+            $.ajax({
+                type:"get",
+                url: "getWeatherAsync",
+                dataType: "task<JsonResult>",
+                async: true,
+                success: function (data) {
+
+                },
+                error: function (data) {
+                    @*json.parse 用不了没办法，只能用字符串截取 *@
+                    var s = data.responseText;
+                    var startindex = s.search("temp");
+                    var result = s.slice(startindex + 7, startindex + 9);
+                    document.getElementById("temperature").innerHTML = result + "°C,";
+                }
+            });
+        });
+        dynamicIp();
+
+    });
+
+
+    setInterval(function () {
+        var v = document.getElementById("recommend");
+        v.textContent = reCommendDataTable[(reCommendIndex) % Math.min(5, reCommendDataTable.length)].newsTitle + "...";
+        v.href = "postDetail?newsID=" + reCommendDataTable[reCommendIndex++].newsID;
+    }, 3000);
+    function dynamicIp() {
+        $.ajax({
+            type:"get",
+            url: "getProvinceAndCity",
+            dataType: "string",
+            async: true,
+            success: function (data) {
+                document.getElementById("provinceCity").innerHTML = data.responseText;
+            },
+            error: function (data) {
+                document.getElementById("provinceCity").innerHTML = data.responseText;
+            }
+        });
+    }
+
+
+</script>
+
+

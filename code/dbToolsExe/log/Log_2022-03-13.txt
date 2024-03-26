@@ -1,0 +1,93 @@
+2022-03-13 22:36:39.3787 Error 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+------------begin-------------
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Dapper.SqlMapper.ExecuteReaderImpl(IDbConnection cnn, CommandDefinition& command, CommandBehavior commandBehavior, IDbCommand& cmd)
+   在 Dapper.SqlMapper.ExecuteReader(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 rui.dbHelper.ExecuteDataTable(String cmdText, Object cmdPara, CommandType cmdType) 位置 E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\db\dbHelper.cs:行号 190
+   在 JavaDevTools.frm列配置.frmColumnConfig_Load(Object sender, EventArgs e) 位置 E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\dbTools\frm列配置.cs:行号 32
+------------End-------------
+ 
+2022-03-13 22:36:39.3867 Error 找不到网络路径。
+------------begin-------------
+
+------------End-------------
+ 
+2022-03-13 22:37:00.2517 Error 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+------------begin-------------
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 JavaDevTools.frmMain.btnSave_Click(Object sender, EventArgs e) 位置 E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\dbTools\frmMain.cs:行号 183
+------------End-------------
+ 
+2022-03-13 22:37:00.2517 Error 找不到网络路径。
+------------begin-------------
+
+------------End-------------
+ 
+2022-03-13 22:37:04.0542 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Web.config 
+2022-03-13 22:37:04.0602 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\Web.config 
+2022-03-13 22:37:04.0642 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\Web.config 
+2022-03-13 22:37:07.9767 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2022-03-13 22:37:07.9767 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2022-03-13 22:37:09.8824 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2022-03-13 22:37:09.8824 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2022-03-13 22:37:09.8824 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2022-03-13 22:37:09.8834 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2022-03-13 22:38:45.8094 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Web.config 
+2022-03-13 22:38:45.8169 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\Web.config 
+2022-03-13 22:38:45.8179 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\Web.config 
+2022-03-13 22:38:45.8199 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2022-03-13 22:38:45.8199 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2022-03-13 22:38:45.8209 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2022-03-13 22:38:45.8209 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2022-03-13 22:38:45.8209 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2022-03-13 22:38:45.8219 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2022-03-13 22:39:42.5491 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 JavaDevTools.frm列配置.loadData() 位置 E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\dbTools\frm列配置.cs:行号 68
+------------End-------------
+ 
+2022-03-13 22:39:43.7855 Error 未将对象引用设置到对象的实例。
+------------begin-------------
+   在 JavaDevTools.frm列配置.loadData() 位置 E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\dbTools\frm列配置.cs:行号 68
+------------End-------------
+ 
+2022-03-13 22:40:38.1394 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Web.config 
+2022-03-13 22:40:38.1473 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\Web.config 
+2022-03-13 22:40:38.1483 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\Web.config 
+2022-03-13 22:41:12.5027 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2022-03-13 22:41:12.7731 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2022-03-13 22:41:47.1117 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2022-03-13 22:41:47.1117 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2022-03-13 22:41:47.1127 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2022-03-13 22:41:47.1127 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2022-03-13 22:47:53.6673 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Web.config 
+2022-03-13 22:47:53.6753 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\Web.config 
+2022-03-13 22:47:53.6763 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\Web.config 
+2022-03-13 22:47:53.6783 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2022-03-13 22:47:53.6783 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2022-03-13 22:47:53.6793 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2022-03-13 22:47:53.6802 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2022-03-13 22:47:53.6802 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2022-03-13 22:47:53.6802 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 

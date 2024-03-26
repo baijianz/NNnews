@@ -1,0 +1,162 @@
+﻿@model db.NN_newsItem
+
+@{
+    ViewBag.Title = "Insert";
+}
+<script type="text/javascript" charset="utf-8" src="/uEditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/uEditor/ueditor.all.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/uEditor/lang/zh-cn/zh-cn.js"></script>
+
+<style type="text/css">
+    .fieldset-container {
+        display: flex;
+        flex-wrap: wrap; /* 允许控件自动换行 */
+    }
+
+    .fieldset-item {
+        margin-right: 50px; /* 控制控件之间的间距 */
+    }
+</style>
+@using (Html.BeginForm(new { enctype = "multipart / form - data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="dialog">
+        <!--新闻ID自动生成-->
+
+        <div class="editor-label">
+            <!--新闻标题-->
+            @Html.LabelFor(model => model.newsTitle)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.newsTitle)
+            @Html.ValidationMessageFor(model => model.newsTitle)
+        </div>
+
+        <div class="editor-label">
+            <!--作者ID，在这里的话我应该设置一个明确的值。比如说是NN新闻官方工作室-->
+            <!--
+                -->
+            @Html.Label("作者", new { @class = "read" })
+        </div>
+        <div class="editor-field read">
+            @Html.DropDownListFor(a => a.userID, db.bll.NN_newsItem.bindNN官方新闻(false))
+            @Html.ValidationMessageFor(model => model.userID)
+        </div>
+
+        <div class="editor-label hide">
+            <!--被阅读量应该是不能更改的-->
+            @Html.LabelFor(model => model.readQuantity)
+        </div>
+        <div class="editor-field hide ">
+            @Html.EditorFor(model => model.readQuantity)
+            @Html.ValidationMessageFor(model => model.readQuantity)
+        </div>
+
+        <div class="editor-label hide">
+            <!--发布时间应该也是不能更改的-->
+            @Html.LabelFor(model => model.publishDateTime)
+        </div>
+        <div class="editor-field hide ">
+            @Html.EditorFor(model => model.publishDateTime)
+            @Html.ValidationMessageFor(model => model.publishDateTime)
+        </div>
+
+
+        <div class="editor-label">
+            <!--封面图片预览-->
+            @Html.LabelFor(model => model.coverPic)
+        </div>
+        <div class="editor-field">
+            <img src="#" id="coverPicDemo" alt="图片预览" style="width:30px;height:25px;" />
+        </div>
+
+        <div class="editor-label">
+            <!--封面图片-->
+            @Html.LabelFor(model => model.coverPic)
+        </div>
+        <div class="editor-field">
+            <input type="file" name="newCoverPic" id="newCoverPic"  />
+            @Html.ValidationMessageFor(model => model.coverPic)
+        </div>
+
+        <div class="editor-label">
+            <!--新闻描述-->
+            @Html.LabelFor(model => model.describe)
+        </div>
+        <div class="editor-field three">
+            @Html.TextBoxFor(a => a.describe)
+            @Html.ValidationMessageFor(model => model.status)
+
+        </div>
+
+        <fieldset>
+            <legend>标签选择</legend>
+            <div style="fieldset-container">
+                @{
+                    var data = db.bll.NN_newsCategory.getWords();
+                    foreach (var v in data)
+                    {
+                        <span style="class=" fieldset-item"">
+                            <input type="checkbox" name="selectedItems" id="@v.Value" value="@v.Value" /> <label for="@v.Value">@v.Key</label>
+                        </span>
+
+                    }
+                }
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                @Html.LabelFor(model => model.content)
+            </legend>
+            <div>
+                @Html.HiddenFor(model => model.content, new { @class = "uEditorProxy_content" })
+                <script id="uEditor_content" type="text/plain" style="width: 100%; height: 400px;">
+                </script>
+            </div>
+        </fieldset>
+
+        <p class="button">
+            <a class="billSave opSave" data-close="true">发布</a>
+            <a class="opClose">关闭</a>
+        </p>
+    </div>
+}
+
+<script type="text/javascript">
+
+    //保存前，从uEditor取值赋值给代理表单
+    function saveBefore() {
+        $(".uEditorProxy_content").val(ue_content.getContent());
+        return "";
+    }
+    var ue_content;
+
+    //页面加载后，从代理表单取值付给uEditor
+    $(document).ready(function () {
+        //实例化作者介绍的编辑器
+        ue_content = UE.getEditor('uEditor_content');
+        //赋值
+        ue_content.ready(function () {
+            ue_content.setContent($(".uEditorProxy_content").val());
+        });
+
+    });
+
+    document.getElementById("newCoverPic").addEventListener("change", function () {
+        var fileInput = this;
+        var imagePreview = document.getElementById("coverPicDemo");
+
+        if (fileInput.files && fileInput.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                imagePreview.src = e.target.result;
+            };
+            reader.readAsDataURL(fileInput.files[0]);
+        }
+    });
+
+
+</script>

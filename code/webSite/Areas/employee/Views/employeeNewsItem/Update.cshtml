@@ -1,0 +1,178 @@
+﻿@model db.NN_newsItem
+
+@{
+    ViewBag.Title = "Update";
+}
+
+<script type="text/javascript" charset="utf-8" src="/uEditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/uEditor/ueditor.all.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/uEditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+    //保存前，从uEditor取值赋值给代理表单
+    function saveBefore() {
+        $(".UeditorProxy").val(ue_content.getContent());
+        return "";
+    }
+    var ue_content;
+
+    //页面加载后，从代理表单取值付给uEditor
+    $(document).ready(function () {
+        //实例化作者介绍的编辑器
+        window.log("reminder");
+        ue_content = UE.getEditor('uEditor');
+        //赋值
+        ue_content.ready(function () {
+            ue_content.setContent($(".UeditorProxy").val());
+        });
+
+    });
+</script>
+
+<style type="text/css">
+    .fieldset-container {
+        display: flex;
+        flex-wrap: wrap; /* 允许控件自动换行 */
+    }
+
+    .fieldset-item {
+        margin-right: 50px; /* 控制控件之间的间距 */
+    }
+</style>
+
+
+@using(Html.BeginForm(new { enctype = "multipart / form - data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+<div class="dialog">
+    <div class="editor-label hide">
+        @Html.LabelFor(model => model.rowID)
+    </div>
+    <div class="editor-field hide">
+        @Html.EditorFor(model => model.rowID)
+        @Html.ValidationMessageFor(model => model.rowID)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.newsID)
+    </div>
+    <div class="editor-field read">
+        @Html.EditorFor(model => model.newsID)
+        @Html.ValidationMessageFor(model => model.newsID)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.newsTitle)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.newsTitle)
+        @Html.ValidationMessageFor(model => model.newsTitle)
+    </div>
+
+    <div class="editor-label">
+        @Html.Label("作者")
+    </div>
+    <div class="editor-field read">
+        @Html.TextBox("authorName", db.bll.NN_newsItem.getUserName(Model.userID))<!--展示用-->
+        @Html.ValidationMessageFor(model => model.userID)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.readQuantity)
+    </div>
+    <div class="editor-field read">
+        @Html.EditorFor(model => model.readQuantity)
+        @Html.ValidationMessageFor(model => model.readQuantity)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.publishDateTime)
+    </div>
+    <div class="editor-field read">
+        @Html.EditorFor(model => model.publishDateTime)
+        @Html.ValidationMessageFor(model => model.publishDateTime)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.status)
+    </div>
+    <div class="editor-field">
+        @Html.DropDownListFor(a => a.status, db.bll.NN_newsItem.bind新闻状态(false, Model.status.ToString()))
+        @Html.ValidationMessageFor(model => model.status)
+
+    </div>
+
+    <div class="editor-label">
+        <!--封面图片-->
+        @Html.Label("现有新闻封面")
+    </div>
+    <div class="editor-field">
+        <img style="width:30px;height:25px;" src="data:jpg/jpeg;base64,@Convert.ToBase64String((byte[])Model.coverPic)" alt="图像">
+        @Html.ValidationMessageFor(model => model.coverPic)
+    </div>
+
+
+    <div class="editor-label">
+        <!--封面图片-->
+        @Html.LabelFor(model => model.coverPic)
+    </div>
+    <div class="editor-field">
+        <input type="file" name="newCoverPic">
+        @Html.ValidationMessageFor(model => model.coverPic)
+    </div>
+
+    <div class="editor-label">
+        <!--新闻描述-->
+        @Html.LabelFor(model => model.describe)
+    </div>
+    <div class="editor-field three">
+        @Html.TextBoxFor(a => a.describe)
+        @Html.ValidationMessageFor(model => model.status)
+
+    </div>
+
+    <fieldset>
+        <legend>新闻标签</legend>
+        <div style="fieldset-container">
+            @{
+                var data = db.bll.NN_newsCategory.getWords();
+                var selected = db.bll.NN_newsCategroryItem.getTagListByNewsID(Model.newsID);
+                foreach (var v in data)
+                {
+                    <span style="class = " fieldset-item"">
+                        @{ if (selected.Contains(v.Key))
+                            {
+                                <input type="checkbox" name="selectedItems" id="@v.Value" value="@v.Value" checked /> <label for="@v.Value">@v.Key</label>
+                            }
+                            else
+                            {
+                                <input type="checkbox" name="selectedItems" id="@v.Value" value="@v.Value" /> <label for="@v.Value">@v.Key</label>
+                            }
+                        }
+                    </span>
+
+                }
+            }
+        </div>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>
+            @Html.LabelFor(model => model.content)
+        </legend>
+        <div>
+            @Html.HiddenFor(model => model.content, new { @class = "UeditorProxy" })
+            <script id="uEditor" type="text/plain" style="width: 100%; height: 400px;"></script>
+            @Html.ValidationMessageFor(model => model.content)
+        </div>
+    </fieldset>
+    <p class="button">
+        <a class="billSave opSave" data-close="true">保存</a>
+        <a class="opClose">关闭</a>
+    </p>
+
+</div>
+
+}

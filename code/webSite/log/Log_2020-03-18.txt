@@ -1,0 +1,100 @@
+2020-03-18 19:38:23.4035 Info sys_Home-index 
+2020-03-18 19:38:24.4605 Info sys_Home-desktop 
+2020-03-18 19:38:27.0257 Info bks_Book-Select 
+2020-03-18 19:38:35.2381 Info rbac_Resource-select 
+2020-03-18 19:38:46.4088 Info sys_Home-index 
+2020-03-18 19:38:46.4878 Info sys_Home-desktop 
+2020-03-18 19:38:48.5169 Info rbac_Resource-select 
+2020-03-18 19:39:26.9581 Info sys_Home-index 
+2020-03-18 19:39:27.8841 Info sys_Home-desktop 
+2020-03-18 19:39:30.6373 Info rbac_Resource-select 
+2020-03-18 19:39:38.9668 Info rbac_Resource-Select 
+2020-03-18 19:39:53.1606 Info rbac_Resource-Select 
+2020-03-18 19:40:12.4267 Info rbac_Resource-Select 
+2020-03-18 19:40:15.5399 Info rbac_Resource-Select 
+2020-03-18 19:40:21.0512 Info rbac_Resource-Select 
+2020-03-18 19:40:23.5833 Info rbac_Resource-Select 
+2020-03-18 19:40:26.0525 Info rbac_Resource-Select 
+2020-03-18 19:40:46.5706 Info rbac_Resource-Select 
+2020-03-18 19:41:41.6978 Info rbac_Resource-Select 
+2020-03-18 19:41:42.2828 Info rbac_Resource-Select 
+2020-03-18 19:41:49.2742 Info rbac_Resource-Select 
+2020-03-18 19:41:49.8653 Info rbac_Resource-Select 
+2020-03-18 19:41:50.3513 Info rbac_Resource-Select 
+2020-03-18 19:41:50.7963 Info rbac_Resource-Select 
+2020-03-18 19:41:51.2803 Info rbac_Resource-Select 
+2020-03-18 19:42:06.2982 Info rbac_Resource-Select 
+2020-03-18 19:42:11.4495 Info rbac_Resource-Select 
+2020-03-18 19:42:18.9049 Info rbac_Resource-Select 
+2020-03-18 19:42:21.6851 Info rbac_Resource-Select 
+2020-03-18 19:42:23.8882 Info rbac_Resource-Select 
+2020-03-18 19:42:28.4325 Info sys_Home-desktop 
+2020-03-18 19:42:42.4363 Info rbac_Resource-Select 
+2020-03-18 19:43:07.5687 Info rbac_Resource-select 
+2020-03-18 19:43:09.5848 Info rbac_Resource-Select 
+2020-03-18 19:43:18.5793 Info rbac_Resource-select 
+2020-03-18 19:43:23.8166 Info rbac_Resource-Select 
+2020-03-18 19:44:25.2962 Info sys_Home-index 
+2020-03-18 19:44:25.4852 Info sys_Home-desktop 
+2020-03-18 19:44:29.9234 Info sys_Home-index 
+2020-03-18 19:44:30.1294 Info sys_Home-desktop 
+2020-03-18 19:44:31.7675 Info rbac_Resource-select 
+2020-03-18 19:44:32.9496 Info rbac_Resource-Select 
+2020-03-18 19:44:33.6366 Info rbac_Resource-Select 
+2020-03-18 19:44:34.1227 Info rbac_Resource-Select 
+2020-03-18 19:44:34.6337 Info rbac_Resource-Select 
+2020-03-18 19:44:35.0637 Info rbac_Resource-Select 
+2020-03-18 19:44:35.6117 Info rbac_Resource-Select 
+2020-03-18 19:44:36.0988 Info rbac_Resource-Select 
+2020-03-18 19:44:36.5308 Info rbac_Resource-Select 
+2020-03-18 19:44:36.9468 Info rbac_Resource-Select 
+2020-03-18 19:44:48.3145 Info rbac_Resource-Select 
+2020-03-18 19:44:52.6207 Info rbac_Resource-Select 
+2020-03-18 19:45:09.1537 Info rbac_Resource-Select 
+2020-03-18 19:45:09.7777 Info rbac_Resource-Select 
+2020-03-18 20:59:03.5253 Error 找不到方法:“System.String rui.configHelper.getAppValue(System.String)”。
+-------------------------
+   在 db.bll.loginAdminHelper.getUserCode()
+   在 db.bll.sys_WebLog.logLogin() 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\system\sys_WebLog.Df.cs:行号 71
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 51
+-------------------------
+ 
+2020-03-18 20:59:37.0912 Error 找不到方法:“System.String rui.configHelper.getAppValue(System.String)”。
+-------------------------
+   在 db.bll.loginAdminHelper.getUserCode()
+   在 db.bll.sys_WebLog.logLogin() 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\system\sys_WebLog.Df.cs:行号 71
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 51
+-------------------------
+ 
+2020-03-18 20:59:57.3274 Error 找不到方法:“System.String rui.configHelper.getAppValue(System.String)”。
+-------------------------
+   在 db.bll.loginAdminHelper.getUserCode()
+   在 db.bll.sys_WebLog.logLogin() 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\system\sys_WebLog.Df.cs:行号 71
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 51
+-------------------------
+ 
+2020-03-18 21:00:07.2939 Error 找不到方法:“System.String rui.configHelper.getAppValue(System.String)”。
+-------------------------
+   在 db.bll.loginAdminHelper.getUserCode()
+   在 db.bll.sys_WebLog.logLogin() 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\dbLibrary\bll\system\sys_WebLog.Df.cs:行号 71
+   在 web.Controllers.LoginController.loginAdmin(String tbxUserName, String tbxPassword, String orgCode) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版\code\WebSite\Controllers\LoginController.cs:行号 51
+-------------------------
+ 
+2020-03-18 21:02:41.0727 Info sys_Home-index 
+2020-03-18 21:02:42.0798 Info sys_Home-desktop 
+2020-03-18 21:02:43.7059 Info bks_Book-Select 
+2020-03-18 21:02:49.6842 Info rbac_Role-select 
+2020-03-18 21:02:52.1554 Info rbac_User-Select 
+2020-03-18 21:03:06.8802 Info rbac_User-Select 
+2020-03-18 21:03:07.5543 Info af_AuditPost-Select 
+2020-03-18 21:03:08.9943 Info af_AuditPostUser-Select 
+2020-03-18 21:03:10.1614 Info af_AuditType-select 
+2020-03-18 21:03:17.0028 Info af_AuditFlow-select 
+2020-03-18 21:03:18.7709 Info af_AuditCenter-select 
+2020-03-18 21:03:20.8430 Info sbs_Dept-select 
+2020-03-18 21:03:22.2261 Info sbs_Org-select 
+2020-03-18 21:03:23.4252 Info sbs_Empl-select 
+2020-03-18 21:03:25.6033 Info rbac_Module-select 
+2020-03-18 21:03:29.4495 Info rbac_Resource-select 
+2020-03-18 21:03:32.2207 Info rbac_Resource-Select 
+2020-03-18 21:03:32.7517 Info rbac_Resource-Select 

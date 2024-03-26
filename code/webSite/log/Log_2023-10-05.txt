@@ -1,0 +1,145 @@
+2023-10-05 00:22:16.7634 Info sys_Home-index 
+2023-10-05 00:22:16.8152 Info sys_Home-desktop 
+2023-10-05 17:40:55.0951 Info sys_Home-index 
+2023-10-05 17:40:55.1664 Info sys_Home-desktop 
+2023-10-05 18:10:19.9046 Info sys_Home-index 
+2023-10-05 18:10:20.4748 Info sys_Home-desktop 
+2023-10-05 18:10:27.8699 Info sys_Home-exit 
+2023-10-05 18:10:30.2977 Info sys_Home-index 
+2023-10-05 18:10:30.3338 Info sys_Home-desktop 
+2023-10-05 18:10:35.3567 Info rbac_Module-select 
+2023-10-05 18:10:36.1408 Info rbac_Resource-select 
+2023-10-05 18:10:40.8177 Info rbac_Resource-Update 
+2023-10-05 18:10:40.8868 Info rbac_ResourceOp-SelectPartial 
+2023-10-05 18:10:41.1728 Info sys_BillAttach-SelectPartial 
+2023-10-05 18:11:09.0749 Info rbac_Resource-Update 
+2023-10-05 18:11:09.3195 Info rbac_ResourceOp-SelectPartial 
+2023-10-05 18:11:18.5543 Info rbac_Resource-Select 
+2023-10-05 18:11:24.6850 Info rbac_Resource-Select 
+2023-10-05 18:11:26.4918 Info rbac_Resource-Update 
+2023-10-05 18:11:26.4979 Info rbac_ResourceOp-SelectPartial 
+2023-10-05 18:11:26.5029 Info sys_BillAttach-SelectPartial 
+2023-10-05 18:11:29.8943 Info rbac_Resource-Update 
+2023-10-05 18:11:29.9094 Info rbac_ResourceOp-SelectPartial 
+2023-10-05 18:11:31.1271 Info rbac_Resource-Select 
+2023-10-05 18:11:32.6305 Info rbac_Resource-Update 
+2023-10-05 18:11:32.6381 Info rbac_ResourceOp-SelectPartial 
+2023-10-05 18:11:32.6442 Info sys_BillAttach-SelectPartial 
+2023-10-05 18:11:35.3256 Info rbac_Resource-Update 
+2023-10-05 18:11:35.3400 Info rbac_ResourceOp-SelectPartial 
+2023-10-05 18:11:35.9338 Info rbac_Resource-Select 
+2023-10-05 18:11:41.6215 Info sys_Home-index 
+2023-10-05 18:11:41.6651 Info sys_Home-desktop 
+2023-10-05 18:16:25.8004 Info sys_Home-index 
+2023-10-05 18:16:25.8835 Info sys_Home-desktop 
+2023-10-05 18:17:59.9941 Info sys_Home-index 
+2023-10-05 18:18:00.0401 Info sys_Home-desktop 
+2023-10-05 18:18:13.2148 Info rbac_Role-select 
+2023-10-05 18:18:17.5402 Info sys_Home-index 
+2023-10-05 18:18:17.5770 Info sys_Home-desktop 
+2023-10-05 18:23:44.6598 Info sys_Home-index 
+2023-10-05 18:23:44.7425 Info sys_Home-desktop 
+2023-10-05 18:23:49.8233 Info sys_Home-index 
+2023-10-05 18:23:49.8567 Info sys_Home-desktop 
+2023-10-05 18:33:11.0357 Info sys_Home-index 
+2023-10-05 18:33:11.6103 Info sys_Home-desktop 
+2023-10-05 18:39:47.5030 Info sys_Home-index 
+2023-10-05 18:39:48.0296 Info sys_Home-desktop 
+2023-10-05 18:41:04.0213 Info sys_Home-index 
+2023-10-05 18:41:04.5927 Info sys_Home-desktop 
+2023-10-05 18:43:45.2806 Info sys_Home-index 
+2023-10-05 18:43:45.4126 Info sys_Home-desktop 
+2023-10-05 18:45:54.7130 Info sys_Home-index 
+2023-10-05 18:45:54.8065 Info sys_Home-desktop 
+2023-10-05 18:48:27.1513 Info sys_Home-index 
+2023-10-05 18:48:27.7112 Info sys_Home-desktop 
+2023-10-05 18:48:55.6668 Info sys_Home-index 
+2023-10-05 18:48:56.1948 Info sys_Home-desktop 
+2023-10-05 18:56:51.7389 Info sys_Home-index 
+2023-10-05 18:56:52.2912 Info sys_Home-desktop 
+2023-10-05 19:39:34.7763 Info sys_Home-index 
+2023-10-05 19:39:35.3853 Info sys_Home-desktop 
+2023-10-05 19:40:15.7919 Info rbac_Resource-select 
+2023-10-05 19:40:17.8915 Info rbac_Resource-Update 
+2023-10-05 19:40:18.1286 Info rbac_ResourceOp-SelectPartial 
+2023-10-05 19:40:18.4125 Info sys_BillAttach-SelectPartial 
+2023-10-05 19:40:38.3529 Info rbac_Resource-Update 
+2023-10-05 19:40:38.5698 Info rbac_ResourceOp-SelectPartial 
+2023-10-05 19:40:39.5865 Info rbac_Resource-Select 
+2023-10-05 19:45:31.7712 Info sys_Home-index 
+2023-10-05 19:45:32.3388 Info sys_Home-desktop 
+2023-10-05 19:46:45.2541 Info sys_Home-index 
+2023-10-05 19:46:45.8254 Info sys_Home-desktop 
+2023-10-05 19:47:41.5855 Info sys_Home-index 
+2023-10-05 19:47:42.1610 Info sys_Home-desktop 
+2023-10-05 19:53:08.8572 Info sys_Home-index 
+2023-10-05 19:53:09.4489 Info sys_Home-desktop 
+2023-10-05 19:55:42.1239 Info sys_Home-index 
+2023-10-05 19:55:42.6928 Info sys_Home-desktop 
+2023-10-05 19:56:19.7836 Info sys_Home-index 
+2023-10-05 19:56:20.3534 Info sys_Home-desktop 
+2023-10-05 19:57:27.8958 Info sys_Home-index 
+2023-10-05 19:57:28.4425 Info sys_Home-desktop 
+2023-10-05 20:10:40.1504 Info sys_Home-index 
+2023-10-05 20:10:40.7112 Info sys_Home-desktop 
+2023-10-05 20:13:35.0469 Info sys_Home-index 
+2023-10-05 20:13:35.0940 Info sys_Home-desktop 
+2023-10-05 20:14:17.9034 Info sys_Home-index 
+2023-10-05 20:14:18.4490 Info sys_Home-desktop 
+2023-10-05 20:14:52.1174 Info sys_Home-index 
+2023-10-05 20:14:52.6518 Info sys_Home-desktop 
+2023-10-05 20:15:39.0918 Info sys_Home-index 
+2023-10-05 20:15:39.6463 Info sys_Home-desktop 
+2023-10-05 20:16:08.8921 Info sys_Home-index 
+2023-10-05 20:16:09.4355 Info sys_Home-desktop 
+2023-10-05 20:17:24.9468 Info sys_Home-index 
+2023-10-05 20:17:25.4836 Info sys_Home-desktop 
+2023-10-05 20:21:41.1460 Info sys_Home-index 
+2023-10-05 20:21:41.7114 Info sys_Home-desktop 
+2023-10-05 20:30:12.6981 Info sys_Home-index 
+2023-10-05 20:30:13.2390 Info sys_Home-desktop 
+2023-10-05 20:30:22.8212 Error “@userID”附近有语法错误。
+------------begin-------------
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderImpl(IDbConnection cnn, CommandDefinition& command, CommandBehavior commandBehavior, IDbCommand& cmd)
+   在 Dapper.SqlMapper.ExecuteReader(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 db.efHelper.ExecuteDataTable(String cmdText, Object param, CommandType type) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\lib\db\efHelper.cs:行号 148
+   在 db.bll.NN_apply.batchAgree(String keyFieldValues, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_apply.cs:行号 56
+   在 web.Areas.employee.Controllers.employeeApplyController.batchAgree(String keyFieldValues) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeApplyController.cs:行号 32
+------------End-------------
+ 
+2023-10-05 20:31:25.1919 Info sys_Home-index 
+2023-10-05 20:31:25.7890 Info sys_Home-desktop 
+2023-10-05 20:34:17.0988 Info sys_Home-index 
+2023-10-05 20:34:17.7246 Info sys_Home-desktop 
+2023-10-05 20:41:37.2556 Info sys_Home-index 
+2023-10-05 20:41:37.8866 Info sys_Home-desktop 
+2023-10-05 20:44:47.5384 Info sys_Home-index 
+2023-10-05 20:44:48.1790 Info sys_Home-desktop 
+2023-10-05 20:48:19.1631 Info sys_Home-index 
+2023-10-05 20:48:19.8063 Info sys_Home-desktop 
+2023-10-05 20:49:24.8666 Info sys_Home-index 
+2023-10-05 20:49:25.4425 Info sys_Home-desktop 
+2023-10-05 20:51:10.5787 Info sys_Home-index 
+2023-10-05 20:51:11.1239 Info sys_Home-desktop 
+2023-10-05 21:07:07.8186 Info sys_Home-index 
+2023-10-05 21:07:08.3613 Info sys_Home-desktop 
+2023-10-05 21:07:56.3284 Info sys_Home-index 
+2023-10-05 21:07:56.8813 Info sys_Home-desktop 
+2023-10-05 21:09:50.6117 Info sys_Home-index 
+2023-10-05 21:09:51.1732 Info sys_Home-desktop 
+2023-10-05 21:15:45.9968 Info sys_Home-index 
+2023-10-05 21:15:46.0727 Info sys_Home-desktop 

@@ -1,0 +1,8 @@
+﻿dbTools\App.Config
+dbLibrary\App.Config
+webSite\Web.config
+webSiteApi\Web.config
+webSiteWeixin\Web.config
+webSite\appsettings.json
+webSiteApi\appsettings.json
+webSiteWeixin\appsettings.json

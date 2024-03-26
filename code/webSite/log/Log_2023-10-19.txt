@@ -1,0 +1,248 @@
+2023-10-19 00:12:47.9461 Info sys_Home-index 
+2023-10-19 00:12:48.7821 Info sys_Home-desktop 
+2023-10-19 00:29:05.0506 Info sys_Home-index 
+2023-10-19 00:29:05.6911 Info sys_Home-desktop 
+2023-10-19 00:30:59.7148 Info sys_Home-index 
+2023-10-19 00:30:59.7809 Info sys_Home-desktop 
+2023-10-19 00:31:40.3896 Info sys_Home-index 
+2023-10-19 00:31:40.5718 Info sys_Home-desktop 
+2023-10-19 00:41:37.1569 Info sys_Home-index 
+2023-10-19 00:41:37.9720 Info sys_Home-desktop 
+2023-10-19 00:43:29.1279 Info sys_Home-index 
+2023-10-19 00:43:30.0484 Info sys_Home-desktop 
+2023-10-19 00:46:12.1868 Info sys_Home-index 
+2023-10-19 00:46:13.0340 Info sys_Home-desktop 
+2023-10-19 00:46:52.8648 Info sys_Home-index 
+2023-10-19 00:46:53.7144 Info sys_Home-desktop 
+2023-10-19 00:47:15.9244 Info sys_Home-index 
+2023-10-19 00:47:16.0858 Info sys_Home-desktop 
+2023-10-19 00:54:05.4670 Info sys_Home-index 
+2023-10-19 00:54:06.2527 Info sys_Home-desktop 
+2023-10-19 00:55:06.4247 Info sys_Home-index 
+2023-10-19 00:55:06.5005 Info sys_Home-desktop 
+2023-10-19 00:58:04.8861 Info sys_Home-index 
+2023-10-19 00:58:05.6809 Info sys_Home-desktop 
+2023-10-19 01:02:50.0435 Info sys_Home-index 
+2023-10-19 01:02:50.1365 Info sys_Home-desktop 
+2023-10-19 01:07:20.4116 Info sys_Home-index 
+2023-10-19 01:07:21.0678 Info sys_Home-desktop 
+2023-10-19 01:09:02.5761 Info sys_Home-index 
+2023-10-19 01:09:02.6901 Info sys_Home-desktop 
+2023-10-19 01:09:11.0328 Info sys_Home-index 
+2023-10-19 01:09:11.0937 Info sys_Home-desktop 
+2023-10-19 01:18:02.5852 Info sys_Home-index 
+2023-10-19 01:18:03.2870 Info sys_Home-desktop 
+2023-10-19 01:20:25.1330 Info sys_Home-index 
+2023-10-19 01:20:25.1992 Info sys_Home-desktop 
+2023-10-19 01:22:12.3211 Info sys_Home-index 
+2023-10-19 01:22:12.3920 Info sys_Home-desktop 
+2023-10-19 01:24:44.2942 Info sys_Home-index 
+2023-10-19 01:24:45.0019 Info sys_Home-desktop 
+2023-10-19 03:57:49.1876 Info sys_Home-index 
+2023-10-19 03:57:50.0295 Info sys_Home-desktop 
+2023-10-19 05:22:12.1201 Info sys_Home-index 
+2023-10-19 05:22:12.9900 Info sys_Home-desktop 
+2023-10-19 05:22:21.7574 Info sys_Home-index 
+2023-10-19 05:22:21.8043 Info sys_Home-desktop 
+2023-10-19 05:56:39.9284 Info sys_Home-index 
+2023-10-19 05:56:40.7783 Info sys_Home-desktop 
+2023-10-19 05:57:01.5885 Info sys_Home-index 
+2023-10-19 05:57:01.6534 Info sys_Home-desktop 
+2023-10-19 06:09:35.3821 Error An error occurred while preparing the command definition. See the inner exception for details.
+------------begin-------------
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityProviderServices.CreateDbCommandDefinition(DbProviderManifest providerManifest, DbCommandTree commandTree, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.Common.DbProviderServices.CreateCommandDefinition(DbCommandTree commandTree, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlanFactory.CreateCommandDefinition(ObjectContext context, DbQueryCommandTree tree)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlanFactory.Prepare(ObjectContext context, DbQueryCommandTree tree, Type elementType, MergeOption mergeOption, Boolean streaming, Span span, IEnumerable`1 compiledQueryParameters, AliasGenerator aliasGenerator)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 db.bll.NN_user.getModelByRowID(String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 180
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_loginCustomer.cs:行号 28
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 
+2023-10-19 06:09:35.3902 Error 
+dbModel1.msl(162,10) : error 3003: Problem in mapping fragments starting at line 162:All the key properties (NN_apply.userID, NN_apply.type) of the EntitySet NN_apply must be mapped to all the key properties (NN_apply.applicationDateTime, NN_apply.type, NN_apply.userID) of table NN_apply.
+
+------------begin-------------
+   在 System.Data.Entity.Core.Mapping.StorageMappingItemCollection.ViewDictionary.SerializedGenerateViews(EntityContainerMapping entityContainerMap, Dictionary`2 resultDictionary)
+   在 System.Data.Entity.Core.Mapping.StorageMappingItemCollection.ViewDictionary.SerializedGetGeneratedViews(EntityContainer container)
+   在 System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   在 System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   在 System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   在 System.Data.Entity.Core.Mapping.StorageMappingItemCollection.ViewDictionary.GetGeneratedView(EntitySetBase extent, MetadataWorkspace workspace, StorageMappingItemCollection storageMappingItemCollection)
+   在 System.Data.Entity.Core.Metadata.Edm.MetadataWorkspace.GetGeneratedView(EntitySetBase extent)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.ExpandView(ScanTableOp scanTableOp, IsOfOp& typeFilter)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.ProcessScanTable(Node scanTableNode, ScanTableOp scanTableOp, IsOfOp& typeFilter)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Visit(ScanTableOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.ScanTableOp.Accept[TResultType](BasicOpVisitorOfT`1 v, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.VisitNode(Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitRelOpDefault(RelOp op, Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Visit(FilterOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.FilterOp.Accept[TResultType](BasicOpVisitorOfT`1 v, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.VisitNode(Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitRelOpDefault(RelOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.VisitSortOp(SortBaseOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.Visit(ConstrainedSortOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.ConstrainedSortOp.Accept[TResultType](BasicOpVisitorOfT`1 v, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.VisitNode(Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfNode.VisitDefault(Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfNode.VisitPhysicalOpDefault(PhysicalOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.Visit(PhysicalProjectOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.PhysicalProjectOp.Accept[TResultType](BasicOpVisitorOfT`1 v, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.VisitNode(Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Process(Dictionary`2& tvfResultKeys)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Process(PlanCompiler planCompilerState, StructuredTypeInfo& typeInfo, Dictionary`2& tvfResultKeys)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PlanCompiler.Compile(List`1& providerCommands, ColumnMap& resultColumnMap, Int32& columnCount, Set`1& entitySets)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PlanCompiler.Compile(DbCommandTree ctree, List`1& providerCommands, ColumnMap& resultColumnMap, Int32& columnCount, Set`1& entitySets)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+------------End-------------
+ 
+2023-10-19 06:09:38.6604 Error An error occurred while preparing the command definition. See the inner exception for details.
+------------begin-------------
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityProviderServices.CreateDbCommandDefinition(DbProviderManifest providerManifest, DbCommandTree commandTree, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.Common.DbProviderServices.CreateCommandDefinition(DbCommandTree commandTree, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlanFactory.CreateCommandDefinition(ObjectContext context, DbQueryCommandTree tree)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlanFactory.Prepare(ObjectContext context, DbQueryCommandTree tree, Type elementType, MergeOption mergeOption, Boolean streaming, Span span, IEnumerable`1 compiledQueryParameters, AliasGenerator aliasGenerator)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 db.bll.NN_user.getModelByRowID(String rowID, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_user.cs:行号 180
+   在 db.bll.NN_loginCustomer.login(String userID, String password, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_loginCustomer.cs:行号 28
+   在 web.Areas.client.Controllers.clientLoginController.login_(String userID, String password) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\client\Controllers\clientLoginController.cs:行号 29
+------------End-------------
+ 
+2023-10-19 06:09:38.6614 Error 
+dbModel1.msl(162,10) : error 3003: Problem in mapping fragments starting at line 162:All the key properties (NN_apply.userID, NN_apply.type) of the EntitySet NN_apply must be mapped to all the key properties (NN_apply.applicationDateTime, NN_apply.type, NN_apply.userID) of table NN_apply.
+
+------------begin-------------
+   在 System.Data.Entity.Core.Mapping.StorageMappingItemCollection.ViewDictionary.SerializedGenerateViews(EntityContainerMapping entityContainerMap, Dictionary`2 resultDictionary)
+   在 System.Data.Entity.Core.Mapping.StorageMappingItemCollection.ViewDictionary.SerializedGetGeneratedViews(EntityContainer container)
+   在 System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   在 System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   在 System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   在 System.Data.Entity.Core.Mapping.StorageMappingItemCollection.ViewDictionary.GetGeneratedView(EntitySetBase extent, MetadataWorkspace workspace, StorageMappingItemCollection storageMappingItemCollection)
+   在 System.Data.Entity.Core.Metadata.Edm.MetadataWorkspace.GetGeneratedView(EntitySetBase extent)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.ExpandView(ScanTableOp scanTableOp, IsOfOp& typeFilter)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.ProcessScanTable(Node scanTableNode, ScanTableOp scanTableOp, IsOfOp& typeFilter)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Visit(ScanTableOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.ScanTableOp.Accept[TResultType](BasicOpVisitorOfT`1 v, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.VisitNode(Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitRelOpDefault(RelOp op, Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Visit(FilterOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.FilterOp.Accept[TResultType](BasicOpVisitorOfT`1 v, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.VisitNode(Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitRelOpDefault(RelOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.VisitSortOp(SortBaseOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.Visit(ConstrainedSortOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.ConstrainedSortOp.Accept[TResultType](BasicOpVisitorOfT`1 v, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.VisitNode(Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.SubqueryTrackingVisitor.VisitChildren(Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfNode.VisitDefault(Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfNode.VisitPhysicalOpDefault(PhysicalOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.Visit(PhysicalProjectOp op, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.PhysicalProjectOp.Accept[TResultType](BasicOpVisitorOfT`1 v, Node n)
+   在 System.Data.Entity.Core.Query.InternalTrees.BasicOpVisitorOfT`1.VisitNode(Node n)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Process(Dictionary`2& tvfResultKeys)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PreProcessor.Process(PlanCompiler planCompilerState, StructuredTypeInfo& typeInfo, Dictionary`2& tvfResultKeys)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PlanCompiler.Compile(List`1& providerCommands, ColumnMap& resultColumnMap, Int32& columnCount, Set`1& entitySets)
+   在 System.Data.Entity.Core.Query.PlanCompiler.PlanCompiler.Compile(DbCommandTree ctree, List`1& providerCommands, ColumnMap& resultColumnMap, Int32& columnCount, Set`1& entitySets)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+------------End-------------
+ 
+2023-10-19 06:18:45.8089 Info sys_Home-index 
+2023-10-19 06:18:46.6235 Info sys_Home-desktop 
+2023-10-19 06:22:31.4965 Info sys_Home-index 
+2023-10-19 06:22:32.1037 Info sys_Home-desktop 
+2023-10-19 06:24:58.4802 Info sys_Home-index 
+2023-10-19 06:24:58.7064 Info sys_Home-desktop 
+2023-10-19 06:34:45.0608 Info sys_Home-index 
+2023-10-19 06:34:45.8819 Info sys_Home-desktop 
+2023-10-19 06:41:16.1681 Info sys_Home-index 
+2023-10-19 06:41:16.4019 Info sys_Home-desktop 
+2023-10-19 06:41:40.3259 Info sys_Home-index 
+2023-10-19 06:41:40.3903 Info sys_Home-desktop 
+2023-10-19 07:07:57.9473 Info sys_Home-index 
+2023-10-19 07:07:58.6750 Info sys_Home-desktop 
+2023-10-19 07:12:17.3275 Error 已添加了具有相同键的项。
+------------begin-------------
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 db.bll.NN_apply.batchAgree(String keyFieldValues, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_apply.cs:行号 120
+   在 web.Areas.employee.Controllers.employeeApplyController.batchAgree(String keyFieldValues) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeApplyController.cs:行号 32
+------------End-------------
+ 
+2023-10-19 07:14:11.6058 Info sys_Home-index 
+2023-10-19 07:14:12.3687 Info sys_Home-desktop 
+2023-10-19 07:14:26.3542 Error 已添加了具有相同键的项。
+------------begin-------------
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 db.bll.NN_apply.batchAgree(String keyFieldValues, dbEntities dc) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\dbLibrary\bll\NN\NN_apply.cs:行号 120
+   在 web.Areas.employee.Controllers.employeeApplyController.batchAgree(String keyFieldValues) 位置 C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\WebSite\Areas\employee\Controllers\employeeApplyController.cs:行号 32
+------------End-------------
+ 
+2023-10-19 07:16:12.3881 Info sys_Home-index 
+2023-10-19 07:16:12.6159 Info sys_Home-desktop 
+2023-10-19 07:19:06.0403 Info sys_Home-index 
+2023-10-19 07:19:06.9982 Info sys_Home-desktop 
+2023-10-19 07:20:08.7338 Info sys_Home-index 
+2023-10-19 07:20:09.4177 Info sys_Home-desktop 
+2023-10-19 07:23:27.8956 Info sys_Home-index 
+2023-10-19 07:23:28.1214 Info sys_Home-desktop 
+2023-10-19 07:29:34.7767 Info sys_Home-index 
+2023-10-19 07:29:35.4735 Info sys_Home-desktop 
+2023-10-19 07:33:52.4337 Info sys_Home-exit 
+2023-10-19 07:33:53.9965 Info sys_Home-index 
+2023-10-19 07:34:45.2454 Info sys_Home-index 
+2023-10-19 07:34:45.3053 Info sys_Home-desktop 
+2023-10-19 09:38:34.7324 Info sys_Home-index 
+2023-10-19 09:38:35.3706 Info sys_Home-desktop 
+2023-10-19 09:55:14.9113 Info sys_Home-index 
+2023-10-19 09:55:15.4974 Info sys_Home-desktop 
+2023-10-19 09:56:31.6718 Info sys_Home-index 
+2023-10-19 09:56:32.3318 Info sys_Home-desktop 
+2023-10-19 10:00:39.8540 Info sys_Home-index 
+2023-10-19 10:00:40.4853 Info sys_Home-desktop 
+2023-10-19 10:21:38.5242 Info sys_Home-index 
+2023-10-19 10:21:39.1109 Info sys_Home-desktop 
+2023-10-19 10:28:25.5877 Info sys_Home-index 
+2023-10-19 10:28:26.1489 Info sys_Home-desktop 
+2023-10-19 14:25:17.1670 Info sys_Home-index 
+2023-10-19 14:25:17.8143 Info sys_Home-desktop 
+2023-10-19 14:42:25.0045 Info sys_Home-index 
+2023-10-19 14:42:25.0797 Info sys_Home-desktop 
+2023-10-19 14:43:34.0034 Info sys_Home-index 
+2023-10-19 14:43:34.0666 Info sys_Home-desktop 

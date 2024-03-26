@@ -1,0 +1,46 @@
+2020-04-13 06:52:43.6973 Info bks_Book-Select 
+2020-04-13 06:52:46.3544 Info sys_Home-index 
+2020-04-13 06:52:47.1575 Info sys_Home-desktop 
+2020-04-13 06:52:48.2676 Info bks_Book-Select 
+2020-04-13 06:53:29.3729 Info sys_Home-index 
+2020-04-13 06:53:29.5139 Info sys_Home-desktop 
+2020-04-13 06:53:30.4589 Info bks_Book-Select 
+2020-04-13 06:55:52.5738 Info sys_Home-index 
+2020-04-13 06:55:52.7208 Info sys_Home-desktop 
+2020-04-13 06:55:53.7799 Info bks_Book-Select 
+2020-04-13 07:01:59.5633 Info sys_Home-index 
+2020-04-13 07:02:00.4503 Info sys_Home-desktop 
+2020-04-13 07:02:01.6974 Info bks_Book-Select 
+2020-04-13 07:02:09.5589 Info bks_Book-batchSave 
+2020-04-13 07:02:14.7662 Info bks_Book-Select 
+2020-04-13 07:02:24.2037 Info bks_Book-batchSave 
+2020-04-13 07:02:24.7577 Info bks_Book-batchSave 
+2020-04-13 07:02:27.9059 Info bks_Book-batchSave 
+2020-04-13 07:12:06.6816 Info sys_Home-index 
+2020-04-13 07:12:06.8836 Info sys_Home-desktop 
+2020-04-13 07:12:08.3207 Info bks_Book-Select 
+2020-04-13 07:21:38.8889 Info sys_Home-index 
+2020-04-13 07:21:39.8809 Info sys_Home-desktop 
+2020-04-13 07:21:40.9680 Info bks_Book-Select 
+2020-04-13 07:21:50.5045 Info bks_Book-batchSell 
+2020-04-13 07:21:50.5315 Info bks_Book-select 
+2020-04-13 07:21:57.4939 Info bks_Book-batchNoSell 
+2020-04-13 07:21:57.5109 Info bks_Book-select 
+2020-04-13 07:22:00.6661 Info bks_Book-batchSell 
+2020-04-13 07:22:00.6881 Info bks_Book-select 
+2020-04-13 07:22:05.5774 Info bks_Book-batchSell 
+2020-04-13 07:22:05.6104 Error 已上架
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 rui.dbTools.checkRowFieldValue(DataRow[] rows, String fieldName, String fieldValue, String errorMsg)
+   在 db.bll.bks_Book.batchSell(String keyFieldValues, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版(录屏用)\code\dbLibrary\bll\book\bks_book.cs:行号 61
+-------------------------
+ 
+2020-04-13 07:22:05.6224 Error 已上架
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 rui.dbTools.checkRowFieldValue(DataRow[] rows, String fieldName, String fieldValue, String errorMsg)
+   在 db.bll.bks_Book.batchSell(String keyFieldValues, dbEntities dc) 位置 E:\2020 - 综合项目\MVC5开发框架 - 教学版(录屏用)\code\dbLibrary\bll\book\bks_book.cs:行号 61
+-------------------------
+ 
+2020-04-13 07:22:05.6284 Info bks_Book-select 

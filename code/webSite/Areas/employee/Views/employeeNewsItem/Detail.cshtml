@@ -1,0 +1,51 @@
+﻿@model db.NN_newsItem
+
+<div class="dialog">
+
+
+    <div class="display-label">
+        @Html.DisplayNameFor(a => a.newsTitle)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(a => a.newsTitle)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(a => a.coverPic)
+    </div>
+    <div class="display-field">
+        <img style="width:30px;height:25px;" src="data:jpg/jpeg;base64,@Convert.ToBase64String((byte[])Model.coverPic)" alt="图像">
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(a => a.describe)
+    </div>
+    <div class="display-field three">
+        @Html.DisplayFor(a => a.describe)
+    </div>
+</div>
+
+    <fieldset>
+        <div style="padding:3px; text-indent:2em;line-height:3ex;width:100%;">
+            @Html.Raw(Model.content)
+        </div>
+
+        <fieldset style="padding: 3px; text-indent: 2em; line-height: 3ex; width: 100%;">
+            <P style=" flex-wrap: wrap">
+                <span style="float: left; margin-left:15px;">喜欢：@db.bll.NN_newsItem.getLikeByNewsID(Model.newsID).ToString()次</span>
+                <span style="float: left; margin-left: 15px;">收藏：@db.bll.NN_newsItem.getStarByNewsID(Model.newsID).ToString()次</span>
+                <span style="float: left; margin-left: 15px;">总浏览次数：@db.bll.NN_newsItem.getOutlookByNewsID(Model.newsID).ToString()次</span>
+                <span style="float: left; margin-left: 15px;">评论：@db.bll.NN_newsItem.getCommitByNewsID(Model.newsID).ToString()条</span>
+                <span style="float: left; margin-left: 15px;">标签：@db.bll.NN_newsCategroryItem.getTagListByNewsID(Model.newsID)</span>
+                <span style="float: right; margin-left: 15px;">发布时间：@db.bll.NN_newsItem.getPublishDateByNewsID(Model.newsID)</span>
+                <span style="float: right; margin-left: 15px;">作者：@db.bll.NN_newsItem.getUserName(Model.userID)</span>
+
+            </P>
+        </fieldset>
+
+        <fieldset>
+            <legend>评论区</legend>
+        </fieldset>
+    </fieldset>
+
+

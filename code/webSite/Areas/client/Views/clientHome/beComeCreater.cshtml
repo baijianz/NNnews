@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>成为一名内容创作者</title>
+    <link rel="shortcut icon" href=@Url.Content("~/Areas/client/assets/images/fav.png") type="image/x-icon">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/plugins/fontawesome-5.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/bootstrap.min.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/swiper.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/metismenu.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/vendor/magnific-popup.css") as="style">
+    <link rel="stylesheet preload" href=@Url.Content("~/Areas/client/assets/css/style.css") as="style">
+    @*layui*@
+    <link href="@Url.Content("~/content/layui/css/layui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/layui/layui.js")"></script>
+
+    @*jquery*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery-1.12.4.min.js")></script>
+    @*easyUI*@
+    <link href="@Url.Content("~/content/easyui/icon.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/content/easyui/bootstrap/easyui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/easyui/jquery.easyui.js")"></script>
+    @*layui*@
+    <link href="@Url.Content("~/content/layui/css/layui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/layui/layui.js")"></script>
+    @*chosen*@
+    <link href="@Url.Content("~/content/chosen/chosen.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/chosen/jquery.chosen.js")"></script>
+    @*jquery.validate*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate-vsdoc.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.message.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.unobtrusive.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.metadata.js")></script>
+    @*jquery库*@
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.ajaxfileupload.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.tableInput.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/my97DatePicker/WdatePicker.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.form.js")"></script>
+
+    @*自己封装的js*@
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.tools.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/fontawesome/rui.button.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.modelDialog.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.dropDownList.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.bill.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.cbxMulSelected.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_rui.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_lay.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.pager.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.layout.js"+rui.configHelper.ctxKey)></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-repeat: no-repeat; /* 设置只出现一次 */
+            background-size: cover; @*设置铺满整个屏幕*@
+            background-image: url("\\Areas\\client\\Data\\img\\background1.png");
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #666;
+            }
+
+    </style>
+
+    @*//uediter*@
+    <script type="text/javascript" charset="utf-8" src="/uEditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/uEditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/uEditor/lang/zh-cn/zh-cn.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>申请成为一名作者</h1>
+        <form style="width:100%; background-color:azure">
+
+            <label for="organization" style="font:bold;color:black">机构(加盟NN新闻请与官方联系)：</label>
+            @Html.DropDownList("agency", db.bll.NN_NewsAgency.bind机构_())
+            <fieldset style="border:1px solid; margin-top:10px;">
+                <legend>
+                    证明材料
+                </legend>
+                <div>
+                    @Html.Hidden("content", new { @class = "uEditorProxy_content" })
+                    <script id="uEditor_content" type="text/plain" style="width: 100%; height: 400px;">
+                    </script>
+                </div>
+            </fieldset>
+            <button type="button" id="toBeOfficialSubmit">提交</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+    var submit = document.getElementById("toBeOfficialSubmit");
+    submit.addEventListener("click", function () {
+        var content = document.getElementById("content");
+        content.value = ue_content.getContent();
+        var newsAgence = document.getElementById("agency");
+        var formData = new FormData();
+        formData.append("userID", "@ViewBag.userID");
+        formData.append("newsAgence", newsAgence.value);
+        formData.append("content", content.value)
+        $.ajax({
+            url: "RectobeCreater", // 指向您的ASP.NET后台处理程序
+            type: "POST",
+            data: formData,
+            dataType:"JSON",
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                showInfo(response.message + ",将在5秒后返回主页", { fontColor: 'blue' });
+                setTimeout(function () {
+                    window.open('index', '_self');
+                }, 5000); // 5000 毫秒等于 5 秒
+            },
+            error: function (error) {
+                //showInfo(error.message, { fontColor: 'red' });
+                showInfo('您已经申请过同类型，请静候佳音。将5秒后返回', { fontColor: 'blue' }); // 设置字体颜色为蓝色
+                setTimeout(function () {
+                    window.open('index', '_self');
+                }, 5000); // 5000 毫秒等于 5 秒
+            }
+        });
+    });
+
+    var ue_content;
+
+    //页面加载后，从代理表单取值付给uEditor
+    $(document).ready(function () {
+        //实例化作者介绍的编辑器
+        ue_content = UE.getEditor('uEditor_content');
+    });
+</script>

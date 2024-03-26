@@ -1,0 +1,35 @@
+2022-02-24 08:47:57.1666 Error 用户 'sa' 登录失败。
+------------begin-------------
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 dbTools.frmMain.btnSave_Click(Object sender, EventArgs e) 位置 E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\dbTools\frmMain.cs:行号 183
+------------End-------------
+ 
+2022-02-24 08:48:06.1243 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Web.config 
+2022-02-24 08:48:06.1325 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\Web.config 
+2022-02-24 08:48:06.1351 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\Web.config 
+2022-02-24 08:48:06.1435 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2022-02-24 08:48:06.1445 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2022-02-24 08:48:06.1465 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2022-02-24 08:48:06.1475 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2022-02-24 08:48:06.1485 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2022-02-24 08:48:06.1485 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2022-02-24 08:48:12.5498 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Web.config 
+2022-02-24 08:48:12.5578 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\Web.config 
+2022-02-24 08:48:12.5588 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\Web.config 
+2022-02-24 08:48:12.5598 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2022-02-24 08:48:12.5598 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2022-02-24 08:48:12.5608 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2022-02-24 08:48:12.5618 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2022-02-24 08:48:12.5618 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2022-02-24 08:48:12.5618 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 

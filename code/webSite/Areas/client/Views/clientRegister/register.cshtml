@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>用户注册</title>
+    @*字体库*@
+    <link href="@Url.Content("~/content/fontawesome/css/font-awesome.min.css")" rel="stylesheet" type="text/css" />
+
+    @*jquery*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery-1.12.4.min.js")></script>
+    @*easyUI*@
+    <link href="@Url.Content("~/content/easyui/icon.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/content/easyui/bootstrap/easyui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/easyui/jquery.easyui.js")"></script>
+    @*layui*@
+    <link href="@Url.Content("~/content/layui/css/layui.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/layui/layui.js")"></script>
+    @*chosen*@
+    <link href="@Url.Content("~/content/chosen/chosen.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/content/chosen/jquery.chosen.js")"></script>
+    @*jquery.validate*@
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate-vsdoc.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.message.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.validate.unobtrusive.js")></script>
+    <script type="text/javascript" src=@Url.Content("~/Content/scripts/jquery.metadata.js")></script>
+    @*jquery库*@
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.ajaxfileupload.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.tableInput.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/my97DatePicker/WdatePicker.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/content/scripts/jquery.form.js")"></script>
+
+
+    @*自己封装的js*@
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.tools.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/fontawesome/rui.button.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.modelDialog.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.dropDownList.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.bill.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.cbxMulSelected.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_rui.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table_lay.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.table.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.pager.js"+rui.configHelper.ctxKey)></script>
+    <script type="text/javascript" src=@Url.Content("~/content/scripts/rui.layout.js"+rui.configHelper.ctxKey)></script>
+
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .registration-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            width: 700px;
+        }
+
+        .image-container {
+            background-color: #ccc;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-preview {
+            max-width: 100%;
+            max-height: 100%;
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .registration-content {
+            text-align: left;
+            width: 100%;
+            margin-left: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        Select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: 100%;
+        }
+
+        button {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 32px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #005bbf;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="registration-container">
+            <div>
+                <div class="image-container">
+                    <!-- 用于实时预览头像的元素 -->
+                    <img id="avatar-preview" class="image-preview" src="#" alt="Avatar Preview">
+                </div>
+                <input type="file" id="avatar-upload" accept="image/*" style="margin-top: 20px;">
+            </div>
+            <div class="registration-content">
+                <h2>用户注册</h2>
+                <div>
+                    <label>昵称:</label><br>
+                    <input type="text" placeholder="请输入昵称" id="nickname" style="width:85%"><span id="nickname-error" style="color: red;"></span><br>
+                </div>
+                <div>
+                    <label>密码:</label><br>
+                    <input type="password" placeholder="请输入密码" id="password" style="width:85%"><span id="password-error" style="color: red;"></span><br>
+                </div>
+                <div>
+                    <label>性别:</label><br>
+                    <select id="gender" style="width:85%">
+                        <option value="male">男</option>
+                        <option value="female">女</option>
+                    </select><br>
+                </div>
+                <div>
+                    <label>出生日期:</label><br>
+                    <input type="date" id="birthdate" style="width:85%"><span id="birthdate-error" style="color: red;"></span><br>
+                </div>
+                <button id="register">注册</button>
+                <button id="back">返回</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+
+        var defaultmale = getImagePath("man.jpg");
+        document.getElementById("avatar-preview").src = defaultmale;
+
+        function getImagePath(imageName) {
+            // 构建图片的相对路径
+            var imagePath = "\\Areas\\client\\Data\\img\\" + imageName;
+            return imagePath;
+        }
+
+        document.getElementById("avatar-upload").addEventListener("change", function () {
+            var fileInput = this;
+            var imagePreview = document.getElementById("avatar-preview");
+
+            if (fileInput.files && fileInput.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    imagePreview.src = e.target.result;
+                };
+                reader.readAsDataURL(fileInput.files[0]);
+            }
+        });
+
+        document.getElementById("register").addEventListener("click", function () {
+            var nickname = document.getElementById("nickname").value;
+            var password = document.getElementById("password").value;
+            var gender = document.getElementById("gender").value;
+            var birthdate = document.getElementById("birthdate").value;
+            var nicknameError = document.getElementById("nickname-error");
+
+            //在这里添加相应的注册逻辑
+            //先判断应该输入的信息是否输入完整，还要再判断一个是否存在相同的昵称
+            if (nickname && password && gender && birthdate) {
+                //信息输入完整
+                if (nicknameError.textContent == "") {
+                    $('.nickname').trigger('blur');
+                    var formData = new FormData();
+                    formData.append("avatarUpload", document.getElementById("avatar-upload").files[0]);
+                    formData.append("nickname", nickname);
+                    formData.append("password", password);
+                    formData.append("gender", gender);
+                    formData.append("birthdate", birthdate);
+                    
+                    $.ajax({
+                        url: "register_exec",
+                        type: "POST",
+                        data: formData,
+                        contentType: false,
+                        processData: false,
+                        success: function (response) {
+                            if (response.result == "True") {
+                                showConfirmNotCancel("你的NN号为:" + response.message + "               这将是你登陆NN新闻的唯一账号", function () {
+                                    top.location.href = "../clientLogin/login?type=1";
+                                });     
+                            }
+                            else {
+                                showInfo("注册失败，请联系管理员");
+                            }
+                        },
+                        error: function (error) {
+                            showInfo("内部链接出现问题，请联系管理员");
+                        }
+                    });
+                }
+                else {
+                    //有消息提示，但是输入框有东西，说明用户的昵称不满足条件
+                    //需要进行消息提醒，在这里我们使用layui的消息框
+                    showInfo("该昵称已经被占用，请重新选择你的名字吧！");
+                }
+            }
+            else {
+                showInfo("信息输入不完整");
+            }
+        });
+
+        //当性别变的时候，默认头像也跟着变
+        document.getElementById("gender").addEventListener("change", function () {
+            var genderValue = document.getElementById("gender").value;
+            if (genderValue == "male") {
+                defaultmale = getImagePath("man.jpg");
+                document.getElementById("avatar-preview").src = defaultmale;
+            }
+            else {
+                defaultmale = getImagePath("woman.jpg");
+                document.getElementById("avatar-preview").src = defaultmale;
+            }
+        });
+        //日期输入检测
+        document.getElementById("birthdate").addEventListener("blur", function () {
+            var birthdateInput = this;
+            var birthdateError = document.getElementById("birthdate-error");
+            var birthdateValue = birthdateInput.value;
+            if (birthdateValue == "") {
+                birthdateError.textContent = "必填";
+            } else {
+                birthdateError.textContent = "";
+            }
+        });
+        //昵称输入检测
+        document.getElementById("nickname").addEventListener("blur", function () {
+            var nicknameInput = this;
+            var nicknameError = document.getElementById("nickname-error");
+            var nicknameValue = nicknameInput.value;
+            if (nicknameValue.trim() === "") {
+                nicknameError.textContent = "必填";
+            } else {
+                //这个是输入框里面有东西，我们做一次有无相同昵称的判断
+                ajaxPost("checkSameUserName", { nickname: nicknameValue }, function (data) {
+                    if (data.result == "False") {
+                        //这个说明数据库里面已经存在相同的昵称了
+                        nicknameError.textContent = data.message;
+                        return false;
+                    } else {
+                        //这个说明用户输入的昵称是可以用的
+                    }
+                });
+                nicknameError.textContent = "";
+            }
+        });
+        //密码输入检测
+        document.getElementById("password").addEventListener("blur", function () {
+            var passwordInput = this;
+            var passwordError = document.getElementById("password-error");
+            var passwordValue = passwordInput.value;
+            if (passwordValue.trim() === "") {
+                passwordError.textContent = "必填";
+            } else {
+                passwordError.textContent = "";
+            }
+        });
+
+        document.getElementById("back").addEventListener("click", function () {
+            window.open("../clientLogin/login", "_self");
+        });
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,93 @@
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\obj\Debug\ruiLibrary.csproj.CoreCompileInputs.cache
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\ruiLibrary.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\ruiLibrary.pdb
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\Aspose.Cells.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\BarcodeLib.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\Dapper.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\Gma.QrCodeNet.Encoding.Net35.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\IntelliLock.Licensing.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\itextsharp.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\LitJSON.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\Newtonsoft.Json.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\NLog.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\System.Web.Mvc.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\System.Web.WebPages.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\Aspose.Cells.xml
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\Dapper.xml
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\Newtonsoft.Json.xml
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\System.Web.Mvc.xml
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\System.Web.WebPages.xml
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\obj\Debug\ruiLibrary.csproj.CopyComplete
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\obj\Debug\ruiLibrary.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\obj\Debug\ruiLibrary.pdb
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\ruiLibrary\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\ruiLibrary.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\ruiLibrary.pdb
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\Aspose.Cells.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\BarcodeLib.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\Dapper.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\Gma.QrCodeNet.Encoding.Net35.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\IntelliLock.Licensing.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\itextsharp.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\Newtonsoft.Json.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\NLog.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\System.Web.Mvc.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\System.Web.WebPages.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\Microsoft.SqlServer.Types.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\Aspose.Cells.xml
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\Dapper.xml
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\Newtonsoft.Json.xml
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\System.Web.Mvc.xml
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\System.Web.WebPages.xml
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\obj\Debug\ruiLibrary.csproj.CoreCompileInputs.cache
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\obj\Debug\ruiLibrary.csproj.CopyComplete
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\obj\Debug\ruiLibrary.dll
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\obj\Debug\ruiLibrary.pdb
+F:\MVC5开发框架 - 教学版(给学生)\code\ruiLibrary\obj\Debug\ruiLibrary.csprojResolveAssemblyReference.cache
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\ruiLibrary.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\ruiLibrary.pdb
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\Aspose.Cells.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\BarcodeLib.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\Dapper.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\Gma.QrCodeNet.Encoding.Net35.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\IntelliLock.Licensing.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\itextsharp.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\NLog.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\System.Web.Mvc.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\System.Web.WebPages.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\Aspose.Cells.xml
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\Dapper.xml
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\System.Web.Mvc.xml
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\System.Web.WebPages.xml
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\obj\Debug\ruiLibrary.csproj.AssemblyReference.cache
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\obj\Debug\ruiLibrary.csproj.CoreCompileInputs.cache
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\obj\Debug\ruiLibrary.csproj.CopyComplete
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\obj\Debug\ruiLibrary.dll
+C:\Users\86151\Desktop\杂项\pointNetProjectExercise\PointNetProject\工程项目实训\baijianz\工程训练\code\ruiLibrary\obj\Debug\ruiLibrary.pdb

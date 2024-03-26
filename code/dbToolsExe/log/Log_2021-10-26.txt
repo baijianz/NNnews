@@ -1,0 +1,63 @@
+2021-10-26 16:13:52.5781 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 16:14:20.7445 Error After parsing a value an unexpected character was encountered: p. Path 'AppConfig.prjName', line 15, position 5.
+------------begin-------------
+   在 Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   在 Newtonsoft.Json.JsonTextReader.Read()
+   在 Newtonsoft.Json.JsonWriter.WriteToken(JsonReader reader, Boolean writeChildren, Boolean writeDateConstructorAsDate, Boolean writeComments)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateJObject(JsonReader reader)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   在 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 dbTools.frmMain.btnSave_Click(Object sender, EventArgs e) 位置 E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\dbTools\frmMain.cs:行号 289
+------------End-------------
+ 
+2021-10-26 16:14:31.0885 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 16:16:30.7074 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 16:16:52.5285 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2021-10-26 16:16:52.5305 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2021-10-26 16:17:23.5818 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 16:17:24.0341 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2021-10-26 16:17:24.0342 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2021-10-26 16:48:40.7647 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 16:49:08.2459 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 16:49:08.2538 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2021-10-26 16:49:08.2548 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2021-10-26 16:50:09.1522 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 16:51:21.5298 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2021-10-26 16:51:21.5325 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2021-10-26 16:53:24.4936 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 16:53:24.5015 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2021-10-26 16:53:24.5015 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2021-10-26 17:01:51.2622 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Web.config 
+2021-10-26 17:01:51.2702 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\Web.config 
+2021-10-26 17:01:51.2712 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\Web.config 
+2021-10-26 17:01:55.9960 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 17:01:55.9970 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 17:03:44.0015 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Web.config 
+2021-10-26 17:03:44.0104 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\Web.config 
+2021-10-26 17:03:44.0115 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\Web.config 
+2021-10-26 17:03:45.7631 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 17:03:45.7641 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 17:03:45.7641 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2021-10-26 17:03:45.7651 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2021-10-26 17:03:45.7651 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2021-10-26 17:03:45.7661 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2021-10-26 17:04:21.8974 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Web.config 
+2021-10-26 17:04:21.9044 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\Web.config 
+2021-10-26 17:04:21.9054 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\Web.config 
+2021-10-26 17:04:23.9273 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 17:04:23.9273 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 17:04:24.5267 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2021-10-26 17:04:24.5277 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2021-10-26 17:04:24.5277 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2021-10-26 17:04:24.5277 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2021-10-26 17:04:43.2033 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\Web.config 
+2021-10-26 17:04:43.2103 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\Web.config 
+2021-10-26 17:04:43.2122 Info config文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\Web.config 
+2021-10-26 17:04:44.8816 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 17:04:44.8826 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSite\appsettings.json 
+2021-10-26 17:04:45.3953 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2021-10-26 17:04:45.3963 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteApi\appsettings.json 
+2021-10-26 17:04:45.3963 Info json文件:E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 
+2021-10-26 17:04:45.3973 Info E:\Projecting\_MVC5开发框架 - 腾讯40\trunk\code\webSiteWeixin\appsettings.json 

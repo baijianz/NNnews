@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NN新闻导航页</title>
+    <style>
+        body {
+            background-color: #0073e6;
+            background-image: url("/Resource/Pic/Home2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: flex-end; /* 使容器显示在更右边 */
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+            max-width: 80%; /* 增大容器宽度 */
+            width: 100%;
+            max-height: 85%;
+            height: 100%;
+            margin-right: 20px; /* 向右移动容器 */
+        }
+
+        h2 {
+            color: #0073e6;
+        }
+
+        button {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 20px 45px;
+            margin: 10px;
+            cursor: pointer;
+            margin-top: 30px;
+            width: 200px;
+            height: 50px;
+        }
+
+            button:hover {
+                background-color: #005bbf;
+            }
+    </style>
+    
+</head>
+<body>
+    <div class="login-container">
+        <h2>NN新闻</h2>
+        <button onclick="login()" style=" margin-top: 50px;">登录</button>
+        <button onclick="adminLogin()" style=" margin-bottom: 23px;">管理人员登录</button>
+    </div>
+
+    <script>
+
+        document.title = "NN新闻导航页";
+        function login() {
+            // 处理登录操作
+            top.location.href = "../client/clientLogin/login";
+        }
+
+        function adminLogin() {
+            // 处理管理人员登录操作
+            window.open('toLoginAdmin');
+        }
+    </script>
+</body>
+</html>
+
+

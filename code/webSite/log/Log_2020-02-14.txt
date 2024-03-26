@@ -1,0 +1,89 @@
+2020-02-14 16:53:49.1413 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-14 16:53:50.1604 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 16:53:55.5557 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-14 17:11:44.2948 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-14 17:11:45.2809 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 17:11:47.0790 Info web.Areas.admin.Controllers.rbac_Module-select 
+2020-02-14 17:16:17.7285 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-14 17:16:18.7015 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 17:17:43.7464 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-14 17:17:53.9240 Info web.Areas.admin.Controllers.rbac_Resource-batchSave 
+2020-02-14 17:17:57.0471 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-14 17:18:00.4223 Info web.Areas.admin.Controllers.rbac_Module-select 
+2020-02-14 17:18:07.5017 Info web.Areas.admin.Controllers.rbac_Module-batchSave 
+2020-02-14 17:18:10.0049 Info web.Areas.admin.Controllers.rbac_Module-select 
+2020-02-14 17:18:15.8952 Info web.Areas.admin.Controllers.af_AuditPostUser-Select 
+2020-02-14 17:27:12.6029 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-14 17:27:13.5430 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 17:27:17.3272 Info web.Areas.admin.Controllers.af_AuditPostUser-Select 
+2020-02-14 17:29:27.3106 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-14 17:29:28.2867 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 17:29:29.4457 Info web.Areas.admin.Controllers.af_AuditPostUser-Select 
+2020-02-14 17:29:31.9439 Info web.Areas.admin.Controllers.af_AuditPostUser-batchSave 
+2020-02-14 17:29:32.0019 Error 非部分职务无需变更任职部门
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 db.bll.af_AuditPostUser.batchSave(List`1 rowIDList, List`1 showValueList, List`1 isDeptPostList, List`1 deptCodeList, dbEntities dc) 位置 G:\Projecting\_MVC5开发框架 - 腾讯40\code\dbLibrary\bll\audit\af_AuditPostUser.cs:行号 108
+-------------------------
+ 
+2020-02-14 17:29:32.0289 Error 非部分职务无需变更任职部门
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 db.bll.af_AuditPostUser.batchSave(List`1 rowIDList, List`1 showValueList, List`1 isDeptPostList, List`1 deptCodeList, dbEntities dc) 位置 G:\Projecting\_MVC5开发框架 - 腾讯40\code\dbLibrary\bll\audit\af_AuditPostUser.cs:行号 108
+-------------------------
+ 
+2020-02-14 17:29:51.4180 Info web.Areas.admin.Controllers.af_AuditPostUser-batchSave 
+2020-02-14 17:29:51.4540 Error 非部分职务无需变更任职部门
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 db.bll.af_AuditPostUser.batchSave(List`1 rowIDList, List`1 showValueList, List`1 isDeptPostList, List`1 deptCodeList, dbEntities dc) 位置 G:\Projecting\_MVC5开发框架 - 腾讯40\code\dbLibrary\bll\audit\af_AuditPostUser.cs:行号 108
+-------------------------
+ 
+2020-02-14 17:29:51.4860 Error 非部分职务无需变更任职部门
+-------------------------
+   在 rui.excptHelper.throwEx(String msg)
+   在 db.bll.af_AuditPostUser.batchSave(List`1 rowIDList, List`1 showValueList, List`1 isDeptPostList, List`1 deptCodeList, dbEntities dc) 位置 G:\Projecting\_MVC5开发框架 - 腾讯40\code\dbLibrary\bll\audit\af_AuditPostUser.cs:行号 108
+-------------------------
+ 
+2020-02-14 19:05:39.6778 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-14 19:05:40.5488 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 19:05:42.2219 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-14 19:07:00.7564 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-14 19:07:03.3356 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-14 19:07:03.4766 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 19:07:05.0567 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-14 19:07:13.1481 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-14 19:11:31.9619 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-14 19:11:34.4021 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-14 19:11:34.5401 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 19:11:36.1472 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-14 19:14:26.2939 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-14 19:14:28.8420 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-14 19:14:28.9771 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 19:14:30.0211 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-14 19:14:34.6484 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 19:14:37.4265 Info web.Areas.admin.Controllers.bks_Book-batchChangeBookType 
+2020-02-14 19:14:37.4615 Info web.Areas.admin.Controllers.bks_Book-select 
+2020-02-14 19:16:17.4403 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-14 19:17:29.1044 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 19:17:34.7187 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 20:19:49.9533 Info web.Areas.admin.Controllers.bks_Book-Select 
+2020-02-14 20:19:53.0085 Info web.Areas.admin.Controllers.sys_Home-index 
+2020-02-14 20:19:53.1525 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 20:20:17.7459 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-14 20:20:23.9313 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-14 20:20:24.2313 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-14 20:20:24.6833 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-14 20:22:57.2170 Info web.Areas.admin.Controllers.sys_Home-desktop 
+2020-02-14 20:23:00.3542 Info web.Areas.admin.Controllers.rbac_Resource-Select 
+2020-02-14 20:23:01.5933 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-14 20:23:01.6383 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-14 20:23:01.6503 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-14 20:24:04.6939 Info web.Areas.admin.Controllers.rbac_Resource-select 
+2020-02-14 20:24:05.8120 Info web.Areas.admin.Controllers.rbac_Resource-Detail 
+2020-02-14 20:24:05.8500 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-14 20:24:05.8650 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-14 20:24:08.3381 Info web.Areas.admin.Controllers.rbac_Resource-Update 
+2020-02-14 20:24:08.3821 Info web.Areas.admin.Controllers.rbac_ResourceOp-SelectPartial 
+2020-02-14 20:24:08.3911 Info web.Areas.admin.Controllers.sys_BillAttach-SelectPartial 
+2020-02-14 20:25:57.3333 Info web.Areas.admin.Controllers.sys_Home-desktop 
